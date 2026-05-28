@@ -31,6 +31,19 @@ Software Engineering ist eine **technische Disziplin**, die sich mit **allen Asp
 ### Herausforderungen
 - Heterogenität, neue Technologien, wirtschaftlicher/sozialer Wandel, Sicherheit/Zuverlässigkeit.
 
+### „Hacken" vs. Software Engineering
+
+| Personal Software | Industrial-strength Software |
+|---|---|
+| Developer is user | Client is user |
+| Bugs are tolerable | Bugs are not tolerated |
+| UI not important | UI important |
+| No/Minor documentation | Lots of documentation |
+| SW not in critical use | Supports business functions |
+| Reliability/Robustness not crucial | Reliability/Robustness is crucial |
+| No investment | **Heavy investment (5–25 $/LOC)** |
+| Portability not so important | Portability is an economic advantage |
+
 ---
 
 ## 2. SOFTWAREENTWICKLUNGSPROZESSE
@@ -100,6 +113,18 @@ Gut anwendbar bei klarer/fixer Funktionalität (OS, DB, Web-Server, Branchen-SW 
 
 (+) Verbessertes Kosten/Nutzen-Verhältnis, bessere Code-Qualität.
 (–) Ergebnis nicht vorhersagbar, Qualitätseigenschaften nicht garantierbar, weniger Planung, Anforderungen an Kunde, Refactoring-Zeitfaktor.
+
+#### Agile vs. „Klassische" Modelle (direkte Vergleichstabelle)
+
+| Aspekt | Bisheriger Ansatz | Agiler Ansatz |
+|---|---|---|
+| Ständige Mitwirkung des Kunden | Unwahrscheinlich | **Kritischer Erfolgsfaktor** |
+| Etwas Nützliches wird geliefert | Erst nach einiger Zeit | **Mindestens alle sechs Wochen** |
+| Das Richtige entwickeln durch | Langes Spezifizieren, Vorausdenken | Kern entwickeln, zeigen, verbessern |
+| Nötige Disziplin | Formal, wenig | Informell, viel |
+| Änderungen | Erzeugen Widerstand | Werden erwartet und toleriert |
+| Kommunikation | Über Dokumente | Zwischen Menschen |
+| Vorsorge für Änderungen | Durch Versuch der Vorausplanung | Durch „flexibel bleiben" |
 
 **Es gibt KEIN ideales Modell!** Das beste Modell hängt von Organisation, Produkt und Entwickler-Fähigkeiten ab.
 
@@ -517,6 +542,22 @@ Top-Gründe für Projekt-Abbruch (Chaos Report):
   - Betreffen oft **gesamte Architektur**.
   - Beispiel NFA1: „Das Suchergebnis soll nach spätestens 5 Sekunden angezeigt werden."
 
+#### Metriken zum Messen von NFAs (Sommerville)
+
+| Property | Measure |
+|---|---|
+| Speed | Processed transactions/second, User/event response time, Screen refresh time |
+| Size | MByte |
+| Ease of use | Training time, Number of help frames |
+| Reliability | Mean time to failure, Probability of unavailability |
+| Robustness | Time to restart after failure, % of events causing failure, Probability of data corruption |
+| Portability | % of target-dependent statements, Number of target systems |
+
+#### NFA-Taxonomie (Sommerville – grobe Kategorien)
+- **Produkt-Anforderungen**: Usability, Performance/Effizienz, Speicher, Reliability, Robustheit, Portabilität
+- **Organisatorische Anforderungen**: Anforderungen an Liefer-Prozess, Implementierung, Standards (z. B. monatliche Reviews der Doku)
+- **Externe Anforderungen**: Interoperabilität, ethisch, rechtlich-vertraglich (z. B. Drittel-Zahlung pro Meilenstein)
+
 ### Qualitätskriterien (IEEE ISO/IEC/IEEE 29148-2011)
 
 1. **Vollständig**: Jede Anforderung beschreibt die zu liefernde Funktionalität vollständig. Messbar. Unvollständige Anforderungen markieren (z. B. "tbd").
@@ -549,12 +590,28 @@ Top-Gründe für Projekt-Abbruch (Chaos Report):
 ### Anforderungserhebung
 Wissen über Organisation, Domäne, zukünftiges System, Stakeholder ermitteln.
 
+#### Kommunikation – Vier-Seiten-Modell (F. Schulz von Thun)
+Jede Nachricht hat 4 Seiten, die von Sender und Empfänger unterschiedlich interpretiert werden:
+- **Sachinhalt** (worüber informiere ich) – z. B. „Mit der Suchmaske wird nichts gefunden"
+- **Selbstoffenbarung** (was gebe ich von mir kund) – z. B. „Ich bin überfordert"
+- **Beziehung** (was halte ich von dir) – z. B. „Du solltest mir helfen"
+- **Appell** (was möchte ich erreichen) – z. B. „Bitte überarbeite die Suche"
+
+Beispiel: "Ich finde mit der Bibliothekssuche nichts." Diese Aussage kann unterschiedlich gedeutet werden, je nachdem welche Seite betont wird. RE muss die richtige Seite erkennen.
+
 **Wissensebenen (nach Kano)**:
 - Basis-Faktoren = **unterbewusstes** Wissen → **Beobachtungstechniken**, **artefaktbasiert**
 - Begeisterungs-Faktoren = **unbewusstes** Wissen → **Kreativitätstechniken**
 - Leistungs-Faktoren = **bewusstes** Wissen → **Befragungstechniken**
 
 **Wichtig**: Immer eine **Kombination** an Techniken verwenden!
+
+#### Welche Methode macht Sinn? (Chris Rupp)
+Techniken liegen auf einem Spektrum von **wenig Interaktion** mit Stakeholdern (RE muss Wissen selbst beschaffen) bis **gezielte Interaktion** mit ausgewählten Stakeholdern:
+
+- **Wenig Interaktion**: Hintergrundstudie, Systemarchäologie, Reuse, Audio-/Videoaufzeichnung
+- **Mittlere Interaktion**: Feldbeobachtung, Apprenticing, Mind Mapping, Szenarien, Fragebogen
+- **Hohe Interaktion**: Brainstorming, 6-3-5, Wechsel der Perspektive, Interview, Workshop
 
 #### Kreativitätstechniken (unbewusstes Wissen)
 - **Brainstorming**: 5–10 Teilnehmer, 20 Minuten, keine Kritik, Moderator. (+) viele Ideen schnell, Weiterspinnen, freie Ideen, innovativ. (–) schwierige Gruppendynamik, Terminkoordination.
@@ -1018,6 +1075,16 @@ Visualisiert Fluss der Tasks durch Workflow-Status über die Zeit.
 **Vorgehen** (Sommerville):
 1. **Risikoidentifizierung**: Checklisten (Technologie, Personal, Unternehmen, Tools, Anforderungen, Schätzungen), Komponenten-Prüfung, Risiko-Bäume, "Was wäre wenn?".
 2. **Risikoanalyse**: Wahrscheinlichkeit + Schweregrad. Qualitativ (Bewertungstabelle) oder quantitativ (Gefährdungspotential).
+
+**Beispiel-Risiko-Bewertungstabelle (Zugtür-Fehler):**
+
+| Konsequenz | Wahrscheinlich | Möglich | Unwahrscheinlich |
+|---|---|---|---|
+| Verlust von Leben | katastrophal | katastrophal | schwerwiegend |
+| Verletzungen | katastrophal | schwerwiegend | hoch |
+| Zuggarnitur beschädigt | hoch | moderat | niedrig |
+| Reputationsverlust | moderat | niedrig | niedrig |
+
 3. **Risikoplanung**:
    - **Vermeidung** (z. B. defekte Komponenten durch zugekaufte ersetzen).
    - **Minimierung** (z. B. mehr Überschneidungen MA wegen Krankheit).
