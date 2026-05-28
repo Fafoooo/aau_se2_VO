@@ -1,0 +1,1519 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=2cm,top=2.4cm,bottom=2.2cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}
+\setmonofont{Menlo}
+\usepackage[ngerman]{babel}
+
+\usepackage{microtype}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*,itemsep=3pt,topsep=4pt,parsep=2pt}
+\setlist[enumerate]{leftmargin=*,itemsep=3pt,topsep=4pt,parsep=2pt}
+
+% Unicode character substitutions
+\usepackage{newunicodechar}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{←}{\ensuremath{\leftarrow}}
+\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{⇐}{\ensuremath{\Leftarrow}}
+\newunicodechar{⇔}{\ensuremath{\Leftrightarrow}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{∞}{\ensuremath{\infty}}
+\newunicodechar{×}{\ensuremath{\times}}
+\newunicodechar{·}{\ensuremath{\cdot}}
+\newunicodechar{±}{\ensuremath{\pm}}
+\newunicodechar{‣}{\textbullet\,}
+\newunicodechar{●}{\textbullet}
+\newunicodechar{○}{$\circ$}
+\newunicodechar{★}{\textbf{$\star$}}
+
+% Farb-Palette
+\usepackage{xcolor}
+\definecolor{tldrBg}{HTML}{E3F2FD}
+\definecolor{tldrFrame}{HTML}{1565C0}
+\definecolor{storyBg}{HTML}{FFF3E0}
+\definecolor{storyFrame}{HTML}{E65100}
+\definecolor{keyBg}{HTML}{E8F5E9}
+\definecolor{keyFrame}{HTML}{2E7D32}
+\definecolor{memBg}{HTML}{FFFDE7}
+\definecolor{memFrame}{HTML}{F9A825}
+\definecolor{trapBg}{HTML}{FFEBEE}
+\definecolor{trapFrame}{HTML}{C62828}
+\definecolor{checkBg}{HTML}{F3E5F5}
+\definecolor{checkFrame}{HTML}{6A1B9A}
+\definecolor{primary}{HTML}{1F4E79}
+\definecolor{secondary}{HTML}{2E75B6}
+
+% Section formatting
+\usepackage{titlesec}
+\titleformat{\section}
+  {\Huge\bfseries\color{primary}}
+  {\thesection.}{0.6em}{}
+\titleformat{\subsection}
+  {\LARGE\bfseries\color{secondary}}
+  {\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}
+  {\Large\bfseries\color{primary}}
+  {}{0pt}{}
+\titlespacing*{\section}{0pt}{20pt}{14pt}
+\titlespacing*{\subsection}{0pt}{14pt}{8pt}
+\titlespacing*{\subsubsection}{0pt}{10pt}{5pt}
+
+% Header / Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{primary}\itshape SE2 – Klausur 29.05.2026}
+\fancyhead[R]{\small\color{primary}\itshape\leftmark}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{primary}\leaders\hrule height \headrulewidth\hfill}}
+
+% Tabellen
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\renewcommand{\arraystretch}{1.25}
+
+% Boxen
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\newtcolorbox{tldr}[1][]{
+  enhanced,breakable,
+  colback=tldrBg,colframe=tldrFrame,arc=4mm,boxrule=1.2pt,
+  left=10pt,right=10pt,top=8pt,bottom=8pt,
+  before skip=10pt,after skip=10pt,
+  fonttitle=\bfseries\large,
+  title={IN 30 SEKUNDEN},
+  coltitle=white,colbacktitle=tldrFrame,
+  attach boxed title to top left={yshift=-3mm,xshift=8mm},
+  boxed title style={colframe=tldrFrame,colback=tldrFrame,arc=2mm,boxrule=0pt,left=8pt,right=8pt},
+  #1
+}
+
+\newtcolorbox{story}[1][]{
+  enhanced,breakable,
+  colback=storyBg,colframe=storyFrame,arc=4mm,boxrule=1pt,
+  left=10pt,right=10pt,top=8pt,bottom=8pt,
+  before skip=10pt,after skip=10pt,
+  fonttitle=\bfseries\large,
+  title={DIE STORY},
+  coltitle=white,colbacktitle=storyFrame,
+  attach boxed title to top left={yshift=-3mm,xshift=8mm},
+  boxed title style={colframe=storyFrame,colback=storyFrame,arc=2mm,boxrule=0pt,left=8pt,right=8pt},
+  #1
+}
+
+\newtcolorbox{keyfacts}[1][]{
+  enhanced,breakable,
+  colback=keyBg,colframe=keyFrame,arc=4mm,boxrule=1pt,
+  left=10pt,right=10pt,top=8pt,bottom=8pt,
+  before skip=10pt,after skip=10pt,
+  fonttitle=\bfseries\large,
+  title={MUSS-WISSEN},
+  coltitle=white,colbacktitle=keyFrame,
+  attach boxed title to top left={yshift=-3mm,xshift=8mm},
+  boxed title style={colframe=keyFrame,colback=keyFrame,arc=2mm,boxrule=0pt,left=8pt,right=8pt},
+  #1
+}
+
+\newtcolorbox{merkhilfe}[1][]{
+  enhanced,breakable,
+  colback=memBg,colframe=memFrame,arc=4mm,boxrule=1pt,
+  left=10pt,right=10pt,top=8pt,bottom=8pt,
+  before skip=10pt,after skip=10pt,
+  fonttitle=\bfseries\large,
+  title={MERKHILFE},
+  coltitle=white,colbacktitle=memFrame,
+  attach boxed title to top left={yshift=-3mm,xshift=8mm},
+  boxed title style={colframe=memFrame,colback=memFrame,arc=2mm,boxrule=0pt,left=8pt,right=8pt},
+  #1
+}
+
+\newtcolorbox{trap}[1][]{
+  enhanced,breakable,
+  colback=trapBg,colframe=trapFrame,arc=4mm,boxrule=1pt,
+  left=10pt,right=10pt,top=8pt,bottom=8pt,
+  before skip=10pt,after skip=10pt,
+  fonttitle=\bfseries\large,
+  title={KLAUSUR-FALLE},
+  coltitle=white,colbacktitle=trapFrame,
+  attach boxed title to top left={yshift=-3mm,xshift=8mm},
+  boxed title style={colframe=trapFrame,colback=trapFrame,arc=2mm,boxrule=0pt,left=8pt,right=8pt},
+  #1
+}
+
+\newtcolorbox{quickcheck}[1][]{
+  enhanced,breakable,
+  colback=checkBg,colframe=checkFrame,arc=4mm,boxrule=1pt,
+  left=10pt,right=10pt,top=8pt,bottom=8pt,
+  before skip=10pt,after skip=10pt,
+  fonttitle=\bfseries\large,
+  title={CHECK DICH SELBST},
+  coltitle=white,colbacktitle=checkFrame,
+  attach boxed title to top left={yshift=-3mm,xshift=8mm},
+  boxed title style={colframe=checkFrame,colback=checkFrame,arc=2mm,boxrule=0pt,left=8pt,right=8pt},
+  #1
+}
+
+\setlength{\headheight}{22pt}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+\widowpenalty=10000
+\clubpenalty=10000
+\sloppy
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=secondary,
+  pdftitle={Software Engineering 2 - ADHS-Version},
+  pdfauthor={Klausurvorbereitung},
+  bookmarksnumbered=true,
+}
+
+\title{\Huge\bfseries\color{primary}Software Engineering 2\\[6pt]\LARGE\color{secondary} Die ADHS-freundliche Klausur-Vorbereitung}
+\author{\large 29.\,Mai\,2026 \,$\bullet$\, HS A \,$\bullet$\, 60 Min \,$\bullet$\, 60 Punkte \,$\bullet$\, Multiple Choice}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\vspace{0.5cm}
+
+\begin{tldr}
+\textbf{Du hast morgen Klausur.} Diese Zusammenfassung ist dein Survival-Kit:
+
+\begin{itemize}
+  \item \textbf{Blaue Boxen} (wie diese) = die Hauptaussage in 30 Sekunden
+  \item \textbf{Orange Boxen} = Stories \& Analogien (damit's hängenbleibt)
+  \item \textbf{Grüne Boxen} = Muss-Wissen Fakten
+  \item \textbf{Gelbe Boxen} = Eselsbrücken \& Merkhilfen
+  \item \textbf{Rote Boxen} = Klausur-Fallen, wo Punkte verloren gehen
+  \item \textbf{Lila Boxen} = Quick-Checks, teste dich
+\end{itemize}
+
+\textbf{Notenschlüssel:} 5 < 36 \,$\leq$\, 4 < 42 \,$\leq$\, 3 < 48 \,$\leq$\, 2 < 54 \,$\leq$\, 1\\
+\textbf{Faustregel:} Du brauchst \,$\geq$\, 60\,\% richtig (36 Punkte) für ein \textbf{4er}.
+\end{tldr}
+
+\newpage
+\tableofcontents
+\newpage
+
+% ================================================================
+\section{Was ist Software Engineering überhaupt?}
+% ================================================================
+
+\begin{tldr}
+SE = die \textbf{Kunst}, große Software-Systeme \textbf{wirtschaftlich, schnell und zuverlässig} zu bauen \emph{und} am Leben zu halten.
+\end{tldr}
+
+\begin{story}
+Stell dir vor, du musst einen \textbf{Wolkenkratzer} bauen. Du kannst nicht einfach drauflos legen. Du brauchst Pläne, Statiker, Bauleiter, Qualitätskontrolle, Wartung.
+
+Software ist genauso: \textbf{Hacker-Style} (zuhause an einem Skript basteln) \,$\neq$\, \textbf{Industrie-Software} (Bank-System, Krankenhaus, Auto).
+\end{story}
+
+\subsection{Hacker vs. Software Engineering -- die Tabelle die in der Klausur vorkommen KÖNNTE}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\linewidth}{Xl X}
+\toprule
+\textbf{Personal Software (Hacken)} & \textbf{vs.} & \textbf{Industrial Software (SE)}\\
+\midrule
+Entwickler = Nutzer & & Kunde = Nutzer\\
+Bugs sind tolerabel & & Bugs werden nicht toleriert\\
+UI egal & & UI wichtig\\
+Wenig/keine Doku & & Viel Doku\\
+Nicht kritisch & & Unterstützt Geschäftsprozesse\\
+Robustheit egal & & Robustheit kritisch\\
+Keine Investitionen & & 5--25 \$ pro \textbf{LOC}!\\
+Portabilität egal & & Portabilität = Geld\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Die 4 Merkmale guter Software}
+
+\begin{keyfacts}
+\begin{enumerate}
+  \item \textbf{Wartbarkeit} -- Kann ich sie ändern, ohne dass alles bricht?
+  \item \textbf{Sicherheit \& Zuverlässigkeit} -- Crasht sie nicht? Hackt sie keiner?
+  \item \textbf{Effizienz} -- Frisst sie nicht den ganzen Speicher?
+  \item \textbf{Benutzerfreundlichkeit} -- Versteht sie ein Mensch?
+\end{enumerate}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{,,Warum Sicher Effizient Benutzbar?''} \,$=$\, \textbf{W-S-E-B}
+\end{merkhilfe}
+
+\begin{trap}
+\textbf{SE ist NICHT dasselbe wie Informatik!}
+\begin{itemize}
+  \item Informatik = Theorien und Methoden \emph{der Software-Systeme}
+  \item SE = Probleme der \emph{Herstellung} von Software
+\end{itemize}
+Wenn du das im MC siehst: \textbf{Unterschied!} Häufige Falle.
+\end{trap}
+
+\newpage
+% ================================================================
+\section{Softwareentwicklungs-Prozesse}
+% ================================================================
+
+\begin{tldr}
+Verschiedene \textbf{Vorgehensweisen}, um Software zu bauen.\\
+\textbf{Sequenziell} (Wasserfall, V): geplant, starr\\
+\textbf{Iterativ} (Spiral): runden-basiert, mit Risikoanalyse\\
+\textbf{Agil} (Scrum, XP, Kanban): kurze Zyklen, flexibel
+\end{tldr}
+
+\subsection{Wasserfall (Royce 1970)}
+
+\begin{story}
+\textbf{Wasser fließt nur nach unten}, nie zurück. Genauso die Phasen: Anforderungen $\rightarrow$ Design $\rightarrow$ Code $\rightarrow$ Test $\rightarrow$ Wartung. \emph{Reihenfolge fix.}
+
+Problem: Wenn der Kunde am Ende sagt \emph{,,Ich wollte eigentlich was anderes''} -- pech gehabt.
+\end{story}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Top-Down}, festgelegte Reihenfolge
+  \item \textbf{Eingeschränkte Rückkopplung}
+  \item Benutzerbeteiligung \textbf{nur zu Beginn}
+\end{itemize}
+\textbf{(+)} (theoretisch) gut planbar, geringer Mgmt-Aufwand\\
+\textbf{(--)} Kurskorrekturen zu spät, starr, Doku wird wichtiger als das System
+\end{keyfacts}
+
+\subsection{V-Modell}
+
+\begin{story}
+Wasserfall trifft Test-Schwester. Für jede Bauphase \textbf{links} gibt's rechts eine \textbf{Test/Validation}-Phase. Bildet ein \textbf{V}.
+\end{story}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Qualitätssicherung integriert}
+  \item Sehr umfangreich -- für \textbf{große Projekte}
+  \item \textbf{Verifikation vs. Validation:}
+  \begin{itemize}
+    \item \textbf{Verifikation} = ,,Bauen wir das Produkt \emph{richtig}?'' (gegen Spec)
+    \item \textbf{Validation} = ,,Bauen wir das \emph{richtige} Produkt?'' (Kunde happy?)
+  \end{itemize}
+\end{itemize}
+\textbf{(+)} integriert detailliert, generisch, gut bei großen Projekten\\
+\textbf{(--)} Bürokratie bei kleinen Projekten, ,,Big Bang'' am Schluss, starr
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{Ver}ifikation = ,,\textbf{V}erify against Spec'' (Spezifikation)\\
+\textbf{Val}idation = ,,\textbf{Val}id for the Customer'' (Kunde happy?)
+\end{merkhilfe}
+
+\subsection{Spiral-Modell}
+
+\begin{story}
+Stell dir eine \textbf{Spirale} vor, die nach außen wächst. Jede Runde:
+\begin{enumerate}
+  \item Ziele/Einschränkungen festlegen
+  \item \textbf{Risiken analysieren} (das Herzstück!)
+  \item Entwickeln (Design, Code, Test)
+  \item Nächste Runde planen
+\end{enumerate}
+\end{story}
+
+\begin{keyfacts}
+\textbf{Rundenbasiert.} Risiko zuerst checken, dann entwickeln. Gut für große Systeme mit mehreren Disziplinen.\\
+\textbf{(+)} Risiken früh, anpassungsfähig, inkrementell\\
+\textbf{(--)} Mehrarbeit, komplexes PM, theoretisch
+\end{keyfacts}
+
+\subsection{Agile Modelle}
+
+\begin{story}
+\textbf{Gegenbewegung zu starren Prozessen.} Idee: \emph{,,Wir wissen nicht, was der Kunde am Ende wirklich will. Also bauen wir kurze Iterationen und passen ständig an.''}
+\end{story}
+
+\begin{keyfacts}
+\textbf{Das Agile Manifest -- 4 Werte:}
+\begin{enumerate}
+  \item \textbf{Individuen \& Interaktionen} \,$>$\, Prozesse \& Tools
+  \item \textbf{Funktionierende Software} \,$>$\, ausführliche Doku
+  \item \textbf{Kundenkooperation} \,$>$\, Vertragsverhandlung
+  \item \textbf{Reagieren auf Veränderung} \,$>$\, Plan befolgen
+\end{enumerate}
+
+\textbf{Charakteristika:}
+\begin{itemize}
+  \item Zyklen: 2 Wochen bis einige Monate
+  \item Kleine Teams: \textbf{6--8 Personen}
+  \item Wenig Doku
+  \item Kunde-Präsenz wichtig
+  \item Keine Dogmen
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Agile vs. Klassische Modelle -- die Tabelle die DEFINITIV vorkommt}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+\textbf{Aspekt} & \textbf{Klassisch} & \textbf{Agil}\\
+\midrule
+Kundenmitwirkung & Unwahrscheinlich & \textbf{Kritischer Erfolgsfaktor}\\
+Lieferung & Erst nach langer Zeit & \textbf{Alle 6 Wochen}\\
+Richtiges Produkt durch & Langes Spezifizieren & Kern, zeigen, verbessern\\
+Disziplin & Formal, wenig & Informell, viel\\
+Änderungen & Widerstand & \textbf{Werden erwartet}\\
+Kommunikation & Über Dokumente & \textbf{Zwischen Menschen}\\
+Änderungen vorsorgen durch & Vorausplanung & \textbf{Flexibel bleiben}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{trap}
+\textbf{Es gibt KEIN bestes Modell!} Beliebte Frage in der Klausur.\\
+Antwort: \emph{,,Das beste Modell hängt von Organisation, Produkt und Entwickler-Fähigkeiten ab.''}
+\end{trap}
+
+\begin{quickcheck}
+Was ist der Hauptunterschied zwischen Wasserfall und Spiralmodell?\\
+\emph{Antwort:} Wasserfall = sequenziell, einmal durch. Spiral = iterativ, mit \textbf{Risikoanalyse pro Runde}.
+\end{quickcheck}
+
+\newpage
+% ================================================================
+\section{SCRUM -- der Klausur-Liebling}
+% ================================================================
+
+\begin{tldr}
+\textbf{SCRUM ist NICHT mehr und NICHT weniger als ein Rahmen, in dem ein selbstorganisiertes Team in kurzen Sprints (1 Monat) Software liefert.}\\
+\emph{Begriff aus dem Rugby:} Team-Formation, klares Ziel, freie Taktik.
+\end{tldr}
+
+\begin{story}
+\textbf{Stell dir ein Rugby-Team vor.} Der Coach sagt: \emph{,,Eure Aufgabe ist: Touchdown.''} Wie? Das entscheidet das Team selbst auf dem Feld. Genauso bei SCRUM: \emph{Product Owner} sagt WAS, \emph{Team} entscheidet WIE.
+\end{story}
+
+\subsection{Die 3 Rollen}
+
+\begin{keyfacts}
+\textbf{1. Team (5--10 Vollzeit!)}
+\begin{itemize}
+  \item Heterogen (Dev, QA, UI), aber alle machen alles
+  \item Selbstorganisierend, keine Titel
+  \item Verantwortlich für \textbf{Sprint-Erfolg (Commitment)}
+\end{itemize}
+
+\textbf{2. Scrum Master}
+\begin{itemize}
+  \item \textbf{Schützt das Team} vor äußeren Störungen
+  \item \textbf{Entfernt Hindernisse}
+  \item Achtet auf Einhaltung der Scrum-Werte
+  \item \emph{Bei DoD-Verletzung:} ER ist zuständig!
+\end{itemize}
+
+\textbf{3. Product Owner}
+\begin{itemize}
+  \item Repräsentiert den \textbf{Kunden}
+  \item Verantwortlich für \textbf{ROI}
+  \item \textbf{Priorisiert} das Product Backlog
+  \item Akzeptiert/lehnt Arbeitsergebnisse ab
+\end{itemize}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{Team} -- macht\\
+\textbf{Scrum Master} -- räumt\\
+\textbf{Product Owner} -- sagt
+\end{merkhilfe}
+
+\subsection{Das Product Backlog}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item Liste \textbf{aller Projektarbeiten}, vom Product Owner priorisiert
+  \item Je weiter oben, desto \textbf{genauer} spezifiziert
+  \item Wird \textbf{laufend} ergänzt und verfeinert
+  \item Jedes Item = eine \textbf{User Story}
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Kano-Modell (Kundenzufriedenheit)}
+
+\begin{story}
+Du kaufst dir ein Auto. Welche Features machen dich glücklich?
+\begin{itemize}
+  \item \textbf{Basis} = Sicherheit, Rostschutz (\emph{,,müssen halt sein''})
+  \item \textbf{Begeisterung} = Sonderausstattung, Design (\emph{,,wow!''})
+  \item \textbf{Leistung} = Beschleunigung, Verbrauch (\emph{,,je mehr, desto besser''})
+  \item \textbf{Unerheblich} = Farbe? Automatik? (\emph{,,whatever''})
+  \item \textbf{Rückweisung} = Dellen, keine Zulassung (\emph{,,wenn das, dann kauf ich's NICHT''})
+\end{itemize}
+\end{story}
+
+\begin{merkhilfe}
+\textbf{Gewöhnungseffekt:} Begeisterung wird mit der Zeit zu Basis.\\
+\emph{Beispiel:} SMS war einmal begeisternd, heute ein Muss.
+\end{merkhilfe}
+
+\subsection{User Stories \& INVEST}
+
+\begin{keyfacts}
+\textbf{Format:} ,,Als \emph{$<$Rolle$>$} will ich \emph{$<$tun$>$}, so dass ich \emph{$<$Grund$>$}.''
+
+\textbf{INVEST:}
+\begin{itemize}
+  \item \textbf{I}ndependent -- unabhängig
+  \item \textbf{N}egotiable -- verhandelbar (nicht im Sprint!)
+  \item \textbf{V}aluable -- Mehrwert
+  \item \textbf{E}stimateable -- schätzbar
+  \item \textbf{S}mall -- konkret/klein
+  \item \textbf{T}estable -- testbar (Akzeptanzkriterien!)
+\end{itemize}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{INVEST} = \emph{,,Investiere Zeit in eine gute Story''}.\\
+Akronym von oben nach unten lesen.
+\end{merkhilfe}
+
+\subsection{Sprint -- der Herzschlag}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item Dauer: \textbf{ca. 1 Monat ($\pm$ 1--2 Wochen)}, konstant
+  \item Im Sprint wird \textbf{entworfen, kodiert UND getestet}
+  \item \textbf{KEINE Änderungen} während Sprints -- sonst Sprint-Ende
+  \item \textbf{KEINE Einschränkungen} für das Team
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Die 4 Meetings}
+
+\begin{tldr}
+\textbf{Sprint Planning} (Anfang) $\rightarrow$ \textbf{Daily Scrum} (täglich) $\rightarrow$ \textbf{Sprint Review} (Ende) $\rightarrow$ \textbf{Retrospektive} (Ende-Reflexion)
+\end{tldr}
+
+\begin{keyfacts}
+\textbf{Sprint Planning:} Was kommt in den nächsten Sprint? Output: \textbf{Sprint Goal + Sprint Backlog}
+
+\textbf{Daily Scrum:}
+\begin{itemize}
+  \item \textbf{15 Minuten}, täglich, Stand-up
+  \item \textbf{Nicht zur Problemlösung} (das danach!)
+  \item 3 Fragen: Was getan? Was tun? Was hindert?
+  \item \textbf{Hühner und Schweine nehmen teil -- nur Schweine reden}
+\end{itemize}
+
+\textbf{Sprint Review:} Team zeigt Demo. \textbf{Informell} (,,2h-Vorbereitung''-Regel). Teilnehmer: Kunde, Mgmt, PO, Team.
+
+\textbf{Retrospektive:} \textbf{Nur Team!} Start/Continue/Stop. \textbf{Keinesfalls Performance-Review!}
+\end{keyfacts}
+
+\begin{story}
+\textbf{Hühner und Schweine?} Witz: Ein Huhn und ein Schwein wollen ein Restaurant aufmachen: ,,Ham and Eggs''. Schwein: \emph{,,Moment -- du bist nur \textbf{beteiligt}, ich bin \textbf{committed}!''}\\
+$\rightarrow$ Im Daily reden nur die, die committed sind (das Team).
+\end{story}
+
+\begin{trap}
+Häufige Fallen im MC:
+\begin{itemize}
+  \item Daily Scrum \emph{,,kann durch E-Mail ersetzt werden''} $\rightarrow$ \textbf{FALSCH!}
+  \item Retrospektive \emph{,,mit Management''} $\rightarrow$ \textbf{FALSCH!} (nur Team)
+  \item Review \emph{,,sehr formell, lange Vorbereitung''} $\rightarrow$ \textbf{FALSCH!} (informell, 2h)
+\end{itemize}
+\end{trap}
+
+\subsection{Schätzen -- Story Points \& Planning Poker}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Was wird geschätzt?} Aufwand pro Story \emph{im Vergleich}
+  \item \textbf{Wer schätzt?} Das Team!
+  \item \textbf{Wie?} \textbf{Story Points} + \textbf{Planning Poker}
+  \item Größenordnungen: \textbf{1, 2, 3, 5, 8, 13, 20, 40, 100} (Fibonacci-artig)
+  \item \textbf{$>$ 13 Story Points = EPIC} $\rightarrow$ muss vor Sprint geteilt werden!
+\end{itemize}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{Story Points \,$\neq$\, Personentage!} Es sind \emph{relative} Größen, keine Stunden.
+\end{merkhilfe}
+
+\subsection{Velocity}
+
+\begin{keyfacts}
+\textbf{Velocity} = wie viele Story Points schafft das Team pro Sprint?
+\begin{itemize}
+  \item Bei Urlaub/Krankheit nicht voll ausschöpfbar
+  \item \textbf{Nur 100\% fertige Stories zählen} -- 80\% = 0 Wert für Kunden
+  \item Berechnung: Bauchgefühl (1. Sprint), dann ,,Übernommen'' oder \textbf{Median}
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Burndown Chart}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item Zeigt \textbf{verbleibenden Aufwand pro Tag}
+  \item Täglich aktualisiert
+  \item \textbf{Bei Missbrauch} (z.B. Mgmt-Review) $\rightarrow$ \textbf{ABSCHAFFEN!}
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Definition of Done (DoD)}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Wann ist etwas ,,fertig''?}
+  \item Sammlung an Bedingungen, \textbf{messbar}
+  \item \textbf{Team-/projektspezifisch}
+  \item \textbf{Verletzung} der DoD $\rightarrow$ \textbf{Scrum Master} ist zuständig
+\end{itemize}
+\end{keyfacts}
+
+\begin{quickcheck}
+Q: Was passiert, wenn während eines Sprints ein Produktions-Notfall auftritt?\\
+A: Bei \textbf{sofortiger Notwendigkeit} $\rightarrow$ \textbf{Sprint-Ende} und Reparatur. Sonst geplant einreihen.
+
+Q: Wie viele Personen hat ein Scrum-Team?\\
+A: \textbf{5--10} (in der Vorlesung).
+\end{quickcheck}
+
+\newpage
+% ================================================================
+\section{Software Design}
+% ================================================================
+
+\begin{tldr}
+\textbf{Wie strukturierst du Code so, dass er nicht zum unwartbaren Spaghetti-Monster wird?}\\
+Antwort: \textbf{Schichten} (Layers), \textbf{Patterns} (MVC/MVP) und \textbf{Reuse} (Komponenten/Services).
+\end{tldr}
+
+\subsection{Schichtenarchitektur}
+
+\begin{story}
+\textbf{Wie eine Lasagne.} Oben die hübsche Käse-Schicht (UI), darunter die Logik, ganz unten die Daten. Jede Schicht spricht nur mit der direkt darunter.
+\end{story}
+
+\begin{keyfacts}
+\textbf{Typische Schichten:}
+\begin{enumerate}
+  \item \textbf{Presentation} -- UI
+  \item \textbf{Application} (optional) -- Koordination
+  \item \textbf{Business} -- Logik, Validierung
+  \item \textbf{Technical} -- DB, Hardware
+\end{enumerate}
+\textbf{(+)} unabhängig, austauschbar, leicht verständlich\\
+\textbf{(--)} Performance (durch alle Schichten -- Lösung: \textbf{Layer Bridge}), Änderungen in mehreren Schichten, Skalierbarkeit
+\end{keyfacts}
+
+\subsection{MVC vs. MVP -- der Klassiker}
+
+\begin{story}
+\textbf{Beide:} Trenne Daten / Anzeige / Logik.\\
+\textbf{Unterschied:} In MVP ist die View ein ,,dummes'' Anzeige-Ding, der Presenter ist der Mittelsmann.
+\end{story}
+
+\begin{keyfacts}
+\textbf{MVC (Model-View-Controller):}
+\begin{itemize}
+  \item \textbf{Model} -- Daten/Status, Anwendungslogik
+  \item \textbf{View} -- Anzeige
+  \item \textbf{Controller} -- interpretiert Input, triggert Model
+\end{itemize}
+
+\textbf{MVP (Model-View-Presenter):}
+\begin{itemize}
+  \item \textbf{Model} -- wie MVC
+  \item \textbf{View (PASSIV)} -- nur Anzeige
+  \item \textbf{Presenter} -- \textbf{Mittelsmann} zwischen View und Model
+\end{itemize}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{MVP = bessere Testbarkeit!} Weil die View komplett dumm ist, kann man den Presenter ohne UI testen.
+\end{merkhilfe}
+
+\subsection{Komponenten \& Services}
+
+\begin{story}
+\textbf{Reuse-Pyramide:}
+\begin{itemize}
+  \item \textbf{Direkter Aufruf} = sofort, aber starr (\texttt{new WordImport()})
+  \item \textbf{Interface} = flexibler, aber Code-Recompile
+  \item \textbf{Komponente} = klare Schnittstelle, locker verbunden
+  \item \textbf{Service} = übers Netzwerk, plattformunabhängig
+\end{itemize}
+\end{story}
+
+\begin{keyfacts}
+\textbf{Komponenten-Eigenschaften (Szyperski):}
+\begin{enumerate}
+  \item Standardisiert/dokumentiert
+  \item Unabhängig (deployable)
+  \item Zusammensetzbar
+  \item Verteilbar
+\end{enumerate}
+
+\textbf{Service-Anforderungen:}
+\begin{itemize}
+  \item \textbf{Zustandslos}, lose Kopplung
+  \item Service Registry (Verzeichnis)
+  \item Ortstransparenz, plattformunabhängig
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Dependency Injection (DI)}
+
+\begin{story}
+Statt: \emph{,,Ich hole mir mein Auto selber aus der Garage.''}\\
+DI: \emph{,,Das Framework gibt mir das Auto, wenn ich's brauche.''}\\
+$\rightarrow$ Du kennst nur das \textbf{Interface} (,,Auto''), nicht das konkrete Modell.
+\end{story}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Pattern für Inversion of Control}
+  \item Client kennt nur die Schnittstelle
+  \item Konfiguration: XML \textbf{oder} Annotations (\texttt{@Autowired})
+  \item Beans als \textbf{Singleton}
+  \item Varianten: \textbf{Setter Injection, Constructor Injection}
+\end{itemize}
+\textbf{(+)} bessere Strukturierung, Testbarkeit (Mocking!), Wiederverwendbarkeit\\
+\textbf{(--)} Komplexität, Einarbeitung
+\end{keyfacts}
+
+\subsection{AOP -- Aspektorientierte Programmierung}
+
+\begin{story}
+\textbf{,,Cross-Cutting Concerns''} sind Dinge, die du \emph{überall} brauchst: \textbf{Logging, Security, Transaktionen}. Statt sie in jede Klasse zu schreiben, definierst du \textbf{Aspekte}, die das Framework automatisch einbindet.
+\end{story}
+
+\begin{keyfacts}
+\textbf{Begriffe:}
+\begin{itemize}
+  \item \textbf{Aspekt} -- Klasse mit Querschnittsfunktion
+  \item \textbf{Advice} -- Implementierung (Before/After/Around)
+  \item \textbf{Join Point} -- Punkt, an dem Aspekte greifen können
+  \item \textbf{Pointcut} -- Gruppe von Join Points
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Web Services: REST vs. SOAP}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{X|X}
+\toprule
+\textbf{REST (modern, einfach)} & \textbf{XML/SOAP (alt, formal)}\\
+\midrule
+HTTP-basiert, URIs & RPC-artig, XML-basiert\\
+JSON, CSV, XML & nur XML\\
+GET, POST, PUT, DELETE & SOAP-Envelope\\
+Keine Standard-Beschreibung & WSDL beschreibt\\
+Kein Verzeichnis & UDDI als Registry\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{merkhilfe}
+\textbf{REST}-HTTP-Methoden = \textbf{CRUD}:\\
+\textbf{C}reate = POST, \textbf{R}ead = GET, \textbf{U}pdate = PUT, \textbf{D}elete = DELETE\\[4pt]
+\textbf{SOAP-Aufbau} = \textbf{,,Envelope, Header, Body, Fault''}\\
+$\rightarrow$ Stell dir einen Brief vor: Umschlag, Absender, Inhalt, Fehlermeldung
+\end{merkhilfe}
+
+\subsection{Microservices}
+
+\begin{story}
+\textbf{Statt ein riesiger Monolith}, ist die App eine \textbf{Sammlung kleiner Services}, die jeweils eine Sache gut können. Beispiel: Amazon.
+\end{story}
+
+\begin{keyfacts}
+Eigenschaften: lose gekoppelt, leicht wartbar, einzeln testbar, unabhängig zusammensetzbar, austauschbar.
+\end{keyfacts}
+
+\begin{quickcheck}
+Q: Was ist der Hauptvorteil von MVP gegenüber MVC?\\
+A: \textbf{Bessere Testbarkeit} (View ist passiv).
+
+Q: Wofür steht REST?\\
+A: \textbf{Representational State Transfer}.
+\end{quickcheck}
+
+\newpage
+% ================================================================
+\section{Anforderungen (Requirements Engineering)}
+% ================================================================
+
+\begin{tldr}
+\textbf{Bevor du baust, musst du wissen WAS gebaut werden soll.}\\
+RE = systematisch herausfinden, was die Stakeholder wirklich brauchen.
+\end{tldr}
+
+\begin{story}
+\textbf{Chaos Report:} Top 3 Gründe warum Projekte scheitern:
+\begin{enumerate}
+  \item Unvollständige Anforderungen (13\%)
+  \item Kunden nicht einbezogen (12\%)
+  \item Mittel nicht ausreichend (10\%)
+\end{enumerate}
+$\rightarrow$ \textbf{Anforderungen sind der wichtigste Schritt!}
+\end{story}
+
+\subsection{Die 5 Aufgaben des RE -- MERKEN!}
+
+\begin{keyfacts}
+\textbf{Ermitteln} -- \textbf{Dokumentieren} -- \textbf{Prüfen} -- \textbf{Abstimmen} -- \textbf{Verwalten}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{,,E-D-P-A-V''} -- \emph{Endlich Doku, Prüfen, Abstimmen, Verwalten}
+\end{merkhilfe}
+
+\subsection{Stakeholder}
+
+\begin{keyfacts}
+Personen oder Organisationen mit \textbf{direktem oder indirektem Einfluss} auf das System: Anwender, Kunde, Management, Servicepersonal, Product Owner, Marketing, Schulungspersonal\dots
+\end{keyfacts}
+
+\subsection{FA vs. NFA -- die wichtigste Unterscheidung}
+
+\begin{tldr}
+\textbf{FA = WAS} (Features)\\
+\textbf{NFA = WIE GUT} (Qualität)
+\end{tldr}
+
+\begin{keyfacts}
+\textbf{Funktionale Anforderung (FA):}
+\begin{itemize}
+  \item Beispiel: \emph{,,Die Suche soll alle Bücher zu einem Thema liefern.''}
+\end{itemize}
+
+\textbf{Nicht-Funktionale Anforderung (NFA):}
+\begin{itemize}
+  \item Performance, Security, Usability, Reliability\dots
+  \item Beispiel: \emph{,,Das Suchergebnis nach max. 5 Sekunden.''}
+  \item \textbf{Oft kritischer als FA}, betrifft \textbf{gesamte Architektur}
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Die 9 Qualitätskriterien für Anforderungen}
+
+\begin{keyfacts}
+Eine gute Anforderung ist:
+\begin{enumerate}
+  \item \textbf{vollständig}
+  \item \textbf{atomar} -- genau eine Anforderung pro Satz
+  \item \textbf{technisch lösungsneutral} -- WAS, nicht WIE
+  \item \textbf{notwendig}
+  \item \textbf{verfolgbar}
+  \item \textbf{realisierbar}
+  \item \textbf{konsistent}
+  \item \textbf{eindeutig}
+  \item \textbf{prüfbar} (testbar)
+\end{enumerate}
+\end{keyfacts}
+
+\subsection{Fehler in Anforderungen -- die Beispiele aus der Vorlesung}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \emph{,,Zugtüren immer geschlossen ZWISCHEN Stationen. Sie müssen offen sein WENN Nothalt.''} $\rightarrow$ \textbf{WIDERSPRUCH}
+  \item \emph{,,Türen öffnen, wenn Zug in Station.''} $\rightarrow$ \textbf{MEHRDEUTIG} (sofort? mit Knopf?)
+  \item \emph{,,Anzeige muss benutzerfreundlich sein.''} $\rightarrow$ \textbf{UNMESSBAR}
+  \item \emph{,,Jedes Abteil hat Info-Panel und Nichtraucher-Aufkleber.''} $\rightarrow$ \textbf{NOISE} (irrelevant)
+  \item \emph{,,Anzeige \,$\geq$\, 7\,km/h schneller als real.''} $\rightarrow$ \textbf{UNDURCHSICHTIG}
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Erhebung -- die richtige Technik wählen}
+
+\begin{story}
+\textbf{Drei Wissensebenen} brauchen drei Strategien:
+\begin{itemize}
+  \item \textbf{Bewusstes Wissen} (kann erzählt werden) $\rightarrow$ \textbf{Befragen}
+  \item \textbf{Unbewusstes Wissen} (muss geweckt werden) $\rightarrow$ \textbf{Kreativität}
+  \item \textbf{Unterbewusstes Wissen} (Stakeholder weiß es nicht) $\rightarrow$ \textbf{Beobachten}
+\end{itemize}
+\end{story}
+
+\begin{keyfacts}
+\textbf{Kreativität (Begeisterungs):} Brainstorming, 6-3-5, Wechsel der Perspektive (6 Hüte)\\
+\textbf{Beobachtung (Basis):} Feldbeobachtung, Apprenticing\\
+\textbf{Befragung (Leistung):} Fragebogen, \textbf{Interview} (wichtigste!)\\
+\textbf{Artefakt-basiert:} Hintergrundstudie, Systemarchäologie, Reuse\\
+\textbf{Unterstützend:} Workshop, Mind Mapping, Audio/Video, Szenarien
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{6-3-5 Methode:} \textbf{6} Teilnehmer, je \textbf{3} Ideen, \textbf{5}-mal weitergeben.\\
+\textbf{Apprenticing} (\emph{,,in die Lehre gehen''}): Du bist der \textbf{Lehrling}, der Stakeholder ist der \textbf{Meister}. NICHT für Flugsicherung etc.!
+\end{merkhilfe}
+
+\subsection{Doku: Lastenheft vs. Pflichtenheft}
+
+\begin{tldr}
+\textbf{Lastenheft} = vom Kunden (WAS will ich)\\
+\textbf{Pflichtenheft} = vom Auftragnehmer (WIE setze ich's um)
+\end{tldr}
+
+\begin{merkhilfe}
+\textbf{Lastenheft = ,,Last'' = Auftraggeber lädt das Projekt ab.}\\
+\textbf{Pflichtenheft = ,,Pflicht'' = Auftragnehmer verpflichtet sich zur Umsetzung.}
+\end{merkhilfe}
+
+\subsection{Dokumentations-Methoden}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Prosa} -- natürliche Sprache (häufigste; aber mehrdeutig)
+  \item \textbf{User Stories} -- agil
+  \item \textbf{Use Case Diagramm} -- Übersicht (keine NFAs!)
+  \item \textbf{Use Case Beschreibung} -- detailliert mit Template
+  \item \textbf{Aktivitätsdiagramm} -- Workflow mit Entscheidungen
+  \item \textbf{Sequenzdiagramm} -- zeitliche Abfolge
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Validierung -- 3 Review-Typen}
+
+\begin{keyfacts}
+\textbf{Aufwand wächst:} Stellungnahme \,$<$\, Walkthrough \,$<$\, Inspektion
+
+\textbf{Stellungnahme:} Kollege liest, markiert Auffälligkeiten\\
+\textbf{Walkthrough:} Moderator + Autor präsentiert + Prüfer\\
+\textbf{Inspektion:} Formal, \textbf{6 Phasen}, Checklisten, auch auf Code/Testfälle anwendbar
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{Inspektions-Phasen (6):}
+\begin{enumerate}
+  \item Planung
+  \item Vorbesprechung
+  \item Individuelle Vorbereitung
+  \item Reviewsitzung
+  \item Nachbereitung/Bewertung
+  \item Ende
+\end{enumerate}
+\end{merkhilfe}
+
+\begin{trap}
+\textbf{Häufige Klausur-Falle:} ,,Inspektion ist nur für Anforderungen.''\\
+\textbf{FALSCH!} Inspektion geht auch auf \textbf{Testfälle, Code} etc.
+\end{trap}
+
+\begin{quickcheck}
+Q: Was sind die 5 Aufgaben des RE?\\
+A: \textbf{Ermitteln, Dokumentieren, Prüfen, Abstimmen, Verwalten}.
+
+Q: Was bedeutet \textbf{atomar}?\\
+A: Genau \textbf{eine} Anforderung pro Satz. Keine Konjunktionen.
+
+Q: Lastenheft vs. Pflichtenheft?\\
+A: \textbf{Lasten} = Kunde, WAS. \textbf{Pflichten} = Auftragnehmer, WIE.
+\end{quickcheck}
+
+\newpage
+% ================================================================
+\section{Qualitätssicherung (QS)}
+% ================================================================
+
+\begin{tldr}
+\textbf{Wie stellen wir sicher, dass die Software nicht Schrott ist?}\\
+Antwort: 3 Methoden = \textbf{Analytisch} (prüfen), \textbf{Konstruktiv} (vermeiden), \textbf{Organisatorisch} (Standards)
+\end{tldr}
+
+\subsection{Die 8 Qualitätsfaktoren (ISO 25010)}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Functionality} -- macht's was es soll?
+  \item \textbf{Reliability} -- ist's zuverlässig?
+  \item \textbf{Usability} -- ist's benutzbar?
+  \item \textbf{Efficiency} -- ist's schnell?
+  \item \textbf{Maintainability} -- ist's wartbar?
+  \item \textbf{Portability} -- läuft's woanders?
+  \item \textbf{Security} (NEU in 25010) -- ist's sicher?
+  \item \textbf{Compatibility} (NEU in 25010) -- spielt's mit anderen?
+\end{itemize}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{,,F-R-U-E-M-P-S-C''} oder einfach merken:\\
+\emph{Funkt's Richtig, ist's nutzbar, schnell, wartbar, portabel, sicher, kompatibel?}\\[4pt]
+\textbf{Achtung:} Security und Compatibility kamen 2011 dazu.
+\end{merkhilfe}
+
+\subsection{Analytische QS}
+
+\begin{keyfacts}
+\textbf{Statisch} (ohne Code-Ausführung):
+\begin{itemize}
+  \item \textbf{Metriken} (mit GQM-Ansatz)
+  \item \textbf{Reviews} (Stellungnahme/Walkthrough/Inspektion)
+\end{itemize}
+
+\textbf{Dynamisch} (mit Ausführung):
+\begin{itemize}
+  \item Software Testen
+  \item \textbf{Verifikation vs. Validation} (wie V-Modell)
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Software-Fehler-Begriffe -- WICHTIG für MC!}
+
+\begin{keyfacts}
+\textbf{IEEE 610.12 Definitionen:}
+\begin{itemize}
+  \item \textbf{Software Error (Fehler)} = \textbf{menschliche Aktion} mit inkorrektem Resultat
+  \item \textbf{Software Fault (Fehlerfall)} = \textbf{inkorrekter Schritt} im Programm/Daten
+  \item \textbf{Software Failure (Fehlverhalten)} = \textbf{Unfähigkeit} des Systems
+\end{itemize}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{E-F-F:} \textbf{E}rror (Mensch) $\rightarrow$ \textbf{F}ault (Code) $\rightarrow$ \textbf{F}ailure (System)\\
+\emph{Geschichte:} Der Mensch macht einen Fehler (Error), der einen Fault im Code hinterlässt, der zu einem Failure führt, wenn ausgeführt.
+\end{merkhilfe}
+
+\subsection{Software-Testen}
+
+\begin{story}
+\textbf{Dijkstra:} \emph{,,Testing can show the presence of bugs, but not their absence.''}\\
+$\rightarrow$ Tests beweisen NICHT, dass Bugs fehlen. Nur, dass welche da sind.
+\end{story}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Black-Box} -- ohne Code-Kenntnis
+  \item \textbf{White-Box} -- mit Code-Kenntnis
+  \item \textbf{Äquivalenzklassen}
+  \item \textbf{Grenzwertanalyse}
+  \item \textbf{Mocking}
+  \item \textbf{Test-Coverage:} Statement, Branch, einfache Bedingung, mehrfache Bedingung, Path
+\end{itemize}
+\end{keyfacts}
+
+\subsection{GQM (Goal-Question-Metric)}
+
+\begin{keyfacts}
+\textbf{Wie findet man die richtigen Metriken?}
+\begin{enumerate}
+  \item \textbf{Goals} -- Ziele definieren
+  \item \textbf{Questions} -- Fragen ableiten
+  \item \textbf{Metrics} -- Metriken festlegen
+\end{enumerate}
+\end{keyfacts}
+
+\subsection{CMMI -- die 5 Reifegrade}
+
+\begin{story}
+\textbf{Vom Chaos zur Perfektion -- in 5 Stufen.}
+\end{story}
+
+\begin{keyfacts}
+\begin{enumerate}
+  \item \textbf{Initial} -- ad-hoc, ,,irgendwie'', Erfolg unerklärbar
+  \item \textbf{Repeatable} -- Planung, aber Erfolg hängt von \emph{Personen} ab
+  \item \textbf{Defined} -- institutionalisierter Prozess, Qualität meist gut
+  \item \textbf{Managed} -- durch \textbf{Messen} gesteuert, vorhersagbar hoch
+  \item \textbf{Optimizing} -- kontinuierliches Feedback zur Verbesserung
+\end{enumerate}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{,,I-R-D-M-O''} = \emph{Initial $\rightarrow$ Repeatable $\rightarrow$ Defined $\rightarrow$ Managed $\rightarrow$ Optimizing}\\
+Eselsbrücke: \emph{,,I'm Really Determined to Manage Optimally''}
+\end{merkhilfe}
+
+\begin{trap}
+\textbf{Falle:} Welche Stufe hängt von Personen ab? $\rightarrow$ \textbf{Stufe 2 (Repeatable)}\\
+Auf Stufe 3 (Defined) ist der Prozess \emph{institutionalisiert}.
+\end{trap}
+
+\subsection{Standards}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{ISO 9000/9001} -- Qualitätsmgmt
+  \item \textbf{ISO/IEC 25010} -- Qualitätsfaktoren
+  \item \textbf{IEEE 828} -- SCM
+  \item \textbf{IEEE 1061} -- Metriken
+  \item \textbf{CMMI} -- Reifegrad (SEI = Carnegie Mellon)
+\end{itemize}
+\end{keyfacts}
+
+\begin{quickcheck}
+Q: Wie heißt die CMMI-Stufe 3?\\
+A: \textbf{Defined}.
+
+Q: ,,Bauen wir das Produkt richtig?'' ist welche Frage?\\
+A: \textbf{Verifikation}.
+
+Q: Was sagt Dijkstra über Testing?\\
+A: Tests zeigen Bugs, beweisen aber NICHT deren Abwesenheit.
+\end{quickcheck}
+
+\newpage
+% ================================================================
+\section{Projektmanagement}
+% ================================================================
+
+\begin{tldr}
+\textbf{Wie steuere ich ein Projekt erfolgreich?}\\
+3 Hauptthemen: \textbf{Aufwand schätzen}, \textbf{planen+steuern}, \textbf{Personal+Risiken managen}.
+\end{tldr}
+
+\subsection{Das magische Dreieck (eigentlich 4eck!)}
+
+\begin{keyfacts}
+\textbf{Zeit -- Kosten -- Qualität -- Funktionalität}\\
+$\rightarrow$ Du kannst nicht alles gleichzeitig maximieren.
+\end{keyfacts}
+
+\subsection{Projektphasen}
+
+\begin{keyfacts}
+\textbf{Definition $\rightarrow$ Planung $\rightarrow$ Verfolgung $\rightarrow$ Abschluss}\\
+(Unabhängig von Organisationsform!)
+\end{keyfacts}
+
+\subsection{Organisationsformen}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Stab-Projekt:} Abteilungen mit Spezialisierungen
+  \item \textbf{Reine Projekt:} MA werden ,,abgezogen''
+  \item \textbf{Matrix:} Balance der beiden (MA haben 2 Chefs)
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Schätzverfahren}
+
+\begin{story}
+\textbf{Schätztrichter (Böhm 2000):} Je näher dem Projektende, desto \textbf{genauer} die Schätzung. Anfangs riesiger Fehler, am Ende klein.
+\end{story}
+
+\begin{keyfacts}
+\textbf{3 Kategorien:}
+\begin{enumerate}
+  \item \textbf{Empirisch} (Erfahrung): Experten, Delphi, Analogie, Bottom-Up
+  \item \textbf{Algorithmisch} (Formeln): Function Points, Application Points, COCOMO
+  \item \textbf{Sonstige} (kreativ): Koste-es-was-wolle, Schmerzschwelle, Parkinson
+\end{enumerate}
+\end{keyfacts}
+
+\subsection{Delphi-Methode}
+
+\begin{story}
+\textbf{Mehrere Experten schätzen ANONYM, dann diskutieren, dann wieder. Konvergiert.}\\
+Vorteil: kein dominanter Teilnehmer drückt die Schätzung in eine Richtung.
+\end{story}
+
+\subsection{Function Points (Albrecht 1979, IBM)}
+
+\begin{keyfacts}
+\textbf{Aus Benutzersicht}, schätzt Funktionen-Anzahl.\\
+\textbf{5 Kategorien:}
+\begin{itemize}
+  \item \textbf{EI} = External Input (Eingaben) \,$\times$\, 3/4/6
+  \item \textbf{EO} = External Output (Ausgaben) \,$\times$\, 4/5/7
+  \item \textbf{EQ} = External Inquiry (Abfragen) \,$\times$\, 3/4/6
+  \item \textbf{ILF} = Internal Logical File (interne Daten) \,$\times$\, 7/10/15
+  \item \textbf{EIF} = External Interface File (externe Daten) \,$\times$\, 5/7/10
+\end{itemize}
+\textbf{Formel:}
+\begin{itemize}
+  \item \textbf{UFP} = Summe der gewichteten Kategorien
+  \item \textbf{VAF} = $0{,}65 + 0{,}01 \times \mathrm{TDI}$ (TDI aus 14 Einflussfaktoren)
+  \item \textbf{FP} = $\mathrm{UFP} \times \mathrm{VAF}$
+\end{itemize}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{Eselsbrücke für die 5 Kategorien:}\\
+\textbf{,,Eingang, Ausgang, Anfrage, Innen-Daten, Außen-Daten''}\\
+$\rightarrow$ Das deckt ALLES ab was eine App tut.
+\end{merkhilfe}
+
+\subsection{COCOMO 81 (Boehm 1981)}
+
+\begin{keyfacts}
+Basis: \textbf{KDSI} (Kilo Delivered Source Instructions).
+
+\textbf{3 Projektarten} (immer teurer):
+\begin{itemize}
+  \item \textbf{Organic} -- klein, \,$<$\, 50 KDSI ($\times$ 2.4, Exp. 1.05)
+  \item \textbf{Semidetached} -- mittel, \,$<$\, 300 KDSI ($\times$ 3.0, Exp. 1.12)
+  \item \textbf{Embedded} -- groß/kritisch ($\times$ 3.6, Exp. 1.20)
+\end{itemize}
+
+\textbf{3 Präzisionsstufen:}
+\begin{itemize}
+  \item \textbf{Basic} -- nur KDSI
+  \item \textbf{Intermediate} -- + Korrekturfaktor M (Produkt von Mi)
+  \item \textbf{Detailed} -- noch feiner
+\end{itemize}
+
+\textbf{Personenmonate (PM):}
+\begin{itemize}
+  \item Organic Basic: $E = 2{,}4 \times S^{1{,}05}$
+  \item TDEV Organic: $2{,}5 \times E^{0{,}38}$
+\end{itemize}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{,,O-S-E''} wird IMMER teurer:\\
+$2{,}4 < 3{,}0 < 3{,}6$ (Konstanten)\\
+$1{,}05 < 1{,}12 < 1{,}20$ (Exponenten)\\
+\textbf{Embedded ist der teuerste!}
+\end{merkhilfe}
+
+\subsection{Planung: WBS, PERT, GANTT}
+
+\begin{keyfacts}
+\textbf{WBS (Work-Breakdown Structure)} = hierarchischer Baum aller Arbeiten\\
+\textbf{PBS (PRINCE2)} = wie WBS, aber für Teilprodukte\\
+\textbf{PERT} = Netzplan mit Abhängigkeiten, FA/FE\\
+\textbf{GANTT} = Balkendiagramm, Aktivitäten über Zeit\\
+\textbf{Burndown} = verbleibender Aufwand pro Tag (agil)\\
+\textbf{MTA} = Meilenstein-Trend-Analyse\\
+\textbf{CTA} = Kosten-Trend-Analyse
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{Im PERT:}\\
+\textbf{FA} = Frühster Anfang = MAX(FE der Vorgänger)\\
+\textbf{FE} = Frühstes Ende = FA + Dauer
+\end{merkhilfe}
+
+\subsection{Risikomanagement}
+
+\begin{keyfacts}
+\textbf{3 Risiko-Arten:}
+\begin{itemize}
+  \item \textbf{Projektrisiken} -- Zeit, Budget
+  \item \textbf{Produktrisiken} -- Qualität, Leistung
+  \item \textbf{Wirtschaftliche Risiken} -- Unternehmen
+\end{itemize}
+
+\textbf{4 Schritte:}
+\begin{enumerate}
+  \item Identifizieren (Checklisten)
+  \item Analysieren (Wahrscheinlichkeit + Schweregrad)
+  \item Planen (Vermeidung / Minimierung / Notfallplan)
+  \item Überwachen (Messen, Bewerten, Anpassen)
+\end{enumerate}
+\end{keyfacts}
+
+\subsection{Personal-Mythos -- Brooks' Law}
+
+\begin{story}
+\textbf{Fred Brooks (1975), ,,The Mythical Man-Month'':}\\
+\emph{,,Adding manpower to a late software project makes it later.''}\\
+$\rightarrow$ Mehr Leute = MEHR Verspätung (Einarbeitung, Kommunikation, Integration).
+\end{story}
+
+\begin{quickcheck}
+Q: Was ist der Schätztrichter?\\
+A: Schätzungen werden über die Zeit \textbf{genauer} (kleinerer Fehler).
+
+Q: Wie viele Function-Point-Kategorien?\\
+A: \textbf{5} (EI, EO, EQ, ILF, EIF).
+
+Q: Was ist der teuerste COCOMO-Projekttyp?\\
+A: \textbf{Embedded}.
+\end{quickcheck}
+
+\newpage
+% ================================================================
+\section{Konfigurationsmanagement (SCM)}
+% ================================================================
+
+\begin{tldr}
+\textbf{Wie verwalte ich Änderungen, Versionen und Builds in einem Team?}\\
+3 Themen: \textbf{Änderungsmgmt}, \textbf{Versionsmgmt}, \textbf{Automatisierung}.
+\end{tldr}
+
+\subsection{Änderungsmanagement}
+
+\begin{keyfacts}
+\textbf{Klassisch:} Antrag $\rightarrow$ Analyse $\rightarrow$ Änderungskommission $\rightarrow$ Umsetzung\\
+\textbf{Agil:} Änderung = User Story im Backlog
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{Änderungskommission} betrachtet \textbf{strategisch \& organisatorisch}, NICHT primär technisch:
+\begin{itemize}
+  \item Konsequenzen ohne Änderung?
+  \item Nutzen?
+  \item Kosten?
+  \item Wie viele Benutzer betroffen?
+  \item Releaseplan?
+\end{itemize}
+\end{merkhilfe}
+
+\subsection{Versionsmanagement -- Git}
+
+\begin{story}
+\textbf{Git} = dezentrales Versionssystem. Jeder hat ein eigenes Repository, syncs über Server.\\
+\textbf{SVN/CVS} = zentral (alter Schule).
+\end{story}
+
+\begin{keyfacts}
+\textbf{Workflow:}
+\begin{itemize}
+  \item \texttt{clone} -- Repo herunterladen
+  \item \texttt{commit} -- Änderungen lokal speichern (SHA-1 Hash)
+  \item \texttt{push} -- zum Server
+  \item \texttt{pull} -- vom Server holen + integrieren (merge!)
+\end{itemize}
+
+\textbf{Mehr:}
+\begin{itemize}
+  \item \texttt{branch} -- Verzweigung
+  \item \texttt{tag} -- Markierung (z.\,B. Release)
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Gute Commit Messages}
+
+\begin{keyfacts}
+\textbf{3 Regeln:}
+\begin{enumerate}
+  \item Zusammenfassung \& Details \textbf{trennen}
+  \item Zusammenfassung max. \textbf{50 Zeichen} (GitHub trennt bei 72)
+  \item \textbf{Referenz} zum Issue (\texttt{[ISSUE-1234]})
+\end{enumerate}
+\end{keyfacts}
+
+\subsection{Tangled Commits vermeiden}
+
+\begin{story}
+\textbf{Tangled = ,,Verknäult''.}\\
+Ein Commit mit Typo-Fix + Bug-Fix + neuem Feature $\rightarrow$ später nicht mehr rückverfolgbar.\\
+\textbf{Best Practice:} 1 Task = 1 Commit, sinnvolle Message, Issue-Ref.
+\end{story}
+
+\subsection{Merging-Strategien}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Lock-Modify-Unlock} -- Datei sperren beim Editieren (alt, langsam)
+  \item \textbf{Copy-Modify-Merge} -- jeder editiert, Konflikte beim Mergen (Git!)
+  \item \textbf{Feature Branches} -- jeder im eigenen Branch
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Semantic Versioning}
+
+\begin{tldr}
+\textbf{MAJOR.MINOR.PATCH} (z.\,B. 1.3.15)
+\end{tldr}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{MAJOR}: inkompatible API-Änderung
+  \item \textbf{MINOR}: neue Funktion, abwärtskompatibel
+  \item \textbf{PATCH}: Bug Fix, abwärtskompatibel
+\end{itemize}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{Postfixes:}\\
+\texttt{-SNAPSHOT} (Entwicklung)\\
+\texttt{-M1} (Milestone)\\
+\texttt{-RC} (Release Candidate)\\
+\texttt{-GA} (General Availability, public release)
+\end{merkhilfe}
+
+\subsection{Software Automation Pipeline}
+
+\begin{story}
+Stell dir ein Fließband vor: \emph{Code} $\rightarrow$ \emph{Build} $\rightarrow$ \emph{Unit Tests} $\rightarrow$ \emph{Integrate} $\rightarrow$ \emph{Integration Tests} $\rightarrow$ \emph{Release} $\rightarrow$ \emph{Accept Tests} $\rightarrow$ \emph{Deploy} $\rightarrow$ \emph{Operate}.\\
+Jede Stufe automatisierbar.
+\end{story}
+
+\begin{keyfacts}
+\textbf{Abstufungen:}
+\begin{itemize}
+  \item \textbf{Build Automation} -- Komponenten + Unit Tests
+  \item \textbf{Continuous Integration (CI)} -- automatisch bauen+testen+integrieren
+  \item \textbf{Continuous Delivery} -- Release bereit; Deploy \textbf{manuell}
+  \item \textbf{Continuous Deployment} -- Deploy \textbf{automatisch}
+  \item \textbf{DevOps} -- + Operations (Monitoring, Backups, Scaling)
+\end{itemize}
+\end{keyfacts}
+
+\begin{trap}
+\textbf{Delivery vs. Deployment -- die Klassiker-Falle:}\\
+\textbf{Delivery} = Release bereit, Mensch klickt \textbf{,,Deploy''}\\
+\textbf{Deployment} = alles automatisch, JEDE Änderung geht in Produktion
+\end{trap}
+
+\subsection{DevOps -- Wall of Confusion}
+
+\begin{story}
+\textbf{Spannungsfeld:}
+\begin{itemize}
+  \item \textbf{Dev:} ,,Ich will Änderungen!''
+  \item \textbf{Ops:} ,,Ich will Stabilität!''
+\end{itemize}
+\textbf{Ergebnis:} ,,Wall of Confusion'' -- Bremst die IT.\\
+\textbf{Lösung:} DevOps -- gemeinsame Tools, Kultur, Praktiken.
+\end{story}
+
+\begin{keyfacts}
+\textbf{DevOps Practices:}
+\begin{itemize}
+  \item Versionskontrolle für \textbf{alles} (auch Konfigurationen!)
+  \item Automatisierte Tests
+  \item Proaktives Monitoring
+  \item CI/CD
+  \item Container (Docker, Kubernetes)
+\end{itemize}
+\textbf{Aber:} Tools allein reichen nicht -- \textbf{Kulturwandel} notwendig!
+\end{keyfacts}
+
+\begin{quickcheck}
+Q: Was ist der Unterschied zwischen Delivery und Deployment?\\
+A: \textbf{Delivery} = manuelles Deploy. \textbf{Deployment} = automatisch.
+
+Q: Wer entscheidet bei MAJOR.MINOR.PATCH?\\
+A: \textbf{MAJOR} bei \textbf{inkompatibler API}, \textbf{MINOR} bei \textbf{abwärtskompatibler neuer Funktion}, \textbf{PATCH} bei \textbf{Bug Fix}.
+
+Q: Wofür braucht's die Änderungskommission?\\
+A: Strategische/organisatorische Bewertung von Änderungen (NICHT primär technisch).
+\end{quickcheck}
+
+\newpage
+% ================================================================
+\section{Notfall-Cheatsheet -- die Top-30 Fakten}
+% ================================================================
+
+\begin{tldr}
+\textbf{Wenn du nur EINE Seite vor der Klausur lesen kannst -- diese hier.}
+\end{tldr}
+
+\subsection{Zitate \& Personen}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Wasserfall:} Royce 1970
+  \item \textbf{Spiral:} (Boehm)
+  \item \textbf{COCOMO 81:} Barry Boehm 1981 -- COCOMO II: 2000
+  \item \textbf{Function Points:} Albrecht 1979 (IBM)
+  \item \textbf{Scrum:} Nonaka \& Takeuchi (Begriff aus Rugby)
+  \item \textbf{Brooks 1975:} ,,Adding manpower to a late software project makes it later.''
+  \item \textbf{Dijkstra:} ,,Testing shows presence, not absence of bugs.''
+  \item \textbf{GANTT:} Henry Gantt
+  \item \textbf{Kano-Modell:} Kundenzufriedenheit
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Schlüssel-Akronyme}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{INVEST} (User Stories) = Independent, Negotiable, Valuable, Estimateable, Small, Testable
+  \item \textbf{DoD} = Definition of Done
+  \item \textbf{ROI} = Return on Investment
+  \item \textbf{RE} = Requirements Engineering
+  \item \textbf{FA / NFA} = Funktional / Nicht-Funktional
+  \item \textbf{MVC / MVP} = Model-View-Controller / -Presenter
+  \item \textbf{SOA} = Service Oriented Architecture
+  \item \textbf{REST} = Representational State Transfer
+  \item \textbf{DI / IoC} = Dependency Injection / Inversion of Control
+  \item \textbf{AOP} = Aspect-Oriented Programming
+  \item \textbf{CMMI} = Capability Maturity Model Integration (5 Stufen)
+  \item \textbf{GQM} = Goal-Question-Metric
+  \item \textbf{WBS / PBS} = Work-/Project-Breakdown Structure
+  \item \textbf{PERT / GANTT} = Planungsdiagramme
+  \item \textbf{MTA / CTA} = Meilenstein- / Kosten-Trend-Analyse
+  \item \textbf{CI / CD} = Continuous Integration / Delivery / Deployment
+  \item \textbf{SCM} = Software Configuration Management
+  \item \textbf{POM} = Project Object Model (Maven)
+  \item \textbf{KDSI / KSLOC} = Kilo Delivered Source Instructions / Kilo SLOC
+\end{itemize}
+\end{keyfacts}
+
+\subsection{Zahlen die du wissen MUSST}
+
+\begin{keyfacts}
+\begin{itemize}
+  \item \textbf{Scrum Team:} 5--10 Personen
+  \item \textbf{Agile Team allgemein:} 6--8 Personen
+  \item \textbf{Sprint:} ca. 1 Monat ($\pm$ 1--2 Wochen)
+  \item \textbf{Daily Scrum:} 15 Minuten
+  \item \textbf{Planning Poker:} 15 Min pro Story
+  \item \textbf{Story Points \,$>$\, 13} = Epic
+  \item \textbf{Function Points:} 5 Kategorien, 14 Einflussfaktoren
+  \item \textbf{COCOMO:} 3 Projektarten, 3 Präzisionsstufen
+  \item \textbf{CMMI:} 5 Stufen
+  \item \textbf{Inspektion:} 6 Phasen
+  \item \textbf{Anforderungen:} 9 Qualitätskriterien, 5 RE-Aufgaben
+  \item \textbf{ISO 25010:} 8 Qualitätsfaktoren
+  \item \textbf{Agile Manifest:} 4 Werte
+  \item \textbf{SOAP:} Envelope, Header, Body, Fault
+  \item \textbf{Brainstorming:} 5--10 TN, 20 Min
+  \item \textbf{6-3-5:} 6 TN, 3 Ideen, 5 Weitergaben
+  \item \textbf{6 Hüte:} 6 Perspektiven
+\end{itemize}
+\end{keyfacts}
+
+\newpage
+% ================================================================
+\section{Letzte Klausur-Tipps}
+% ================================================================
+
+\begin{tldr}
+\textbf{Multiple Choice} = jede Aussage einzeln prüfen, nicht überfliegen!
+\end{tldr}
+
+\begin{keyfacts}
+\begin{enumerate}
+  \item \textbf{Achte auf ,,nicht'', ,,immer'', ,,nur'' -- KILLERWÖRTER}
+  \item \textbf{Bei Unsicherheit:} Wähle die Antwort näher an der Foliendefinition
+  \item \textbf{Sehr absolut formulierte Aussagen} sind oft falsch (,,IMMER'', ,,NIE'')
+  \item \textbf{Begründe dir selbst} im Kopf jede Antwort
+  \item \textbf{Zeitmanagement:} ca. 1 Min pro Punkt
+  \item \textbf{Reihenfolge:} Erst easy Fragen, dann harte (markieren!)
+\end{enumerate}
+\end{keyfacts}
+
+\begin{merkhilfe}
+\textbf{Die häufigsten Fallen die du jetzt KENNST:}
+\begin{itemize}
+  \item Daily Scrum ist NICHT E-Mail-ersetzbar
+  \item Retrospektive ist NUR Team
+  \item Inspektion ist NICHT nur für Anforderungen
+  \item Delivery vs. Deployment unterscheiden!
+  \item Lasten \,$\neq$\, Pflichtenheft
+  \item Personentage \,$\neq$\, Story Points
+  \item ,,Es gibt KEIN bestes Prozessmodell''
+  \item Mehr Personal \,$\neq$\, schnelleres Projekt (Brooks)
+\end{itemize}
+\end{merkhilfe}
+
+\vspace{1cm}
+
+\begin{tldr}
+\textbf{Du schaffst das! \, Schlaf gut, frühstücke gut, geh um 16:30 in HS A und ROCK das.}
+\end{tldr}
+
+\end{document}
