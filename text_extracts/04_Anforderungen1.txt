@@ -1,0 +1,1097 @@
+                        SOFTWARE ENGINEERING II
+                                Vorlesung
+
+
+
+                               Anforderungen I
+
+
+
+
+VO - Software Engineering II          1
+                               Planning Poker Recap
+
+                                    Referenz Story!
+
+                                    As a user, I want to input expenses so that my manager can
+                                    send them to reimbursement.
+
+
+
+
+                                                          2
+                       https://planningpokeronline.com/9rz5Z9phkWFgUwOaIhDB/
+
+VO - Software Engineering II                     2
+                               Planning Poker Recap
+                                    As a user, I want the billing system to accurately calculate
+                                    charges based on my usage and subscription plan,
+                                    providing clear breakdowns of costs and any additional fees.
+
+                                    As a manager, I want to export a list of all my expenses as a
+                                    pdf to send it to reclaim them.
+
+                                    As a user, I want to login with my user/password credentials.
+
+                                    As an admin, I want to shutdown all the computers with a
+                                    single click in the controller page.
+
+                       https://planningpokeronline.com/9rz5Z9phkWFgUwOaIhDB/
+
+VO - Software Engineering II                      3
+                                            LITERATUR
+
+
+
+
+                                                    Requirements-Engineering und -Management
+                     Software Engineering
+                                                                   Chris Rupp
+                       Ian Sommerville
+                                                                   6. Au age
+                          10. Au age
+VO - Software Engineering II
+    fl   fl
+                                                4
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      5
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      6
+ 2.1 Motivation
+
+                          SW ENTWICKLUNGSPROZESSE
+
+
+           Software Spezifikation
+                                                                     Software Spezifikation
+                 Software Entwicklung
+                                                    Software Evolution
+                                                                                       Software Entwicklung
+                         Software Validierung
+                                                             Software Verifikation/Validation
+                               Software Evolution
+
+
+
+
+VO - Software Engineering II                           7
+ 2.1 Motivation
+
+                          SW ENTWICKLUNGSPROZESSE
+
+                       Requirements   Design       Code   Test
+
+
+
+
+VO - Software Engineering II                   8
+Ablauf
+
+
+                          Überblick - Vorgehensweise
+
+
+
+
+Software Engineering II               9
+ 2.1 Motivation
+
+                               AUFGABE
+
+          BILD VON GARTEN MIT WEIDE, EINEM ORANGEN
+          BAUM, DANEBEN SOLLTE EIN KLEINES HAUS, EIN
+          TISCH, EINE BANK UND EIN GEMÜTLICHER
+          SESSEL SEIN.
+
+
+
+
+VO - Software Engineering II      10
+VO - Software Engineering II
+
+
+
+
+VO - Software Engineering II   11
+VO - Software Engineering II
+
+
+
+
+VO - Software Engineering II   12
+VO - Software Engineering II
+
+
+
+
+VO - Software Engineering II   13
+VO - Software Engineering II
+
+
+
+
+VO - Software Engineering II   14
+VO - Software Engineering II
+
+
+
+
+VO - Software Engineering II   15
+ 2.1 Motivation
+
+                               AUFGABE
+
+          BILD VON GARTEN MIT WEIDE, EINEM ORANGEN
+          BAUM, DANEBEN SOLLTE EIN KLEINES HAUS,
+          EIN TISCH, EINE BANK UND EIN GEMÜTLICHER
+          SESSEL SEIN.
+
+
+
+
+VO - Software Engineering II      16
+ 2.1 Motivation
+
+                               WARUM WERDEN PROJEKTE
+                                   ABGEBROCHEN?
+                                                                           Chaos Report - Standish Group (1994-2008)
+             ‣ Unvollständige Anforderungen 13.1%          100%
+                                                           90%
+
+
+
+               Kunden nicht ausreichend einbezogen 12.4%
+                                                           80%
+
+             ‣                                             70%
+                                                           60%                                                            Abgebrochen
+                                                           50%
+
+
+               Mittel nicht ausreichend 10.6%
+                                                                                                                          ProblemaBsch
+
+             ‣                                             40%
+                                                           30%
+                                                           20%
+                                                                                                                          Erfolgreich
+
+
+
+
+               Unrealistische Erwartungen 9.9%
+                                                           10%
+
+             ‣                                              0%
+                                                                  1994   1996   1998   2000   2002   2004   2006   2008
+
+
+
+             ‣ Mangelnde Unterstützung durch
+               Management 9.3%
+             ‣ Änderungen in den Anforderungen 8.7%
+             ‣ Mangelnde Planung 8.7%
+                                                                  [CHAOS Report, Standish Group 1995]
+
+
+
+VO - Software Engineering II                   18
+ 2.1 Motivation
+
+                          REQUIREMENTS ENGINEERING
+
+          A systematic and disciplined approach to the speci cation and management of
+          requirements with the following goals:
+          (1) Knowing the relevant requirements, achieving a consensus among the
+          stakeholders about these requirements, documenting them according to given
+          standards, and managing them systematically,
+          (2) Understanding and documenting the stakeholders’ desires and needs,
+          (3) Specifying and managing requirements to minimize the risk of delivering a
+          system that does not meet the stakeholders’ desires and needs.
+                                                                                   [IREB Glossary]
+
+           Aufgaben: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+
+VO - Software Engineering II                       fi
+                                                        19
+ 2.1 Motivation
+
+                                              STAKEHOLDER
+                                                  „Interesseneigner“
+
+    A person or organization that has a (direct or indirect) in uence on a system’s requirements.
+    Indirect in uence also includes situations where a person or organization is impacted by
+    the system.                                                                         [IREB Glossary]
+
+
+
+                                              Anwender    Management
+
+                                     Kunde                             Servicepersonal
+
+                                                                           Product Owner
+                               Kundendienst
+
+                                                                        Marketing/Vertriebsabteilung
+                           Schulungspersonal
+                                                                         …
+
+VO - Software Engineering II
+           fl
+                                                          20
+                                                                fl
+ 2.1 Motivation
+
+                                       REQUIREMENTS
+                                             „Anforderungen“
+
+      1. A condition or capability needed by a user to solve a problem or achieve an objective.
+      2. A condition or capability that must be met or possessed by a system or system
+      component to satisfy a contract, standard, speci cation, or other formally imposed
+      documents.
+      3. A documented representation of a condition or capability as in (1) or (2).
+                                                                            [IEEE Std 610.12 of 1990]
+
+
+                      1. A need perceived by a stakeholder.
+                      2. A capability or property that a system shall have.
+                      3. A documented representation of a need, capability or property.
+                                                                              [IREB Glossary]
+
+VO - Software Engineering II                      fi
+                                                       21
+ 2.1 Motivation
+                               AKTIVITÄTEN DES
+                         REQUIREMENTS ENGINEERINGS
+
+
+   ‣ Durchführbarkeitsstudie
+
+   ‣ Anforderungsbestimmung und Analyse
+
+   ‣ Anforderungsspezi kation
+
+   ‣ Anforderungsvalidierung
+
+
+
+
+                                               [Software Engineering, Sommerville, 2011]
+
+VO - Software Engineering II
+                    fi
+                                          22
+ 2.1 Anforderungsanalyse
+
+                           DURCHFÜHRBARKEITSSTUDIE
+
+   Fragen:
+   ‣ Leistet das System einen Beitrag zu
+      den Gesamtzielen des Unternehmens?
+   ‣ Kann das System innerhalb der
+      bestehenden Beschränkungen (Technik,
+      Zeit, Kosten) realisiert werden?
+   ‣ Kann das System mit bereits
+      existierenden Systemen
+      zusammenarbeiten?                                                          [Software Engineering, Sommerville, 2011]
+
+
+
+                    Wissensaneignung über Organisation, Domäne, zukünftiges System notwendig!
+
+VO - Software Engineering II                           23
+ 2.1 Anforderungsanalyse
+
+          ANFORDERUNGSBESTIMMUNG UND ANALYSE
+
+
+           ‣ Zusammenarbeit SW Entwickler, Kunde,
+              und Endbenutzer
+           ‣ Verstehen, Sammeln, Klassi zieren,
+              Kon ikte lösen, Prioritäten, Überprüfen
+           ‣ Informationen von (den passenden)
+              Stakeholdern einholen
+
+                                                             [Software Engineering, Sommerville, 2011]
+
+
+
+
+VO - Software Engineering II
+   fl                          fi
+                                                        24
+ 2.1 Anforderungsanalyse
+
+                         ANFORDERUNGSÜBERPRÜFUNG
+
+
+           ‣ Konsistenz und Vollständigkeit
+
+           ‣ in Bezug auf die Erwartungen des Kunden
+
+
+
+
+                                                            [Software Engineering, Sommerville, 2011]
+
+
+
+
+VO - Software Engineering II                           25
+ 2.1 Anforderungsanalyse
+
+                                            PROBLEME
+                                                                 politische Faktoren
+                               Änderungen
+
+
+                                                                   organisatorische Faktoren
+                        Fachsprache
+
+
+
+                                                                    unklare
+                   versch. Stakeholder                         Zielvorstellungen
+
+
+                                            neue Stakeholder
+
+VO - Software Engineering II                        26
+ 2.1 Anforderungsanalyse
+
+                REQUIREMENTS ENGINEERING PROCESS
+
+
+                                                       iterativer Prozess
+
+
+
+
+                                       [Software Engineering, Sommerville, 2011]
+
+VO - Software Engineering II   27
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      28
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      29
+ 2.2 Anforderungskategorien
+
+                           ANFORDERUNGSKATEGORIEN
+                                Benutzeranforderungen
+                                      Abstraktion
+
+
+
+
+       Funktionale                                      Nicht-Funktionale
+      Anforderungen                                      Anforderungen
+             Was?                                             Wie?
+
+
+
+                                 Systemanforderungen
+                                      Genauigkeit
+
+
+VO - Software Engineering II              30
+ 2.2 Anforderungskategorien
+
+            BENUTZER- UND SYSTEMANFORDERUNGEN
+                                        1. The MHC-PMS shall generate monthly management
+                          Abstraktion
+                                        reports showing the cost of drugs prescribed by each clinic
+                                        during that month.
+
+                                        1.1 On the last working day of each month, a summary of
+                                        the drugs prescribed, their cost, and the prescribing clinics
+                                        shall be generated.
+                                        1.2 The system shall automatically generate the report for
+                                        printing after 17.30 on the last working day of the month.
+                                        1.3 A report shall be created for each clinic and shall list
+                                        the individual drug names, the total number of
+                          Genauigkeit   prescriptions, the number of doses prescribed, and the
+                                        total cost of the prescribed drugs.
+                                                                       [Software Engineering, Sommerville, 2011]
+
+VO - Software Engineering II                    31
+ 2.2 Anforderungskategorien
+
+                               BENUTZERANFORDERUNGEN
+
+        ‣ Funktionale und nicht-funktionale
+          Anforderungen des Systems für Benutzer ohne
+          technisches Detailwissen
+
+        ‣ Sie beschreiben „externes Verhalten“ des
+          Systems
+        ‣ Systembeschreibung aus Kundensicht
+        ‣ Teil des Lastenhefts
+
+
+
+
+                                                          [Software Engineering, Sommerville, 2011]
+
+VO - Software Engineering II                         32
+ 2.2 Anforderungskategorien
+
+                               BENUTZERANFORDERUNGEN
+          ‣ Natürliche Sprache
+
+          ‣ Vermeiden: Technischer Jargon, strukturierte
+            bzw. formale Notation
+
+          ‣ Klare Sprache, Tabellen, intuitive Diagramme
+              - should vs. shall
+          ‣ Standardformat entwickeln (Vorlagen)
+
+          ‣ Formatierungshilfen (Farbe, Fettschrift) für
+            Schlüsselwörter
+
+
+
+VO - Software Engineering II                               33
+ 2.2 Anforderungskategorien
+
+                   BENUTZERANFORDERUNG BEISPIEL 1
+               2.6 Gitternetzfunktionen Um die Positionierung von Objekten in
+               einem Diagramm zu erleichtern, kann der Benutzer mit Hilfe einer
+               Option in einem Dialogfeld eine Gitternetzfunktion aktivieren, die als
+               Einheit entweder Zentimeter oder Zoll verwendet. Am Anfang ist das
+               Gitternetz deaktiviert. Das Gitternetz kann zu jeder Zeit der
+               Bearbeitungssitzung an- und abgeschaltet werden, und es ist zu jeder
+               Zeit möglich, zwischen Zentimetern und Zoll zu wechseln. Das
+               Gitternetz wird auch in der eingepassten Ansicht bereitgestellt, aber
+               die Anzahl der angezeigten Gitternetzlinien wird reduziert, um zu
+               vermeiden, dass das kleinere Diagramm mit Linien ausgefüllt wird.
+
+                                       SCHLECHTES BEISPIEL
+
+VO - Software Engineering II                     34
+ 2.2 Anforderungskategorien
+
+                   BENUTZERANFORDERUNG BEISPIEL 1
+         3.5.1 Hinzufügen von Knoten zu einem Entwurf
+         3.5.1.1 Der Editor soll dem Benutzer die Möglichkeit bieten, Knoten eines bestimmten Typs zu ihrem Entwurf
+         hinzuzufügen.
+         3.5.1.2 Beim Hinzufügen von Knoten sollten folgende Vorgänge stattfinden:
+            - Der Benutzer sollte den hinzugefügten Knotentyp auswählen.
+            - Der Benutzer sollte den Cursor in die Nähe der Knotenposition im Diagramm bewegen und
+               anzeigen, dass das Knotensymbol an diesem Punkt hinzugefügt werden soll.
+            - Der Benutzer sollte dann das Knotensymbol auf seine endgültige Position ziehen.
+            - Begründung: Der Benutzer kann am besten entscheiden, wo der Knoten im Diagramm zu platzieren
+               ist. Diese Methode gibt dem Benutzer die Kontrolle über den Knotentyp und die Dosierung
+
+
+
+                                                     GUTES BEISPIEL
+
+VO - Software Engineering II                                   35
+ 2.2 Anforderungskategorien
+
+                               SYSTEMANFORDERUNGEN
+        ‣ Legen Dienste und Beschränkungen präzise fest
+
+        ‣ Teil des Pflichtenhefts
+
+        ‣ Sind für technisches Personal interessant
+
+        ‣ Genaue Beschreibung der
+          Benutzeranforderungen
+
+        ‣ Sagen aus WAS ein System tun soll, und nicht
+          wie es zu implementieren ist.
+
+
+                                                           [Software Engineering, Sommerville, 2011]
+
+VO - Software Engineering II                          36
+ 2.2 Anforderungskategorien
+
+                               SYSTEMANFORDERUNGEN
+             Notation                               Beschreibung
+             Strukturierte natürliche Sprache und   Verwendet Standardformulare, Tabellen oder
+             Pseudocode                             Vorlagen um die Spezifikation auszudrücken
+                                                    nummeriert
+             Sprachen zur Entwurfsbeschreibung      Nutzung Programmiersprachen-ähnlicher
+                                                    Sprachen. Z.B. PDL (von Java abgeleitet)
+
+             Grafische Notationen                   Verwendung von grafischen Sprachen inkl.
+                                                    textlicher Anmerkungen, z.B. UML
+             Mathematische Spezifikationen          Bauen auf mathematischen Konzepten auf
+                                                    (Zustandsmaschinen, Mengen), z.B. Z, B,
+                                                    VDM
+                                                                          [Software Engineering, Sommerville, 2011]
+
+VO - Software Engineering II                           37
+ 2.2 Anforderungskategorien
+
+                     SYSTEMANFORDERUNG BEISPIEL 1
+
+
+
+
+VO - Software Engineering II      38
+ 2.2 Anforderungskategorien
+
+                           ANFORDERUNGSKATEGORIEN
+
+                     Funktionale                             Nicht-Funktionale
+                    Anforderungen                             Anforderungen
+                          Was?                                   Wie (gut)?
+
+       FA1: Die Bibliotheks-Suchmaschine            NFA1: Das Suchergebnis soll nach
+       soll eine Liste aller Bücher zu einem        spätestens 5 Sekunden angezeigt
+       Thema liefern.                               werden.
+
+
+
+
+VO - Software Engineering II                   39
+ 2.2 Anforderungskategorien
+
+                        FUNKTIONALE ANFORDERUNGEN
+
+          ‣ Was soll das System leisten? Welche Dienste soll es anbieten?
+
+          ‣ Sind Einheiten und Funktionalitäten welche auch in größere
+            Gruppen zusammengefasst werden können
+
+          ‣ Je nach Ziel: Eingaben, Verarbeitungen, Ausgaben, Exceptions
+
+          ‣ Diese Einheiten werden mitunter auch Features genannt
+
+
+
+
+VO - Software Engineering II                     40
+ 2.2 Anforderungskategorien
+
+              FUNKTIONALE ANFORDERUNG BEISPIEL 1
+         3.5.1 Hinzufügen von Knoten zu einem Entwurf
+         3.5.1.1 Der Editor soll dem Benutzer die Möglichkeit bieten, Knoten eines bestimmten Typs zu ihrem Entwurf
+         hinzuzufügen.
+         3.5.1.2 Beim Hinzufügen von Knoten sollten folgende Vorgänge stattfinden:
+            - Der Benutzer sollte den hinzugefügten Knotentyp auswählen.
+            - Der Benutzer sollte den Cursor in die Nähe der Knotenposition im Diagramm bewegen und
+               anzeigen, dass das Knotensymbol an diesem Punkt hinzugefügt werden soll.
+            - Der Benutzer sollte dann das Knotensymbol auf seine endgültige Position ziehen.
+            - Begründung: Der Benutzer kann am besten entscheiden, wo der Knoten im Diagramm zu platzieren
+               ist. Diese Methode gibt dem Benutzer die Kontrolle über den Knotentyp und die Dosierung
+
+
+
+
+VO - Software Engineering II                                   41
+ 2.2 Anforderungskategorien
+
+              FUNKTIONALE ANFORDERUNG BEISPIEL 2
+
+
+
+
+VO - Software Engineering II   42
+ 2.2 Anforderungskategorien
+
+              FUNKTIONALE ANFORDERUNG BEISPIEL 3
+        Funktion „Vorlesung in Vorlesungsverzeichnis eintragen“
+          ‣ Eingaben: Raum, Zeit und Titel einer Vorlesung.
+
+          ‣ Verarbeitungsschritte:
+
+            1. Prüfe, ob der Vorlesungstitel schon vergeben ist
+            2. Prüfe, ob der Raum zur angegebenen Zeit schon vergeben ist
+            3. Wenn nicht, wird die neue Vorlesung eingetragen und die Daten der Vorlesung
+               werden angezeigt.
+            4. Falls vergeben, wird die Vorlesung nicht eingetragen und eine entsprechende
+               Fehlermeldung wird angezeigt.
+
+          ‣ Ausgaben: Die Vorlesung wird angezeigt oder ein Fehler wird gemeldet.
+
+
+
+VO - Software Engineering II                            43
+ 2.2 Anforderungskategorien
+
+              FUNKTIONALE ANFORDERUNG BEISPIEL 3
+        Funktion „Vorlesung in Vorlesungsverzeichnis eintragen“
+         ‣ Aktionen die vom System ausgeführt werden sollen:
+           Bsp.: Das System muss Vorlesungen in die DB aufnehmen können.
+         ‣ Systeminteraktionen, die dem Nutzer ermöglicht werden:
+           Bsp.: Das System muss es dem Administrator beim Eintragen einer Vorlesung
+           ermöglichen Raum‚ Zeit und Titel einzugeben.
+         ‣ Allg. funktionale Vereinbarung und Einschränkungen:
+           Bsp.: Der Client ist für den Kommunikationsaufbau zuständig.
+
+
+
+
+VO - Software Engineering II                            44
+ 2.2 Anforderungskategorien
+
+                           ANFORDERUNGSKATEGORIEN
+
+                     Funktionale                             Nicht-Funktionale
+                    Anforderungen                             Anforderungen
+                          Was?                                   Wie (gut)?
+
+       FA1: Die Bibliotheks-Suchmaschine            NFA1: Das Suchergebnis soll nach
+       soll eine Liste aller Bücher zu einem        spätestens 5 Sekunden angezeigt
+       Thema liefern.                               werden.
+
+
+
+
+VO - Software Engineering II                   45
+ 2.2 Anforderungskategorien
+
+          NICHT-FUNKTIONALE ANFORDERUNGEN (NFA)
+
+          ‣ Wie soll das System/einzelne Funktionen arbeiten?
+
+          ‣ Qualitätsanforderungen: Usability, Reliability, Robustness, Performance,
+            Portability, Security, Supportabilty, Maintainability
+
+          ‣ Wenn möglich, auf Messbarkeit achten
+
+          ‣ Oft kritischer als funktionale Anforderungen
+
+          ‣ Betreffen oft die gesamte Architektur (nicht nur einzelne Komponenten)
+
+          ‣ Aufgrund der Vielfältigkeit der Einschränkungen ist eine Taxonomie von Vorteil
+
+
+VO - Software Engineering II                            46
+ 2.2 Anforderungskategorien
+                               TAXONOMIE VON NFAs
+
+
+
+
+                                 [Software Engineering, Sommerville, 2011]
+VO - Software Engineering II                         47
+ 2.2 Anforderungskategorien
+                               TAXONOMIE VON NFAs
+
+
+
+
+                                 [Software Engineering, Sommerville, 2011]
+VO - Software Engineering II                         48
+ 2.2 Anforderungskategorien
+                               TAXONOMIE VON NFAs
+
+
+
+
+                                 [Software Engineering, Sommerville, 2011]
+VO - Software Engineering II                         49
+ 2.2 Anforderungskategorien
+                     METRIKEN ZUM MESSEN VON NFAs
+                               Property Measure
+                               Speed      Processed transactions/second
+                                          User/event response time
+                                          Screen refresh time
+                               Size       Mbytes
+
+                               Ease of use Training time
+                                           Number of help frames
+                               Reliability Mean time to failure
+                                           Probabilty of unavailabilty
+                                           Rate of
+                               Robustness Time to restart after failure
+                                           Percentage of events causing failure
+                                           Probability of data corruption on failure
+                               Portability Percentage of target dependent statements
+                                           Number of target systems
+                                         [Software Engineering, Sommerville, 2011]
+VO - Software Engineering II                                 50
+ 2.2 Anforderungskategorien
+
+                         NFAs ANFORDERUNG BEISPIEL 1
+          The system should be easy to use by medical staff and should be organized in such a way
+          that user errors are minimized.
+
+
+
+                                                             BESSER
+
+          Medical staff shall be able to use all the system functions after four hours of training. After this training,
+          the average number of errors made by experienced users shall not exceed two per hour of system use.
+
+
+
+
+VO - Software Engineering II                                  51
+ 2.2 Anforderungskategorien
+
+                        NFAs ANFORDERUNG BEISPIEL 2
+        ‣ Zuverlässigkeit:
+          Die Verfügbarkeit des Systems muss bei 99.999 % liegen.
+
+
+        ‣ Anforderungen an den Entwicklungsprozess:
+          Der Entwickler muss mit dem Kunden monatliche Reviews der zu erstellenden
+          Dokumente durchführen.
+
+
+        ‣ Rechtlich-vertragliche Anforderungen:
+          Der Kunde leistet für jeden abgenommenen Meilenstein ein Drittel der vertraglich
+          vereinbarten Summe für die Entwicklung des Systems.
+
+
+
+
+VO - Software Engineering II                          52
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      53
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      54
+ 2.3 Qualitätskriterien
+
+                                      QUALITÄTSKRITERIEN
+                                                                          verfolgbar
+                        vollständig
+
+                                                                               realisierbar
+
+                     atomar
+
+                                                                                 konsistent
+
+                  technisch
+               lösungsneutral
+                                                                                  eindeutig
+
+                               notwendig                        prüfbar
+
+                         Nach dem IEEE Standard ISO/IEC/IEEE 29148-2011
+VO - Software Engineering II                     55
+ 2.3 Qualitätskriterien
+
+                                     VOLLSTÄNDIG
+
+      ‣    Jede Anforderung muss die zu liefernde
+           Funktionalität vollständig beschreiben
+      ‣    Anforderungen müssen messbar sein, um sie
+           den Stakeholdern adäquat weitergeben zu
+           können
+      ‣    Unvollständige Anforderungen müssen als
+           solche gekennzeichnet sein (z.B.„tbd“)
+
+
+
+
+VO - Software Engineering II                    56
+ 2.3 Qualitätskriterien
+
+                                          ATOMAR
+
+      ‣    Jeder Anforderungssatz enthält genau eine
+           Anforderung (Vollverb)
+      ‣    Konjunktionen, die mehrere Anforderungen
+           verbinden, werden nicht verwendet
+      ‣    Gerade bei groben Anforderungen ist meist
+           weitere Analyse notwendig
+
+
+
+
+VO - Software Engineering II                    57
+ 2.3 Qualitätskriterien
+
+                          TECHNISCH LÖSUNGSNEUTRAL
+       ‣    Jede Anforderung beschreibt nur, was gefordert
+            wird, nicht wie die Anforderung umgesetzt
+            werden soll
+       ‣    Beschreibung der Eigenschaften des Systems
+            soll keine unnötigen Einschränkungen für die
+            Architektur und Entwicklung enthalten
+       ‣    Ziel ist es, keine Lösungsmöglichkeiten von
+            vornherein auszuschließen
+       ‣    Bei der Formulierung der Anforderung auf die
+            Beschreibung des Problems konzentrieren
+
+
+
+VO - Software Engineering II                       58
+ 2.3 Qualitätskriterien
+
+                                         NOTWENDIG
+      ‣   Nur Leistungen, Randbedingungen oder
+          Qualitätsmerkmale beschreiben, die der Kunde
+          tatsächlich benötigt
+      ‣   Eine Anforderung ist nur dann notwendig, wenn
+          sie zur Erfüllung eines Systemziels dient
+      ‣   Zudem muss die Anforderung gültig und aktuell
+          sein
+      ‣   Anforderungen sollen auf ihre Notwendigkeit zur
+          Zielerfüllung überprüft werden
+      ‣   Falls existent, Gültigkeitszeitraum der
+          Anforderung markieren
+
+
+VO - Software Engineering II                        59
+ 2.3 Qualitätskriterien
+
+                                       VERFOLGBAR
+      ‣    Jede Anforderung muss sowohl zu ihren
+           Quellen, als auch zu ihren nachgelagerten
+           Artefakten, verfolgbar sein
+      ‣    Vereinfacht wird dies meist durch
+           Anforderungsnummerierung
+      ‣    Über diese Identifikation können auch
+           voneinander abgeleitete Spezifikationsebenen
+           verbunden werden, so dass ein Systemziel über
+           alle Anforderungsebenen hindurch verfolgt
+           werden kann
+
+
+
+VO - Software Engineering II                      60
+ 2.3 Qualitätskriterien
+
+                                     REALISIERBAR
+      ‣    Es muss möglich sein, jede Anforderung
+           innerhalb der bekannten Fähigkeiten, der
+           Grenzen des Systems und seiner Umgebung
+           umzusetzen
+      ‣    Ohne die Notwendigkeit für grundlegende
+           technische Neuerungen
+      ‣    Mit annehmbarem Risiko in Bezug auf die
+           Rahmenbedingungen des Systems.
+
+
+
+
+VO - Software Engineering II                     61
+ 2.3 Qualitätskriterien
+
+                                      KONSISTENT
+
+         ‣   Anforderungen müssen gegenüber allen
+             anderen Anforderungen widerspruchsfrei sein
+         ‣   Eine gute Gliederung der
+             Anforderungsspezifikation z.B. mit UML-
+             Diagrammen hilft dabei, die Übersicht zu
+             behalten und Widersprüche zu reduzieren
+
+
+
+
+VO - Software Engineering II                    62
+ 2.3 Qualitätskriterien
+
+                                           EINDEUTIG
+
+         ‣    Eine eindeutige Anforderung kann nur auf eine
+              Art und Weise verstanden werden
+         ‣    Sie ist einfach formuliert und leicht zu verstehen
+         ‣    Subjektive Angaben durch harte Fakten ersetzen
+
+
+
+
+VO - Software Engineering II                         63
+ 2.3 Qualitätskriterien
+
+                                          PRÜFBAR
+
+        ‣   Eine Anforderung muss so beschrieben sein,
+            dass sie testbar ist
+        ‣   Das heißt, eine Funktionalität, die durch eine
+            Anforderung gefordert wird, muss sich durch
+            einen Test oder eine Messung nachweisen
+            lassen
+
+
+
+
+VO - Software Engineering II                      64
+ 2.3 Qualitätskriterien
+
+                                            FEHLER
+        ‣   Auslassen einer Beschreibung
+        ‣   Widerspruch
+        ‣   Mehrdeutigkeit
+        ‣   Fehlende Messbarkeit
+        ‣   „Noise“
+        ‣   Überspezifikation
+        ‣   Machbarkeitprobleme
+        ‣   Schlechte Struktur, Unverständlichkeit, fehlende
+            Referenzen, Undurchsichtigkeit
+
+
+VO - Software Engineering II                      65
+ 2.3 Qualitätskriterien
+
+                                    BEISPIEL 1
+
+
+                   Die Zugtüren müssen zwischen Stationen immer
+                   geschlossen bleiben. Sie müssen offen sein wenn es
+                   einen Nothalt gab.
+
+
+
+
+                                     WIDERSPRUCH
+
+VO - Software Engineering II               66
+ 2.3 Qualitätskriterien
+
+                                     BEISPIEL 2
+
+                   Die Zugtüren müssen geöffnet werden, wenn der Zug
+                   in der Station ist.
+
+
+
+
+                                                              [https://boruizhang.github.io/srg.html]
+
+
+
+
+                               MEHRDEUTIGKEIT/UNGENAUIGKEIT
+VO - Software Engineering II               67
+ 2.3 Qualitätskriterien
+
+                                      BEISPIEL 3
+
+
+                               Die Informationsanzeige im Zug
+                               muss benutzerfreundlich sein.
+
+
+
+
+                                        UNMESSBAR
+VO - Software Engineering II                 68
+ 2.3 Qualitätskriterien
+
+                                    BEISPIEL 4
+
+
+                Jedes Abteil ist mit einem Informations-Panel
+                und einem Nichtraucher-Aufkleber versehen.
+
+
+
+
+                                         NOISE
+VO - Software Engineering II               69
+ 2.3 Qualitätskriterien
+
+                                    BEISPIEL 5
+
+                    Die angezeigte Geschwindigkeit eines Zugs muss
+                    immer mindestens 7 km/h über der physikalischen
+                    Geschwindigkeit liegen.
+
+
+
+
+                                  UNDURCHSICHTIGKEIT
+VO - Software Engineering II              70
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      71
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung                 IN 2 WOCHEN
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      72
+Anforderungen I
+                               ZUSAMMENFASSUNG
+
+
+
+
+VO - Software Engineering II          73
+

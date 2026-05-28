@@ -1,0 +1,4434 @@
+                        SOFTWARE ENGINEERING II
+                                Vorlesung
+
+
+
+                               Anforderungen II
+
+
+
+
+VO - Software Engineering II          1
+                                               LITERATUR
+
+
+
+
+                                                       [2] Requirements-Engineering und -Management
+                    [1] Software Engineering
+                                                                         Chris Rupp
+                         Ian Sommerville
+                                                                         6. Au age
+                            10. Au age
+VO - Software Engineering II
+    fl   fl
+                                                   2
+                                           INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                     3
+ Wiederholung
+
+                   KUNDENZUFRIEDENHEIT NACH KANO
+
+         ‣ 5 Qualitätsebenen
+            - Basis-Merkmale
+             - Begeisterungs-Merkmale
+             - Leistungs-Merkmale
+             - Unerhebliche Merkmale
+             - Rückweisung-Merkmale
+
+
+
+
+VO - Software Engineering II            4
+ Wiederholung
+
+                   KUNDENZUFRIEDENHEIT NACH KANO
+
+         ‣ 5 Qualitätsebenen
+            - Basis-Merkmale
+             - Begeisterungs-Merkmale
+             - Leistungs-Merkmale
+             - Unerhebliche Merkmale
+             - Rückweisung-Merkmale
+
+
+          ‣ Gewöhnungseffekt
+            (Begeisterungs-Merkmal      Basis-Merkmal)   +   SMS
+
+
+
+VO - Software Engineering II               4
+ Wiederholung
+
+                   KUNDENZUFRIEDENHEIT NACH KANO
+
+         ‣ 5 Qualitätsebenen
+            - Basis-Merkmale
+             - Begeisterungs-Merkmale
+             - Leistungs-Merkmale
+             - Unerhebliche Merkmale
+             - Rückweisung-Merkmale
+
+
+          ‣ Gewöhnungseffekt
+            (Begeisterungs-Merkmal      Basis-Merkmal)   +   SMS
+
+
+
+VO - Software Engineering II               4
+ Wiederholung
+
+                                         PROBLEME IM RE
+                                                                 politische Faktoren
+                               Änderungen
+
+
+                                                                   organisatorische Faktoren
+                        Fachsprache
+
+
+
+                                                                    unklare
+                   versch. Stakeholder                         Zielvorstellungen
+
+
+                                            neue Stakeholder
+
+VO - Software Engineering II                         5
+ Wiederholung
+
+                           ANFORDERUNGSKATEGORIEN
+                                Benutzeranforderungen
+                                      Abstraktion
+
+
+
+
+       Funktionale                                      Nicht-Funktionale
+      Anforderungen                                      Anforderungen
+
+
+
+                                 Systemanforderungen
+                                      Genauigkeit
+
+
+VO - Software Engineering II               6
+ Wiederholung
+
+                           ANFORDERUNGSKATEGORIEN
+                                Benutzeranforderungen
+                                      Abstraktion
+
+
+
+
+       Funktionale                                      Nicht-Funktionale
+      Anforderungen                                      Anforderungen
+                                                             Wie (gut)?
+
+
+
+                                 Systemanforderungen
+                                      Genauigkeit
+
+
+VO - Software Engineering II               6
+ Wiederholung
+
+                           ANFORDERUNGSKATEGORIEN
+                                Benutzeranforderungen
+                                      Abstraktion
+
+
+
+
+       Funktionale                                      Nicht-Funktionale
+      Anforderungen                                      Anforderungen
+             Was?                                            Wie (gut)?
+
+
+
+                                 Systemanforderungen
+                                      Genauigkeit
+
+
+VO - Software Engineering II               6
+ Wiederholung
+
+                                      QUALITÄTSKRITERIEN
+                                                                              verfolgbar
+                        vollständig
+
+                                                                                   realisierbar
+
+                     atomar
+
+                                                                                     konsistent
+
+                  technisch
+               lösungsneutral
+                                                                                      eindeutig
+
+                                notwendig                           prüfbar
+
+                               Nach dem IEEE Standard ISO/IEC/IEEE 29148-2011
+VO - Software Engineering II                         7
+ Wiederholung
+
+                                    BEISPIEL 1
+
+                    Die Kommunikation zwischen den Geräten soll so
+                    gut wie immer funktionieren.
+
+
+
+
+VO - Software Engineering II              8
+ Wiederholung
+
+                                    BEISPIEL 1
+
+                    Die Kommunikation zwischen den Geräten soll so
+                    gut wie immer funktionieren.
+
+
+
+
+                                         NFA
+
+
+
+VO - Software Engineering II              8
+ Wiederholung
+
+                                      BEISPIEL 2
+
+                        Als Spieler möchte ich mit meinen Mitspielern
+                        chatten können.
+
+
+
+
+VO - Software Engineering II                 9
+ Wiederholung
+
+                                      BEISPIEL 2
+
+                        Als Spieler möchte ich mit meinen Mitspielern
+                        chatten können.
+
+
+
+
+                                            FA
+
+
+
+VO - Software Engineering II                 9
+ Wiederholung
+
+                                           BEISPIEL 2
+
+                               Die Schummelfunktion des Spieles sollte
+                               intuitiv verständlich und bedienbar sein.
+
+
+
+
+VO - Software Engineering II                      10
+ Wiederholung
+
+                                           BEISPIEL 2
+
+                               Die Schummelfunktion des Spieles sollte
+                               intuitiv verständlich und bedienbar sein.
+
+
+
+
+VO - Software Engineering II                      10
+ Wiederholung
+
+                                           BEISPIEL 2
+
+                               Die Schummelfunktion des Spieles sollte
+                               intuitiv verständlich und bedienbar sein.
+
+
+
+
+VO - Software Engineering II                      10
+ Wiederholung
+
+                                           BEISPIEL 2
+
+                               Die Schummelfunktion des Spieles sollte
+                               intuitiv verständlich und bedienbar sein.
+
+
+
+
+                                                  NFA
+
+
+
+VO - Software Engineering II                      10
+ Wiederholung
+
+                                       BEISPIEL 4
+
+                         Als Spieler will ich den Highscore nach
+                         Punkten und Spielernamen sortieren können,
+                         damit ich meinen Highscore schneller finde,
+                         wenn ich nicht Erste/r bin.
+
+
+
+
+VO - Software Engineering II                 11
+ Wiederholung
+
+                                       BEISPIEL 4
+
+                         Als Spieler will ich den Highscore nach
+                         Punkten und Spielernamen sortieren können,
+                         damit ich meinen Highscore schneller finde,
+                         wenn ich nicht Erste/r bin.
+
+
+
+                                             FA
+
+
+
+VO - Software Engineering II                 11
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      12
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+
+                                                   ‣ Was, wozu, warum, wer?
+                                                   ‣ Wissen über Organisation, Domäne, zukünftiges
+                                                     System, Stakeholder
+
+                                                   ‣ Begeisterungsfaktoren nach Kano
+                                                      - Basis-Faktoren = unterbewusstes Wissen
+                                                      - Begeisterungs-Faktoren = unbewusstes Wissen
+                                                         - Leistungs-Faktoren = bewusstes Wissen
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                        13
+ 2.4 Anforderungserhebung
+
+                                   KOMMUNIKATION (1)
+
+
+
+
+                         Vier-Seiten-Modell
+                                                   F. Schulz von Thun
+
+
+VO - Software Engineering II                  14
+ 2.4 Anforderungserhebung
+
+                                  KOMMUNIKATION (2)
+
+
+
+                               „Ich nde mit der Bibliothekssuche nichts.“
+
+
+
+
+VO - Software Engineering II
+     fi
+                                                   15
+ 2.4 Anforderungserhebung
+
+                                  KOMMUNIKATION (2)
+
+                                                                 Der Sender findet mit Hilfe der
+                                                               Suchmaske keine Leihgegenstände.
+
+
+
+                               „Ich nde mit der Bibliothekssuche nichts.“
+
+
+
+
+VO - Software Engineering II
+     fi
+                                                   15
+ 2.4 Anforderungserhebung
+
+                                    KOMMUNIKATION (2)
+
+                                                                 Der Sender findet mit Hilfe der
+                                                               Suchmaske keine Leihgegenstände.
+
+
+
+                               „Ich nde mit der Bibliothekssuche nichts.“
+
+
+
+    Sender will Leihgegenstand finden
+  und erwartet vom Empfänger Hilfe. z.B.
+    Anleitungen oder Überarbeitungen
+
+
+
+
+VO - Software Engineering II
+     fi
+                                                   15
+ 2.4 Anforderungserhebung
+
+                                    KOMMUNIKATION (2)
+
+                                                                 Der Sender findet mit Hilfe der
+                                                               Suchmaske keine Leihgegenstände.
+
+
+
+                               „Ich nde mit der Bibliothekssuche nichts.“
+
+
+
+    Sender will Leihgegenstand finden                          Sender kommt mit der Suchmaske
+  und erwartet vom Empfänger Hilfe. z.B.                         nicht zurecht. Evtl. fühlt er sich
+    Anleitungen oder Überarbeitungen                                      überfordert?
+
+
+
+
+VO - Software Engineering II
+     fi
+                                                   15
+ 2.4 Anforderungserhebung
+
+                                    KOMMUNIKATION (2)
+     Der Sender kann Forderungen an den
+           Empfänger übermitteln.                                Der Sender findet mit Hilfe der
+                                                               Suchmaske keine Leihgegenstände.
+
+
+
+                               „Ich nde mit der Bibliothekssuche nichts.“
+
+
+
+    Sender will Leihgegenstand finden                          Sender kommt mit der Suchmaske
+  und erwartet vom Empfänger Hilfe. z.B.                         nicht zurecht. Evtl. fühlt er sich
+    Anleitungen oder Überarbeitungen                                      überfordert?
+
+
+
+
+VO - Software Engineering II
+     fi
+                                                   15
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         16
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         16
+ 2.4 Anforderungserhebung
+
+                                KREATIVITÄTSTECHNIKEN
+
+
+                                                                            1. Brainstorming
+                                                                            2. Methode 6-3-5
+                                                                            3. Wechsel der Perspektive
+
+
+
+
+                               zur Ermittlung des unbewussten Wissens, Begeisterungsfaktoren
+
+
+VO - Software Engineering II                                17
+ 2.4 Anforderungserhebung
+
+                                 BRAINSTORMING (1)
+
+
+                ‣ 5-10 Teilnehmer
+
+                ‣ 20 Minuten
+
+                ‣ keine Kritik
+
+                ‣ Moderator
+
+
+
+
+VO - Software Engineering II             18
+ 2.4 Anforderungserhebung
+
+                               BRAINSTORMING (2)
+
+
+
+
+VO - Software Engineering II           19
+ 2.4 Anforderungserhebung
+
+                                 BRAINSTORMING (2)
+                                      Vorteile
+       + Viele Ideen in kurzer Zeit
+       + Weiterspinnung von Ideen durch
+         mehrere Personen
+       + neue Lösungen durch unreflektierte
+         Sammlung freier Ideen
+       + Fokus oft auf innovative Ideen
+
+
+
+
+VO - Software Engineering II                     19
+ 2.4 Anforderungserhebung
+
+                                 BRAINSTORMING (2)
+                                      Vorteile
+       + Viele Ideen in kurzer Zeit
+       + Weiterspinnung von Ideen durch
+         mehrere Personen
+       + neue Lösungen durch unreflektierte
+         Sammlung freier Ideen
+       + Fokus oft auf innovative Ideen
+
+                                    Nachteile
+       - Bei schwieriger Gruppendynamik nicht
+         effektiv
+       - Terminkoordination
+
+
+
+VO - Software Engineering II                     19
+ 2.4 Anforderungserhebung
+
+                                METHODE 6-3-5 (1)
+
+         ‣ 6 Teilnehmer
+
+         ‣ je 3 Ideen aufschreiben
+           (3-5 Minuten Zeit)
+         ‣ 5 mal weitergeben, inspirieren lassen
+           und neue Ideen aufschreiben
+         ‣ Wiederholung, Permutation,
+           neue Ideen
+                                                   [http://www.einfachgutelehre.uni-kiel.de/allgemein/methode-6-3-5/]
+
+
+
+
+VO - Software Engineering II                  20
+ 2.4 Anforderungserhebung
+
+                               METHODE 6-3-5 (2)
+
+
+
+
+                                             [http://www.einfachgutelehre.uni-kiel.de/allgemein/methode-6-3-5/]
+
+
+
+
+VO - Software Engineering II           21
+ 2.4 Anforderungserhebung
+
+                                  METHODE 6-3-5 (2)
+                                      Vorteile
+       + jeder Teilnehmer wird gleich stark
+         eingebunden
+       + schriftliche Form hilft aufkommende
+         Konflikte bei komplexer
+         Gruppendynamik zu vermeiden
+       + Räumliche Verteilung der Stakeholder
+         möglich
+
+
+
+                                                      [http://www.einfachgutelehre.uni-kiel.de/allgemein/methode-6-3-5/]
+
+
+
+
+VO - Software Engineering II                     21
+ 2.4 Anforderungserhebung
+
+                                   METHODE 6-3-5 (2)
+                                        Vorteile
+       + jeder Teilnehmer wird gleich stark
+         eingebunden
+       + schriftliche Form hilft aufkommende
+         Konflikte bei komplexer
+         Gruppendynamik zu vermeiden
+       + Räumliche Verteilung der Stakeholder
+         möglich
+
+                                     Nachteile
+       - weniger Aktivität der Teilnehmer               [http://www.einfachgutelehre.uni-kiel.de/allgemein/methode-6-3-5/]
+
+         untereinander
+
+
+VO - Software Engineering II                       21
+ 2.4 Anforderungserhebung
+                        WECHSEL DER PERSPEKTIVE (1)
+                                    (6-Hut-Denken)
+
+
+           ‣ verschiedene Denkweisen
+
+           ‣ neue Anschauungsmöglichkeiten
+
+           ‣ in vorgegebene Denkart schlüpfen
+
+           ‣ Überblick über das Gesamtbild des Projekts
+
+
+
+
+VO - Software Engineering II                 22
+ 2.4 Anforderungserhebung
+                        WECHSEL DER PERSPEKTIVE (2)
+                                (6-Hut-Denken)
+
+
+
+
+                                   [mehr Infos]
+
+VO - Software Engineering II            23
+ 2.4 Anforderungserhebung
+                        WECHSEL DER PERSPEKTIVE (2)
+                                (6-Hut-Denken)
+                                                  subjektive Meinung und
+                                                  persönliches Emp nden
+                                                  (Gefühle, Ängste, Hoffnungen)
+
+
+
+
+                                   [mehr Infos]
+
+VO - Software Engineering II
+                 fi
+                                        23
+ 2.4 Anforderungserhebung
+                        WECHSEL DER PERSPEKTIVE (2)
+                                (6-Hut-Denken)
+                                                  subjektive Meinung und
+                                                  persönliches Emp nden
+                                                  (Gefühle, Ängste, Hoffnungen)
+
+
+
+
+                                                            Prozesskontrolle
+                                                          (Moderation und Anleitung
+                                                              der Ideen ndung)
+
+
+
+
+                                   [mehr Infos]
+
+VO - Software Engineering II
+       fi        fi
+                                        23
+ 2.4 Anforderungserhebung
+                        WECHSEL DER PERSPEKTIVE (2)
+                                (6-Hut-Denken)
+                                                        subjektive Meinung und
+                                                        persönliches Emp nden
+                                                        (Gefühle, Ängste, Hoffnungen)
+
+
+
+
+                                                                    Prozesskontrolle
+                                                                 (Moderation und Anleitung
+                                                                     der Ideen ndung)
+
+
+                                                                   neue Ideen
+                                                  (beliebige Ideen, ähnlich wie bei Brainstorming)
+
+
+
+
+                                   [mehr Infos]
+
+VO - Software Engineering II
+       fi        fi
+                                        23
+ 2.4 Anforderungserhebung
+                                 WECHSEL DER PERSPEKTIVE (2)
+                                           (6-Hut-Denken)
+                                                                   subjektive Meinung und
+                                                                   persönliches Emp nden
+                                                                   (Gefühle, Ängste, Hoffnungen)
+
+
+
+
+                                                                               Prozesskontrolle
+                                                                            (Moderation und Anleitung
+                                                                                der Ideen ndung)
+
+
+   objektive negative Argumente                                               neue Ideen
+            (Zweifel, Bedenken, Risiken)                     (beliebige Ideen, ähnlich wie bei Brainstorming)
+
+
+
+
+                                              [mehr Infos]
+
+VO - Software Engineering II
+       fi               fi
+                                                   23
+ 2.4 Anforderungserhebung
+                                 WECHSEL DER PERSPEKTIVE (2)
+                                           (6-Hut-Denken)
+                                                                   subjektive Meinung und
+                                                                   persönliches Emp nden
+                                                                   (Gefühle, Ängste, Hoffnungen)
+
+
+
+
+ objektive positive Eigenschaften                                              Prozesskontrolle
+      (Chancen, Pluspunkte, Ziele)                                          (Moderation und Anleitung
+                                                                                der Ideen ndung)
+
+
+   objektive negative Argumente                                               neue Ideen
+            (Zweifel, Bedenken, Risiken)                     (beliebige Ideen, ähnlich wie bei Brainstorming)
+
+
+
+
+                                              [mehr Infos]
+
+VO - Software Engineering II
+       fi               fi
+                                                   23
+ 2.4 Anforderungserhebung
+                                      WECHSEL DER PERSPEKTIVE (2)
+                                                   (6-Hut-Denken)
+                                                                           subjektive Meinung und
+                      objektiv und neutral                                 persönliches Emp nden
+                             (Zahlen und Fakten)                           (Gefühle, Ängste, Hoffnungen)
+
+
+
+
+ objektive positive Eigenschaften                                                      Prozesskontrolle
+      (Chancen, Pluspunkte, Ziele)                                                  (Moderation und Anleitung
+                                                                                        der Ideen ndung)
+
+
+   objektive negative Argumente                                                       neue Ideen
+            (Zweifel, Bedenken, Risiken)                             (beliebige Ideen, ähnlich wie bei Brainstorming)
+
+
+
+
+                                                      [mehr Infos]
+
+VO - Software Engineering II
+       fi               fi
+                                                           23
+ 2.4 Anforderungserhebung
+                        WECHSEL DER PERSPEKTIVE (3)
+                                (6-Hut-Denken)
+
+
+
+
+VO - Software Engineering II          24
+ 2.4 Anforderungserhebung
+                        WECHSEL DER PERSPEKTIVE (3)
+                                        (6-Hut-Denken)
+
+                                      Vorteile
+       + festgefahrene Sichtweisen aufbrechen
+
+
+
+
+VO - Software Engineering II                     24
+ 2.4 Anforderungserhebung
+                        WECHSEL DER PERSPEKTIVE (3)
+                                          (6-Hut-Denken)
+
+                                        Vorteile
+       + festgefahrene Sichtweisen aufbrechen
+
+                                     Nachteile
+       - kommt nicht gut bei introvertierten oder
+         konservativen Stakeholdern
+       - „vorsichtige Einführung“
+       - Gefahr der„Psycho“-Schublade
+
+
+
+
+VO - Software Engineering II                        24
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         25
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         25
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         25
+ 2.4 Anforderungserhebung
+
+                               BEOBACHTUNGSTECHNIKEN
+
+
+                                                                            1. Feldbeobachtung
+                                                                            2. Apprenticing
+
+
+
+
+                               zur Ermittlung des unterbewussten Wissens, Basisfaktoren
+
+
+VO - Software Engineering II                                26
+ 2.4 Anforderungserhebung
+
+                                FELDBEOBACHTUNG (1)
+                     Verhaltensbeobachtung eines Individuums in seiner „natürlichen Umgebung“
+
+
+
+           ‣ Erfassen der Tätigkeiten, ihrer zeitlichen
+             Zusammenhänge und Arbeitsabläufe
+           ‣ Fragen stellen
+
+           ‣ Requirements Engineer ist kein Kontrolleur!!
+
+
+
+
+VO - Software Engineering II                         27
+ 2.4 Anforderungserhebung
+
+                               FELDBEOBACHTUNG (2)
+
+
+
+
+VO - Software Engineering II            28
+ 2.4 Anforderungserhebung
+
+                               FELDBEOBACHTUNG (2)
+                                                     Vorteile
+       + gut einsetzbar bei automatisierter unbewusster Arbeit
+         der Stakeholder
+       + gut einsetzbar bei schlechter zeitlicher Verfügbarkeit
+         der Stakeholder
+       + sehr effektiv bei der Untersuchung von
+         Abweichungen in den Prozessen
+
+
+
+
+VO - Software Engineering II                          28
+ 2.4 Anforderungserhebung
+
+                               FELDBEOBACHTUNG (2)
+                                                     Vorteile
+       + gut einsetzbar bei automatisierter unbewusster Arbeit
+         der Stakeholder
+       + gut einsetzbar bei schlechter zeitlicher Verfügbarkeit
+         der Stakeholder
+       + sehr effektiv bei der Untersuchung von
+         Abweichungen in den Prozessen
+
+                                                   Nachteile
+       - keine Beobachtung selten auftretender Abläufe
+       - evtl. anderes Verhalten der Stakeholder bei
+         Beobachtung
+
+
+VO - Software Engineering II                          28
+ 2.4 Anforderungserhebung
+
+                                 APPRENTICING (1)
+
+
+           ‣   „in die Lehre gehen“
+           ‣ Erleben des Ist-Systems
+
+           ‣ Szenarien für Testfälle ableiten
+
+
+
+
+VO - Software Engineering II                    29
+ 2.4 Anforderungserhebung
+
+                               APPRENTICING (2)
+
+
+
+
+VO - Software Engineering II          30
+ 2.4 Anforderungserhebung
+
+                                     APPRENTICING (2)
+                                        Vorteile
+       + Wissen schwer sprachlich ausdrückbar
+       + kein „Kontrollieren“ des Stakeholders, er
+         ist der „Meister“
+       + Vorbild RE: angstfreier Umgang mit
+         Nichtwissen/Problemen
+
+
+
+
+VO - Software Engineering II                         30
+ 2.4 Anforderungserhebung
+
+                                     APPRENTICING (2)
+                                        Vorteile
+       + Wissen schwer sprachlich ausdrückbar
+       + kein „Kontrollieren“ des Stakeholders, er
+         ist der „Meister“
+       + Vorbild RE: angstfreier Umgang mit
+         Nichtwissen/Problemen
+
+                                      Nachteile
+       - in kritischen Arbeitsumfeld nicht
+         einsetzbar (Flugsicherung)
+       - sehr zeitintensiv
+       - bei unklarer Abgrenzung der
+         Stakeholder, keine fachverantwortlichen
+         Personen „Meister“
+
+VO - Software Engineering II                         30
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         31
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         31
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         31
+ 2.4 Anforderungserhebung
+
+                                 BEFRAGUNGSTECHNIKEN
+
+
+                                                                              1. Fragebogen
+                                                                              2. Interview
+
+
+
+
+                      zur Ermittlung des (unter)bewussten Wissens, Leistungsfaktoren (und Basisfaktoren)
+
+
+VO - Software Engineering II                                 32
+ 2.4 Anforderungserhebung
+
+                                 FRAGEBÖGEN (1)
+
+
+           ‣ Vorstudien!
+
+           ‣ redundante Fragen
+
+           ‣ offene und geschlossene Fragen
+
+
+
+
+VO - Software Engineering II                  33
+ 2.4 Anforderungserhebung
+
+                               FRAGEBÖGEN (2)
+
+
+
+
+VO - Software Engineering II         34
+ 2.4 Anforderungserhebung
+
+                                   FRAGEBÖGEN (2)
+                                     Vorteile
+       + schnelle, subjektive Antworten
+       + niedrige Kosten
+       + große Benutzergruppen möglich
+
+
+
+
+VO - Software Engineering II                    34
+ 2.4 Anforderungserhebung
+
+                                    FRAGEBÖGEN (2)
+                                      Vorteile
+       + schnelle, subjektive Antworten
+       + niedrige Kosten
+       + große Benutzergruppen möglich
+
+
+                                    Nachteile
+       - Informationen haben Bias
+       - keine Erhebung impliziten Wissens
+       - Nicht-funktionale Anforderungen sind
+         schwer mittels Fragebogen ermittelbar
+
+
+
+
+VO - Software Engineering II                     34
+ 2.4 Anforderungserhebung
+
+                                           INTERVIEW (1)
+           ‣ wichtigste Technik!
+
+           ‣ Vorgehensweise:
+             1. Auswahl eines Stakeholders
+             2. Organisation eines Treffens
+             3. Fragen stellen und protokollieren
+             4. Bericht schreiben
+             5. Zusenden des Berichts an interviewte Person
+              mit der Bitte um Validierung und Verbesserung
+
+           ‣ Strukturiertes Interview
+
+           ‣ Unstrukturiertes Interview
+
+
+
+VO - Software Engineering II                              35
+ 2.4 Anforderungserhebung
+
+                                           INTERVIEW (1)
+           ‣ wichtigste Technik!
+
+           ‣ Vorgehensweise:
+             1. Auswahl eines Stakeholders
+             2. Organisation eines Treffens
+             3. Fragen stellen und protokollieren
+             4. Bericht schreiben
+             5. Zusenden des Berichts an interviewte Person
+              mit der Bitte um Validierung und Verbesserung
+
+           ‣ Strukturiertes Interview
+
+           ‣ Unstrukturiertes Interview    }   Kombination!
+
+
+
+
+VO - Software Engineering II                              35
+ 2.4 Anforderungserhebung
+
+                                              INTERVIEW (2)
+            ‣ Tipps:
+               -   richtige Auswahl an Interviewpersonen
+               -   Vorbereitung und Kontrolle
+               -   Angenehme Atmosphäre
+               -   Erlaubnis für Aufzeichnung
+               -   mit einfachen Fragen starten
+               -   Vorstellung der Interviewleiter
+               -   Nachfragen!
+
+            ‣ Interviews mit mehreren Stakeholdern:
+               + Klärung widersprüchlicher Anforderungen
+               -   weniger effektiv
+
+
+
+
+                                                   [mehr Tipps im Moodle: Chris Rupp]
+
+VO - Software Engineering II                                      36
+ 2.4 Anforderungserhebung
+
+                               INTERVIEW (3)
+
+
+
+
+VO - Software Engineering II         37
+ 2.4 Anforderungserhebung
+
+                                       INTERVIEW (3)
+                                       Vorteile
+       + brauchbare Liste an Anforderungen
+       + neue nicht bedachte Punkte durch das
+         Gespräch
+       + individuelle Anpassung auf Stakeholder
+
+
+
+
+VO - Software Engineering II                      37
+ 2.4 Anforderungserhebung
+
+                                        INTERVIEW (3)
+                                       Vorteile
+       + brauchbare Liste an Anforderungen
+       + neue nicht bedachte Punkte durch das
+         Gespräch
+       + individuelle Anpassung auf Stakeholder
+
+                                     Nachteile
+       - Zeitaufwendig
+       - Trennung von subjektiver und objektiver
+         Information notwendig
+       - Effektivität hängt von Geschick des
+         Interviewleiters ab
+
+
+VO - Software Engineering II                       37
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         38
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         38
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         38
+ 2.4 Anforderungserhebung
+
+                        ARTEFAKTBASIERTE TECHNIKEN
+
+
+                                                                1. Hintergrundstudie
+                                                                2. Systemarchäologie
+                                                                3. Reuse
+
+
+
+
+                               zur Ermittlung des unterbewussten Wissens, Basisfaktoren
+
+
+VO - Software Engineering II                             39
+ 2.4 Anforderungserhebung
+
+                                HINTERGRUNDSTUDIE (1)
+
+           ‣ Sammeln und auswerten von bestehenden
+             Dokumenten:
+             -   Organisation
+             -   Domäne
+             -   Bestehendes System
+
+
+           ‣ evtl. auch Studien über Gebrauch und
+             Kosten                                      [Photo by Glen Noble on Unsplash]
+
+
+
+
+VO - Software Engineering II                        40
+ 2.4 Anforderungserhebung
+
+                               HINTERGRUNDSTUDIE (2)
+
+
+
+
+                                                       [Photo by Glen Noble on Unsplash]
+
+
+
+
+VO - Software Engineering II             41
+ 2.4 Anforderungserhebung
+
+                               HINTERGRUNDSTUDIE (2)
+                                        Vorteile
+       + liefert das benötigte Wissen über die
+         Organisation, Domäne und das
+         bestehende System
+       + Einblick, bevor man vor Ort ist
+
+
+
+
+                                                        [Photo by Glen Noble on Unsplash]
+
+
+
+
+VO - Software Engineering II                       41
+ 2.4 Anforderungserhebung
+
+                               HINTERGRUNDSTUDIE (2)
+                                        Vorteile
+       + liefert das benötigte Wissen über die
+         Organisation, Domäne und das
+         bestehende System
+       + Einblick, bevor man vor Ort ist
+
+                                      Nachteile
+       - Menge an Dokumenten
+       - Meta-Wissen erforderlich (man muss
+         wissen, was man wissen muss)
+       - schriftliche Dokumente != Wirklichkeit
+                                                        [Photo by Glen Noble on Unsplash]
+
+
+
+
+VO - Software Engineering II                       41
+ 2.4 Anforderungserhebung
+
+                               SYSTEMARCHÄOLOGIE (1)
+
+           ‣ auf Basis von existierenden Systemen und/oder
+             dazugehöriger Dokumentation:
+             Benutzerhandbuch, Testfälle, …
+           ‣ bei offenen Fragen nach Durchsicht der
+             Dokumente: Code-Recherche
+
+
+
+
+VO - Software Engineering II                           42
+ 2.4 Anforderungserhebung
+
+                               SYSTEMARCHÄOLOGIE (2)
+
+
+
+
+VO - Software Engineering II             43
+ 2.4 Anforderungserhebung
+
+                               SYSTEMARCHÄOLOGIE (2)
+                                        Vorteile
+       + kein Verlust von bereits implementierter
+         Funktionalität
+
+
+
+
+VO - Software Engineering II                        43
+ 2.4 Anforderungserhebung
+
+                               SYSTEMARCHÄOLOGIE (2)
+                                         Vorteile
+       + kein Verlust von bereits implementierter
+         Funktionalität
+
+
+
+                                      Nachteile
+       - aufwendig
+       - kein Gewinn bei vielen potentiellen
+         Änderungen des Systems
+       - Probleme, wenn Dokumente von
+         schlechter Qualität oder veraltert sind
+
+
+VO - Software Engineering II                        43
+ 2.4 Anforderungserhebung
+
+                                                      REUSE (1)
+
+           ‣ selten wird ein System von Grund auf neu
+             implementiert
+           ‣ Wiederverwendbare Anforderungen:
+
+             ‣   generalisiert und gut dokumentiert
+
+             ‣   Zusatzaufwand
+
+
+
+
+VO - Software Engineering II                              44
+ 2.4 Anforderungserhebung
+
+                               REUSE (2)
+
+
+
+
+VO - Software Engineering II       45
+ 2.4 Anforderungserhebung
+
+                                             REUSE (2)
+                                        Vorteile
+       + Kosteneinsparung bei Anforderungen
+       + evtl. auch Informationen wie Testfälle
+         oder Teile vom Modell
+
+
+
+
+VO - Software Engineering II                       45
+ 2.4 Anforderungserhebung
+
+                                             REUSE (2)
+                                        Vorteile
+       + Kosteneinsparung bei Anforderungen
+       + evtl. auch Informationen wie Testfälle
+         oder Teile vom Modell
+
+
+                                      Nachteile
+       - schwer die richtigen/wichtigen
+         Anforderungen zu finden
+       - Qualität der alten Anforderungen oft
+         nicht ausreichend
+       - Gefahr der Übernahme von Fehlern des
+         Altsystems
+
+VO - Software Engineering II                       45
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         46
+ 2.4 Anforderungserhebung
+
+                          UNTERSTÜTZENDE TECHNIKEN
+
+
+                                          1. Workshop
+
+                                          2. Mind Mapping
+
+                                          3. Audio/Videoaufzeichnungen
+
+                                          4. Szenarien
+
+
+
+
+VO - Software Engineering II         47
+ 2.4 Anforderungserhebung
+
+                               WORKSHOP
+
+
+
+
+                                       [clipart-library]
+
+
+
+
+VO - Software Engineering II      48
+ 2.4 Anforderungserhebung
+
+                                         WORKSHOP
+
+
+
+
+                                                    [clipart-library]
+
+
+                                    Vorteile
+     + Förderung von Verständnis und
+       Kompromissbereitschaft durch direkte
+       Kommunikation
+
+VO - Software Engineering II                   48
+ 2.4 Anforderungserhebung
+
+                                         WORKSHOP
+
+
+
+
+                                                        [clipart-library]
+
+
+                                    Vorteile                                      Nachteile
+     + Förderung von Verständnis und                - gruppendynamische Effekte
+       Kompromissbereitschaft durch direkte         - schwer bei großer räumlicher Verteilung
+       Kommunikation                                  und schlechter zeitlicher Verfügbarkeit
+
+VO - Software Engineering II                   48
+ 2.4 Anforderungserhebung
+
+                                      MIND MAPPING
+
+
+
+
+                                                                                   Nachteile
+                                      Vorteile        - oft nur von bei der Erstellung
+      + Struktur und Visualisierung                     Anwesenden korrekt interpretierbar
+
+VO - Software Engineering II                     49
+ 2.4 Anforderungserhebung
+
+                           AUDIO-/VIDEOAUFZEICHNUNG
+
+
+
+
+                                    [clipart-library]
+
+
+
+
+VO - Software Engineering II                     50
+ 2.4 Anforderungserhebung
+
+                           AUDIO-/VIDEOAUFZEICHNUNG
+
+
+
+
+                                          [clipart-library]
+
+
+
+                                   Vorteile
+      + kein Informationsverlust
+
+
+VO - Software Engineering II                           50
+ 2.4 Anforderungserhebung
+
+                           AUDIO-/VIDEOAUFZEICHNUNG
+
+
+
+
+                                          [clipart-library]
+
+
+
+                                   Vorteile                                               Nachteile
+      + kein Informationsverlust                              - zeitaufwendige Nachbereitung
+                                                              - Gefühl der „Beobachtung“
+
+VO - Software Engineering II                           50
+ 2.4 Anforderungserhebung
+
+                               SZENARIEN
+
+
+
+
+VO - Software Engineering II       51
+ 2.4 Anforderungserhebung
+
+                                           SZENARIEN
+
+
+
+
+                                     Vorteile
+      + leicht verständlich
+      + zur Validierung wiederverwendbar
+VO - Software Engineering II                    51
+ 2.4 Anforderungserhebung
+
+                                           SZENARIEN
+
+
+
+
+                                     Vorteile                                    Nachteile
+      + leicht verständlich                          - keine Doku der Systemeigenschaften
+      + zur Validierung wiederverwendbar             - unvollständig
+
+VO - Software Engineering II                    51
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         52
+ 2.4 Anforderungserhebung
+
+                               ANFORDERUNGSERHEBUNG
+                                   „Hellsehen für Fortgeschrittene“ nach C. Rupp
+
+
+
+
+                                                           ‣ Kreativitätstechniken
+
+                                                           ‣ Beobachtungstechniken
+
+                                                           ‣ Befragungstechniken
+
+                                                           ‣ Artefakt-basierende Techniken
+
+                                                           ‣ unterstützende Techniken
+
+
+
+
+VO - Software Engineering II                         52
+ 2.4 Anforderungserhebung
+
+                       WELCHE METHODE MACHT SINN?
+                                                                                         wenig Interaktion mit Stakeholder,
+                                                                                         RE muss Wissen selbst beschaffen
+
+
+
+
+                                                                                                gezielte Interaktion mit
+                                                                                              ausgewählten Stakeholdern
+
+
+
+
+                                        [Requirements-Engineering und -Management, Chriss Rupp]
+
+VO - Software Engineering II       53
+ 2.4 Anforderungserhebung
+
+                                          AUFGABE
+                                           6-3-5 Methode
+
+
+
+           Wie kann im Spiel <Spielname> die Schummelfunktionalität aussehen?
+
+
+
+
+                               Ziel: kreative Ideen, unbewusstes Wissen
+
+
+
+VO - Software Engineering II                      54
+ 2.4 Anforderungserhebung
+
+                         METHODE 6-3-5 - ANWENDUNG
+
+
+
+
+VO - Software Engineering II         55
+ Zusammenfassung
+
+                               ANFORDERUNGSERHEBUNG
+
+
+
+
+VO - Software Engineering II            56
+ Zusammenfassung
+
+                               ANFORDERUNGSERHEBUNG
+        bewusstes Wissen
+        (Leistungsfaktoren)
+
+
+
+
+VO - Software Engineering II            56
+ Zusammenfassung
+
+                               ANFORDERUNGSERHEBUNG
+        bewusstes Wissen            unbewusstes Wissen
+        (Leistungsfaktoren)          (Begeisterungsfaktoren)
+
+
+
+
+VO - Software Engineering II                    56
+ Zusammenfassung
+
+                               ANFORDERUNGSERHEBUNG
+        bewusstes Wissen            unbewusstes Wissen         unterbewusstes Wissen
+        (Leistungsfaktoren)          (Begeisterungsfaktoren)        (Basisfaktoren)
+
+
+
+
+VO - Software Engineering II                    56
+ Zusammenfassung
+
+                               ANFORDERUNGSERHEBUNG
+        bewusstes Wissen            unbewusstes Wissen         unterbewusstes Wissen
+        (Leistungsfaktoren)          (Begeisterungsfaktoren)        (Basisfaktoren)
+
+
+
+
+          Fragetechniken
+
+
+
+
+      Artefaktbasierte Techniken
+
+
+VO - Software Engineering II                    56
+ Zusammenfassung
+
+                               ANFORDERUNGSERHEBUNG
+        bewusstes Wissen            unbewusstes Wissen         unterbewusstes Wissen
+        (Leistungsfaktoren)          (Begeisterungsfaktoren)        (Basisfaktoren)
+
+
+
+
+          Fragetechniken
+                                      Kreativitätstechniken
+
+
+
+
+      Artefaktbasierte Techniken
+
+
+VO - Software Engineering II                    56
+ Zusammenfassung
+
+                               ANFORDERUNGSERHEBUNG
+        bewusstes Wissen            unbewusstes Wissen         unterbewusstes Wissen
+        (Leistungsfaktoren)          (Begeisterungsfaktoren)         (Basisfaktoren)
+
+
+
+
+          Fragetechniken
+                                      Kreativitätstechniken
+                                                               Beobachtungstechniken
+
+
+
+
+      Artefaktbasierte Techniken
+
+
+VO - Software Engineering II                    56
+ Zusammenfassung
+
+                               ANFORDERUNGSERHEBUNG
+        bewusstes Wissen            unbewusstes Wissen          unterbewusstes Wissen
+        (Leistungsfaktoren)          (Begeisterungsfaktoren)          (Basisfaktoren)
+
+
+
+
+          Fragetechniken
+                                      Kreativitätstechniken
+                                                                Beobachtungstechniken
+
+
+
+
+      Artefaktbasierte Techniken
+                                     unterstützende Techniken
+VO - Software Engineering II                    56
+ Zusammenfassung
+
+                               ANFORDERUNGSERHEBUNG
+        bewusstes Wissen                        unbewusstes Wissen                              unterbewusstes Wissen
+        (Leistungsfaktoren)                     (Begeisterungsfaktoren)                               (Basisfaktoren)
+
+                           Imm
+                                   er e
+                                       ine Ko
+                                             mbi
+                                                 nation
+                                                          an T
+          Fragetechniken                                      ech
+                                                                    nik
+                                                 Kreativitätstechniken
+                                                                            en v
+                                                                                erw             Beobachtungstechniken
+                                                                                   end
+                                                                                         en!!
+
+
+      Artefaktbasierte Techniken
+                                                 unterstützende Techniken
+VO - Software Engineering II                                56
+                                            INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                      57
+ 2.5 Dokumentation
+
+                                    DOKUMENTATION
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                        58
+ 2.5 Dokumentation
+
+                                    DOKUMENTATION
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                        58
+ 2.5 Dokumentation
+
+                                    DOKUMENTATION
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                        58
+ 2.5 Dokumentation
+
+                                     DOKUMENTATION
+
+
+                                                    ‣ Wissen verfällt
+                                                    ‣ Detailtiefe und Verständnis
+                                                    ‣ Gesamtüberblick
+                                                    ‣ Missverständnisse klären
+                                                    ‣ Abweichende Informationen identi zieren
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II    fi
+                                                    58
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     59
+ 2.5 Dokumentation
+
+                                            LASTENHEFT (1)
+
+                                     Ziel                                  Inhalte
+                       ‣ zum Einholen von Angeboten             ‣ Einführung
+                       ‣ „vom Auftraggeber festgelegte          ‣ Ist-Zustand
+                         Gesamtheit der Forderungen an
+                         die Lieferungen und Leistungen         ‣ Soll-Zustand
+                         eines Auftragnehmers innerhalb
+                         eines Auftrages“ [DIN 69901-5 ]        ‣ Schnittstellen
+
+                       ‣ WAS und WARUM                          ‣ FA und NFA (Qualitätskriterien)
+                       ‣ keine Umsetzungsvorschläge             ‣ Risiken und Akzeptanz
+                       ‣ natürliche Sprache                     ‣ Abnahmekriterien
+
+
+
+
+VO - Software Engineering II                               60
+ 2.5 Dokumentation
+
+                                       PFLICHTENHEFT (1)
+                                     Ziel
+                       ‣ „vom Auftragnehmer erarbeiteten
+                         Realisierungsvorgaben aufgrund der
+                         Umsetzung des vom Auftraggeber
+                                                                            Optional
+                         vorgegebenen Lastenhefts“
+                         [DIN 69901-5 ]
+                                                                   ‣ Soll Überlegungen zum
+                       ‣ beschreibt konkrete Realisierung            Lebenszyklus beinhalten
+                         bzw. Beschränkungen bzgl. der
+                         Implementierung                           ‣ Soll akzeptable Reaktionen auf
+                                                                     potentielle Systemfehler
+                       ‣ technische Sprache                          beschreiben
+                       ‣ Muss leicht veränderbar sein!
+                       ‣ Referenz für das Wartungspersonal
+
+
+
+
+VO - Software Engineering II                                  61
+ 2.5 Dokumentation
+
+                                         PFLICHTENHEFT (2)
+
+                          Vorgeschlagene Inhalte
+                          nach IEEE Standard             ‣ Systemarchitektur
+                          (IEEE/ANSI 830-1993)
+                                                         ‣ Spezi kation der
+                                                           Systemanforderungen
+                          ‣ Vorwort
+                                                         ‣ Systemmodelle
+                          ‣ Einleitung
+                                                         ‣ Systementwicklung
+                          ‣ Begriffe
+                                                         ‣ Anhänge
+                          ‣ Benutzeranforderungen
+                                                         ‣ Index
+
+
+
+
+VO - Software Engineering II
+    fi
+                                                    62
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     63
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     63
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     63
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     63
+ 2.5 Dokumentation
+
+                                    PRODUCT BACKLOG (1)
+
+       ‣ Eine Liste von allen erforderlichen
+          Projektarbeiten
+
+       ‣ Je weiter „oben“ (=höher priorisiert) Tasks sind,
+          desto genauer müssen sie spezi ziert sein
+           - Formulierung als User Stories kann helfen!
+       ‣ Product Backlog - Sprint Backlog
+       ‣ Jedes Backlog Item ist eine User Story
+
+
+
+VO - Software Engineering II   fi
+                                                          64
+ 2.5 Dokumentation
+
+                                    PRODUCT BACKLOG (1)
+
+       ‣ Eine Liste von allen erforderlichen
+          Projektarbeiten                                      Wichtig
+
+
+       ‣ Je weiter „oben“ (=höher priorisiert) Tasks sind,
+          desto genauer müssen sie spezi ziert sein
+           - Formulierung als User Stories kann helfen!
+       ‣ Product Backlog - Sprint Backlog
+       ‣ Jedes Backlog Item ist eine User Story                Derzeit
+                                                               weniger
+                                                                wichtig
+
+
+
+
+VO - Software Engineering II   fi
+                                                          64
+ 2.5 Dokumentation
+
+                                       USER STORIES (1)
+
+           ‣ Als <Rolle> will ich <tun> [, so dass ich <Grund>]
+              - Als Vertriebsmitarbeiter will ich nach Tweets regional
+                  gruppieren, so dass ich Hotspots nde
+           ‣ De nition of Done
+           ‣ INVEST
+           ‣ Scrumboard
+           ‣ Tasks
+
+
+
+VO - Software Engineering II
+  fi                             fi
+                                                         65
+ 2.5 Dokumentation
+
+                               USER STORIES (2)
+                                Story Card Template - Vorderseite
+
+
+
+               Priorisierung          Name der Story                 Story Points
+
+
+
+
+                                                                    schätzbar, testbar, usw.
+      Beschreibung der Story    Als <Rolle> möchte ich
+              WER               <Ziel/Wunsch>, so dass
+               WAS              ich <Nutzen/Grund>.
+            WARUM
+                                                                      Story Points
+                  Risiko                                            (Post-Schätzung)
+
+
+VO - Software Engineering II                   66
+ 2.5 Dokumentation
+
+                               USER STORIES (3)
+                                 Story Card Template - Rückseite
+
+        Wie kann die Story
+        getestet werden?
+
+
+
+                               Angenommen <Vorbedingung>,
+                                     wenn <Aktion>,
+                                    dann <Ergebnis>.
+                                                                   Akzeptanzkriterien
+
+
+
+
+VO - Software Engineering II                    67
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     68
+ 2.5 Dokumentation
+
+                                                                                 PROSA (1)
+
+     Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam
+     Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur. 2 Hi
+     omnes lingua, institutis, legibus inter se differunt. Gallos ab Aquitanis
+     Garumna flumen, a Belgis Matrona et Sequana dividit. 3 Horum omnium
+     fortissimi sunt Belgae, propterea quod a cultu atque humanitate provinciae
+     longissime absunt, minimeque ad eos mercatores saepe commeant atque ea              ‣ natürliche Sprache
+     quae ad effeminandos animos pertinent important, 4 proximique sunt
+     Germanis, qui trans Rhenum incolunt, quibuscum continenter bellum
+     gerunt. Qua de causa Helvetii quoque reliquos Gallos virtute praecedunt,            ‣ am häu gsten genutzte Dokumentationstechnik
+     quod fere cotidianis proeliis cum Germanis contendunt, cum aut suis
+     finibus eos prohibent aut ipsi in eorum finibus bellum gerunt. 5 Eorum una
+     pars, quam Gallos obtinere dictum est, initium capit a flumine Rhodano,             ‣ Die verwendete Sprache muss allen beteiligten
+     continetur Garumna flumine, Oceano, finibus Belgarum, attingit etiam ab
+     Sequanis et Helvetiis flumen Rhenum, vergit ad septentriones. 6 Belgae ab             hinreichend geläu g sein
+     extremis Galliae finibus oriuntur, pertinent ad inferiorem partem fluminis
+     Rheni, spectant in septentrionem et orientem solem. 7 Aquitania a Garumna
+     flumine ad Pyrenaeos montes et eam partem Oceani quae est ad
+     Hispaniam pertinet; spectat inter occasum solis et septentriones.
+
+                                                         [De Bello Gallico, J. Caesar]
+
+
+
+
+VO - Software Engineering II
+       fi                 fi
+                                                                                          69
+ 2.5 Dokumentation
+
+                                                                                 PROSA (2)
+
+     Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam
+     Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur. 2 Hi
+     omnes lingua, institutis, legibus inter se differunt. Gallos ab Aquitanis
+     Garumna flumen, a Belgis Matrona et Sequana dividit. 3 Horum omnium
+     fortissimi sunt Belgae, propterea quod a cultu atque humanitate provinciae
+     longissime absunt, minimeque ad eos mercatores saepe commeant atque ea
+     quae ad effeminandos animos pertinent important, 4 proximique sunt
+     Germanis, qui trans Rhenum incolunt, quibuscum continenter bellum
+     gerunt. Qua de causa Helvetii quoque reliquos Gallos virtute praecedunt,
+     quod fere cotidianis proeliis cum Germanis contendunt, cum aut suis
+     finibus eos prohibent aut ipsi in eorum finibus bellum gerunt. 5 Eorum una
+     pars, quam Gallos obtinere dictum est, initium capit a flumine Rhodano,
+     continetur Garumna flumine, Oceano, finibus Belgarum, attingit etiam ab
+     Sequanis et Helvetiis flumen Rhenum, vergit ad septentriones. 6 Belgae ab
+     extremis Galliae finibus oriuntur, pertinent ad inferiorem partem fluminis
+     Rheni, spectant in septentrionem et orientem solem. 7 Aquitania a Garumna
+     flumine ad Pyrenaeos montes et eam partem Oceani quae est ad
+     Hispaniam pertinet; spectat inter occasum solis et septentriones.
+
+                                                         [De Bello Gallico, J. Caesar]
+
+
+
+
+VO - Software Engineering II                                                             70
+ 2.5 Dokumentation
+
+                                                                                 PROSA (2)
+
+     Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam
+     Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur. 2 Hi                                              Vorteile
+     omnes lingua, institutis, legibus inter se differunt. Gallos ab Aquitanis
+     Garumna flumen, a Belgis Matrona et Sequana dividit. 3 Horum omnium                      + keine komplizierte Notation
+     fortissimi sunt Belgae, propterea quod a cultu atque humanitate provinciae
+     longissime absunt, minimeque ad eos mercatores saepe commeant atque ea                   + für die der Sprache mächtigen einfach
+     quae ad effeminandos animos pertinent important, 4 proximique sunt
+     Germanis, qui trans Rhenum incolunt, quibuscum continenter bellum
+     gerunt. Qua de causa Helvetii quoque reliquos Gallos virtute praecedunt,
+     quod fere cotidianis proeliis cum Germanis contendunt, cum aut suis
+     finibus eos prohibent aut ipsi in eorum finibus bellum gerunt. 5 Eorum una
+     pars, quam Gallos obtinere dictum est, initium capit a flumine Rhodano,
+     continetur Garumna flumine, Oceano, finibus Belgarum, attingit etiam ab
+     Sequanis et Helvetiis flumen Rhenum, vergit ad septentriones. 6 Belgae ab
+     extremis Galliae finibus oriuntur, pertinent ad inferiorem partem fluminis
+     Rheni, spectant in septentrionem et orientem solem. 7 Aquitania a Garumna
+     flumine ad Pyrenaeos montes et eam partem Oceani quae est ad
+     Hispaniam pertinet; spectat inter occasum solis et septentriones.
+
+                                                         [De Bello Gallico, J. Caesar]
+
+
+
+
+VO - Software Engineering II                                                             70
+ 2.5 Dokumentation
+
+                                                                                 PROSA (2)
+
+     Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam
+     Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur. 2 Hi                                              Vorteile
+     omnes lingua, institutis, legibus inter se differunt. Gallos ab Aquitanis
+     Garumna flumen, a Belgis Matrona et Sequana dividit. 3 Horum omnium                      + keine komplizierte Notation
+     fortissimi sunt Belgae, propterea quod a cultu atque humanitate provinciae
+     longissime absunt, minimeque ad eos mercatores saepe commeant atque ea                   + für die der Sprache mächtigen einfach
+     quae ad effeminandos animos pertinent important, 4 proximique sunt
+     Germanis, qui trans Rhenum incolunt, quibuscum continenter bellum
+     gerunt. Qua de causa Helvetii quoque reliquos Gallos virtute praecedunt,
+     quod fere cotidianis proeliis cum Germanis contendunt, cum aut suis
+     finibus eos prohibent aut ipsi in eorum finibus bellum gerunt. 5 Eorum una
+     pars, quam Gallos obtinere dictum est, initium capit a flumine Rhodano,
+     continetur Garumna flumine, Oceano, finibus Belgarum, attingit etiam ab
+                                                                                                                           Nachteile
+     Sequanis et Helvetiis flumen Rhenum, vergit ad septentriones. 6 Belgae ab
+     extremis Galliae finibus oriuntur, pertinent ad inferiorem partem fluminis               - Mehrdeutigkeit
+     Rheni, spectant in septentrionem et orientem solem. 7 Aquitania a Garumna
+     flumine ad Pyrenaeos montes et eam partem Oceani quae est ad                             - Unvollständigkeit
+     Hispaniam pertinet; spectat inter occasum solis et septentriones.
+
+                                                         [De Bello Gallico, J. Caesar]
+
+
+
+
+VO - Software Engineering II                                                             70
+ 2.5 Dokumentation
+
+                                               PROSA (3)
+                  „Das Bibliothekssystem muss dem Bibliothekar die Möglichkeit bieten, die
+                  Bankverbindung eines Kunden einzugeben.“
+
+
+
+                  „Falls das Leihobjekt, das der Kunde entleihen möchte, bereits durch einen
+                  anderen Kunden reserviert ist, muss das Bibliothekssystem dem
+                  Bibliothekar die Meldung ‚Das Leihobjekt ist bereits durch einen anderen
+                  Kunden reserviert‘ anzeigen.“
+
+
+
+                  „Als Bibliothekar will ich nach allen Leihobjekten ltern können, die seit drei
+                  Jahren oder länger nicht mehr ausgeliehen worden sind, um diese aus dem
+                  Bestand aussortieren zu können.“
+
+
+VO - Software Engineering II                      fi
+                                                         71
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     72
+ 2.5 Dokumentation
+
+                               USE CASE DIAGRAMME (1)
+
+                                              ‣ Übersicht über die Funktionalität des
+                                                (Teil-)Systems
+
+                                              ‣ Graphische Darstellung mehrerer Use-Case
+                                                Beziehungen untereinander
+
+                                              ‣ Ergänzung durch textuelle Use-Case
+                                                Beschreibung
+
+
+
+
+VO - Software Engineering II             73
+ 2.5 Dokumentation
+
+                               USE CASE DIAGRAMME (2)
+
+
+
+
+VO - Software Engineering II             74
+ 2.5 Dokumentation
+
+                               USE CASE DIAGRAMME (2)
+
+                                                                              Vorteile
+                                              + leicht verständlich
+                                              + weitestgehend akzeptiert für ersten
+                                                Skizzen und Darstellung von
+                                                Teilaspekten
+
+
+
+
+VO - Software Engineering II             74
+ 2.5 Dokumentation
+
+                               USE CASE DIAGRAMME (2)
+
+                                                                              Vorteile
+                                              + leicht verständlich
+                                              + weitestgehend akzeptiert für ersten
+                                                Skizzen und Darstellung von
+                                                Teilaspekten
+
+                                                                            Nachteile
+                                              - keine NFAs darstellbar
+                                              - Redundanzen und Inkonsistenzen
+                                                schwer vermeidbar
+
+
+
+VO - Software Engineering II             74
+ 2.5 Dokumentation
+
+                           USE CASE BESCHREIBUNG (1)
+
+
+       ‣ genaue Beschreibung von Use-Cases
+
+       ‣ Beschreibungen in natürlicher Sprache
+
+       ‣ NFAs auch direkt in Use-Case
+         geschrieben (Alternative: Dokument
+         „Zusatzanforderungen“)
+
+       ‣ Template/Formular
+
+
+
+
+VO - Software Engineering II                     75
+ 2.5 Dokumentation
+
+                           USE CASE BESCHREIBUNG (2)
+
+
+
+
+VO - Software Engineering II           76
+ 2.5 Dokumentation
+
+                           USE CASE BESCHREIBUNG (2)
+                                      Vorteile
+      + Formular erleichtert Erfassung sonst
+        leicht vergessener Details
+      + Struktur erleichtert Selektion der
+        Information
+      + Erfolgs- und Misserfolgsszenarien
+
+
+
+
+VO - Software Engineering II                     76
+ 2.5 Dokumentation
+
+                           USE CASE BESCHREIBUNG (2)
+                                      Vorteile
+      + Formular erleichtert Erfassung sonst
+        leicht vergessener Details
+      + Struktur erleichtert Selektion der
+        Information
+      + Erfolgs- und Misserfolgsszenarien
+
+
+                                    Nachteile
+      - Aufblähung durch Darstellung aller
+        Alternativabläufe und Ausnahmen führt
+        zu Unübersichtlichkeit und
+        Inkonsistenzen
+
+VO - Software Engineering II                     76
+ 2.5 Dokumentation
+
+                              USE CASE BESCHREIBUNG (3)
+               USE CASE <ID>                <Name, kurze aktive Phrase mit Verb>
+               Beschreibung                 <längere Beschreibung vom Use Case mit Kontext, wenn notwendig>
+               Beteiligte Akteure           <Personen, Systeme>
+               Status                       <Status der Umsetzung>
+               Verwendete Use-Cases         (includes)
+               Auslöser                     <Trigger, Grund für die Durchführung>
+               Vorbedingungen               <Status bevor der Use Case durchgeführt wird>
+               Nachbedingungen              <Status nach der erfolgreichen Durchführung des Use Cases>
+               Nachbedingungen Fehlerfall   <Status, wenn der Use Case nicht erfolgreich durchgeführt wurde>
+               Invarianten                  <Bedingungen die zu jeder Zeit gelten müssen>
+               Hauptszenario                Schritt Aktivität
+                                            1          <Schritte des Szenarios vom Auslöser bis zum Zielresultat und auch
+                                                       Nachbereitungsschritte, Aktivitäts- und Sequenzdiagramme>
+                                            2          <…>
+               Alternativszenarios          Schritt Abweichende Aktivität
+                                            1a         <Bedingung die Alternativszenario auslöst, Referenz auf Sub-Use
+                                                       Cases bzw. Aktivitäten>
+               Hinweise
+               Änderungsgeschichte                                                         [A. Cockburn, Use Cases effektiv erstellen]
+
+
+VO - Software Engineering II                                    77
+ 2.5 Dokumentation
+
+                               AKTIVITÄTSDIAGRAMM
+
+
+
+
+VO - Software Engineering II           78
+ 2.5 Dokumentation
+
+                               AKTIVITÄTSDIAGRAMM
+                                                                            Vorteile
+                                            + Detailierungsgrad sehr variabel
+                                            + gute Abbildungsmöglichkeit für
+                                              Alternativen und Entscheidungen
+                                            + Erfolgs- und Misserfolgsszenarien
+                                            + Grundzüge leicht erlernbar
+
+
+
+
+VO - Software Engineering II           78
+ 2.5 Dokumentation
+
+                               AKTIVITÄTSDIAGRAMM
+                                                                            Vorteile
+                                            + Detailierungsgrad sehr variabel
+                                            + gute Abbildungsmöglichkeit für
+                                              Alternativen und Entscheidungen
+                                            + Erfolgs- und Misserfolgsszenarien
+                                            + Grundzüge leicht erlernbar
+
+
+                                                                          Nachteile
+                                            - Komplexität steigt bei Nutzung vieler
+                                              besonderer Modellierungsmöglichkeiten
+
+
+
+
+VO - Software Engineering II           78
+ 2.5 Dokumentation
+
+                               SEQUENZDIAGRAMM
+
+
+
+
+VO - Software Engineering II          79
+ 2.5 Dokumentation
+
+                               SEQUENZDIAGRAMM
+                                                                              Vorteile
+                                           + intuitive Darstellung zeitlicher Abfolgen
+                                           + Kommunikationsprotokoll
+
+
+
+
+VO - Software Engineering II          79
+ 2.5 Dokumentation
+
+                               SEQUENZDIAGRAMM
+                                                                              Vorteile
+                                           + intuitive Darstellung zeitlicher Abfolgen
+                                           + Kommunikationsprotokoll
+
+
+
+
+                                                                           Nachteile
+                                           - Tendenz zur Unübersichtlichkeit
+
+
+
+
+VO - Software Engineering II          79
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     80
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     80
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     80
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     80
+ 2.5 Dokumentation
+
+                               DOKUMENTATION
+
+                                          ‣ Lastenheft
+                                          ‣ P ichtenheft
+                                          ‣ Product Backlog
+                                          ‣ User Stories
+                                          ‣ Prosa
+                                          ‣ Use Case Diagramm
+                                          ‣ Use Case Beschreibung
+                                          ‣ Aktivitätsdiagramm
+                                          ‣ Sequenzdiagramm
+
+
+
+VO - Software Engineering II
+ fl
+                                     80
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                    Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                         Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                       Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                       User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                         Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                       Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                       Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                         Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                                                                                                       Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                       Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                       Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                     [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                          81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                    Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                         Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                       Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                           sehr abstrakte
+                      Organisational         Anforderung,
+                                      Requirement,             erster
+                                                      Featureliste, Kontextabgrenzung
+                          Überblick,   Absichtserklärung
+                      Anwenderforderung,     Nutzeranforderung, Operational Concept Description,
+                                                                                                       User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                         Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                       Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                       Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                         Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                                                                                                       Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                       Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                       Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                     [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                          81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                    Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                         Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                       Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                       User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                         Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                       Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                       Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                         Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                                                                                                       Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                       Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                       Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                     [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                          81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                      Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                            Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                          Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                          User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                            Acceptance Criteria, Definition of
+                            Identifikation von
+                      Grobspezifikation,          Teilschritten
+                                          Operational   Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                          Done
+                      Featureliste
+                            des Geschäftsprozesses
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                          Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                            Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                                                                                                          Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                          Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                          Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                       [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                           81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                    Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                         Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                       Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                       User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                         Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                       Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                       Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                         Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                                                                                                       Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                       Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                       Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                     [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                          81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                     Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                          Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                        Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                        User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                          Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                        Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                        Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3              fachliche  Abläufe    definiert,                                            Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                            Daten   und  wichtigsten    NFAs                                            Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                            geklärt, keine Teilsysteme
+                      Komponentenanforderungen,        Technische Anforderung, Schnittstellenübersicht,
+                                                                                                        Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                        Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                      [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                          81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                    Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                         Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                       Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                       User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                         Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                       Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                       Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                         Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                                                                                                       Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                       Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                       Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                     [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                          81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                    Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                         Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                       Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                       User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                         Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                       Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                       Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                         Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                                                                                                       Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                       Technical User Story, Task,
+             4        Schnittstellenbeschreibung,
+                            Verfeinerung von Level 2,System   Segement Specification, Interface Design
+                                                                                                       Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                           Teilprozesse, NFA und                                                     [Requirements-Engineering und -Management, Chris Rupp]
+
+                           Anforderungen an die GUI
+VO - Software Engineering II                                          81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                    Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                         Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                       Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                       User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                         Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                       Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                       Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                         Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                                                                                                       Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                       Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                       Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                     [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                          81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                    Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                         Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                       Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                       User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                         Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                       Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                       Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                         Item, Acceptance Criteria,
+                         für Architekt
+                      Specification,     interessant
+                                     Interface Requirements Specification, Systemanforderung,
+                                                                                                       Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                       Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                       Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                     [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                          81
+ 2.5 Dokumentation
+
+                               WAS, WO, WIE DOKUMENTIEREN?
+      Spezifikations-                                            Zugeordnete Begrifflichkeiten
+           level      herkömmliche Vorgehen (Wasserfall, V-Modell)                                    Scrum
+                      grobe Systembeschreibung, Systemziele, Systemüberblick, Vision, Introduction,
+             0                                                                                         Sprint Goal, Product, Vision
+                      Mission Statement
+                      Anwendungsfall (Use-Case), User Story, (Anwendungs-) Szenario, Fachkonzept,
+                                                                                                       Epic, Theme
+             1        Funktionsbeschreibung, Funktionsgliederung, fachliche Anforderungen,
+                      Organisational Requirement, Featureliste, Kontextabgrenzung
+                      Anwenderforderung, Nutzeranforderung, Operational Concept Description,
+                                                                                                       User Story, Backlog Item,
+                      Interface Requirements Specification, Lastenheft, Sollkonzept,
+             2                                                                                         Acceptance Criteria, Definition of
+                      Grobspezifikation, Operational Requirement, betriebliche Anforderung, Testfälle,
+                                                                                                       Done
+                      Featureliste
+                      Detaillierte Anwenderforderungen, Technische Anforderung,
+                                                                                                       Technical User Story, Backlog
+                      Schnittstellenübersicht, Schnittstellenbeschreibung, System Segment
+             3                                                                                         Item, Acceptance Criteria,
+                      Specification, Interface Requirements Specification, Systemanforderung,
+                                                                                                       Definition of Done
+                      Feinspezifikation, Testfälle, Featureliste
+                      Komponentenanforderungen, Technische Anforderung, Schnittstellenübersicht,
+                                                                                                       Technical User Story, Task,
+             4        Schnittstellenbeschreibung, System Segement Specification, Interface Design
+                                                                                                       Backlog Item, Acceptance Criteria
+                      Description, Pflichtenheft, Feinspezifikation, Modulanforderung, Testfälle
+                                                                                                     [Requirements-Engineering und -Management, Chris Rupp]
+
+
+
+VO - Software Engineering II                                          81
+ Zusammenfassung
+
+                      ANFORDERUNGSDOKUMENTATION
+
+
+
+
+VO - Software Engineering II      82
+ Zusammenfassung
+
+                      ANFORDERUNGSDOKUMENTATION
+                               WO werden die dokumentierten Anforderungen gesammelt?
+
+
+
+
+VO - Software Engineering II            82
+ Zusammenfassung
+
+                      ANFORDERUNGSDOKUMENTATION
+                                       WO werden die dokumentierten Anforderungen gesammelt?
+
+
+
+
+                               WIE werden Anforderungen dokumentiert?
+
+
+
+
+VO - Software Engineering II                     82
+     Zusammenfassung
+
+                      ANFORDERUNGSDOKUMENTATION
+                                       WO werden die dokumentierten Anforderungen gesammelt?
+
+
+                                         Lastenheft          P ichtenheft
+
+                                                                              Product Backlog
+
+
+                               WIE werden Anforderungen dokumentiert?
+
+
+
+
+VO - Software Engineering II
+fl
+                                                      82
+     Zusammenfassung
+
+                                          ANFORDERUNGSDOKUMENTATION
+                                                                   WO werden die dokumentierten Anforderungen gesammelt?
+
+
+                                                                      Lastenheft                  P ichtenheft
+
+                                                                                                                         Product Backlog
+
+
+                                                         WIE werden Anforderungen dokumentiert?
+
+         Gallia est omnis divisa
+         in partes tres, quarum
+         unam incolunt Belgae,
+         aliam Aquitani, tertiam
+         q u i i p s o ru m l i n g u a
+         Celtae, nostra Galli
+         appellantur. 2 Hi omnes
+         lingua, institutis, legibus
+         inter se differunt.
+
+
+                Prosa                     User Stories    Use Case Diagramm   Use Case Beschreibung    Sequenzdiagramm     Aktivitätsdiagramm
+
+
+
+VO - Software Engineering II
+fl
+                                                                                   82
+                                           INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+
+
+
+
+VO - Software Engineering II                     83
+ 2.6 Anforderungsvalidierung
+
+                          ANFORDERUNGSVALIDIERUNG
+
+                                                   ‣ Reviews
+
+                                                   ‣ Prototyping/Simulationsmodell
+
+                                                   ‣ Testfälle
+
+                                                   ‣ Hilfsmittel: Lesetechniken, Checklisten
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                         84
+ 2.6 Anforderungsvalidierung
+
+                          ANFORDERUNGSVALIDIERUNG
+
+                                                   ‣ Reviews
+
+                                                   ‣ Prototyping/Simulationsmodell
+
+                                                   ‣ Testfälle
+
+                                                   ‣ Hilfsmittel: Lesetechniken, Checklisten
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                         84
+ 2.6 Anforderungsvalidierung
+
+                               REVIEWS
+
+
+                                       1. Stellungnahme
+
+                                       2. Walkthrough
+
+                                       3. Inspektion
+
+
+
+
+VO - Software Engineering II      85
+ 2.6 Anforderungsvalidierung
+
+                               STELLUNGNAHME
+
+                                          ‣ Kollege bekommt zu prüfende Anforderungen
+                                           von Anforderungsautor zum Lesen
+
+                                          ‣ Markierung von Auffälligkeiten
+
+
+
+
+VO - Software Engineering II         86
+ 2.6 Anforderungsvalidierung
+
+                                    STELLUNGNAHME
+
+                                                     ‣ Kollege bekommt zu prüfende Anforderungen
+                                                      von Anforderungsautor zum Lesen
+
+                                                     ‣ Markierung von Auffälligkeiten
+
+
+                                     Vorteile
+      + (>)4 Augen sehen mehr als 2
+      + Lücken werden oft leicht aufgedeckt
+      + geringer (Zeit)Aufwand
+
+
+
+VO - Software Engineering II                    86
+ 2.6 Anforderungsvalidierung
+
+                                    STELLUNGNAHME
+
+                                                     ‣ Kollege bekommt zu prüfende Anforderungen
+                                                      von Anforderungsautor zum Lesen
+
+                                                     ‣ Markierung von Auffälligkeiten
+
+
+                                     Vorteile                                           Nachteile
+      + (>)4 Augen sehen mehr als 2                    - konkrete Vorgaben der Prüfziele
+      + Lücken werden oft leicht aufgedeckt              notwendig!
+      + geringer (Zeit)Aufwand                         - kein Klären von Verständnisproblemen
+                                                       - Resultat stark von Prüfer abhängig
+
+
+VO - Software Engineering II                    86
+ 2.6 Anforderungsvalidierung
+
+                               WALKTHROUGH
+                                         ‣ Moderator (!= Stakeholder), Prüfer und Autor
+                                         ‣ Autor der Anforderung:
+                                           - Präsentation
+                                           - Entstehungsprozess und Gedankengänge
+                                         ‣ Regeln festlegen!
+                                         ‣ Kombination: Prototype
+
+
+
+
+VO - Software Engineering II        87
+ 2.6 Anforderungsvalidierung
+
+                                    WALKTHROUGH
+                                                       ‣ Moderator (!= Stakeholder), Prüfer und Autor
+                                                       ‣ Autor der Anforderung:
+                                                         - Präsentation
+                                                         - Entstehungsprozess und Gedankengänge
+                                                       ‣ Regeln festlegen!
+                                                       ‣ Kombination: Prototype
+
+
+                                       Vorteile
+   + gemeinsames Verständnis von Anforderungen
+   + direkte Lösung von Verständnisproblemen
+   + Wissensaustausch im persönlichen Gespräch
+
+
+VO - Software Engineering II                      87
+ 2.6 Anforderungsvalidierung
+
+                                    WALKTHROUGH
+                                                       ‣ Moderator (!= Stakeholder), Prüfer und Autor
+                                                       ‣ Autor der Anforderung:
+                                                         - Präsentation
+                                                         - Entstehungsprozess und Gedankengänge
+                                                       ‣ Regeln festlegen!
+                                                       ‣ Kombination: Prototype
+
+
+                                       Vorteile                                             Nachteile
+   + gemeinsames Verständnis von Anforderungen         - Ablenkung von Schwächen möglich
+   + direkte Lösung von Verständnisproblemen           - zeitliche Beschränkung
+   + Wissensaustausch im persönlichen Gespräch         - Abhängig von Können des Leiters bzw. der
+                                                         Prüfer
+
+VO - Software Engineering II                      87
+ 2.6 Anforderungsvalidierung
+
+                               INSPEKTION
+                                        ‣ auch auf Testfälle, Code, usw. anwendbar
+                                        ‣ 6 Phasen
+                                          1. Planung: Checklisten, Inspektorengruppe
+                                          2. Vorbesprechung: Anforderungen, Checklisten
+                                          3. Individuelle Vorbereitung: Prüfung der Anforderungen
+                                          4. Reviewsitzung: Meldung, Protokollierung, Aufnahme
+                                          5. Nachbereitung und Bewertung
+                                          6. Ende
+
+
+
+
+VO - Software Engineering II       88
+ 2.6 Anforderungsvalidierung
+
+                                            INSPEKTION
+                                                            ‣ auch auf Testfälle, Code, usw. anwendbar
+                                                            ‣ 6 Phasen
+                                                              1. Planung: Checklisten, Inspektorengruppe
+                                                              2. Vorbesprechung: Anforderungen, Checklisten
+                                                              3. Individuelle Vorbereitung: Prüfung der Anforderungen
+                                                              4. Reviewsitzung: Meldung, Protokollierung, Aufnahme
+                                                              5. Nachbereitung und Bewertung
+                                                              6. Ende
+
+                                            Vorteile
+   + Auffinden von vielen, auch tief sitzenden
+     Auffälligkeiten
+   + formaler Prozess steigert Effizienz
+   + Prüffokus mit Checklisten und Vorgaben
+     anpassbar
+
+VO - Software Engineering II                           88
+ 2.6 Anforderungsvalidierung
+
+                                            INSPEKTION
+                                                             ‣ auch auf Testfälle, Code, usw. anwendbar
+                                                             ‣ 6 Phasen
+                                                               1. Planung: Checklisten, Inspektorengruppe
+                                                               2. Vorbesprechung: Anforderungen, Checklisten
+                                                               3. Individuelle Vorbereitung: Prüfung der Anforderungen
+                                                               4. Reviewsitzung: Meldung, Protokollierung, Aufnahme
+                                                               5. Nachbereitung und Bewertung
+                                                               6. Ende
+
+                                            Vorteile                                                   Nachteile
+   + Auffinden von vielen, auch tief sitzenden              - zeitaufwendig
+     Auffälligkeiten                                        - kostenintensiv
+   + formaler Prozess steigert Effizienz                    - Erfolg hängt stark von Erfahrung und Können
+   + Prüffokus mit Checklisten und Vorgaben                   des Inspektionsleiters und Inspektoren ab
+     anpassbar
+
+VO - Software Engineering II                           88
+ 2.6 Anforderungsvalidierung
+
+                               REVIEWS
+
+
+
+
+VO - Software Engineering II      89
+ 2.6 Anforderungsvalidierung
+
+                          ANFORDERUNGSVALIDIERUNG
+
+                                                   ‣ Reviews
+
+                                                   ‣ Prototyping/Simulationsmodell
+
+                                                   ‣ Testfälle
+
+                                                   ‣ Hilfsmittel: Lesetechniken, Checklisten
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                         90
+ 2.6 Anforderungsvalidierung
+
+                   PROTOTYPING/SIMULATIONSMODELL
+                                      ‣ Rückmeldungen auf Skizze, Modell oder Prototyp
+                                      ‣ Throw away vs. evolutionäre Prototypen
+                                      ‣ Trainingsobjekt bzw. zur Validierung
+                                      ‣ Usability!
+
+
+
+
+VO - Software Engineering II     91
+ 2.6 Anforderungsvalidierung
+
+                   PROTOTYPING/SIMULATIONSMODELL
+                                                               ‣ Rückmeldungen auf Skizze, Modell oder Prototyp
+                                                               ‣ Throw away vs. evolutionäre Prototypen
+                                                               ‣ Trainingsobjekt bzw. zur Validierung
+                                                               ‣ Usability!
+
+
+                                               Vorteile
+   + Steigerung der Vorstellungskraft
+   + gute Diskussionsbasis
+   + frühe Implikation von Anforderungen erkennbar
+   + in jeder Phase einsetzbar
+
+
+
+VO - Software Engineering II                              91
+ 2.6 Anforderungsvalidierung
+
+                   PROTOTYPING/SIMULATIONSMODELL
+                                                               ‣ Rückmeldungen auf Skizze, Modell oder Prototyp
+                                                               ‣ Throw away vs. evolutionäre Prototypen
+                                                               ‣ Trainingsobjekt bzw. zur Validierung
+                                                               ‣ Usability!
+
+
+                                               Vorteile                                                   Nachteile
+   + Steigerung der Vorstellungskraft                          - Erstellung ist aufwendig und zeitraubend
+   + gute Diskussionsbasis                                     - ungewünschte „Spielereien“
+   + frühe Implikation von Anforderungen erkennbar             - Aussehen von Endsystem != Aussehen Prototyp
+   + in jeder Phase einsetzbar                                 - der „Wunderbar, die sind ja schon fast fertig“- Gedanke
+                                                               - nicht alle Aspekte des neuen Systems abgedeckt
+
+
+VO - Software Engineering II                              91
+ 2.6 Anforderungsvalidierung
+
+                          ANFORDERUNGSVALIDIERUNG
+
+                                                   ‣ Reviews
+
+                                                   ‣ Prototyping/Simulationsmodell
+
+                                                   ‣ Testfälle
+
+                                                   ‣ Hilfsmittel: Lesetechniken, Checklisten
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                         92
+ 2.6 Anforderungsvalidierung
+
+                                                  TESTFÄLLE (1)
+                                                                  ‣ Erstellung am Besten im Rahmen vom RE
+     Anforderung   Ausgangssituation   Ereignis   Ergebnis        ‣ natürlichsprachlicher Test
+                                                                    - Ausgangssituation
+                                                                    - Testereignis
+                                                                    - erwartetes Ergebnis
+                                                                  ‣ Anforderungsautor != Testfallersteller
+                                                                  ‣ Prüfung der Testfälle von Anforderungsautor
+
+
+
+
+VO - Software Engineering II                                 93
+ 2.6 Anforderungsvalidierung
+
+                                                   TESTFÄLLE (1)
+                                                                     ‣ Erstellung am Besten im Rahmen vom RE
+     Anforderung   Ausgangssituation   Ereignis    Ergebnis          ‣ natürlichsprachlicher Test
+                                                                       - Ausgangssituation
+                                                                       - Testereignis
+                                                                       - erwartetes Ergebnis
+                                                                     ‣ Anforderungsautor != Testfallersteller
+                                                                     ‣ Prüfung der Testfälle von Anforderungsautor
+
+
+                                                     Vorteile
+   + Sichtwechsel hilft Fehler zu finden
+   + Basis für automatisierte Testfallerstellung
+   + Auffälligkeiten leicht identifizierbar
+
+
+
+VO - Software Engineering II                                    93
+ 2.6 Anforderungsvalidierung
+
+                                                   TESTFÄLLE (1)
+                                                                     ‣ Erstellung am Besten im Rahmen vom RE
+     Anforderung   Ausgangssituation   Ereignis    Ergebnis          ‣ natürlichsprachlicher Test
+                                                                       - Ausgangssituation
+                                                                       - Testereignis
+                                                                       - erwartetes Ergebnis
+                                                                     ‣ Anforderungsautor != Testfallersteller
+                                                                     ‣ Prüfung der Testfälle von Anforderungsautor
+
+
+                                                     Vorteile                                                         Nachteile
+   + Sichtwechsel hilft Fehler zu finden                             - zeitaufwendig
+   + Basis für automatisierte Testfallerstellung                     - Vorwissen und Erfahrung bezüglich Testfallerstellung und
+   + Auffälligkeiten leicht identifizierbar                            Testen sind notwendig
+                                                                     - nicht alle Qualitätskriterien sind prüfbar (z.B. Notwendigkeit)
+
+
+VO - Software Engineering II                                    93
+ 2.6 Anforderungsvalidierung
+
+                                       TESTFÄLLE (2)
+                Anforderung            Ausgangssituation   Ereignis   Ergebnis
+
+     Das System muss dem
+     Bibliothekar die Möglichkeit
+     bieten, die Kundenkarte mittels
+     Kartenlesegerät einzulesen.
+
+
+
+
+VO - Software Engineering II                         94
+ 2.6 Anforderungsvalidierung
+
+                                         TESTFÄLLE (2)
+                Anforderung               Ausgangssituation   Ereignis   Ergebnis
+
+     Das System muss dem               Der Kunde ist im
+     Bibliothekar die Möglichkeit      Bibliothekssystem
+     bieten, die Kundenkarte mittels   gespeichert und
+     Kartenlesegerät einzulesen.       besitzt eine
+                                       Kundenkarte. Der
+                                       Bibliothekar ist am
+                                       System angemeldet.
+                                       Der Bibliothekar hat
+                                       einen
+                                       Entleihvorgang
+                                       gestartet.
+
+
+VO - Software Engineering II                            94
+ 2.6 Anforderungsvalidierung
+
+                                         TESTFÄLLE (2)
+                Anforderung               Ausgangssituation          Ereignis          Ergebnis
+
+     Das System muss dem               Der Kunde ist im       Der Bibliothekar liest
+     Bibliothekar die Möglichkeit      Bibliothekssystem      die Kundenkarte mit
+     bieten, die Kundenkarte mittels   gespeichert und        dem Kartenlesegerät
+     Kartenlesegerät einzulesen.       besitzt eine           ein.
+                                       Kundenkarte. Der
+                                       Bibliothekar ist am
+                                       System angemeldet.
+                                       Der Bibliothekar hat
+                                       einen
+                                       Entleihvorgang
+                                       gestartet.
+
+
+VO - Software Engineering II                            94
+ 2.6 Anforderungsvalidierung
+
+                                         TESTFÄLLE (2)
+                Anforderung               Ausgangssituation          Ereignis              Ergebnis
+
+     Das System muss dem               Der Kunde ist im       Der Bibliothekar liest Das Bibliothekssystem
+     Bibliothekar die Möglichkeit      Bibliothekssystem      die Kundenkarte mit zeigt dem Bibliothekar
+     bieten, die Kundenkarte mittels   gespeichert und        dem Kartenlesegerät die Kundendaten des
+     Kartenlesegerät einzulesen.       besitzt eine           ein.                   Kunden an.
+                                       Kundenkarte. Der
+                                       Bibliothekar ist am
+                                       System angemeldet.
+                                       Der Bibliothekar hat
+                                       einen
+                                       Entleihvorgang
+                                       gestartet.
+
+
+VO - Software Engineering II                            94
+ 2.6 Anforderungsvalidierung
+
+                                       TESTFÄLLE (2)
+                   Anforderung          Ausgangssituation          Ereignis              Ergebnis
+
+      Nachdem der Entleihvorgang     Der Kunde ist im       Der Bibliothekar liest Das Bibliothekssystem
+      gestartet wurde, muss das      Bibliothekssystem      die Kundenkarte mit zeigt dem Bibliothekar
+      System dem Bibliothekar die    gespeichert und        dem Kartenlesegerät die Kundendaten des
+      M glichkeit bieten, die        besitzt eine           ein.                   Kunden an.
+      Kundenkarte mittels            Kundenkarte. Der
+      Kartenleseger t einzulesen.    Bibliothekar ist am
+      Nach dem Einlesen muss das     System angemeldet.
+      Bibliothekssystem dem          Der Bibliothekar hat
+      Bibliothekar die Kundendaten   einen
+      anzeigen.                      Entleihvorgang
+                                     gestartet.
+
+
+VO - Software Engineering II
+ ö           ä
+                                                      94
+ 2.6 Anforderungsvalidierung
+
+                                              TESTFÄLLE (3)
+        ID              Anforderung                   Ausgangssituation             Ereignis               Ergebnis
+
+             Vorher: Als Spieler möchte ich die Eine Lobby zum Spielbeitritt Der Spieler klickt       Der Spieler landet
+             Lobby verlassen können. Nachher:    wurde   erstellt. Ein anderer   auf den  Button      wieder im Hauptmenü
+             Als Spieler (nicht Server) kann ich Spieler hat sich  zur  Lobby    „Lobby  verlassen“   und wird in der Lobby
+         1   aus einer bestehen Lobby wieder     angemeldet.    Das  Spiel       oder die  App  wurde ausgetragen.  Die
+             austreten und ich werde aus der     wurde   noch  nicht  gestartet. geschlossen   oder   Verbindung   wurde
+             Lobby entfernt. Danach gelange                                      am  Handy   wurde    abgebaut.
+             ich wieder ins Hauptmenü.                                           „zurück“  gedruckt.
+             Als Spieler möchte ich bei          Spieler befindet sich in        Spieler klickt auf   Nach dem Würfeln soll
+             Monopoly würfeln können             einer Spielphase in der er Würfel, dann wird eine Zufallszahl
+         2                                       Würfeln kann.                   gewürfelt.           zwischen 1 und 6 in
+                                                                                                      graphischer Form
+                                                                                                      erscheinen.
+
+
+
+VO - Software Engineering II                                   95
+ 2.6 Anforderungsvalidierung
+
+                          ANFORDERUNGSVALIDIERUNG
+
+                                                   ‣ Reviews
+
+                                                   ‣ Prototyping/Simulationsmodell
+
+                                                   ‣ Testfälle
+
+                                                   ‣ Hilfsmittel: Lesetechniken, Checklisten
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                         96
+ 2.6 Anforderungsvalidierung
+
+                          ANFORDERUNGSVALIDIERUNG
+
+                                                   ‣ Reviews
+
+                                                   ‣ Prototyping/Simulationsmodell
+
+                                                   ‣ Testfälle
+
+                                                   ‣ Hilfsmittel: Lesetechniken, Checklisten
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                         97
+ 2.6 Anforderungsvalidierung
+
+                                           LESETECHNIKEN
+             Lesetechnik           Fokus                                  bevorzugte Verwendung
+                                                                 ‣ asdf
+             Ad-hoc-Lesen          Einzelne Anforderungen und bestimmte Stellungnahme
+                                   Aspekte
+
+             Ablauforientiertes    Verhalten des Systems in einem Szenario Walkthrough
+             Lesen
+             Schrittweise          Ermitteln des gemeinsamen Ziels von    Erkennen des Sinns von
+             Abstraktion           Anforderungen durch Abstraktion        Anforderungen beim Prüfen z.B. der
+                                                                          Notwendigkeit
+             Perspektivbasiertes   Betrachten der Anforderungen unter     Erhalten eines vollständigen Bilds des
+             Lesen                 einer bestimmten Sichtweise (User,     Systems unter Berücksichtigung
+                                   Tester, Entwickler, …)                 verschiedener Meinungen
+
+
+
+
+VO - Software Engineering II                                98
+ 2.6 Anforderungsvalidierung
+
+                                CHECKLISTEN
+                                                                                         … Qualitätskriterien…
+                                  ‣ Vorgabe bestimmter Kriterien/Fragen
+                                    Beispiele:
+                                    - Ist die Struktur des Anforderungsdokuments standardisiert?
+                                    - Haben alle Stakeholder Zugriff auf die Anforderungen?
+                                    - Ist jede Anforderung eindeutig identi zierbar?
+                                    - Wurde die Quelle für jede Anforderung aufgenommen?
+                                    - Sind in der Anforderung technische Informationen zur Umsetzung enthalten?
+                                    - Kann die Anforderung verschieden interpretiert werden?
+                                    -…
+
+                                  ‣ Checkliste mit Team erstellen
+
+                                  ‣ je nach Fokus verschiedene Checkliste
+
+
+
+VO - Software Engineering II
+                           fi
+                                        99
+ 2.6 Anforderungsvalidierung
+
+                          ANFORDERUNGSVALIDIERUNG
+
+                                                   ‣ Reviews
+
+                                                   ‣ Prototyping/Simulationsmodell
+
+                                                   ‣ Testfälle
+
+                                                   ‣ Hilfsmittel: Lesetechniken, Checklisten
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                        100
+                                           INHALTE
+                           2     Anforderungen
+                           2.1   Motivation
+                           2.2   Anforderungskategorien
+                           2.3   Qualitätskriterien
+                           2.4   Erhebung
+                           2.5   Dokumentation
+                           2.6   Validierung
+                           2.7   Abstimmen und Verwalten
+
+
+
+
+VO - Software Engineering II                    101
+ 2.7 Abstimmen und Verwalten
+
+                                ANFORDERUNGSABSTIMMUNG (1/4)
+
+
+
+           bei Kon ikten
+                           Identifikation   Analyse          Auflösen           Dokumentation
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II
+      fl
+                                                      102
+ 2.7 Abstimmen und Verwalten
+
+                                ANFORDERUNGSABSTIMMUNG (1/4)
+
+
+
+           bei Kon ikten
+                           Identifikation   Analyse          Auflösen           Dokumentation
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II
+      fl
+                                                      102
+ 2.7 Abstimmen und Verwalten
+
+                                ANFORDERUNGSABSTIMMUNG (1/4)
+
+
+
+           bei Kon ikten
+                           Identifikation   Analyse          Auflösen           Dokumentation
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II
+      fl
+                                                      102
+ 2.7 Abstimmen und Verwalten
+
+                                ANFORDERUNGSABSTIMMUNG (1/4)
+                                            Indikatoren in der
+                                             Kommunikation
+
+
+
+
+           bei Kon ikten
+                           Identifikation      Analyse                 Auflösen   Dokumentation
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II
+      fl
+                                                                 102
+ 2.7 Abstimmen und Verwalten
+
+                                ANFORDERUNGSABSTIMMUNG (1/4)
+                                            Indikatoren in der
+                                             Kommunikation
+
+
+
+
+           bei Kon ikten
+                           Identifikation      Analyse                 Auflösen   Dokumentation
+
+
+
+
+                                              Indikatoren in der
+                                                Dokumentation
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II
+      fl
+                                                                 102
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+
+
+
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (2/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              103
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (3/4)
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              104
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (3/4)
+
+
+
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              104
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (3/4)
+
+
+
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+VO - Software Engineering II              104
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (3/4)
+
+
+
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+                                                           Annäherungs-
+                                                            methoden
+
+
+
+VO - Software Engineering II              104
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (3/4)
+                                                           Abstimmungs- und
+                                                           Weisungsmethoden
+
+
+
+               Identifikation   Analyse         Auflösen   Dokumentation
+
+
+
+
+                                                           Annäherungs-
+                                                            methoden
+
+
+
+VO - Software Engineering II              104
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (3/4)
+                                                                  Abstimmungs- und
+                                                                  Weisungsmethoden
+
+
+
+               Identifikation        Analyse           Auflösen   Dokumentation
+
+
+
+
+                                unterstützende
+                                  Techniken                       Annäherungs-
+                                                                   methoden
+
+
+
+VO - Software Engineering II                     104
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (3/4)
+                                                                          Abstimmungs- und
+                                                                          Weisungsmethoden
+                         Durchsetzung vs. Kooperation?
+
+
+
+               Identifikation            Analyse               Auflösen   Dokumentation
+
+
+
+
+                                   unterstützende
+                                     Techniken                            Annäherungs-
+                                                                           methoden
+
+
+
+VO - Software Engineering II                             104
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (4/4)
+
+
+
+               Identifikation          Analyse               Auflösen           Dokumentation
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                        105
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (4/4)
+
+
+
+               Identifikation          Analyse               Auflösen           Dokumentation
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                        105
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (4/4)
+                                                     Nachvollziehbarkeit
+                                                 auch zu späterem Zeitpunkt
+
+
+
+
+               Identifikation          Analyse               Auflösen           Dokumentation
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                        105
+ 2.7 Abstimmen und Verwalten
+
+                    ANFORDERUNGSABSTIMMUNG (4/4)
+                                                     Nachvollziehbarkeit
+                                                 auch zu späterem Zeitpunkt
+
+
+
+
+               Identifikation          Analyse               Auflösen           Dokumentation
+
+
+
+                                                              Worum?
+                                                           Wurde aufgelöst?
+                                                           Warum und wie?
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                        105
+ 2.7 Abstimmen und Verwalten
+
+                          REQUIREMENTS-MANAGEMENT
+             Das Requirements-Management umfasst alle Maßnahmen, die notwendig sind, um Anforderungen und
+             anforderungsbezogene Artefakte zu dokumentieren, zu ändern und nachzuverfolgen. [CPRE2012]
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                           106
+ 2.7 Abstimmen und Verwalten
+
+                          REQUIREMENTS-MANAGEMENT
+             Das Requirements-Management umfasst alle Maßnahmen, die notwendig sind, um Anforderungen und
+             anforderungsbezogene Artefakte zu dokumentieren, zu ändern und nachzuverfolgen. [CPRE2012]
+
+
+ Wer gibt wann wem was?
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                           106
+ 2.7 Abstimmen und Verwalten
+
+                          REQUIREMENTS-MANAGEMENT
+             Das Requirements-Management umfasst alle Maßnahmen, die notwendig sind, um Anforderungen und
+             anforderungsbezogene Artefakte zu dokumentieren, zu ändern und nachzuverfolgen. [CPRE2012]
+
+
+ Wer gibt wann wem was?
+
+                                                                                          Wer darf wann was?
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                           106
+ 2.7 Abstimmen und Verwalten
+
+                          REQUIREMENTS-MANAGEMENT
+             Das Requirements-Management umfasst alle Maßnahmen, die notwendig sind, um Anforderungen und
+             anforderungsbezogene Artefakte zu dokumentieren, zu ändern und nachzuverfolgen. [CPRE2012]
+
+
+ Wer gibt wann wem was?
+
+                                                                                          Wer darf wann was?
+
+
+
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                           107
+ 2.7 Abstimmen und Verwalten
+
+                          REQUIREMENTS-MANAGEMENT
+             Das Requirements-Management umfasst alle Maßnahmen, die notwendig sind, um Anforderungen und
+             anforderungsbezogene Artefakte zu dokumentieren, zu ändern und nachzuverfolgen. [CPRE2012]
+
+
+ Wer gibt wann wem was?
+
+                                                                                          Wer darf wann was?
+
+
+
+
+         Was hängt wie mit
+         was zusammen?
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                           107
+ 2.7 Abstimmen und Verwalten
+
+                          REQUIREMENTS-MANAGEMENT
+             Das Requirements-Management umfasst alle Maßnahmen, die notwendig sind, um Anforderungen und
+             anforderungsbezogene Artefakte zu dokumentieren, zu ändern und nachzuverfolgen. [CPRE2012]
+
+
+ Wer gibt wann wem was?
+
+                                                                                          Wer darf wann was?
+
+
+
+
+                                                                                             Wie läuft’s?
+         Was hängt wie mit
+         was zusammen?
+
+      Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+
+VO - Software Engineering II                           107
+ 2.7 Abstimmen und Verwalten
+
+          SUPPORT FÜR REQUIREMENTS-MANAGEMENT
+                                       Requirements-Engineering Leitfaden
+
+
+
+
+            … ist das zentrale Artefakt, in dem alle Prozesse, Methoden, Artefakte, Tools, Rollen und Vorgehensweisen
+                  dokumentiert sind, die für die Durchführung der Anforderungsanalyse gebraucht werden.
+
+VO - Software Engineering II                                  108
+ 2.7 Abstimmen und Verwalten
+
+          SUPPORT FÜR REQUIREMENTS-MANAGEMENT
+                                Gliederungsstrukturen
+
+                                                         ‣ Standard Spezi kationsstrukturen:
+                                                          z.b. Volere, IEEE 29148-2011, V-Modell XT
+
+                                                         ‣ Gliederungsstrategien: lexikalische Gruppen,}         z.B.
+                                                                                                              De nitionen
+                                          z.B.
+                                   Systemanforderungen     } Use-Cases, Features, Signale, Benutzer,
+                                                             Hardwarekomponenten, Schnittstellen,} techn. Anforderungen
+                                                                                                           z.B.
+
+
+                               durchzuführende Tätigkeiten } Verantwortungsbereich, Prozessschritte, …
+                                          z.B.
+
+
+
+                                                         ‣ Objekt-IDs z.B. US-Bib-008, TF-Bib-008
+
+                                                         ‣ Duplikate vermeiden!
+
+
+
+VO - Software Engineering II
+ fi             fi
+                                               109
+ 2.7 Abstimmen und Verwalten
+
+          SUPPORT FÜR REQUIREMENTS-MANAGEMENT
+                                           Gliederungsstrukturen
+                       Welche Information landet                   ‣ Standard Spezi kationsstrukturen:
+                        wo in der Gliederung?                       z.b. Volere, IEEE 29148-2011, V-Modell XT
+
+                                                                   ‣ Gliederungsstrategien: lexikalische Gruppen,}         z.B.
+                                                                                                                        De nitionen
+                                                    z.B.
+                                             Systemanforderungen     } Use-Cases, Features, Signale, Benutzer,
+                                                                       Hardwarekomponenten, Schnittstellen,} techn. Anforderungen
+                                                                                                                     z.B.
+
+
+                                         durchzuführende Tätigkeiten } Verantwortungsbereich, Prozessschritte, …
+                                                    z.B.
+
+
+
+                                                                   ‣ Objekt-IDs z.B. US-Bib-008, TF-Bib-008
+
+                                                                   ‣ Duplikate vermeiden!
+
+
+
+VO - Software Engineering II
+ fi             fi
+                                                         109
+ 2.7 Abstimmen und Verwalten
+
+          SUPPORT FÜR REQUIREMENTS-MANAGEMENT
+                               Tools
+
+
+
+
+                               uvm.
+
+
+VO - Software Engineering II    110
+ 2.7 Abstimmen und Verwalten
+
+          SUPPORT FÜR REQUIREMENTS-MANAGEMENT
+                               Tools
+
+
+
+
+                               uvm.
+
+
+VO - Software Engineering II    110
+ Anforderungen III
+
+                               ZUSAMMENFASSUNG
+    Validierung
+                                            Abstimmung
+
+
+
+
+                                            Management
+
+
+
+
+VO - Software Engineering II          111
+ Anforderungen III
+
+                                           ZUSAMMENFASSUNG
+    Validierung
+                                                                     Abstimmung
+
+
+
+
+       Anforderung   Ausgangssituation   Ereignis   Ergebnis         Management
+
+
+
+
+VO - Software Engineering II                                   111
+ Anforderungen III
+
+                                           ZUSAMMENFASSUNG
+    Validierung
+                                                                     Abstimmung
+
+                                                                     Identifikation   Analyse   Auflösen   Dokumentation
+
+
+
+
+       Anforderung   Ausgangssituation   Ereignis   Ergebnis         Management
+
+
+
+
+VO - Software Engineering II                                   111
+

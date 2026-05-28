@@ -1,0 +1,2044 @@
+                          SOFTWARE ENGINEERING II
+                                  Vorlesung
+
+
+                                    SCRUM
+
+
+
+
+Software Engineering II
+SCRUM
+
+                                       LITERATUR
+
+            ‣ SCRUM mit User Stories
+                 - Ralf Wirdemann
+                 - 2017
+            ‣ Grundlegende Konzepte
+
+
+            ‣ Einfach erklärt
+
+
+
+
+Software Engineering II                    2
+SCRUM
+
+
+
+
+                          SCRUM - Begriff
+
+
+
+
+Software Engineering II          3
+Begriff
+
+
+                          TITLE TEXT
+
+
+
+
+Software Engineering II       4
+Begriff
+
+
+                                                SCRUM
+          ‣ Ikujirō Nonaka und Hirotaka Takeuchi
+          ‣ Analogie für außergewöhnlich erfolgreiche Produktentwicklungsteams
+              ‣ klein
+              ‣ selbst-organisiert
+              ‣ Richtung vorgegeben (Produkt)
+              ‣ „Taktik“ frei wählbar
+
+
+
+
+Software Engineering II                           5
+Begriff
+
+
+                                                SCRUM
+          ‣ Ikujirō Nonaka und Hirotaka Takeuchi
+          ‣ Analogie für außergewöhnlich erfolgreiche Produktentwicklungsteams
+              ‣ klein
+              ‣ selbst-organisiert
+              ‣ Richtung vorgegeben (Produkt)
+              ‣ „Taktik“ frei wählbar
+
+
+
+
+Software Engineering II                           5
+Begriff
+
+
+                           ENTWICKLUNG
+    ‣ Once upon a time …
+
+
+
+
+Software Engineering II         6
+Begriff
+
+
+                           ENTWICKLUNG
+    ‣ Once upon a time …
+                              Requirements
+
+                             Implementation
+
+                                 Design
+
+                                 Tes3ng
+
+                              Deployment
+
+                              Maintenance
+
+
+                                Product
+
+
+Software Engineering II            7
+Begriff
+
+
+                          ENTWICKLUNG
+                             Requirements
+
+                            Implementation
+
+                                Design
+
+                                Tes3ng
+
+                             Deployment
+
+                             Maintenance
+
+
+                               Product
+
+
+Software Engineering II           7
+Begriff
+
+
+                               ENTWICKLUNG
+               Requirements
+
+              Implementation
+
+                  Design
+
+                  Tes3ng
+
+                Deployment
+
+               Maintenance
+
+
+                  Product
+
+
+Software Engineering II             7
+Begriff
+
+
+                                             ENTWICKLUNG
+               Requirements
+
+              Implementation
+
+                  Design
+
+                  Tes3ng       Iteration 1
+
+
+
+                Deployment
+
+               Maintenance
+
+
+                  Product
+
+
+Software Engineering II                           7
+Begriff
+
+
+                                             ENTWICKLUNG
+               Requirements                     Requirements
+
+              Implementation                   Implementation
+
+                  Design                           Design
+
+                  Tes3ng       Iteration 1         Tes3ng
+
+                Deployment                      Deployment
+
+               Maintenance                      Maintenance
+
+
+                  Product                         Product
+
+
+Software Engineering II                              7
+Begriff
+
+
+                                             ENTWICKLUNG
+               Requirements                     Requirements
+
+              Implementation                   Implementation
+
+                  Design                           Design
+
+                               Iteration 1                      Iteration 2
+                  Tes3ng                           Tes3ng
+
+                Deployment                      Deployment
+
+               Maintenance                      Maintenance
+
+
+                  Product                         Product
+
+
+Software Engineering II                              7
+Begriff
+
+
+                                             ENTWICKLUNG
+               Requirements                     Requirements
+
+              Implementation                   Implementation
+
+                  Design                           Design
+
+                               Iteration 1                      Iteration 2
+                  Tes3ng                           Tes3ng
+
+                Deployment                      Deployment
+
+               Maintenance                      Maintenance
+
+
+                  Product                         Product
+
+
+Software Engineering II                              7
+Begriff
+
+
+                                             ENTWICKLUNG
+               Requirements                     Requirements                  Requirements
+
+              Implementation                   Implementation                 Implementation
+
+                  Design                           Design                         Design
+
+                               Iteration 1                      Iteration 2
+                  Tes3ng                           Tes3ng                        Tes3ng
+
+                Deployment                      Deployment                     Deployment
+
+               Maintenance                      Maintenance                    Maintenance
+
+
+                  Product                         Product                        Product
+
+
+Software Engineering II                              7
+Begriff
+
+
+                                             ENTWICKLUNG
+               Requirements                     Requirements                  Requirements
+
+              Implementation                   Implementation                 Implementation
+
+                  Design                           Design                         Design
+
+                               Iteration 1                      Iteration 2                    Iteration n
+                  Tes3ng                           Tes3ng                        Tes3ng
+
+                Deployment                      Deployment                     Deployment
+
+               Maintenance                      Maintenance                    Maintenance
+
+
+                  Product                         Product                        Product
+
+
+Software Engineering II                              7
+Begriff
+
+
+                                             ENTWICKLUNG
+               Requirements                     Requirements                  Requirements
+
+              Implementation                   Implementation                 Implementation
+
+                  Design                           Design                         Design
+
+                               Iteration 1                      Iteration 2                    Iteration n
+                  Tes3ng                           Tes3ng                        Tes3ng
+
+                Deployment                      Deployment                     Deployment
+
+               Maintenance                      Maintenance                    Maintenance
+
+
+                  Product                         Product                        Product
+
+
+Software Engineering II                              7
+Begriff
+
+
+                          ENTWICKLUNG
+
+
+
+
+Software Engineering II        8
+SCRUM
+
+
+
+
+                          SCRUM - Vorgehensweise
+
+
+
+
+Software Engineering II             9
+Vorgehensweise
+
+
+                               SCRUM in 100 Worten
+          ‣ Scrum ist ein agiler Prozess, der es erlaubt, auf die Auslieferung der
+             wichtigsten Geschäftsanforderungen innerhalb kürzester Zeit zu fokussieren
+
+          ‣ Scrum gestattet es, schnell und in regelmäßigen Abschnitten (von zwei
+             Wochen bis zu einem Monat) tatsächlich lauffähige Software zu entwicklen
+
+          ‣ Das Business setzt die Prioritäten. Selbstorganisierende Entwicklungsteams
+             legen das beste Vorgehen zur Auslieferung der höchstpriorisierten Features
+             fest
+
+          ‣ Alle zwei Wochen bis zu einem Monat kann jeder lauffähige Software sehen
+             und entscheiden, diese so auszuliefern oder in einem weiteren Abschnitt zu
+             ergänzen
+Software Engineering II                          10
+Vorgehensweise
+
+
+                                  Charakteristika
+          ‣ Selbstorganisierende Teams
+          ‣ Produkt schreitet in Serien von monatlichen „Sprints“ fort
+          ‣ Anforderungen sind im „Produkt-Backlog“ festgehalten
+          ‣ Keine spezi schen Entwicklungsvorgehen vorgeschrieben
+          ‣ Einfache Regeln, Prinzipien, Rollen, Artefakte und Meetings
+
+
+
+Software Engineering II
+              fi
+                                             11
+Vorgehensweise
+
+
+                                     Prinzipien
+          ‣ Transparenz
+          ‣ Beobachtung und Anpassung
+          ‣ Time-Boxing
+          ‣ Dinge abschließen
+          ‣ Maximierung vom Geschäftswert
+          ‣ Teams scheitern nicht!
+Software Engineering II                     12
+Vorgehensweise
+
+
+                     Agiles Manifest - Das Wertesystem
+
+
+
+
+Software Engineering II             13
+Vorgehensweise
+
+
+                     Agiles Manifest - Das Wertesystem
+
+
+
+
+Software Engineering II             13
+Vorgehensweise
+
+
+                     Agiles Manifest - Das Wertesystem
+
+
+
+
+Software Engineering II             13
+Vorgehensweise
+
+
+                     Agiles Manifest - Das Wertesystem
+
+
+
+
+Software Engineering II             13
+Vorgehensweise
+
+
+                     Agiles Manifest - Das Wertesystem
+
+
+
+
+Software Engineering II             13
+Vorgehensweise
+
+
+                     Agiles Manifest - Das Wertesystem
+
+          ‣ Individuen und Interaktionen gelten mehr als Prozesse und Tools
+          ‣ Funktionierende Programme gelten mehr als ausführliche Dokumentation
+          ‣ Die stetige Zusammenarbeit mit dem Kunden steht über Verträgen
+          ‣ Der Mut und die Offenheit für Änderungen steht über dem Befolgen
+             eines festgelegten Plans
+
+          ‣ https://agilemanifesto.org/ bzw. https://medium.com/create-software/
+             agile-manifesto-ffa788e86143
+
+Software Engineering II                     14
+Vorgehensweise
+
+
+                          Überblick - Vorgehensweise
+
+
+
+
+Software Engineering II               15
+SCRUM
+
+
+
+
+                          SCRUM - Rollen
+
+
+
+
+Software Engineering II         16
+Rollen
+
+
+
+
+Software Engineering II   17
+Rollen
+
+
+
+
+Software Engineering II   17
+Rollen
+
+
+
+
+Software Engineering II   17
+Rollen
+
+
+                                                  Team
+          ‣ 5 - 10 Mitglieder (Vollzeit!)
+          ‣ Heterogen (QA, Developer, Tester, UI-Designer, … )
+              ‣ Aber: Alle machen alles (fast notwendig)
+          ‣ Verantwortlich für Sprint-Erfolg (Commitment)
+          ‣Selbstorganisierend
+              ‣ Was tun, wenn ein Team jemanden aus dem Team „heraus-organisiert“?
+              ‣ Idealerweise keine Titel, aber manchmal möglich
+
+
+
+Software Engineering II                               18
+Rollen
+
+
+                                   SCRUM Master
+          ‣ Repräsentiert das Management gegenüber dem Projekt
+          ‣ Verantwortlich für die Einhaltung von Scrum-Werten und Techniken
+          ‣ Stellt sicher, dass das Team vollständig, funktional und produktiv ist
+          ‣ Unterstützt die enge Zusammenarbeit zwischen allen Rollen und
+             Funktionen
+
+          ‣ Schützt das Team vor äußeren Störungen
+          ‣ Entfernt Hindernisse
+
+Software Engineering II                        19
+Rollen
+
+
+                                  Produkt Owner
+          ‣ Repräsentiert den Kunden
+          ‣ De nition von Produkt - Features
+          ‣ Festlegen von Auslieferungsdatum und Inhalt
+          ‣ Verantwortlich für den Gewinn des Projekts (ROI)
+          ‣ Priorisierung der Features
+          ‣ Anpassung von Features und Prioritäten nach Bedarf für jede Iteration
+          ‣ Akzeptanz oder Zurückweisung der Arbeitsergebnisse
+
+Software Engineering II
+   fi
+                                             20
+SCRUM
+
+
+
+
+                          SCRUM - Ablauf
+
+
+
+
+Software Engineering II         21
+Ablauf
+
+
+                          Überblick - Vorgehensweise
+
+
+
+
+Software Engineering II               22
+Ablauf
+
+
+                                         Product-Backlog
+
+          ‣ Eine Liste von allen erforderlichen Projektarbeiten
+                ‣ story-based Arbeiten („let user search and replace“)
+                ‣ task-based Arbeiten („improve exception handling“)
+          ‣ Liste wird vom Product Owner priorisiert
+                ‣ Typischerweise Produktmanager, Marketing, interner Kunde etc.
+          ‣ Je weiter „oben“ (=höher priorisiert) Tasks sind, desto genauer müssen
+               sie spezi ziert sein
+                ‣ Formulierung als User Stories kann helfen!
+Software Engineering II
+          fi
+                                                         23
+Ablauf
+
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          24
+Ablauf
+
+
+                                   Product-Backlog
+          ‣ Wie priorisieren?
+              ‣ Nach Wichtigkeit, „Muss“-Stories, „nice to have“ Features?
+
+
+
+
+Software Engineering II                          24
+Ablauf
+
+
+                                   Product-Backlog
+          ‣ Wie priorisieren?
+              ‣ Nach Wichtigkeit, „Muss“-Stories, „nice to have“ Features?
+          ➡ Exkurs: Kundenzufriedenheit nach Kano [Kano1984]
+
+
+
+
+Software Engineering II                          24
+Ablauf
+
+
+                                   Product-Backlog
+          ‣ Wie priorisieren?
+              ‣ Nach Wichtigkeit, „Muss“-Stories, „nice to have“ Features?
+          ➡ Exkurs: Kundenzufriedenheit nach Kano [Kano1984]
+
+          ‣ 5 Qualitätsebenen
+             ‣ Basis-Merkmale
+             ‣ Begeisterungs-Merkmale
+             ‣ Leistungs-Merkmale
+             ‣ Unerhebliche Merkmale
+             ‣ Rückweisung-Merkmale
+
+
+Software Engineering II                          24
+Ablauf
+
+
+                                   Product-Backlog
+          ‣ Wie priorisieren?
+              ‣ Nach Wichtigkeit, „Muss“-Stories, „nice to have“ Features?
+          ➡ Exkurs: Kundenzufriedenheit nach Kano [Kano1984]
+
+          ‣ 5 Qualitätsebenen
+             ‣ Basis-Merkmale
+             ‣ Begeisterungs-Merkmale
+             ‣ Leistungs-Merkmale
+             ‣ Unerhebliche Merkmale
+             ‣ Rückweisung-Merkmale
+          ‣ Gewöhnungseffekt (Begeisterungs-Merkmal             Basis-Merkmal)
+Software Engineering II                          24
+Ablauf
+
+
+                                 Product-Backlog
+
+
+
+          ‣ 5 Qualitätsebenen
+             ‣ Basis-Merkmale
+             ‣ Begeisterungs-Merkmale
+             ‣ Leistungs-Merkmale
+             ‣ Unerhebliche Merkmale
+             ‣ Rückweisung-Merkmale
+          ‣ Gewöhnungseffekt (Begeisterungs-Merkmal   Basis-Merkmal)
+Software Engineering II                    24
+Ablauf
+
+
+                                 Product-Backlog
+
+
+
+          ‣ 5 Qualitätsebenen
+             ‣ Basis-Merkmale
+             ‣ Begeisterungs-Merkmale
+             ‣ Leistungs-Merkmale
+             ‣ Unerhebliche Merkmale
+             ‣ Rückweisung-Merkmale
+          ‣ Gewöhnungseffekt (Begeisterungs-Merkmal   Basis-Merkmal)
+Software Engineering II                    24
+Ablauf
+
+
+                                 Product-Backlog
+
+
+
+          ‣ 5 Qualitätsebenen                    ‣ Beispiele
+             ‣ Basis-Merkmale
+             ‣ Begeisterungs-Merkmale
+             ‣ Leistungs-Merkmale
+             ‣ Unerhebliche Merkmale
+             ‣ Rückweisung-Merkmale
+          ‣ Gewöhnungseffekt (Begeisterungs-Merkmal      Basis-Merkmal)
+Software Engineering II                    24
+Ablauf
+
+
+                                 Product-Backlog
+
+
+
+          ‣ 5 Qualitätsebenen                    ‣ Beispiele
+             ‣ Basis-Merkmale                       ‣ Sicherheit, Rostschutz
+             ‣ Begeisterungs-Merkmale
+             ‣ Leistungs-Merkmale
+             ‣ Unerhebliche Merkmale
+             ‣ Rückweisung-Merkmale
+          ‣ Gewöhnungseffekt (Begeisterungs-Merkmal      Basis-Merkmal)
+Software Engineering II                    24
+Ablauf
+
+
+                                 Product-Backlog
+
+
+
+          ‣ 5 Qualitätsebenen                    ‣ Beispiele
+             ‣ Basis-Merkmale                       ‣ Sicherheit, Rostschutz
+             ‣ Begeisterungs-Merkmale                 ‣ Sonderausstattung, Design
+             ‣ Leistungs-Merkmale
+             ‣ Unerhebliche Merkmale
+             ‣ Rückweisung-Merkmale
+          ‣ Gewöhnungseffekt (Begeisterungs-Merkmal        Basis-Merkmal)
+Software Engineering II                    24
+Ablauf
+
+
+                                 Product-Backlog
+
+
+
+          ‣ 5 Qualitätsebenen                    ‣ Beispiele
+             ‣ Basis-Merkmale                       ‣ Sicherheit, Rostschutz
+             ‣ Begeisterungs-Merkmale                 ‣ Sonderausstattung, Design
+             ‣ Leistungs-Merkmale                     ‣ Beschleunigung, Verbrauch
+             ‣ Unerhebliche Merkmale
+             ‣ Rückweisung-Merkmale
+          ‣ Gewöhnungseffekt (Begeisterungs-Merkmal        Basis-Merkmal)
+Software Engineering II                    24
+Ablauf
+
+
+                                 Product-Backlog
+
+
+
+          ‣ 5 Qualitätsebenen                    ‣ Beispiele
+             ‣ Basis-Merkmale                       ‣ Sicherheit, Rostschutz
+             ‣ Begeisterungs-Merkmale                 ‣ Sonderausstattung, Design
+             ‣ Leistungs-Merkmale                     ‣ Beschleunigung, Verbrauch
+             ‣ Unerhebliche Merkmale                  ‣ Farbe?, Automatik?, Schiebedach?
+             ‣ Rückweisung-Merkmale
+          ‣ Gewöhnungseffekt (Begeisterungs-Merkmal       Basis-Merkmal)
+Software Engineering II                    24
+Ablauf
+
+
+                                 Product-Backlog
+
+
+
+          ‣ 5 Qualitätsebenen                    ‣ Beispiele
+             ‣ Basis-Merkmale                       ‣ Sicherheit, Rostschutz
+             ‣ Begeisterungs-Merkmale                 ‣ Sonderausstattung, Design
+             ‣ Leistungs-Merkmale                     ‣ Beschleunigung, Verbrauch
+             ‣ Unerhebliche Merkmale                  ‣ Farbe?, Automatik?, Schiebedach?
+             ‣ Rückweisung-Merkmale                   ‣ Dellen, keine Zulassung
+          ‣ Gewöhnungseffekt (Begeisterungs-Merkmal       Basis-Merkmal)
+Software Engineering II                    24
+Ablauf
+
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          25
+Ablauf
+
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          26
+Ablauf
+
+
+                          Product-Backlog
+                                            Wichtig
+
+
+
+
+                                            Derzeit
+                                            weniger
+                                             wichtig
+
+
+
+Software Engineering II          26
+Ablauf
+
+
+                          Product-Backlog
+                                            Wichtig
+
+
+
+
+                                            Derzeit
+                                            weniger
+                                             wichtig
+
+
+
+Software Engineering II          26
+Ablauf
+
+
+                          Product-Backlog
+                                            Wichtig
+
+
+
+
+                                            Derzeit
+                                            weniger
+                                             wichtig
+
+
+
+Software Engineering II          26
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                               Product-Backlog
+
+
+
+                      Wird laufend ergänzt und verfeinert!
+
+
+
+
+Software Engineering II                 27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+                                      „Als XXX will ich YYY.“
+
+                                         —> User Stories
+
+
+
+
+Software Engineering II          27
+Ablauf
+
+                          Product-Backlog
+
+
+
+
+Software Engineering II          27
+     Ablauf
+
+
+                                                  User Stories
+               ‣ Als <Rolle> will ich <tun> [, so dass ich <Grund>]
+                   ‣ Als Vertriebsmitarbeiter will ich nach Tweets regional gruppieren, so dass ich Hotspots
+                       nde
+
+               ‣ Jedes Backlog Item ist eine User Story
+                   ‣ Wert für den Kunden / Product Owner
+                   ‣ Keine technischen Details (Kundensprache)
+                   ‣ Iterative Weiterentwicklung
+                   ‣ Gute Planungsgröße
+                   ‣ Weg vom Schreiben hin zum Sprechen
+                   ‣ Akzeptanzkriterien (siehe auch „De nition of Done“)
+fi
+     Software Engineering II            fi
+                                                              28
+     Ablauf
+
+
+                                                  User Stories
+               ‣ Als <Rolle> will ich <tun> [, so dass ich <Grund>]
+                   ‣ Als Vertriebsmitarbeiter will ich nach Tweets regional gruppieren, so dass ich Hotspots
+                       nde
+
+               ‣ Jedes Backlog Item ist eine User Story
+                   ‣ Wert für den Kunden / Product Owner
+                   ‣ Keine technischen Details (Kundensprache)
+                   ‣ Iterative Weiterentwicklung
+                   ‣ Gute Planungsgröße
+                   ‣ Weg vom Schreiben hin zum Sprechen
+                   ‣ Akzeptanzkriterien (siehe auch „De nition of Done“)
+fi
+     Software Engineering II            fi
+                                                              28
+Ablauf
+
+
+                                           User Stories
+
+          ‣De nition of Done (DoD)
+              ‣ Wann ist etwas „fertig“?
+
+          ‣Charakteristika
+              ‣ Sammlung an Bedingungen
+              ‣ SEHR genau
+              ‣ Messbar
+              ‣ Team-/Projektspezi sch
+
+Software Engineering II
+  fi               fi
+                                                29
+Ablauf
+
+
+                                    User Stories
+          ‣ Bei fehlender/missachteter DoD, wer ist zuständig?
+
+
+
+
+Software Engineering II                     30
+Ablauf
+
+
+                                    User Stories
+          ‣ Bei fehlender/missachteter DoD, wer ist zuständig?
+
+
+
+
+                                 SCRUM Master
+Software Engineering II                     30
+Ablauf
+
+                          User Stories
+
+
+
+
+Software Engineering II        31
+Ablauf
+
+                                   User Stories
+          ‣ Story ist fertig —> Abnahme?
+
+
+
+
+Software Engineering II                    32
+Ablauf
+
+                                   User Stories
+          ‣ Story ist fertig —> Abnahme?
+
+
+
+
+Software Engineering II                    32
+Ablauf
+
+                          User Stories
+
+
+
+
+Software Engineering II        33
+Ablauf
+
+                          User Stories
+          ‣Invest
+
+
+
+
+Software Engineering II        33
+Ablauf
+
+                                    User Stories
+          ‣Invest
+              ‣ Independent: unabhängig voneinander sein
+
+
+
+
+Software Engineering II                     33
+Ablauf
+
+                                       User Stories
+          ‣Invest
+              ‣ Independent: unabhängig voneinander sein
+              ‣ Negotiable: Verhandelbar, offen für Veränderung (aber nicht während eines
+                 Sprints
+
+
+
+
+Software Engineering II                          33
+Ablauf
+
+                                       User Stories
+          ‣Invest
+              ‣ Independent: unabhängig voneinander sein
+              ‣ Negotiable: Verhandelbar, offen für Veränderung (aber nicht während eines
+                 Sprints
+
+              ‣ Valuable: Mehrwert für den Anwender
+
+
+
+
+Software Engineering II                          33
+Ablauf
+
+                                       User Stories
+          ‣Invest
+              ‣ Independent: unabhängig voneinander sein
+              ‣ Negotiable: Verhandelbar, offen für Veränderung (aber nicht während eines
+                 Sprints
+
+              ‣ Valuable: Mehrwert für den Anwender
+              ‣ Estimateable: Relative Größe soll geschätzt werden können
+
+
+
+
+Software Engineering II                          33
+Ablauf
+
+                                        User Stories
+          ‣Invest
+              ‣ Independent: unabhängig voneinander sein
+              ‣ Negotiable: Verhandelbar, offen für Veränderung (aber nicht während eines
+                 Sprints
+
+              ‣ Valuable: Mehrwert für den Anwender
+              ‣ Estimateable: Relative Größe soll geschätzt werden können
+              ‣ Small: Konkret (z.B. Benutzerverwaltung vs. Benutzer soll sich anmelden
+                 können, Benutzer soll sich, …
+
+
+
+Software Engineering II                          33
+Ablauf
+
+                                        User Stories
+          ‣Invest
+              ‣ Independent: unabhängig voneinander sein
+              ‣ Negotiable: Verhandelbar, offen für Veränderung (aber nicht während eines
+                 Sprints
+
+              ‣ Valuable: Mehrwert für den Anwender
+              ‣ Estimateable: Relative Größe soll geschätzt werden können
+              ‣ Small: Konkret (z.B. Benutzerverwaltung vs. Benutzer soll sich anmelden
+                 können, Benutzer soll sich, …
+              ‣ Testable: Testbare User Storys, Akzeptanzkriterien
+
+Software Engineering II                          33
+Ablauf
+
+
+                          Überblick - Vorgehensweise
+
+
+
+
+Software Engineering II               34
+Ablauf
+
+
+                          Überblick - Vorgehensweise
+
+
+
+
+Software Engineering II               34
+Ablauf
+
+
+                          Sprint-Backlog
+
+
+
+     Sprint-Ziel
+
+
+
+
+Software Engineering II         35
+Ablauf
+
+
+                                 Sprint-Backlog
+          ‣ Annahme: Team schafft 50 Story Points/Sprint (=Velocity)
+
+
+
+
+Software Engineering II                      36
+Ablauf
+
+
+                                 Sprint-Backlog
+          ‣ Annahme: Team schafft 50 Story Points/Sprint (=Velocity)
+
+               Welche Stories kommen in den Sprint?
+
+
+
+
+Software Engineering II                      36
+Ablauf
+
+
+                                 Sprint-Backlog
+          ‣ Annahme: Team schafft 50 Story Points/Sprint (=Velocity)
+
+
+
+
+Software Engineering II                      36
+Ablauf
+
+
+                                 Sprint-Backlog
+          ‣ Annahme: Team schafft 50 Story Points/Sprint (=Velocity)
+
+
+
+
+Software Engineering II                      36
+Ablauf
+
+
+                                        Sprint-Backlog
+          ‣ Das Scrum-Team nimmt das Sprint-Ziel und entscheidet, welche
+             Arbeiten zur Erreichung notwendig sind
+
+          ‣ Das Team organisiert sich auf eine Weise, die es ermöglicht, das
+             Sprint-Ziel zu erreichen
+              ‣Manager weist keine Arbeiten zu
+          ‣ Manager entscheiden nichts für das Team
+          ‣ Das Sprint-Backlog wird erstellt
+              ‣ Kann nur durch das Team geändert werden
+              ‣ Tasks werden vom Backlog abgeleitet
+Software Engineering II                             37
+Ablauf
+
+
+                          Überblick - Vorgehensweise
+
+
+
+
+Software Engineering II               38
+Ablauf
+
+
+                          Überblick - Vorgehensweise
+
+
+
+
+Software Engineering II               38
+Ablauf
+
+     Der Sprint
+
+
+
+
+Software Engineering II   39
+Ablauf
+
+
+                                               Sprint
+          ‣ Scrum-Projekte schreiten in Serien von „Sprints“ voran
+          ‣ Angestrebte Dauer ist ein Monat
+              ‣ +/- 1 bis 2 Wochen
+              ‣ Eine konstante Dauer führt zu einem besseren Rhythmus
+          ‣ Das Produkt wird während des Sprints entworfen, kodiert und getestet
+
+
+          ➡ Überlappende Entwicklung
+Software Engineering II                            40
+Ablauf
+
+
+                                             Sprint
+
+                          Requirements   Design        Code   Test
+
+
+
+
+Software Engineering II                           41
+Ablauf
+
+
+                                              Sprint
+          ‣ Keine Änderungen während des Sprints
+              ‣ Sonst Sprint-Ende
+          ‣ Einschränkungen für das Team
+              ‣ KEINE!
+              ‣ Scrum-Master verantwortlich
+          ‣ Zeremonien/Meetings
+              ‣ Sprint Planung
+              ‣ Daily Scrum Meeting
+              ‣ Sprint Review
+              ‣ Sprint Retrospektive
+Software Engineering II                         42
+Ablauf
+
+
+                          Sprint Planning
+
+
+
+
+Software Engineering II          43
+Ablauf
+
+
+                                              Sprint Planning
+                                                     Ow       Te    Cu
+                                                       ner      am    stome
+                                                                   Ma      rs
+                                                Pr od      Sc        na ge
+                                                     uc      rum          ment
+                                                       t
+
+
+
+
+                          Product Backlog
+
+                          Team Capabilities
+                                                                                  Sprint Goal
+                                                      Sprint Planning
+                      Business Conditions
+                                                          Meeting
+                            Technology                                           Sprint Backlog
+
+                          Current Product
+
+
+Software Engineering II                                       43
+Ablauf
+
+
+                          Sprint Planning
+
+
+
+
+Software Engineering II          44
+Ablauf
+
+
+                                 Sprint Planning
+          ‣Produktionssupport?
+              ‣ Planen?
+              ‣ Wie?
+
+
+
+
+Software Engineering II                 44
+Ablauf
+
+
+                                      Sprint Planning
+          ‣Produktionssupport?
+              ‣ Planen?
+              ‣ Wie?
+          ‣ Meistens nicht planbar
+              ‣ Woher weiß man, dass ein Fehler auftreten wird?
+
+
+
+
+Software Engineering II                             44
+Ablauf
+
+
+                                        Sprint Planning
+          ‣Produktionssupport?
+              ‣ Planen?
+              ‣ Wie?
+          ‣ Meistens nicht planbar
+              ‣ Woher weiß man, dass ein Fehler auftreten wird?
+          ‣ Zwei Kategorien (nach dem Grad des Fehlers)
+              1.Einschreiten sofort notwendig (Produktionsumgebung steht)
+              2.Einschreiten kann geplant werden (Fehler vorhanden aber Produktion läuft)
+
+
+
+Software Engineering II                               44
+Ablauf
+
+
+                                        Sprint Planning
+          ‣Produktionssupport?
+              ‣ Planen?
+              ‣ Wie?
+          ‣ Meistens nicht planbar
+              ‣ Woher weiß man, dass ein Fehler auftreten wird?
+          ‣ Zwei Kategorien (nach dem Grad des Fehlers)
+              1.Einschreiten sofort notwendig (Produktionsumgebung steht)
+              2.Einschreiten kann geplant werden (Fehler vorhanden aber Produktion läuft)
+
+          ‣ Wenn (1.) —> Sprintende und Anlaufen der Reparatur
+Software Engineering II                               44
+Ablauf
+
+
+                                 Daily Scrum Meeting
+          ‣Parameter
+              ‣ täglich
+              ‣ 15-minütig
+              ‣ Stand-up
+              ‣ Nicht zur Problemlösung (danach)
+
+          ‣Drei Fragen:
+              ‣ Was hast du getan?
+              ‣ Was wirst du tun?
+              ‣ (Was ist dazwischengekommen?)
+Software Engineering II                            45
+Ablauf
+
+
+                          Daily Scrum Meeting
+
+
+
+
+Software Engineering II            46
+Ablauf
+
+
+                            Daily Scrum Meeting
+
+
+
+
+          ‣Hühner und Schweine nehmen teil
+
+Software Engineering II                      46
+Ablauf
+
+
+                            Daily Scrum Meeting
+
+
+
+
+          ‣Hühner und Schweine nehmen teil
+          ‣Nur Schweine reden (haben das Commitment)
+Software Engineering II                    46
+Ablauf
+
+
+                          Daily Scrum Meeting
+
+
+
+
+Software Engineering II            47
+Ablauf
+
+
+                            Daily Scrum Meeting
+          ‣Warum täglich?
+
+
+
+
+Software Engineering II              47
+Ablauf
+
+
+                                Daily Scrum Meeting
+          ‣Warum täglich?
+              ‣ „Wie verspätet sich ein Projekt um ein Jahr?“
+               ‣ „Um einen Tag zu jedem Zeitpunkt.“
+               ‣ Frei nach Fred Brooks, „The Mythical Man-Month“
+
+
+
+
+Software Engineering II                            47
+Ablauf
+
+
+                                Daily Scrum Meeting
+          ‣Warum täglich?
+              ‣ „Wie verspätet sich ein Projekt um ein Jahr?“
+               ‣ „Um einen Tag zu jedem Zeitpunkt.“
+               ‣ Frei nach Fred Brooks, „The Mythical Man-Month“
+
+          ‣ Können Scrum-Meetings durch Berichte per E-Mail ersetzt werden?
+
+
+
+Software Engineering II                            47
+Ablauf
+
+
+                                Daily Scrum Meeting
+          ‣Warum täglich?
+              ‣ „Wie verspätet sich ein Projekt um ein Jahr?“
+               ‣ „Um einen Tag zu jedem Zeitpunkt.“
+               ‣ Frei nach Fred Brooks, „The Mythical Man-Month“
+
+          ‣ Können Scrum-Meetings durch Berichte per E-Mail ersetzt werden?
+             ‣ Nein!
+              ‣ Das ganze Team erhält täglich einen Projekt-Überblick
+              ‣ Erzeugt Druck von Peers/Kollegen das zu tun, was man angekündigt hat zu tun
+
+Software Engineering II                            47
+Ablauf
+
+
+                                         Artefakte
+          ‣ Wie behält man die Übersicht über alle
+             User Stories und Tasks?
+
+
+          ‣ Mit Hilfe von 2 Artefakten
+            ‣ Burndown Chart (Fortschritt)
+            ‣ Scrum Board (aktueller Status)
+
+
+
+Software Engineering II                        48
+Ablauf
+
+
+                                 Burndown Chart
+          ‣ Zeigt verbleibenden Gesamtaufwand des Teams pro Tag an
+          ‣ Täglich aktualisiert, neu geschätzt
+          ‣ Ziel: Team soll sich selbst organisieren, Prioritäten setzen, Maßnahmen
+             ergreifen
+
+          ‣ So einfach wie möglich, ist kein Selbstzweck
+          ‣ Falls missbraucht (Management Review, Ampelwarnung, …):
+              ‣ Abschaffen
+
+
+Software Engineering II                       49
+Ablauf
+
+
+                          Burndown Chart
+
+
+
+
+Software Engineering II         50
+Ablauf
+
+
+                          Burndown Chart
+
+
+
+
+Software Engineering II         50
+Ablauf
+
+
+                               Burndown Chart
+        Unerwarteter Aufwand
+            aufgetreten
+
+
+
+
+Software Engineering II              50
+Ablauf
+
+
+                               Burndown Chart
+        Unerwarteter Aufwand
+            aufgetreten
+
+
+
+
+Software Engineering II              50
+Ablauf
+
+
+                               Burndown Chart
+        Unerwarteter Aufwand
+            aufgetreten
+                                          Überstunden um
+                                            aufzuholen
+
+
+
+
+Software Engineering II              50
+Ablauf
+
+
+                               Burndown Chart
+        Unerwarteter Aufwand
+            aufgetreten
+                                          Überstunden um
+                                            aufzuholen
+
+
+
+
+Software Engineering II              50
+Ablauf
+
+
+                                    Burndown Chart
+        Unerwarteter Aufwand
+            aufgetreten
+                                                 Überstunden um
+                                                   aufzuholen
+
+
+
+
+                    Task X braucht etwas
+                    mehr Aufwand - Kein
+                  Problem wenn kein Trend
+
+
+Software Engineering II                     50
+Ablauf
+
+
+                                    Burndown Chart
+        Unerwarteter Aufwand
+            aufgetreten
+                                                 Überstunden um
+                                                   aufzuholen
+
+
+
+
+                    Task X braucht etwas
+                    mehr Aufwand - Kein
+                  Problem wenn kein Trend
+
+
+Software Engineering II                     50
+Ablauf
+
+
+                                    Burndown Chart
+        Unerwarteter Aufwand
+            aufgetreten
+                                                 Überstunden um
+                                                   aufzuholen
+
+
+
+
+                                                                  Sprint Ziel am Ende
+                                                                   der Zeit erreicht
+
+                    Task X braucht etwas
+                    mehr Aufwand - Kein
+                  Problem wenn kein Trend
+
+
+Software Engineering II                     50
+Ablauf
+
+                                     Scrum Board
+          ‣ „Todo-Liste“ des Teams
+          ‣ Enthält alle Tasks des aktuellen Sprints
+          ‣ Organisiert in Spalten
+           ‣ Eine Spalte entspricht einer „Station“ (In Arbeit, Test,…)
+          ‣ Of ine/Online
+
+
+
+
+Software Engineering II
+  fl
+                                               51
+Ablauf
+
+                          Scrum Board
+
+
+
+
+Software Engineering II        52
+Ablauf
+
+                          Scrum Board
+
+
+
+
+Software Engineering II        52
+Ablauf
+
+
+                                       Sprint Review
+          ‣ Team präsentiert, was es während eines Sprints erreicht hat
+          ‣ Demo (Features, Architektur, …)
+          ‣Informell
+              ‣ „2-Stunden-Vorbereitung“-Regel
+          ‣Teilnehmer
+              ‣ Kunden
+              ‣ Management
+              ‣ Product Owner
+              ‣ Entwickler
+Software Engineering II                          53
+Ablauf
+
+
+                                  Sprint Retrospektive
+          ‣ Nur das Scrum Team
+          ‣ Feedback-Meeting, Meta Fragen, Re exion
+              ‣ Was können wir besser machen? (start)
+              ‣ Was hat gut funktioniert? (continue)
+              ‣ Was weniger gut? (stop)
+
+          ‣ Keinesfalls Leistungs- und Performance-Review, oder
+             Bewertung!
+
+
+Software Engineering II                    fl
+                                                    54
+Ablauf
+
+                          UE Software Engineering II – SCRUM Tutorial
+
+
+                          Sprint Retrospektive
+
+
+
+
+Software Engineering II                                                 55
+Ablauf
+
+                          UE Software Engineering II – SCRUM Tutorial
+
+
+                          Sprint Retrospektive
+
+
+
+
+                      Nicht auslassen für die ersten 5-6 Sprints!!!
+
+
+Software Engineering II                                                 55
+Ablauf
+
+
+                          Überblick - Vorgehensweise
+
+
+
+
+Software Engineering II               56
+Ablauf
+
+
+                          Überblick - Vorgehensweise
+
+
+
+
+Software Engineering II               56
+Ablauf
+
+
+
+
+Software Engineering II   57
+SCRUM
+
+
+
+
+                          SCRUM - Agiles Schätzen
+
+
+
+
+Software Engineering II             58
+Agiles Schätzen
+
+
+                                       Agiles Schätzen
+      ‣ Recap: Product Backlog enthält alle Anforderungen oder Tätigkeiten die im
+         Zusammenhang mit dem System erledigt werden müssen
+
+      ‣Funktionale Anforderungen
+          ‣ Beispiel:
+            ‣ Features, …
+          ‣ „Als Admin möchte ich User löschen können.“
+      ‣Nicht-Funktionale Anforderungen
+        ‣ Beispiel:
+          ‣ Performance, Security
+          ‣ „Als Spieler möchte ich, dass das Erstellen des Spielbrettes nicht länger als 2 Sekunden dauert“
+Software Engineering II                               59
+Agiles Schätzen
+
+
+                                       Agiles Schätzen
+          ‣ Was wird geschätzt?
+              ‣ Aufwand pro User Story (im Vergleich!)
+          ‣ Wer schätzt?
+              ‣ Das Team
+          ‣ Wann wird geschätzt?
+              ‣ Vor dem ersten Sprint (theoretisch)
+              ‣ 1-3 Sprints im voraus (praktisch)
+          ‣ Wie wird geschätzt?
+              ‣ Story Points
+              ‣ Planning Poker
+Software Engineering II                               60
+Agiles Schätzen
+
+
+          ‣ Schätzungen sind keine Verp ichtungen (Rechtfertigungszwang)
+              ‣ Personentag != Arbeitstag (Overhead)
+              ‣ User-Stories sind ungenau (Anforderungen, Sprache, „Unwissenheit“)
+              ‣ Entwicklungsmethode: Pair Programming??
+
+
+          ‣ Schätzung
+              ‣ Keine Dauer schätzen —> Vergleiche schätzen (A < B; B << C, etc)
+              ‣ Nicht zu viel Zeit investieren
+                                                                    Pro l-
+                                                 Registrierung    Erfassung
+                                     Anmeldung
+
+
+                                         S            M              L
+
+Software Engineering II
+  fi                            fl
+                                                      61
+Agiles Schätzen
+
+
+
+
+Software Engineering II   62
+Agiles Schätzen
+
+
+                                          Agiles Schätzen
+          ‣ Schätzen nur in Größenordnungen
+              ‣ 2 Punkten Story zweimal so groß wie 1 Punkte Story
+              ‣ 1 Punkte Story zu 20 oder 21 Punkte Story?
+                ‣ 1, 2, 3, 5, 8, 13, 20, 40, 100, …
+          ‣ >13 Story Points: Epic
+              ‣ Kann nicht in einem Sprint umgesetzt werden
+              ‣ Wenn Implementierung naht: teilen
+              ‣ Als Spieler möchte ich mit Karten spielen
+                  ‣ Als Spieler will ich Karten legen
+                  ‣ Als Spieler will ich Karten sortieren
+                  ‣ Als Spieler will ich Karten aufnehmen
+Software Engineering II                                     63
+Agiles Schätzen
+
+
+                                        Planning Poker
+         ‣Planning Poker
+              ‣ Time-Boxed: 15 Minuten pro Story
+              ‣ Keine perfekte Schätzung
+              ‣ Referenz-Story
+              ‣ Triangularisierung nach mehreren Stories
+         ‣Kriterien
+              ‣ Komplexität
+              ‣ Risiken
+              ‣ Kenntnis der Formulare
+              ‣ Externe Abhängigkeiten
+              ‣ Anzahl der zusätzlich benötigten DB-Tabellen
+              ‣…
+Software Engineering II                               64
+Agiles Schätzen
+
+
+                                      Planning Poker
+         ‣Vorgehensweise
+              ‣ Vorstellung der Story
+              ‣ Diskussion
+              ‣ Schätzen
+              ‣ Argumentation: größte und kleinste Schätzung
+              ‣ Schätzung wiederholen
+              ‣ Differenz zu groß:
+                ‣ Anforderung ws. nicht zu 100% verstanden??
+                ‣ Evtl. Klärungsbedarf mit Kunden
+
+
+Software Engineering II                            65
+Agiles Schätzen
+                          Planning Poker
+
+
+
+
+Software Engineering II         66
+Agiles Schätzen
+                          Planning Poker
+
+
+
+
+Software Engineering II         66
+Agiles Schätzen
+
+
+                                       Planen
+          ‣ Wenn das Backlog geschätzt wurde
+          ‣ Wieviele Stories kommen in den Sprint?
+
+
+
+
+Software Engineering II                     67
+Agiles Schätzen
+
+
+                                       Planen
+          ‣ Wenn das Backlog geschätzt wurde
+          ‣ Wieviele Stories kommen in den Sprint?
+                      Team Velocity FTW!
+
+
+Software Engineering II                     67
+Agiles Schätzen
+
+
+                                         Velocity
+          ‣ Entwicklungsgeschwindigkeit des Teams
+          ‣ Anzahl an Storypoints die pro Sprint umgesetzt werden können
+          ‣ Bei Urlaub/Krankheit etc. kann Team Velocity nicht vollständig ausschöpfen
+          ‣ nur 100% fertige User Stories zählen
+          ‣ Mehrwert für Kunden bei 80% Fertigstellung = 0
+
+
+
+
+Software Engineering II                        68
+Agiles Schätzen
+
+
+                                         Velocity
+          ‣ Entwicklungsgeschwindigkeit des Teams
+          ‣ Anzahl an Storypoints die pro Sprint umgesetzt werden können
+          ‣ Bei Urlaub/Krankheit etc. kann Team Velocity nicht vollständig ausschöpfen
+          ‣ nur 100% fertige User Stories zählen
+          ‣ Mehrwert für Kunden bei 80% Fertigstellung = 0
+
+
+
+
+Software Engineering II                        68
+Agiles Schätzen
+
+
+                                         Velocity
+          ‣ Entwicklungsgeschwindigkeit des Teams
+          ‣ Anzahl an Storypoints die pro Sprint umgesetzt werden können
+          ‣ Bei Urlaub/Krankheit etc. kann Team Velocity nicht vollständig ausschöpfen
+          ‣ nur 100% fertige User Stories zählen
+          ‣Warum       genau
+            Mehrwert für           1180%
+                          Kunden bei     Story     Points
+                                             Fertigstellung = 0als Ziel/Plan?
+
+
+
+
+Software Engineering II                        68
+Agiles Schätzen
+
+
+                                 Velocity - Berechnung
+
+          ‣1. Sprint: Schätzung nach Bauchgefühl des Teams
+              ‣ Vorteil wenn Team schon länger zusammen arbeitet
+          ‣Folgende Sprints
+              ‣ „Übernommene Velocity“
+                ‣ Plan Story Points nächster Sprint = Fertige Story Points aktueller Sprint
+              ‣ „Mittlere Velocity“
+                ‣ Berechnen des Medians von x vorangegangenen Sprints
+          ‣ Variiert im Laufe der Zeit (Krankheit, Urlaub, schlechte(r) Tag/Woche)
+Software Engineering II                                69
+SCRUM
+
+
+
+
+                          SCRUM - Summary
+
+
+
+
+Software Engineering II          70
+Summary
+
+
+                          ENTWICKLUNG
+
+
+
+
+Software Engineering II        71
+Summary
+
+
+                          Vorgehensweise
+
+
+
+
+Software Engineering II         72
+Summary
+
+
+                          Burndown Chart
+
+
+
+
+Software Engineering II         73
+Summary
+
+
+                                       Agiles Schätzen
+          ‣ Was wird geschätzt?
+              ‣ Aufwand pro User Story (im Vergleich!)
+          ‣ Wer schätzt?
+              ‣ Das Team
+          ‣ Wann wird geschätzt?
+              ‣ Vor dem ersten Sprint (theoretisch)
+              ‣ 1-3 Sprints im voraus (praktisch)
+          ‣ Wie wird geschätzt?
+              ‣ Story Points
+              ‣ Planning Poker
+Software Engineering II                               74
+Summary
+
+
+
+
+Software Engineering II   75
+Summary
+
+
+
+
+Software Engineering II   75
+SCRUM
+
+
+
+
+                          SCRUM in SEII
+
+
+
+
+Software Engineering II        76
+SCRUM in SEII
+
+
+                   SCRUM ADAPTIERT FÜR DIE SEII - UE
+
+       ‣ Sprints von 3-4 Wochen
+       ‣ Weekly Scrum Meetings mit LV-Leitern     weekly
+
+       ‣ Team bernimmt das Erstellen der          3-4 Wöchentlich
+            Anforderungen Sprint Review und die
+            Priorisierung
+
+       ‣ Review / Retrospektive mit LV-Leiterin
+
+
+Software Engineering II
+       ü
+                                             77
+

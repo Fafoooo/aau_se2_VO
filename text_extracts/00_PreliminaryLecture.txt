@@ -1,0 +1,218 @@
+Software Engineering 2 – Vorlesung
+ Christian Macho                       https://mitschi.github.io/
+
+ Software Engineering Research Group   @Mitschiiii
+ Universität Klagenfurt                christian.macho@aau.at
+                  Teacher: Christian Macho
+•   E-Mail: christian.macho@aau.at
+     –   Subject: [SEII] …
+
+•   Room: S.2.70 (“Südbau“ - 2. floor)
+
+•   Office hours: On request!
+     –   Please, prior notice! (E-Mail)
+
+•   Bachelor
+     –   Objektorientierte Modellierung und Implementierung – VO (620.100)
+     –   Software Engineering II – VO (621.250)
+     –   Software Engineering – VI (700.875, RAI)
+
+•   Master
+     –   Advanced Software Engineering – VC (623.503)
+     –   Advanced Software Testing – VC (623.830)
+                        Teacher: Martin Pinzger
+•   E-Mail: martin.pinzger@aau.at
+     –   Subject: [SEII] …
+
+•   Room: S.2.79 (“Südbau“ - 2. floor)
+
+•   Office hours: On request!
+     –   Please, prior notice! (E-Mail)
+
+•   Bachelor
+     –   Einführung in das wissenschaftliche Arbeiten - VI (621.00)
+     –   Software Engineering I – VO (621.200)
+     –   Software Engineering II – VO (621.250)
+     –   Clean Code – VI (622.060)
+•   Master
+     –   Automating Software Engineering – VI (623.828)
+     –   Software Evolution/Reengineering – VI (623.824)
+     –   Project/Privatissimum – PR/SE (622.973, 624.010)
+     –   Seminar in Software Engineering – SE (624.010)
+     –   Scientific Writing – SE (622.980)
+                       Software Engineering (SERG)
+                       Fundamental Courses                                                        Required Subjects
+
+           Programming           Modeling        Algorithms und
+                                                                                            Advanced Software Engineering
+              (ESOP)              (OMI)          Data Structures
+
+
+                         Required Subjects                                               Specialization Track (Elective)
+
+
+
+Bachelor                                                           Master
+                                                                                        Current Topics in Software Engineering:
+           Software Engineering 1       Software Engineering 2
+                                                                                          Software Evolution/Reengineering
+
+
+                  Specialization Track (Elective)                                       Current Topics in Software Engineering:
+                                                                                          Automating Software Engineering
+              Domain Driven                 Specification und
+                                                                            Seminar in Software        Selected Topics in Software Engineering:
+             Design/Clean Code                Verification
+                                                                               Engineering                    Advanced Software Testing
+
+                   Bachelorprojects and Bachelortheses                                     Masterprojects and Mastertheses
+
+
+
+                                                                                                                                             4
+                       Software Engineering (SERG)
+                       Fundamental Courses                                                        Required Subjects
+
+           Programming           Modeling        Algorithms und
+                                                                                            Advanced Software Engineering
+              (ESOP)              (OMI)          Data Structures
+
+
+                         Required Subjects                                               Specialization Track (Elective)
+
+
+
+Bachelor                                                           Master
+                                                                                        Current Topics in Software Engineering:
+           Software Engineering 1       Software Engineering 2
+                                                                                          Software Evolution/Reengineering
+
+
+                  Specialization Track (Elective)                                       Current Topics in Software Engineering:
+                                                                                          Automating Software Engineering
+              Domain Driven                 Specification und
+                                                                            Seminar in Software        Selected Topics in Software Engineering:
+             Design/Clean Code                Verification
+                                                                               Engineering                    Advanced Software Testing
+
+                   Bachelorprojects and Bachelortheses                                     Masterprojects and Mastertheses
+
+
+
+                                                                                                                                             5
+               Software Engineering
+      Software Engineering behandelt Methoden zur
+effizienten Entwicklung, Wartung und Qualitätssicherung
+  von langlebigen, umfangreichen Software-Systemen.
+
+     Software Engineering 1        Software Engineering 2
+
+      Wartung von Software       Neuentwicklung von Software
+
+
+                                                               6
+                      Lernziele
+  Vermittlung von Software Engineering Wissen und
+Fähigkeiten, die nötig sind, um langlebige, qualitätsvolle
+   Software Systeme effizient entwickeln zu können.
+
+Softwareentwicklungsprozesse     Qualitätssicherung
+Software Design                  Konfigurationsmangement
+Anforderungen                    Projektmanagement
+
+                                                             7
+                                      Überblick
+03.03.26 Softwareentwicklungsprozesse I (CM)    16.04.26    Anforderungen II (MP)
+05.03.26 Softwareentwicklungsprozesse II (CM)   23.04.26   Qualitätssicherung (MP)
+10.03.26         Anforderungen I (CM)           30.04.26   Projektmanagement (MP)
+12.03.26         Software Design (MP)
+17.03.26           Keine Vorlesung!
+19.03.26           Keine Vorlesung!
+24.03.26   Konfigurationsmanagement I (CM)
+26.03.26   Konfigurationsmanagement II (CM)     29.05.26   Prüfung, 1. Termin, HS A
+
+
+                                                                                      8
+                                   Prüfung
+• Wann/Wo?
+  –   1. Termin: 29.05.2026, 16:30 – 17:30 Uhr, HS A
+  –   2. Termin: 11.09.2026, 12:30 – 13:30 Uhr, HS A
+  –   3. Termin: TBA
+  –   4. Termin: TBA
+
+• Wie?
+  – Online/SPU, ohne Unterlagen, 60 Minuten
+
+• Wer?
+  – Alle, die sich anmelden. Keine automatische Anmeldung!
+
+
+                                                             9
+                                    Prüfung
+•   Was?
+     – Vorlesungsinhalte, theoretische und praktische Aufgaben
+
+•   Wieviele Punkte?
+     – Insgesamt 60 Punkte
+
+•   Welche Note habe ich?
+     –   N5 < 36
+     –   G4 >=36
+     –   B3 >= 42
+     –   G2 >= 48
+     –   S1 >= 54
+
+                                                                 10
+                       Literatur
+Software Engineering,
+Ian Sommverville, 10. Auflage
+
+
+                   Requirements-Engineering und –Management,
+                                          Chris Rupp, 6. Auflage
+
+
+Best Practice Software-Engineering,
+Alexander Schatten et al., 2010
+
+
+                                                                   11
+1. Folien nach der Einheit durchschauen
+2. Fehler im Moodle-Forum posten (pro VO-
+   Einheit 1 Thread)
+3. Punkte auf Endklausur kassieren – je nach
+   Fehlertyp
+
+
+
+-   FCFS
+-   Gastvorlesungen sind ausgenommen
+-   Zählt nur auf die positive Endnote
+
+
+
+                                               12
+                               Punktesystem
+Fehlertyp                                                      Punkte
+Typo, Rechtschreibfehler, Folienübergang, Seitenzahl fehlt,…   0,25
+Strukturelle Fehler (Überschrift, Inhaltsverzeichnis)          0,50
+Widersprüche                                                   0,75
+Inhaltliche Fehler                                             1,00
+
+
+
+            Maximal 1 Punkt pro Person pro Vorlesungseinheit!
+
+
+                                                                        13
+                          Fragen?
+• Moodle Kurs + Forum
+
+• Nächste VO Einheit
+  – Jetzt im Anschluss!
+
+
+
+
+                                    14
+

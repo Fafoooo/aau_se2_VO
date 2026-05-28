@@ -1,0 +1,790 @@
+Software Engineering 2 – Vorlesung
+ Christian Macho                       https://mitschi.github.io/
+
+ Software Engineering Research Group   @Mitschiiii
+ Universität Klagenfurt                christian.macho@aau.at
+EINFÜHRUNG SE
+Literatur
+
+
+     Software Engineering,
+        Ian Sommerville,
+           10. Auflage
+
+
+
+                             3
+Software Engineering
+
+
+
+
+                       4
+             Software Engineering
+  Software Engineering is an engineering discipline that is
+concerned with all aspects of software production from the
+early stages of system specification through to maintaining
+          the system after it has gone into use. [1]
+
+
+
+
+                                                              5
+                  Software Engineering
+   Software Engineering is an engineering discipline that is
+ concerned with all aspects of software production from the
+ early stages of system specification through to maintaining
+           the system after it has gone into use. [1]
+• Technische Disziplin                    • Alle Aspekte
+                                             – Technische Aspekte
+   – Bewusste Selektion von Theorien,
+                                             – Projektmanagement
+     Methoden, Werkzeugen
+                                             – Entwicklung von Werkzeugen,
+   – Neue Lösungen, auch unter                 Methoden und Theorien zur
+     organisatorischen und finanziellen        Unterstützung der professionellen
+     Einschränkungen                           Software Entwicklung
+                                                                               6
+                  Software Engineering
+   Software Engineering is an engineering discipline that is
+ concerned with all aspects of software production from the
+ early stages of system specification through to maintaining
+           the system after it has gone into use. [1]
+• Technische Disziplin                    • Alle Aspekte
+                                             – Technische Aspekte
+   – Bewusste Selektion von Theorien,
+                                             – Projektmanagement
+     Methoden, Werkzeugen
+                                             – Entwicklung von Werkzeugen,
+   – Neue Lösungen, auch unter                 Methoden und Theorien zur
+     organisatorischen und finanziellen        Unterstützung der professionellen
+     Einschränkungen                           Software Entwicklung
+                                                                               7
+                        Software Engineering
+      Software Engineering is an engineering discipline that is
+    concerned with all aspects of software production from the
+    early stages of system specification through to maintaining
+              the system after it has gone into use. [1]
+•    Warum brauchen wir Software Engineering?
+      – Um zuverlässige und vertrauenswürdige Systeme wirtschaftlich und schnell herzustellen.
+
+•    Unterschied zur Informatik?
+      – Theorien und Methoden der SW Systeme vs. Probleme der SW Herstellung
+
+
+•    Unterschied von Software Projekten auf der Uni vs. im „echten“ Leben?
+                                                                                                 8
+      “Hacken” vs. Software Engineering
+Personal Software                    Industrial-strength Software
+Developer is user                    Client is user
+Bugs are tolerable                   Bugs are not tolerated
+UI not important                     UI important
+No/Minor documentation               Lots of documentation
+SW not in critical use               Supports business functions
+Reliability/Robustness not crucial   Reliability/Robustness is crucial
+No investment                        Heavy investment (5$-25$ per LOC)
+Portability not so important         Portability is an economic advantage
+
+                                                                            9
+                          FAQ
+1. Was ist das Besondere an Software?
+2. Wozu braucht man Software
+   Engineering?
+3. Was sind Merkmale guter Software?
+4. Was sind die Herausforderungen im
+   Software Engineering?
+
+
+                                        10
+HERAUSFORDERUNGEN UND
+AKTIVITÄTEN IM SE
+                1. Was ist besonders?
+
+SW …                                           SW …
+   … ist unsichtbar                               … ist risikobehaftet
+   … verbraucht keinen Platz                      … benötigt Platz und Zeit (Entwicklung)
+   … hat keine physikalische Substanz
+   … riecht nicht
+                                        ABER      … lebt länger, als man denkt
+                                                  … kann großen Schaden verursachen
+   … hat kein Aussehen
+                1. Was ist besonders?
+
+SW …                                           SW …
+   … ist unsichtbar                               … ist risikobehaftet
+   … verbraucht keinen Platz                      … benötigt Platz und Zeit (Entwicklung)
+   … hat keine physikalische Substanz
+   … riecht nicht
+                                        ABER      … lebt länger, als man denkt
+                                                  … kann großen Schaden verursachen
+   … hat kein Aussehen
+      2. Wozu Software Engineering?
+• Wieviele SW-Projekte gehen schief?
+
+• Wieviele SW-Projekte sind “in-time”?
+
+• Wieviele SW-Projekte sind “on-budget”?
+
+
+                                           14
+              2. Wozu Software Engineering?
+                                Chaos Report – Standish Group
+100%
+ 90%
+ 80%
+ 70%
+ 60%
+ 50%
+ 40%
+ 30%
+ 20%
+ 10%
+  0%
+       1994    1996   1998   2000   2002    2004     2006       2009        2011     2012       2013       2014      2015
+                                     Successful    Challenged      Failed
+                                                      https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf
+
+                                                                                                                            15
+              2. Wozu Software Engineering?
+                                Chaos Report – Standish Group
+100%
+ 90%
+ 80%
+• Kaliforniens DMV. Erneuerung der Motorzulassung. Projektstart 1987.
+ 70%
+  1993 nach $45 Millionen Dollar gestoppt.
+ 60%
+ 50%
+• American Airlines. Autoverleih und Hotelreservierungssystem.
+ 40%
+  1994 nach $145 Millionen Dollar gestoppt.
+ 30%
+ 20%
+ 10%
+  0%
+       1994    1996   1998   2000   2002    2004     2006       2009        2011     2012       2013       2014      2015
+                                     Successful    Challenged      Failed
+                                                      https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf
+
+                                                                                                                            16
+         2. Wozu Software Engineering?
+
+
+
+
+Terac-25 Strahlentherapie,
+       1985 – 1987
+
+
+
+                                         17
+         2. Wozu Software Engineering?
+
+
+
+
+Terac-25 Strahlentherapie,
+       1985 – 1987
+
+                             Ariane 5, 1996
+                                              18
+         2. Wozu Software Engineering?
+
+
+
+                                              Flughafen Heathrow,
+                                                      2018
+Terac-25 Strahlentherapie,
+       1985 – 1987
+
+                             Ariane 5, 1996
+                                                                    19
+3. Was sind Merkmale guter Software?
+
+
+
+
+                                       20
+ 3. Was sind Merkmale guter Software?
+Good software should deliver the required functionality
+and performance to the user and should be maintainable,
+dependable, and usable [1].
+
+      1. Wartbarkeit              3. Effizienz
+
+      2. Sicherheit und           4. Benutzerfreund-
+      Zuverlässigkeit             lichkeit (Acceptability)
+                                                          21
+4. Herausforderungen im SE?
+
+
+
+
+       Heterogenität
+                              22
+4. Herausforderungen im SE?
+
+
+
+
+           Neue Technologien,
+   wirtschaftlicher und sozialer Wandel
+                                          23
+4. Herausforderungen im SE?
+
+
+
+
+  Sicherheit und Zuverlässigkeit
+                                   24
+SOFTWAREENTWICKLUNGSPROZESSE I
+         Wie Software entwickeln?
+
+• Wie entwickeln Sie Software?
+
+
+
+• Wie gehen Sie dabei vor?
+
+
+                                    26
+                          Herausforderungen
+•   Unterschiedliche Dimensionen der Komplexität
+     –   Eine Aufgabe selbst zum ersten Mal erledigen
+     –   Eine Aufgabe überhaupt zum ersten Mal erledigen
+     –   Wenn das Problemfeld unklar ist
+     –   Wenn die Problemlösung umfangreich ist
+     –   Wenn das Problem facettenreich ist
+     –   Wenn die Facetten des Problems ineinandergreifen
+         (und damit evtl. Teillösungen ineinandergreifen)
+
+•   Möglichkeiten, um komplexe Aufgaben zu lösen
+     – Einen Weg ausprobieren und sehen, ob er funktioniert
+     – Jemanden anderen eine Lösung finden lassen
+     – Planen, Ausführen, Überprüfen und Anpassen (PDCA)
+
+
+
+                                                              27
+              Herausforderungen
+• Naives Grundmodell: Code & Fix
+  – Schreibe ein Programm
+  – Finde und behebe die Fehler im Programm
+
+
+
+
+                                              28
+                      Herausforderungen
+• Naives Grundmodell: Code & Fix
+    – Schreibe ein Programm
+    – Finde und behebe die Fehler im Programm
+
++ Schnell lauffähiges Programm               - Projekt nicht planbar
++ Coding und spontanes Testen sind einfach   - Anforderungen werden nicht erhoben
+                                             - Keine Basis für Tests
+                                             - Schwierige und teure Wartung
+                                             - Wie wird erworbenes Wissen transferiert?
+                                             - Skalierbarkeit?
+
+                                                                                      29
+                      Herausforderungen
+• Naives Grundmodell: Code & Fix
+    – Schreibe ein Programm
+    – Finde und behebe die Fehler im Programm (bzw.
+         Softwareentwicklungsprozesse
+                    Vorgehensmodelle)
++ Schnell lauffähiges Programm             helfen!
+                               - Projekt nicht planbar
++ Coding und spontanes Testen sind einfach   - Anforderungen werden nicht erhoben
+                                             - Keine Basis für Tests
+                                             - Schwierige und teure Wartung
+                                             - Wie wird erworbenes Wissen transferiert?
+                                             - Skalierbarkeit?
+
+                                                                                          30
+                          Aktivitäten
+  Ein SW-Prozess Modell ist eine abstrakte Repräsentation einer Menge an
+  Aktivitäten und Leistungen, die zur Erzeugung eines SW-Produkts führen.
+
+• Wozu?
+  – Überblick behalten
+  – Effektives und effizientes Arbeiten im Team
+  – Gemeinsame Notation, konsistente
+    Bedeutung
+
+                                                                            31
+                                 Aktivitäten
+     Ein SW-Prozess Modell ist eine abstrakte Repräsentation einer Menge an
+     Aktivitäten und Leistungen, die zur Erzeugung eines SW-Produkts führen.
+
+•   Aktivitäten
+     – Spezifizierung: Festlegung der Funktionalität und Einschränkungen
+     – Design und Implementierung: Umsetzung der Architektur und Entwicklung des Systems
+     – Validierung/Verifizierung: Überprüfung auf Erfüllung der Anforderungen des Kunden
+       und der korrekten Funktionalität
+     – Evolution: Anpassungen und Erweiterungen aufgrund von veränderten
+       Kundenwünschen
+
+                                                                                           32
+                                 Aktivitäten
+     Ein SW-Prozess Modell ist eine abstrakte Repräsentation einer Menge an
+     Aktivitäten und Leistungen, die zur Erzeugung eines SW-Produkts führen.
+
+•   Aktivitäten
+     – Spezifizierung: Festlegung der Funktionalität und Einschränkungen
+     – Design und Implementierung: Umsetzung der Architektur und Entwicklung des Systems
+     – Validierung/Verifizierung: Überprüfung auf Erfüllung der Anforderungen des Kunden
+       und der korrekten Funktionalität
+     – Evolution: Anpassungen und Erweiterungen aufgrund von veränderten
+       Kundenwünschen
+
+                                                                                           33
+                                 Aktivitäten
+     Ein SW-Prozess Modell ist eine abstrakte Repräsentation einer Menge an
+     Aktivitäten und Leistungen, die zur Erzeugung eines SW-Produkts führen.
+
+•   Aktivitäten
+     – Spezifizierung: Festlegung der Funktionalität und Einschränkungen
+     – Design und Implementierung: Umsetzung der Architektur und Entwicklung des Systems
+     – Validierung/Verifizierung: Überprüfung auf Erfüllung der Anforderungen des Kunden
+       und der korrekten Funktionalität
+     – Evolution: Anpassungen und Erweiterungen aufgrund von veränderten
+       Kundenwünschen
+
+                                                                                           34
+                                 Aktivitäten
+     Ein SW-Prozess Modell ist eine abstrakte Repräsentation einer Menge an
+     Aktivitäten und Leistungen, die zur Erzeugung eines SW-Produkts führen.
+
+•   Aktivitäten
+     – Spezifizierung: Festlegung der Funktionalität und Einschränkungen
+     – Design und Implementierung: Umsetzung der Architektur und Entwicklung des Systems
+     – Validierung/Verifizierung: Überprüfung auf Erfüllung der Anforderungen des Kunden
+       und der korrekten Funktionalität
+     – Evolution: Anpassungen und Erweiterungen aufgrund von veränderten
+       Kundenwünschen
+
+                                                                                           35
+                                 Aktivitäten
+     Ein SW-Prozess Modell ist eine abstrakte Repräsentation einer Menge an
+     Aktivitäten und Leistungen, die zur Erzeugung eines SW-Produkts führen.
+
+•   Aktivitäten
+     – Spezifizierung: Festlegung der Funktionalität und Einschränkungen
+     – Design und Implementierung: Umsetzung der Architektur und Entwicklung des Systems
+     – Validierung/Verifizierung: Überprüfung auf Erfüllung der Anforderungen des Kunden
+       und der korrekten Funktionalität
+     – Evolution: Anpassungen und Erweiterungen aufgrund von veränderten
+       Kundenwünschen
+
+                                                                                           36
+        Softwareentwicklungsprozesse
+• Sequentielle Modelle
+   – Wasserfallmodell
+   – V-Modell
+• Iterative Modelle
+   – Spiralmodell
+   – (Rational Unified Process – RUP)
+• Agile Methoden
+   – XP
+   – Scrum
+   – Kanban
+   – Scaled Agile
+
+                                        37
+        Softwareentwicklungsprozesse
+• Sequentielle Modelle
+   – Wasserfallmodell
+   – V-Modell
+• Iterative Modelle
+   – Spiralmodell
+   – (Rational Unified Process – RUP)
+• Agile Methoden
+   – XP
+   – Scrum
+   – Kanban
+   – Scaled Agile
+
+                                        38
+        Softwareentwicklungsprozesse
+• Sequentielle Modelle
+   – Wasserfallmodell
+   – V-Modell
+• Iterative Modelle
+   – Spiralmodell
+   – (Rational Unified Process – RUP)
+• Agile Methoden
+   – XP
+   – Scrum
+   – Kanban
+   – Scaled Agile
+
+                                        39
+        Softwareentwicklungsprozesse
+• Sequentielle Modelle
+   – Wasserfallmodell
+   – V-Modell
+• Iterative Modelle
+   – Spiralmodell
+   – (Rational Unified Process – RUP)
+• Agile Methoden
+   – XP
+   – Scrum
+   – Kanban
+   – Scaled Agile
+
+                                        40
+SEQUENTIELLE PROZESSE
+              Das Wasserfall Modell
+                           Charakteristika
+                           • Top-Down
+                           • Festgelegte Reihenfolge der
+                              Aktivitäten
+                           • Eingeschränkte Rückkopplung
+                           • Zwischenprodukt am Ende jeder
+                              Aktivität
+                           • Benutzerbeteiligung nur zu
+                              Beginn
+                           • Variante: formale
+                              Systementwicklung
+Royce, 1970
+
+
+
+                                                        42
+              Das Wasserfall Modell
+                           Charakteristika
+                           • Top-Down
+                           • Festgelegte Reihenfolge der
+                              Aktivitäten
+                           • Eingeschränkte Rückkopplung
+                           • Zwischenprodukt am Ende jeder
+                              Aktivität
+                           • Benutzerbeteiligung nur zu
+                              Beginn
+                           • Variante: formale
+                              Systementwicklung
+Royce, 1970
+
+
+
+                                                        43
+              Das Wasserfall Modell
+                           + (Theoretisch) gut planbar
+                           + Geringer Managementaufwand
+
+                           - Notwendige „Kurskorrekturen“ nicht
+                           frühzeitig erkennbar
+                           - Sequentialität nicht immer nötig
+                           - Gefahr, dass Dokumente wichtiger als
+                           das System werden
+                           - Risikofaktoren werden u.U. zu wenig
+                           berücksichtigt
+Royce, 1970
+
+
+
+                                                               44
+Das V – Modell
+                          Charakteristika
+                          • Qualitätssicherung integriert
+                          • Sehr umfangreiches Modell,
+                             wurde für große Projekte
+                             konzipiert
+                          • Phasen, Aktivitäten,
+                             (Zwischen-Produkte)
+                          • Verifikation und Validation
+                          • Produkt muss mit den
+                             Anforderungen und den
+                             Kundenwünschen
+                             übereinstimmen
+   [QS-Folien, TU Wien]
+
+                                                       45
+Das V – Modell
+                          Charakteristika
+                          • Qualitätssicherung integriert
+                          • Sehr umfangreiches Modell,
+                             wurde für große Projekte
+                             konzipiert
+                          • Phasen, Aktivitäten,
+                             (Zwischen-Produkte)
+                          • Verifikation und Validation
+                          • Produkt muss mit den
+                             Anforderungen und den
+                             Kundenwünschen
+                             übereinstimmen
+   [QS-Folien, TU Wien]
+
+                                                       46
+Das V – Modell
+                          Anwendung
+                          • Gut anwendbar bei klarer,
+                            relativ fixer Funktionalität
+                          • System- und Basissoftware, wie
+                            OS, DB, Web-Server
+                          • Branchen Software wie SAP R/3
+
+
+
+
+   [QS-Folien, TU Wien]
+
+                                                         47
+                                Das V – Modell
++ Integrierte, detaillierte Beschreibung von          - Software-Bürokratie bei kleinen & mittleren
+Systemerstellung, Qualitätssicherung,                 Projekten
+Konfigurationsmanagement und                          - Risiken gesammelt am Schluss —> „Big Bang“
+Projektmanagement                                     - Starr während des Ablaufs
++ Generisches Vorgehensmodell
++ Lässt sich gut anpassen und erweitern
++ Gut geeignet für große Projekte
++ Einfach durchzuführen
++ Schränkt Freiheitsgrade stark ein, daher auch für
+sehr große Projekte anwendbar
++ Sehr effizient bei bekannten und konstanten
+Anforderungen
+
+                                                                                                      48
+Änderungen?
+
+
+
+
+              49
+50
+ITERATIVE PROZESSE
+Iterative Prozessmodelle
+
+
+
+
+Weiterentwicklung der sequentiellen Methoden
+   unterstützen inkrementelle Entwicklung
+
+                                               52
+Das Spiral Modell
+          Charakteristika
+          •   Rundenbasiert
+              –   Entwicklungsziele und Einschränkungen
+              –   Risiko-Analyse und Alternativen,
+                  Prototypen
+              –   Entwicklungsphase (Design,
+                  Programmierung, Verifikation,
+                  Validierung)
+              –   Planungsphase (für den nächsten
+                  Iterationsschritt)
+          •   Gut für große Systeme, die das
+              Zusammenarbeiten von mehreren
+              Disziplinen erfordert
+
+
+
+                                                      53
+Das Spiral Modell
+           + Risiken können früher erkannt werden
+           + Volatile Anforderungen können besser
+           berücksichtigt werden
+           + Inkrementelle Auslieferung wird
+           erleichtert
+           + Anpassungsfähig!
+
+
+           - Mehrarbeit
+           - Komplexeres Projektmanagement
+           - Theoretisches Modell
+
+
+                                                54
+AGILE PROZESSE
+                  Agile Prozessmodelle
+„Agil“ wird hier im Sinne von „bereit sich zu bewegen“, „aktiv“ oder „geschickt“
+                                   verstanden
+
+• Gegenbewegung “mit                 Agiles Manifest: Werte und Prinzipien
+                                     • Individuals and interactions over processes
+  Anti-Prozessen”                       and tools
+                                     • Working software over comprehensive
+   – XP, SCRUM, Adaptive                documentation
+     Software Development,           • Customer collaboration over contract
+     FDD                                negotiation
+                                     • Responding to change over following a plan
+
+                                                                                     56
+Das Agile Manifesto
+
+
+
+
+                      57
+                Agile Prozessmodelle
+Charakteristika
+• Sie sind iterativ angelegt. Die Zyklendauer liegt zwischen 2
+  Wochen und einigen Monaten
+• Die Arbeiten werden in kleinen Gruppen (6-8 Personen)
+  durchgeführt
+• Sie lehnen die Idee einer umfangreichen Dokumentation ab
+  (zumindest mit Einschränkungen)
+• Die Kunden sind sehr wichtig und deren Präsenz wird
+  verlangt/erwünscht
+• Dogmatische Regelungen werden abgelehnt
+                                                                 58
+               Agile vs. “Klassische” Modelle
+                                  Bisheriger Ansatz                    Agiler Ansatz
+
+Ständige Mitwirkung des Kunden    Unwahrscheinlich                     Kritischer Erfolgsfaktor
+
+Etwas Nützliches wird geliefert   Erst nach einiger Zeit               Mindestens alle sechs Wochen
+
+Das Richtige entwickeln durch     Langes Spezifizieren, Vorausdenken   Kern entwickeln, zeigen, verbessern
+
+Nötige Disziplin                  Formal, wenig                        Informell, viel
+
+Änderungen                        Erzeugen Widerstand                  Werden erwartet und toleriert
+
+Kommunikation                     Über Dokumente                       Zwischen Menschen
+
+Vorsorge für Änderungen           Durch Versuch der Vorausplanung      Durch „flexibel bleiben“
+
+
+
+                                                                                                         59
+EXtreme Programming
+         Charakteristika
+
+         •   Werte und Prinzipien:
+             Kommunikation, Feedback,
+             Einfachheit, Mut zur Entscheidung
+         •   Konzepte: Managementkonzepte,
+             Teamkonzepte,
+             Programmierkonzepte
+         •   Rollen: Programmierer, Kunde, XP-
+             Trainer, Verfolger, Tester, Berater, Big
+             Boss
+
+
+                                                   60
+EXtreme Programming
+         Charakteristika
+
+         •   Werte und Prinzipien:
+             Kommunikation, Feedback,
+             Einfachheit, Mut zur Entscheidung
+         •   Konzepte: Managementkonzepte,
+             Teamkonzepte,
+             Programmierkonzepte
+         •   Rollen: Programmierer, Kunde, XP-
+             Trainer, Verfolger, Tester, Berater, Big
+             Boss
+
+
+                                                   61
+EXtreme Programming
+         Charakteristika
+
+         •   Werte und Prinzipien:
+             Kommunikation, Feedback,
+             Einfachheit, Mut zur Entscheidung
+         •   Konzepte: Managementkonzepte,
+             Teamkonzepte,
+             Programmierkonzepte
+         •   Rollen: Programmierer, Kunde, XP-
+             Trainer, Verfolger, Tester, Berater, Big
+             Boss
+
+
+                                                   62
+EXtreme Programming
+         Charakteristika
+
+         •   Werte und Prinzipien:
+             Kommunikation, Feedback,
+             Einfachheit, Mut zur Entscheidung
+         •   Konzepte: Managementkonzepte,
+             Teamkonzepte,
+             Programmierkonzepte
+         •   Rollen: Programmierer, Kunde, XP-
+             Trainer, Verfolger, Tester, Berater, Big
+             Boss
+
+
+                                                   63
+EXtreme Programming
+         Charakteristika
+
+         •   Werte und Prinzipien:
+             Kommunikation, Feedback,
+             Einfachheit, Mut zur Entscheidung
+         •   Konzepte: Managementkonzepte,
+             Teamkonzepte,
+             Programmierkonzepte
+         •   Rollen: Programmierer, Kunde, XP-
+             Trainer, Verfolger, Tester, Berater, Big
+             Boss
+
+
+                                                   64
+SCRUM
+  Charakteristika
+
+  •   Keine strenge Arbeitsteilung, sondern
+      kooperative Zusammenarbeit
+  •   Selbst organisierendes Team
+  •   Erfolg und Misserfolg wird kollektiv
+      verantwortet
+  •   Terminologie aus dem Rugby
+       – „scrum“ Eroberung des Balles
+  •   „sprint“ mit dem Ball um Raum zu gewinnen
+  •   Scrum ist Rollen-basiert, iterativ und
+      inkrementell
+
+
+                                              65
+KANBAN
+  Charakteristika
+  • Orientiert sich an der selben Strategie, die
+     Supermärkte nutzen, um ihre Regale zu
+     füllen
+
+  •   Kanban-Board
+       – Tool zur Visualisierung
+
+  •   Kanban-Karten
+       – Jedes Aufgabenelement ist separate Karte
+       – Ermöglichen klare visuelle Darstellung des
+         Workflows
+       – Stellen kritische Informationen zum jeweiligen
+         Aufgabenfeld in den Vordergrund
+
+                                                    66
+                 Bewertung Agiler Prozesse
+Anwendung
+• Gut einsetzbar bei unklaren Zielen und sich ändernden
+  Anforderungen
+• innovative, zeitkritische Projekte
++ Verspricht verbessertes Kosten/Nutzen Verhältnis   - Das Ergebnis ist nicht vorhersagbar
+                                                     - Qualitätseigenschaften können nicht garantiert
++ Verbesserte durchschnittliche Code-Qualität        werden
+                                                     - Weniger Planung
+                                                     - Kunde (mangelndes Fachwissen)
+                                                     - Zeitfaktor Refactoring
+
+
+                                                                                                    67
+Welches SW-Prozessmodell ist das BESTE?
+
+
+
+
+                                     68
+Welches SW-Prozessmodell ist das BESTE?
+
+
+
+
+   Das „beste“ Modell hängt von der Organisation, dem Produkt, bzw. den
+         Fähigkeiten der Entwickler ab (es gibt kein ideales Modell!)
+
+                                                                          69
+

@@ -1,0 +1,1186 @@
+                        SOFTWARE ENGINEERING II
+                                 Vorlesung
+
+
+                               Qualitätssicherung
+
+
+
+
+VO - Software Engineering II           1
+ Wiederholung
+
+                                         PROJEKTPHASEN
+
+
+       Projektde nition          Projektplanung            Projektverfolgung       Projektabschluss
+
+      - Projektvorschlag       - Projektstruktur           - Projektüberwachung   - Übergabe der Projektergebnisse
+      - Projektentscheidung    - Aufwände schätzen         - Aufwandserfassung    - Entlastung des Projektteams
+      - Projektauftrag         - technische und            - Meilenstein Trend-   - Abrechnung der Projektaufwände
+                                 wirtschaftliche Planung     analyse              - Projektbericht „lessons learned“
+
+
+
+
+                               unabhängig von Organisationsform und Projekttyp
+VO - Software Engineering II
+         fi
+                                                           2
+ Wiederholung
+
+                               KOSTENSCHÄTZUNG
+
+
+
+
+VO - Software Engineering II          3
+ Wiederholung
+
+                                  KOSTENSCHÄTZUNG
+
+
+
+
+     Empirische Schätzverfahren
+VO - Software Engineering II             3
+ Wiederholung
+
+                                  KOSTENSCHÄTZUNG
+
+
+
+
+     Empirische Schätzverfahren     Algorithmische Schätzverfahren
+VO - Software Engineering II                     3
+ Wiederholung
+
+                                  KOSTENSCHÄTZUNG
+
+
+
+
+     Empirische Schätzverfahren     Algorithmische Schätzverfahren   Sonstige Schätzverfahren
+VO - Software Engineering II                     3
+ Wiederholung
+
+                   PROJEKTPLANUNG UND -STEUERUNG
+          Projektstruktur            Planen, Messen, Steuern
+
+
+
+
+VO - Software Engineering II     4
+ Wiederholung
+
+                 PERSONAL- UND RISIKOMANAGEMENT
+
+
+
+
+VO - Software Engineering II   5
+ Wiederholung
+
+                  PERSONAL- UND RISIKOMANAGEMENT
+
+ Personalmanagement
+                          Mitarbeiter
+                                         Teamarbeit
+
+      Projekt
+
+
+
+
+  „Adding manpower to a late software project makes it later“
+                                                 Fred Brooks, 1975
+
+
+
+
+VO - Software Engineering II                                         5
+ Wiederholung
+
+                  PERSONAL- UND RISIKOMANAGEMENT
+
+ Personalmanagement
+                          Mitarbeiter                                    Risikomanagement
+                                         Teamarbeit
+
+      Projekt
+
+
+
+
+  „Adding manpower to a late software project makes it later“
+                                                 Fred Brooks, 1975
+
+
+
+
+VO - Software Engineering II                                         5
+ Handout
+                   FUNCTION POINTS                                                             APPLICATION POINTS                                                                                 COCOMO
+                   Typ                                   Komplexität                                   Objekte                                   Komplexität                   Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV [CM]
+
+                                           niedrig       mittel          hoch      ∑                                             niedrig        mittel         hoch    Summe                     - Basic        - Intermediate
+
+  Eingabe (EI)                         ____ × 3        ____ × 4        ____ × 6         Anzahl an unterschiedlichen Screens      ____ × 1     ____ × 2     ____ × 3            Organic          2.4 x S1.05    M x 3.2 x S 1.05   2.5 x E[PM]0.38
+
+  Ausgabe (EO)                         ____ × 4        ____ × 5        ____ × 7         Anzahl an Reports die generiert werden   ____ × 2     ____ × 5     ____ × 8            Semidetached     3.0 x S1.12    M x 3.0 x S1.12    2.5 x E[PM]0.35
+
+  Abfrage (EQ)                         ____ × 3        ____ × 4        ____ × 6         Anzahl an Modulen                                                ____ × 10             Embedded         3.6 x S1.20    M x 2.8 x S1.20    2.5 x E[PM]0.32
+
+  interne Datenbestände (ILF)          ____ × 7        ____ × 10       ____ × 15                                                            Application Points (AP):
+  externe Datenbestände (EIF)          ____ × 5        ____ × 7        ____ × 10
+                                               Unadjusted Function Points (UFP):       NAP = AP x (100 - RC) x 0.01
+
+
+
+
+          i         Faktor                                   Gewicht (SM ) 0-5
+                                                                        i
+
+               1    Datenkommunikation
+               2    Verteilte Datenverarbeitung
+               3    Geschwindigkeit
+               4    Auslastung der HW-Konfiguration
+               5    Transaktionsrate
+               6    Echtzeit-Dateneingabe
+               7    Bedienerfreundlichkeit
+               8    Echtzeit-Datenpflege
+               9    Prozesslogik
+              10    Wiederverwendbarkeit
+              11    Installation und Konvertierung
+              12    Automatisierung
+              13    Vernetzung
+              14    Anpassbarkeit
+                    Total Degree of Influence (TDI) ∑ SMi
+
+
+      ‣       Korrekturfaktor VAF = 0.65 + 0.01 x TDI
+      ‣       FP = UFP x VAF
+
+
+
+
+VO - Software Engineering II
+ Handout
+                   FUNCTION POINTS                                                             APPLICATION POINTS                                                                                               COCOMO
+                   Typ                                   Komplexität                                   Objekte                                      Komplexität                              Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV [CM]
+
+                                           niedrig       mittel          hoch      ∑                                               niedrig         mittel          hoch      Summe                             - Basic        - Intermediate
+
+  Eingabe (EI)                         ____ × 3        ____ × 4        ____ × 6         Anzahl an unterschiedlichen Screens        ____ × 1       ____ × 2      ____ × 3                     Organic          2.4 x S1.05    M x 3.2 x S 1.05   2.5 x E[PM]0.38
+
+  Ausgabe (EO)                         ____ × 4        ____ × 5        ____ × 7         Anzahl an Reports die generiert werden     ____ × 2       ____ × 5      ____ × 8                     Semidetached     3.0 x S1.12    M x 3.0 x S1.12    2.5 x E[PM]0.35
+
+  Abfrage (EQ)                         ____ × 3        ____ × 4        ____ × 6         Anzahl an Modulen                                                      ____ × 10                     Embedded         3.6 x S1.20    M x 2.8 x S1.20    2.5 x E[PM]0.32
+
+  interne Datenbestände (ILF)          ____ × 7        ____ × 10       ____ × 15                                                              Application Points (AP):
+  externe Datenbestände (EIF)          ____ × 5        ____ × 7        ____ × 10
+                                               Unadjusted Function Points (UFP):       NAP = AP x (100 - RC) x 0.01
+
+
+                                                                                        Merkmal                          sehr gering    gering        mittel          hoch       sehr hoch
+
+                                                                                        M1 (Erfahrung und
+          i         Faktor                                   Gewicht (SM ) 0-5                                                    1           2                3             4          5
+                                                                        i               Leistungsfähigkeit der MA)
+
+               1    Datenkommunikation                                                  M2 (Reife der verwendeten
+                                                                                                                                  1           2                3             4          5
+                                                                                        CASE Umgebung)
+               2    Verteilte Datenverarbeitung
+                                                                                        PROD ( = Mittelwert aus
+               3    Geschwindigkeit                                                                                           1 —> 4   2 —> 7        3 —> 13        4 —> 25      5 —> 50
+                                                                                        M1 und M2, dann Zuordnung)
+               4    Auslastung der HW-Konfiguration
+               5    Transaktionsrate
+               6    Echtzeit-Dateneingabe
+               7    Bedienerfreundlichkeit
+               8    Echtzeit-Datenpflege
+               9    Prozesslogik
+              10    Wiederverwendbarkeit
+              11    Installation und Konvertierung
+              12    Automatisierung
+              13    Vernetzung
+              14    Anpassbarkeit
+                    Total Degree of Influence (TDI) ∑ SMi
+
+
+      ‣       Korrekturfaktor VAF = 0.65 + 0.01 x TDI
+      ‣       FP = UFP x VAF
+
+
+
+
+VO - Software Engineering II
+ Handout
+                   FUNCTION POINTS                                                             APPLICATION POINTS                                                                                               COCOMO
+                   Typ                                   Komplexität                                   Objekte                                      Komplexität                              Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV [CM]
+
+                                           niedrig       mittel          hoch      ∑                                               niedrig         mittel          hoch      Summe                             - Basic        - Intermediate
+
+  Eingabe (EI)                         ____ × 3        ____ × 4        ____ × 6         Anzahl an unterschiedlichen Screens        ____ × 1       ____ × 2      ____ × 3                     Organic          2.4 x S1.05    M x 3.2 x S 1.05   2.5 x E[PM]0.38
+
+  Ausgabe (EO)                         ____ × 4        ____ × 5        ____ × 7         Anzahl an Reports die generiert werden     ____ × 2       ____ × 5      ____ × 8                     Semidetached     3.0 x S1.12    M x 3.0 x S1.12    2.5 x E[PM]0.35
+
+  Abfrage (EQ)                         ____ × 3        ____ × 4        ____ × 6         Anzahl an Modulen                                                      ____ × 10                     Embedded         3.6 x S1.20    M x 2.8 x S1.20    2.5 x E[PM]0.32
+
+  interne Datenbestände (ILF)          ____ × 7        ____ × 10       ____ × 15                                                              Application Points (AP):
+  externe Datenbestände (EIF)          ____ × 5        ____ × 7        ____ × 10
+                                               Unadjusted Function Points (UFP):       NAP = AP x (100 - RC) x 0.01
+
+
+                                                                                        Merkmal                          sehr gering    gering        mittel          hoch       sehr hoch
+
+                                                                                        M1 (Erfahrung und
+          i         Faktor                                   Gewicht (SM ) 0-5                                                    1           2                3             4          5
+                                                                        i               Leistungsfähigkeit der MA)
+
+               1    Datenkommunikation                                                  M2 (Reife der verwendeten
+                                                                                                                                  1           2                3             4          5
+                                                                                        CASE Umgebung)
+               2    Verteilte Datenverarbeitung
+                                                                                        PROD ( = Mittelwert aus
+               3    Geschwindigkeit                                                                                           1 —> 4   2 —> 7        3 —> 13        4 —> 25      5 —> 50
+                                                                                        M1 und M2, dann Zuordnung)
+               4    Auslastung der HW-Konfiguration
+                                                                                               NAP
+               5    Transaktionsrate                                                    PM =   ——
+                                                                                               PROD
+               6    Echtzeit-Dateneingabe
+               7    Bedienerfreundlichkeit
+               8    Echtzeit-Datenpflege
+               9    Prozesslogik
+              10    Wiederverwendbarkeit
+              11    Installation und Konvertierung
+              12    Automatisierung
+              13    Vernetzung
+              14    Anpassbarkeit
+                    Total Degree of Influence (TDI) ∑ SMi
+
+
+      ‣       Korrekturfaktor VAF = 0.65 + 0.01 x TDI
+      ‣       FP = UFP x VAF
+
+
+
+
+VO - Software Engineering II
+ Handout
+                   FUNCTION POINTS                                                             APPLICATION POINTS                                                                                                       COCOMO
+                   Typ                                   Komplexität                                   Objekte                                      Komplexität                                  Projektart       Aufwand E [PM]    Aufwand E [PM]       Dauer TDEV [CM]
+
+                                           niedrig       mittel          hoch      ∑                                               niedrig         mittel          hoch      Summe                                      - Basic      - Intermediate
+
+  Eingabe (EI)                         ____ × 3        ____ × 4        ____ × 6         Anzahl an unterschiedlichen Screens        ____ × 1       ____ × 2      ____ × 3                         Organic             2.4 x S1.05    M x 3.2 x S 1.05     2.5 x E[PM]0.38
+
+  Ausgabe (EO)                         ____ × 4        ____ × 5        ____ × 7         Anzahl an Reports die generiert werden     ____ × 2       ____ × 5      ____ × 8                         Semidetached        3.0 x S1.12    M x 3.0 x S1.12      2.5 x E[PM]0.35
+
+  Abfrage (EQ)                         ____ × 3        ____ × 4        ____ × 6         Anzahl an Modulen                                                      ____ × 10                         Embedded            3.6 x S1.20    M x 2.8 x S1.20      2.5 x E[PM]0.32
+
+  interne Datenbestände (ILF)          ____ × 7        ____ × 10       ____ × 15                                                              Application Points (AP):
+  externe Datenbestände (EIF)          ____ × 5        ____ × 7        ____ × 10
+                                               Unadjusted Function Points (UFP):       NAP = AP x (100 - RC) x 0.01                                                                          i      Faktor/Einschränkungen Mi       sehr niedrig   niedrig    normal       hoch   sehr hoch   extrem hoch
+
+                                                                                                                                                                                             1      RELY (SW Reliability)              0.75           0.88       1         1.15   1.40
+                                                                                        Merkmal                          sehr gering    gering        mittel          hoch       sehr hoch
+                                                                                                                                                                                             2      CPLX (Complexity)                  0.70           0.85       1         1.15   1.30           1.65
+                                                                                        M1 (Erfahrung und
+          i         Faktor                                   Gewicht (SM ) 0-5                                                    1           2                3             4          5    3      TIME (Execution time)                                        1         1.11   1.30           1.66
+                                                                        i               Leistungsfähigkeit der MA)
+                                                                                        M2 (Reife der verwendeten                                                                            4      ACAP (Analyst capability)          1.46           1.99       1         0.86   0.71
+               1    Datenkommunikation                                                                                            1           2                3             4          5
+                                                                                        CASE Umgebung)                                                                                       5      PCAP (Programmer capability)       1.42           1.17       1         0.86   0.70
+               2    Verteilte Datenverarbeitung
+                                                                                        PROD ( = Mittelwert aus                                                                              6      LEXP (Language experience)         1.14           1.07       1         0.95
+               3    Geschwindigkeit                                                                                           1 —> 4   2 —> 7        3 —> 13        4 —> 25      5 —> 50
+                                                                                        M1 und M2, dann Zuordnung)
+                                                                                                                                                                                             7      TOOL (Use of SW Tools)             1.24           1.10       1         0.91   0.83
+               4    Auslastung der HW-Konfiguration
+                                                                                               NAP                                                                                           8      SCED (Required dev. schedule)      1.23           1.08       1         1.04   1.10
+               5    Transaktionsrate                                                    PM =   ——
+                                                                                               PROD
+               6    Echtzeit-Dateneingabe
+               7    Bedienerfreundlichkeit
+               8    Echtzeit-Datenpflege
+               9    Prozesslogik
+              10    Wiederverwendbarkeit
+              11    Installation und Konvertierung
+              12    Automatisierung
+              13    Vernetzung
+              14    Anpassbarkeit
+                    Total Degree of Influence (TDI) ∑ SMi
+
+
+      ‣       Korrekturfaktor VAF = 0.65 + 0.01 x TDI
+      ‣       FP = UFP x VAF
+
+
+
+
+VO - Software Engineering II
+                                               INHALTE
+
+                               4     Qualitätssicherung
+                               4.1   Einführung
+                               4.2   Analytische Qualitätssicherung
+                               4.3   Konstruktive Qualitätssicherung
+                               4.4   Organisatorische Qualitätssicherung
+
+
+
+
+VO - Software Engineering II                          7
+                                               INHALTE
+
+                               4     Qualitätssicherung
+                               4.1   Einführung
+                               4.2   Analytische Qualitätssicherung
+                               4.3   Konstruktive Qualitätssicherung
+                               4.4   Organisatorische Qualitätssicherung
+
+
+
+
+VO - Software Engineering II                          7
+                                                LITERATUR
+
+
+
+
+                     [1] Software Engineering           [4] Best Practice Software-Engineering
+                          Ian Sommerville                          A. Schatten et al.
+                             10. Au age                                   2010
+
+VO - Software Engineering II
+    fl
+                                                    8
+4.1 Einführung
+
+
+
+
+VO - Software Engineering II   9
+4.1 Einführung
+
+                               MOTIVATION
+
+
+
+
+VO - Software Engineering II       10
+4.1 Einführung
+
+                                             MOTIVATION
+
+
+
+
+                                                               Heathrow, 2018
+    Terac-25 Strahlentherapie, 1985 - 1987
+
+                                              Ariane 5, 1996
+
+VO - Software Engineering II                         11
+4.1 Einführung
+
+
+
+
+VO - Software Engineering II   12
+4.1 Einführung
+
+                            SICHTEN AUF QUALITÄT IM SE
+
+
+
+
+                Zufriedenheit                     Erfüllung von Anforderungen,                Erfüllung von Richtlinien,
+      der Auftraggeber und Anwender            Attributen und Systemfunktionen                 Vorgaben, Standards
+                                                                                                  und Regelungen
+
+             Qualität ist die Gesamtheit von Merkmalen einer Einheit bezüglich ihrer Eignung, festgelegte und
+             vorausgesetzte Erfordernisse zu erfüllen.                                                   [ISO 9000]
+
+
+VO - Software Engineering II                                  13
+4.1 Einführung
+
+                               QUALITÄTSSICHERUNG (QS)
+         (1) A planned and systematic pattern of all actions necessary to provide adequate con dence
+             that an item or product conforms to established technical requirements
+
+         (2) A set of activities designed to evaluate the process by which the products are developed or
+             manufactured                                                                     [IEEE-Standard 610.12]
+
+
+
+
+                                        ‣ Qualitätsmanagement: Planung, Lenkung, Sicherung, Anpassung (PDCA)
+
+
+
+
+VO - Software Engineering II                                 14
+                                                                                          fi
+4.1 Einführung
+
+                                         MOTIVATION
+    Software wird stets größer und komplexer
+
+
+
+
+        million LOC
+
+
+
+
+        million LOC
+
+                                                      [informationisbeautiful]
+
+VO - Software Engineering II                   15
+4.1 Einführung
+
+                                                        FEHLER IM CODE
+                                                                                     Anzahl der Fehler pro 1.000 LOC
+
+  Space Shu le So ware (<1 bug per 10k LOC)
+
+
+                                     Safety-Cri cal So ware
+
+
+                                     Microso internal rules
+
+
+                                         Standard So ware
+
+
+                                                              0   5        10   15        20          25         30
+VO - Software Engineering II
+       ft   ti   tt   ft   ft   ft
+                                                                      16
+4.1 Einführung
+
+                               FEHLER FINDEN IST TEUER
+
+
+      ‣ Gesucht ist ein Optimum
+        zwischen Fehlerkosten,
+        Fehlervermeidungskosten
+        und Qualität
+
+
+
+
+VO - Software Engineering II              17
+4.1 Einführung
+
+                                QUALITÄTSFAKTOREN
+                                 ISO/IEC 9126:1990        ISO/IEC 25010:2011
+
+
+            ‣ Functionality
+            ‣ Usability
+            ‣ Reliability
+            ‣ Portability
+            ‣ Maintainability
+            ‣ Ef ciency
+            ‣ Security
+            ‣ Compatibility
+
+
+VO - Software Engineering II
+   fi
+                                                     18
+4.1 Einführung
+
+                                QUALITÄTSFAKTOREN
+                                 ISO/IEC 9126:1990        ISO/IEC 25010:2011
+
+
+            ‣ Functionality
+            ‣ Usability
+            ‣ Reliability
+            ‣ Portability
+            ‣ Maintainability
+            ‣ Ef ciency
+            ‣ Security
+            ‣ Compatibility
+
+
+VO - Software Engineering II
+   fi
+                                                     18
+4.1 Einführung
+
+                               QUALITÄTSFAKTOREN
+                                ISO/IEC 9126:1990 bzw. ISO/IEC 25010:2011
+
+
+
+
+VO - Software Engineering II                       19
+4.1 Einführung
+
+                                   FUNCTIONALITY
+                   „Vorhandensein von Attributen mit festgelegten Eigenschaften“
+
+
+
+
+VO - Software Engineering II                   20
+4.1 Einführung
+
+                                   FUNCTIONALITY
+                   „Vorhandensein von Attributen mit festgelegten Eigenschaften“
+
+
+
+
+          ‣ Angemessenheit
+
+          ‣ Richtigkeit
+
+          ‣ Ordnungsmäßigkeit
+
+
+
+
+VO - Software Engineering II                   20
+4.1 Einführung
+
+                                      EFFICIENCY
+                „Verhältnis zwischen Leistung und eingesetzten Betriebsmitteln“
+
+
+
+
+VO - Software Engineering II                  21
+4.1 Einführung
+
+                                        EFFICIENCY
+                „Verhältnis zwischen Leistung und eingesetzten Betriebsmitteln“
+
+
+
+
+                ‣ Zeitverhalten
+
+                ‣ Verbrauchsverhalten
+
+                ‣ Konformität
+
+
+
+
+VO - Software Engineering II                  21
+4.1 Einführung
+
+                                   COMPATIBILITY
+          „Funktionalität bzw. Informationsaustausch mit anderen Produkten, Systemen oder
+                Komponenten bei Teilen der gleichen Hard- oder Softwareumgebung“
+
+
+
+
+VO - Software Engineering II                   22
+4.1 Einführung
+
+                                       COMPATIBILITY
+          „Funktionalität bzw. Informationsaustausch mit anderen Produkten, Systemen oder
+                Komponenten bei Teilen der gleichen Hard- oder Softwareumgebung“
+
+
+
+
+                 ‣ Koexistenz
+
+                 ‣ Interoperabilität
+
+                 ‣ Konformität
+
+
+
+
+VO - Software Engineering II                   22
+4.1 Einführung
+
+                                         USABILITY
+                               „Aufwand für das Benutzen der Software“
+
+
+
+
+VO - Software Engineering II                    23
+4.1 Einführung
+
+                                           USABILITY
+                                 „Aufwand für das Benutzen der Software“
+
+
+
+            ‣ Verständlichkeit
+
+            ‣ Erlernbarkeit
+
+            ‣ Bedienbarkeit
+
+            ‣ Attraktivität
+
+            ‣ Konformität
+
+
+
+
+VO - Software Engineering II                      23
+4.1 Einführung
+
+                                  RELIABILITY
+           „Kann das System seinen Dienst über bestimmten Zeitraum anbieten?“
+
+
+
+
+VO - Software Engineering II               24
+4.1 Einführung
+
+                                            RELIABILITY
+           „Kann das System seinen Dienst über bestimmten Zeitraum anbieten?“
+
+
+
+                  ‣ Reife
+
+                  ‣ Fehlertoleranz
+
+                  ‣ Robustheit
+
+                  ‣ Wiederherstellbarkeit
+
+                  ‣ Konformität
+
+
+
+
+VO - Software Engineering II                     24
+4.1 Einführung
+
+                                           SECURITY
+               „Grad, des Schutzes, so dass der Datenzugriff von Personen/Produkten/
+               Systemen der Art und des Umfangs ihrer Autorisierung entspricht.“
+
+
+
+
+VO - Software Engineering II                       25
+4.1 Einführung
+
+                                           SECURITY
+               „Grad, des Schutzes, so dass der Datenzugriff von Personen/Produkten/
+               Systemen der Art und des Umfangs ihrer Autorisierung entspricht.“
+
+
+                 ‣ Vertraulichkeit
+
+                 ‣ Integrität
+
+                 ‣ Nicht-Abstreitbarkeit
+
+                 ‣ Verantwortlichkeit
+
+                 ‣ Authentizität
+
+                 ‣ Konformität
+
+
+
+VO - Software Engineering II                       25
+4.1 Einführung
+
+                                   MAINTAINABILITY
+                          „Aufwand zur Durchführung von Änderungen“
+
+
+
+
+VO - Software Engineering II                   26
+4.1 Einführung
+
+                                   MAINTAINABILITY
+                          „Aufwand zur Durchführung von Änderungen“
+
+
+
+          ‣ Analysierbarkeit
+
+          ‣ Modi zierbarkeit
+
+          ‣ Stabilität
+
+          ‣ Testbarkeit
+
+
+
+
+VO - Software Engineering II
+     fi
+                                               26
+4.1 Einführung
+
+                                      PORTABILITY
+                          „Aufwand, um SW in neues System zu integrieren“
+
+
+
+
+VO - Software Engineering II                    27
+4.1 Einführung
+
+                                       PORTABILITY
+                          „Aufwand, um SW in neues System zu integrieren“
+
+
+
+                 ‣ Anpassbarkeit
+
+                 ‣ Installierbarkeit
+
+                 ‣ Koexistenz
+
+                 ‣ Austauschbarkeit
+
+                 ‣ Konformität
+
+
+
+
+VO - Software Engineering II                    27
+4.1 Einführung
+
+                                         METHODEN DER QS
+
+       ‣     Analytische Qualitätssicherung
+           - statische QS
+           - dynamische QS
+
+       ‣     Konstruktive Qualitätssicherung
+           - technisch, organisatorisch und menschlich
+
+       ‣     Organisatorische Qualitätssicherung
+           - Wissensmanagement
+           - Checklisten/Templates
+           - Standards
+
+
+VO - Software Engineering II                             28
+                                               INHALTE
+
+                               4     Qualitätssicherung
+                               4.1   Einführung
+                               4.2   Analytische Qualitätssicherung
+                               4.3   Konstruktive Qualitätssicherung
+                               4.4   Organisatorische Qualitätssicherung
+
+
+
+
+VO - Software Engineering II                         29
+                                               INHALTE
+
+                               4     Qualitätssicherung
+                               4.1   Einführung
+                               4.2   Analytische Qualitätssicherung
+                               4.3   Konstruktive Qualitätssicherung
+                               4.4   Organisatorische Qualitätssicherung
+
+
+
+
+VO - Software Engineering II                         29
+4.2 Analytische QS
+
+                               ANALYTISCHE METHODEN
+        Ziel: Prüfung und Bewertung der Qualität eines Produktes
+
+
+       ‣    Statische analytische Qualitätssicherung
+
+       ‣    Dynamische analytische Qualitätssicherung
+
+       ‣    Hilfsmittel
+
+
+
+
+VO - Software Engineering II                         30
+4.2 Analytische QS
+
+                                           STATISCHE QS
+    Ziel: Prüfung der inneren Qualität (Struktur, Design)
+
+
+    ‣       Einsatz in frühen Phasen möglich
+    ‣       Prüfung, ohne System dynamisch auszuführen
+    ‣       Repräsentationen des Systems
+            (Dokumentation, Code)
+
+
+    Methoden:
+        -    Metriken
+        -    Reviews
+
+
+VO - Software Engineering II                          31
+4.2 Analytische QS
+
+                                            METRIKEN (1/3)
+        „Eine SW-Qualitätsmetrik ist eine Funktion, die eine Software Einheit in einen Zahlenwert abbildet. Dieser
+        berechnete Wert ist interpretierbar als der Erfüllungsgrad einer Qualitätseigenschaft der Software Einheit.“
+                                                                                                        [IEEE 1061, 1998]
+
+
+
+
+        ‣ Metriken helfen, um die Qualität zu quanti zieren und zu
+          bewerten
+
+        ‣ Prognosen sind möglich (Kosten, Termine, und damit
+          verbundene Ressourcen)
+
+        ‣ Entscheidungsunterstützung (basierend auf Kenndaten)
+
+        ‣ Unterscheidung: Kostenmetriken, Fehlermetriken,
+          Umfangsmetriken, Qualitätsmetriken
+
+
+VO - Software Engineering II                 fi
+                                                              32
+4.2 Analytische QS
+
+                               METRIKEN (2/3)
+
+
+
+
+VO - Software Engineering II         33
+4.2 Analytische QS
+
+                                               METRIKEN (3/3)
+
+       ‣ Wie ndet man geeignete Metriken?
+         ➔ GQM Ansatz
+       ‣ Drei Ziele:
+
+              ‣ De nieren der Ziele
+
+              ‣ Ableitung von Fragen bezüglich der Ziele
+
+              ‣ Festlegung von Metriken für jede Frage
+
+
+
+
+VO - Software Engineering II
+  fi     fi
+                                                           34
+4.2 Analytische QS
+
+                               REVIEWS
+
+                                       1. Stellungnahme
+
+                                       2. Walkthrough
+
+                                       3. Inspektion
+
+
+
+
+VO - Software Engineering II      35
+4.2 Analytische QS
+
+                               INSPEKTION - CHECKLISTE
+
+
+
+
+VO - Software Engineering II              36
+4.2 Analytische QS
+
+                               ANALYTISCHE METHODEN
+
+
+       ‣    Statische analytische Qualitätssicherung
+
+       ‣    Dynamische analytische Qualitätssicherung
+
+       ‣    Hilfsmittel
+
+
+
+
+VO - Software Engineering II                      37
+4.2 Analytische QS
+
+                                        DYNAMISCHE QS
+
+    Ziel: Fehlerfindung in existierenden
+    Teillösungen
+
+    ‣    Überprüfung von Komponenten
+         und Systemen durch
+         Software Testen
+    ‣    Validierung vs. Verifikation
+
+
+
+
+VO - Software Engineering II                  38
+4.2 Analytische QS
+
+                         DYNAMISCHE QS IM V-MODELL
+                                   Bauen wir das richtige Produkt?
+
+
+
+
+                    Bauen wir
+                   das Produkt
+                     richtig?
+
+
+
+
+VO - Software Engineering II          39
+4.2 Analytische QS
+
+                                  SOFTWARE FEHLER
+          ‣ Software Error (Fehler): A human action that produces an incorrect result
+
+          ‣ Software Fault (Fehlerfall): An incorrect step, process, or data de nition on a
+              computer program
+          ‣ Software Failure (Fehlverhalten): The inability of a system or component to
+              perform its required functions within speci ed performance requirements
+          ‣
+
+
+
+
+VO - Software Engineering II                fi
+                                                   40
+                                                                   fi
+4.2 Analytische QS
+
+                               SOFTWARE FEHLER
+
+
+
+
+VO - Software Engineering II          41
+4.2 Analytische QS
+
+                                 SOFTWARE TESTEN
+                               Program testing can be a very effective way to show
+                               the presence of bugs, but it is hopelessly inadequate
+                               for showing their absence
+
+                                    ‣    Black-Box Testen
+                                    ‣    White-Box Testen
+                                    ‣    Äquivalenzklassenzerlegung
+                                    ‣    Grenzwertanalyse
+                                    ‣    Mocking
+                                    ‣    Testüberdeckung:
+              E. Dijkstra                Statement, Branch, Einfache Bedingungsüberdeckung,
+                                         Mehrfache Bedingungsüberdeckung, Path
+
+VO - Software Engineering II                          42
+4.2 Analytische QS
+
+                               ANALYTISCHE METHODEN
+
+
+       ‣    Statische analytische Qualitätssicherung
+
+       ‣    Dynamische analytische Qualitätssicherung
+
+       ‣    Hilfsmittel
+
+
+
+
+VO - Software Engineering II                      43
+4.2 Analytische QS
+
+                                         HILFSMITTEL
+
+ ‣       Testautomatisierung
+     -    Verwendung bei CI Strategien
+     -    Regressionstest
+ ‣       Code Coverage Analyse
+ ‣       Code Quality Checks
+
+
+
+
+VO - Software Engineering II                  44
+4.2 Analytische QS
+
+                               ANALYTISCHE METHODEN
+
+
+       ‣    Statische analytische Qualitätssicherung
+
+       ‣    Dynamische analytische Qualitätssicherung
+
+       ‣    Hilfsmittel
+
+
+
+
+VO - Software Engineering II                      45
+                                               INHALTE
+
+                               4     Qualitätssicherung
+                               4.1   Einführung
+                               4.2   Analytische Qualitätssicherung
+                               4.3   Konstruktive Qualitätssicherung
+                               4.4   Organisatorische Qualitätssicherung
+
+
+
+
+VO - Software Engineering II                         46
+                                               INHALTE
+
+                               4     Qualitätssicherung
+                               4.1   Einführung
+                               4.2   Analytische Qualitätssicherung
+                               4.3   Konstruktive Qualitätssicherung
+                               4.4   Organisatorische Qualitätssicherung
+
+
+
+
+VO - Software Engineering II                         46
+4.3 Konstruktive QS
+
+                               KONSTRUKTIVE METHODEN
+      Ziel: Mängel bereits zu Beginn zu vermeiden
+            Qualitätsniveau erreichen/steigern
+
+
+      ‣   Technische Maßnahmen: Verwendung von
+          Methoden, Sprachen, Werkzeugen
+      ‣   Organisatorische Maßnahmen: Verwendung von
+          SE-Prozessmodellen
+      ‣   Menschliche Maßnahmen: Schulungen
+
+
+
+VO - Software Engineering II                    47
+                                               INHALTE
+
+                               4     Qualitätssicherung
+                               4.1   Einführung
+                               4.2   Analytische Qualitätssicherung
+                               4.3   Konstruktive Qualitätssicherung
+                               4.4   Organisatorische Qualitätssicherung
+
+
+
+
+VO - Software Engineering II                         48
+                                               INHALTE
+
+                               4     Qualitätssicherung
+                               4.1   Einführung
+                               4.2   Analytische Qualitätssicherung
+                               4.3   Konstruktive Qualitätssicherung
+                               4.4   Organisatorische Qualitätssicherung
+
+
+
+
+VO - Software Engineering II                         48
+4.4 Organisatorische QS
+
+             ORGANISATORISCHE QUALITÄTSSICHERUNG
+
+         Ziel: Rahmenbedingungen für analytische Maßnahmen
+         schaffen, Lenkung der Qualität
+         ‣    Wissensmanagement
+         ‣    Templates/Checklisten
+         ‣    Standards (Software, Produkt, Prozess)
+         ‣    Teil des Qualitätsmanagements
+
+
+
+
+VO - Software Engineering II                     49
+4.4 Organisatorische QS
+
+                                                               STANDARDS
+                                                                              Prozess
+     ISO … International Standardization Organization
+     IEEE … Institute for Electrical and Electronic Engineering
+     SEI … Software Engineering Institute (Carnegie Mellon University)
+
+     ISO-9000 ist eine Familie von Standards für Qualitätsmanagementsysteme
+
+     ‣ ISO 9001 befasst sich mit Organisationen, welche mit dem QS-Prozess
+       beschäftigt sind und Produkte entwerfen, entwickeln und warten
+     ‣ ISO 9001-3 Normen für den Bereich der SW-Entwicklung
+       (QA-Aktivitäten, Management, Tools, Messungen)
+
+     Regelmäßig aktualisiert. Momentan: ISO 9001:2015
+
+     ISO/IEC 250xx Qualitätskriterien und Bewertung von Softwareprodukten
+
+     IEEE Standard Familie
+     Sammlung von vielen Standards
+     ~ 160 Dokumente zum Thema SW-Engineering
+
+     SEI CMMI-DEV (Capability Maturity Model Integration for Development)
+     Ein Prozessverbesserungsansatz für Services, Beschaffung und Entwicklung
+     CMMI Modelle sind Sammlungen von „best practices“
+
+
+VO - Software Engineering II                                                    50
+4.4 Organisatorische QS
+                                CMMI -
+                 CAPABILITY MATURITY MODEL INTEGRATED
+
+        Ziel: Einschätzung der Qualität der SW-Entwicklung
+        ‣        Reifegradmodell in 5 Stufen
+        1.Initial (initialer Prozess): ad-hoc: SW-Entwicklung erfolgt "irgendwie"; Erfolg ist nicht erkl rbar
+
+        2.Repeatable (wiederholbarer Prozess): Planung, Meilensteine, QS; Erfolg h ngt aber von Personen ab
+
+        3.De ned (de nierter Prozess): Konstruktive QS; Institutionalisierter Prozess; Qualit t meist gut
+
+        4.Managed (gesteuerter Prozess): Durch Messen gesteuert; vorhersagbar hohe Qualit t
+
+        5.Optimizing (selbstverbessernder Prozess): Kontinuierliches Feedback zur Verbesserung des Prozesses
+
+
+
+VO - Software Engineering II
+ fi         fi
+                                                                 51
+                                                                         ä       ä   ä   ä
+4.4 Organisatorische QS
+
+                               ZUSAMMENFASSUNG
+      Qualitätsfaktoren                    Maßnahmen
+
+
+
+
+VO - Software Engineering II          52
+

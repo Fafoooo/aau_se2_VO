@@ -1,0 +1,4681 @@
+                        SOFTWARE ENGINEERING II
+                                 Vorlesung
+
+
+                               Projektmanagement
+
+
+
+
+VO - Software Engineering II           1
+ Wiederholung
+
+                      ANFORDERUNGSDOKUMENTATION
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+VO - Software Engineering II                        2
+ Wiederholung
+
+                      ANFORDERUNGSDOKUMENTATION
+                                         WO werden die dokumentierten Anforderungen gesammelt?
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+VO - Software Engineering II                        2
+ Wiederholung
+
+                      ANFORDERUNGSDOKUMENTATION
+                                         WO werden die dokumentierten Anforderungen gesammelt?
+
+
+
+
+                                WIE werden Anforderungen dokumentiert?
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+VO - Software Engineering II                        2
+     Wiederholung
+
+                      ANFORDERUNGSDOKUMENTATION
+                                           WO werden die dokumentierten Anforderungen gesammelt?
+
+                                             Lastenheft            P ichtenheft
+
+
+                                                                                      Product Backlog
+
+                                  WIE werden Anforderungen dokumentiert?
+
+
+
+
+         Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+VO - Software Engineering II
+fl
+                                                          2
+     Wiederholung
+
+                                          ANFORDERUNGSDOKUMENTATION
+                                                                   WO werden die dokumentierten Anforderungen gesammelt?
+
+                                                                      Lastenheft                  P ichtenheft
+
+
+                                                                                                                         Product Backlog
+
+                                                         WIE werden Anforderungen dokumentiert?
+
+         Gallia est omnis divisa
+         in partes tres, quarum
+         unam incolunt Belgae,
+         aliam Aquitani, tertiam
+         q u i i p s o ru m l i n g u a
+         Celtae, nostra Galli
+         appellantur. 2 Hi omnes
+         lingua, institutis, legibus
+         inter se differunt.
+
+
+                Prosa                     User Stories    Use Case Diagramm   Use Case Beschreibung    Sequenzdiagramm     Aktivitätsdiagramm
+
+         Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+VO - Software Engineering II
+fl
+                                                                                   2
+ Wiederholung
+
+                          REQUIREMENTS ENGINEERING
+    Validierung                                         Abstimmung
+
+
+
+
+                                                        Management
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+VO - Software Engineering II                        3
+ Wiederholung
+
+                              REQUIREMENTS ENGINEERING
+    Validierung                                                     Abstimmung
+
+
+
+
+        Anforderung   Ausgangssituation   Ereignis   Ergebnis       Management
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+VO - Software Engineering II                                    3
+ Wiederholung
+
+                              REQUIREMENTS ENGINEERING
+    Validierung                                                     Abstimmung
+
+
+                                                                    Identifikation   Analyse   Auflösen   Dokumentation
+
+
+
+
+        Anforderung   Ausgangssituation   Ereignis   Ergebnis       Management
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+VO - Software Engineering II                                    3
+ Wiederholung
+
+                              REQUIREMENTS ENGINEERING
+    Validierung                                                     Abstimmung
+
+
+                                                                    Identifikation   Analyse   Auflösen   Dokumentation
+
+
+
+
+        Anforderung   Ausgangssituation   Ereignis   Ergebnis       Management
+
+
+
+
+       Aufgaben des RE: Ermitteln, Dokumentieren, Prüfen, Abstimmen und Verwalten von Anforderungen
+VO - Software Engineering II                                    3
+                                               LITERATUR
+
+
+
+
+                    [1] Software Engineering           [4] Best Practice Software-Engineering
+                         Ian Sommerville                          A. Schatten et al.
+                            10. Au age                                   2010
+VO - Software Engineering II
+     fl
+                                                   4
+                                            INHALTE
+                           3     Projektmanagement
+                           3.1   Einführung
+                           3.2   Aufwandsschätzung
+                           3.3   Planung und Steuerung
+                           3.4   Personal- und Risikomanagement
+
+
+
+
+VO - Software Engineering II                      5
+ 3.1 Einführung
+
+                               PROJEKTMANAGEMENT
+
+
+
+
+           … Ergebnisse oft abhängig von Zeitplan, Kosten, Technischem, zu erwartendem Pro t …
+
+
+
+
+VO - Software Engineering II                        6
+                                                                               fi
+ 3.1 Einführung
+
+                               PROJEKTMANAGEMENT
+                Projektmanagement ist die „Gesamtheit von Führungsaufgaben, -organisation,
+                          -techniken und -mitteln für die Abwicklung eines Projekts.“
+                                                                                     [DIN 69901]
+
+
+
+
+           … Ergebnisse oft abhängig von Zeitplan, Kosten, Technischem, zu erwartendem Pro t …
+
+
+
+
+VO - Software Engineering II                         6
+                                                                                fi
+ 3.1 Einführung
+
+                               PROJEKTMANAGEMENT
+                Projektmanagement ist die „Gesamtheit von Führungsaufgaben, -organisation,
+                          -techniken und -mitteln für die Abwicklung eines Projekts.“
+                                                                                     [DIN 69901]
+
+
+
+
+           … Ergebnisse oft abhängig von Zeitplan, Kosten, Technischem, zu erwartendem Pro t …
+
+
+
+
+VO - Software Engineering II                         6
+                                                                                fi
+ 3.1 Einführung
+
+                               PROJEKTMANAGEMENT
+                Projektmanagement ist die „Gesamtheit von Führungsaufgaben, -organisation,
+                          -techniken und -mitteln für die Abwicklung eines Projekts.“
+                                                                                                       [DIN 69901]
+
+
+
+              Ein Projekt ist (im Gegensatz zum normalen Tagesgeschäft oder zur Produktion)
+              ein einmaliges Vorhaben mit einem de nierten Anfang, einem de nierten Ende und
+              mehreren beteiligten Personen.
+                                                                  [H. Karnovsky, Grundlagen des Projektmanagements]
+
+
+
+
+           … Ergebnisse oft abhängig von Zeitplan, Kosten, Technischem, zu erwartendem Pro t …
+
+
+
+
+VO - Software Engineering II        fi
+                                                     6
+                                                             fi                                fi
+ 3.1 Einführung
+
+                                                   ZIELE
+                 Projekt mit geforderter Funktionalität wird innerhalb der vorgesehenen Zeit bzw.
+                                    Kosten in geforderter Qualität verwirklicht.
+
+
+                                                      Zeit
+
+
+
+
+                                                    Qualität
+
+                                Kosten                                   Funktionalität
+                                            Das „magische“ Dreieck
+
+VO - Software Engineering II                            7
+ 3.1 Einführung
+
+                                  KONTEXT
+
+
+      ‣ Projektgröße und Komplexität
+      ‣ Stakeholder
+      ‣ Rollen im Projekt
+      ‣ Organisationsstrukturen
+      ‣ Projektphasen
+
+
+
+VO - Software Engineering II           8
+ 3.1 Einführung
+
+                   PROJEKTGRÖSSE UND KOMPLEXITÄT
+                                         nach H. Karnovsky
+
+
+
+    kleines SW-Projekt (MINI): 1-2 Personen
+    z.B. Applikation zur Verwaltung von Kundendaten
+    mittleres SW-Projekt (MIDI): 3-20 Personen
+    z.B. Webapplikation mit hoher Verfügbarkeit von
+    Applikation und Datenbank
+
+    großes SW-Projekt (MAXI): > 20 Personen
+    z.B. verteilte Anwendung mit vielen Schnittstellen zu
+    bestehenden Systemen und hohe Verfügbarkeit
+
+    Risiken: Domänenkenntnis, Komplexität, Quali kation/Erfahrung der MA, Technologien
+
+
+
+VO - Software Engineering II                  fi
+                                                       9
+ 3.1 Einführung
+
+                   PROJEKTGRÖSSE UND KOMPLEXITÄT
+                                         nach H. Karnovsky
+
+
+
+    kleines SW-Projekt (MINI): 1-2 Personen
+    z.B. Applikation zur Verwaltung von Kundendaten
+    mittleres SW-Projekt (MIDI): 3-20 Personen
+    z.B. Webapplikation mit hoher Verfügbarkeit von
+    Applikation und Datenbank
+
+    großes SW-Projekt (MAXI): > 20 Personen
+    z.B. verteilte Anwendung mit vielen Schnittstellen zu
+    bestehenden Systemen und hohe Verfügbarkeit
+
+    Risiken: Domänenkenntnis, Komplexität, Quali kation/Erfahrung der MA, Technologien
+
+
+
+VO - Software Engineering II                  fi
+                                                       10
+ 3.1 Einführung
+
+                   PROJEKTGRÖSSE UND KOMPLEXITÄT
+                                         nach H. Karnovsky
+
+
+
+    kleines SW-Projekt (MINI): 1-2 Personen
+    z.B. Applikation zur Verwaltung von Kundendaten
+    mittleres SW-Projekt (MIDI): 3-20 Personen
+    z.B. Webapplikation mit hoher Verfügbarkeit von
+    Applikation und Datenbank
+
+    großes SW-Projekt (MAXI): > 20 Personen
+    z.B. verteilte Anwendung mit vielen Schnittstellen zu
+    bestehenden Systemen und hohe Verfügbarkeit
+
+    Risiken: Domänenkenntnis, Komplexität, Quali kation/Erfahrung der MA, Technologien
+
+
+
+VO - Software Engineering II                  fi
+                                                       11
+ 3.1 Einführung
+
+                                  KONTEXT
+
+
+      ‣ Projektgröße und Komplexität
+      ‣ Stakeholder
+      ‣ Rollen im Projekt
+      ‣ Organisationsstrukturen
+      ‣ Projektphasen
+
+
+
+VO - Software Engineering II           12
+ 3.1 Einführung
+
+                                              STAKEHOLDER
+                                                  „Interesseneigner“
+
+    A person or organization that has a (direct or indirect) in uence on a system’s requirements.
+    Indirect in uence also includes situations where a person or organization is impacted by
+    the system.                                                                         [IREB Glossary]
+
+
+
+                                              Anwender    Management
+
+                                     Kunde                             Servicepersonal
+
+                                                                           Product Owner
+                               Kundendienst
+
+                                                                        Marketing/Vertriebsabteilung
+                           Schulungspersonal
+                                                                         …
+
+VO - Software Engineering II
+           fl
+                                                          13
+                                                                fl
+ 3.1 Einführung
+
+                                      ROLLEN IM PROJEKT
+                                                                   Auftragnehmer
+
+
+
+
+                               redet mit                             koordiniert
+
+                                           Projektleiter/Teamkoordinator                Entwicklerteam
+
+
+
+
+                                                                                   {
+         Auftraggeber
+                                                                                       - Software Architekt
+                                                                                       - Dokumentenbeauftragter
+                                                                 Hauptverantwortung    - Testbeauftragter
+                                                                                       -…
+                                                                                       - Stellvertreter
+
+VO - Software Engineering II                                14
+ 3.1 Einführung
+
+                                      ROLLEN IM PROJEKT
+                                                                   Auftragnehmer
+
+
+
+
+                               redet mit                             koordiniert
+
+                                           Projektleiter/Teamkoordinator                Entwicklerteam
+
+
+
+
+                                                                                   {
+         Auftraggeber
+                                                                                       - Software Architekt
+                                                                                       - Dokumentenbeauftragter
+                                                                 Hauptverantwortung    - Testbeauftragter
+                                                                                       -…
+                                                                                       - Stellvertreter
+
+VO - Software Engineering II                                14
+ 3.1 Einführung
+
+                                  KONTEXT
+
+
+      ‣ Projektgröße und Komplexität
+      ‣ Stakeholder
+      ‣ Rollen im Projekt
+      ‣ Organisationsstrukturen
+      ‣ Projektphasen
+
+
+
+VO - Software Engineering II           15
+ 3.1 Einführung
+
+                          STAB-PROJEKTORGANISATION
+      ‣ Abteilungen mit bestimmten Spezialisierungen
+
+
+
+
+                                                                                                  [4]
+
+                                                            z.B. A= Software Entwicklung, B= Marketing
+VO - Software Engineering II                           16
+ 3.1 Einführung
+
+                          STAB-PROJEKTORGANISATION
+      ‣ Abteilungen mit bestimmten Spezialisierungen
+
+
+
+       + effiziente Nutzung von techn. Personal
+       + Karrieremöglichkeiten
+       + guter Technologietransfer zwischen Projekten
+       + Stabilität, Sicherheit, Moral
+
+
+
+
+                                                                                                   [4]
+
+                                                             z.B. A= Software Entwicklung, B= Marketing
+VO - Software Engineering II                            16
+ 3.1 Einführung
+
+                          STAB-PROJEKTORGANISATION
+      ‣ Abteilungen mit bestimmten Spezialisierungen
+
+                                           Vorteile
+       + effiziente Nutzung von techn. Personal
+       + Karrieremöglichkeiten
+       + guter Technologietransfer zwischen Projekten
+       + Stabilität, Sicherheit, Moral
+
+
+
+
+       - schlechte Schnittstelle zum Kunden
+       - weniger Projektautorität
+       - schlechte horizontale Kommunikation
+       - eher disziplin-/technologieorientiert                                                     [4]
+       - langsamerWorkflows
+                                                             z.B. A= Software Entwicklung, B= Marketing
+VO - Software Engineering II                            16
+ 3.1 Einführung
+
+                          STAB-PROJEKTORGANISATION
+      ‣ Abteilungen mit bestimmten Spezialisierungen
+
+                                           Vorteile
+       + effiziente Nutzung von techn. Personal
+       + Karrieremöglichkeiten
+       + guter Technologietransfer zwischen Projekten
+       + Stabilität, Sicherheit, Moral
+
+
+
+                                         Nachteile
+       - schlechte Schnittstelle zum Kunden
+       - weniger Projektautorität
+       - schlechte horizontale Kommunikation
+       - eher disziplin-/technologieorientiert                                                     [4]
+       - langsamerWorkflows
+                                                             z.B. A= Software Entwicklung, B= Marketing
+VO - Software Engineering II                            16
+ 3.1 Einführung
+
+                          REINE PROJEKTORGANISATION
+      ‣ MA werden für Projekte „abgezogen“
+
+
+
+
+                                                      [4]
+
+
+
+VO - Software Engineering II                 17
+ 3.1 Einführung
+
+                          REINE PROJEKTORGANISATION
+      ‣ MA werden für Projekte „abgezogen“
+
+                                      Vorteile
+       + Planbarkeit
+       + Kostenkontrolle
+       + Ansprechpartner für Kunden
+       + schnelle Reaktionszeiten
+
+
+
+
+                                                      [4]
+
+
+
+VO - Software Engineering II                     17
+ 3.1 Einführung
+
+                          REINE PROJEKTORGANISATION
+      ‣ MA werden für Projekte „abgezogen“
+
+                                        Vorteile
+       + Planbarkeit
+       + Kostenkontrolle
+       + Ansprechpartner für Kunden
+       + schnelle Reaktionszeiten
+
+
+
+                                      Nachteile
+       - ineffiziente Nutzung der Experten
+       - unsicheres berufliches Weiterkommen
+       - wenig Wissensweitergabe zwischen Projekten        [4]
+
+
+
+VO - Software Engineering II                          17
+ 3.1 Einführung
+
+                       MATRIX-PROJEKTORGANISATION
+      ‣ Balance zwischen reiner Projektorganisation und
+        Stab-Projektorganisation
+
+
+
+
+     ‣ Mit wem müssen Aufgaben koordiniert werden?
+     ‣ Wie wird das Projektteam im Unternehmen gesehen?
+                                                               [4]
+     ‣ Was passiert mit MA gegen Ende des Projektes?
+
+
+VO - Software Engineering II                              18
+ 3.1 Einführung
+
+                        MATRIX-PROJEKTORGANISATION
+      ‣ Balance zwischen reiner Projektorganisation und
+        Stab-Projektorganisation
+
+
+                                            Vorteile
+       + effizienterer Einsatz von Ressourcen
+
+
+
+
+     ‣ Mit wem müssen Aufgaben koordiniert werden?
+     ‣ Wie wird das Projektteam im Unternehmen gesehen?
+                                                               [4]
+     ‣ Was passiert mit MA gegen Ende des Projektes?
+
+
+VO - Software Engineering II                              18
+ 3.1 Einführung
+
+                        MATRIX-PROJEKTORGANISATION
+      ‣ Balance zwischen reiner Projektorganisation und
+        Stab-Projektorganisation
+
+
+                                            Vorteile
+       + effizienterer Einsatz von Ressourcen
+
+                                         Nachteile
+       - MA haben mehr als einen Vorgesetzten
+       - Zeitmanagement
+
+
+     ‣ Mit wem müssen Aufgaben koordiniert werden?
+     ‣ Wie wird das Projektteam im Unternehmen gesehen?
+                                                               [4]
+     ‣ Was passiert mit MA gegen Ende des Projektes?
+
+
+VO - Software Engineering II                              18
+19
+ 3.1 Einführung
+
+                                  KONTEXT
+
+
+      ‣ Projektgröße und Komplexität
+      ‣ Stakeholder
+      ‣ Rollen im Projekt
+      ‣ Organisationsstrukturen
+      ‣ Projektphasen
+
+
+
+VO - Software Engineering II           20
+ 3.2 Aufwandsschätzung
+
+                                         PROJEKTPHASEN
+
+
+       Projektde nition          Projektplanung            Projektverfolgung       Projektabschluss
+
+      - Projektvorschlag       - Projektstruktur           - Projektüberwachung   - Übergabe der Projektergebnisse
+      - Projektentscheidung    - Aufwände schätzen         - Aufwandserfassung    - Entlastung des Projektteams
+      - Projektauftrag         - technische und            - Meilenstein Trend-   - Abrechnung der Projektaufwände
+                                 wirtschaftliche Planung     analyse              - Projektbericht „lessons learned“
+
+
+
+
+                               unabhängig von Organisationsform und Projekttyp
+VO - Software Engineering II
+         fi
+                                                           21
+ 3.1 Einführung
+
+                                  KONTEXT
+
+
+      ‣ Projektgröße und Komplexität
+      ‣ Stakeholder
+      ‣ Rollen im Projekt
+      ‣ Organisationsstrukturen
+      ‣ Projektphasen
+
+
+
+VO - Software Engineering II           22
+ Projektmanagement I
+
+                                         ZUSAMMENFASSUNG
+
+                               Zeit
+
+
+
+                             Qualität
+
+             Kosten                            Funktionalität
+                      Das „magische“ Dreieck
+
+
+
+
+      Phasen: Projektde nition                     Projektplanung    Projektverfolgung   Projektabschluss
+
+
+VO - Software Engineering II
+        fi
+                                                                23
+                                            INHALTE
+                           3     Projektmanagement
+                           3.1   Einführung
+                           3.2   Aufwandsschätzung
+                           3.3   Planung und Steuerung
+                           3.4   Personal- und Risikomanagement
+
+
+
+
+VO - Software Engineering II                      24
+ 3.2 Aufwandsschätzung
+
+                                         PROJEKTPHASEN
+
+
+       Projektde nition          Projektplanung            Projektverfolgung       Projektabschluss
+
+      - Projektvorschlag       - Projektstruktur           - Projektüberwachung   - Übergabe der Projektergebnisse
+      - Projektentscheidung    - Aufwände schätzen         - Aufwandserfassung    - Entlastung des Projektteams
+      - Projektauftrag         - technische und            - Meilenstein Trend-   - Abrechnung der Projektaufwände
+                                 wirtschaftliche Planung     analyse              - Projektbericht „lessons learned“
+
+
+
+
+VO - Software Engineering II
+         fi
+                                                           25
+ 3.2 Aufwandsschätzung
+
+                               AUFWANDSSCHÄTZUNG
+          ‣ Wie hoch wird der Aufwand sein?
+          ‣ Wie lange wird für die Entwicklung benötigt?
+          ‣ Wie viele Personen werden benötigt?
+
+
+
+
+VO - Software Engineering II                26
+ 3.2 Aufwandsschätzung
+
+                               AUFWANDSSCHÄTZUNG
+          ‣ Wie hoch wird der Aufwand sein?
+          ‣ Wie lange wird für die Entwicklung benötigt?
+          ‣ Wie viele Personen werden benötigt?
+
+
+
+
+VO - Software Engineering II                26
+ 3.2 Aufwandsschätzung
+
+                         WOZU AUFWANDSSCHÄTZUNG?
+
+          ‣ Kalkulation und Angebotslegung
+
+          ‣ Grundlage der Entscheidung: selber bauen oder kaufen?
+
+          ‣Personalplanung
+
+          ‣Nachkalkulation
+
+
+
+
+VO - Software Engineering II                 27
+ 3.2 Aufwandsschätzung
+
+                    WIE MAN ES NICHT MACHEN SOLLTE
+
+
+
+
+VO - Software Engineering II      28
+ 3.2 Aufwandsschätzung
+
+                                                  SCHÄTZTRICHTER
+            Schätzungen werden umso genauer, je näher man sich dem Projektende nähert.
+
+
+
+
+                   Maximaler Schätzfehler (log)
+                                                                   Zeit
+
+
+
+
+                                                                          [Böhm, 2000]
+VO - Software Engineering II                            29
+ 3.2 Aufwandsschätzung
+
+                               SCHÄTZVERFAHREN
+
+
+          ‣ Empirische Schätzverfahren
+
+          ‣ Algorithmische Schätzverfahren
+
+          ‣ Sonstige Schätzverfahren
+
+
+
+
+VO - Software Engineering II                 30
+ 3.2 Empirische Schätzverfahren
+
+                      EMPIRISCHE SCHÄTZVERFAHREN
+
+   ‣ Gut bei genug Erfahrung mit gleichartigen
+     Projekten
+   ‣ Basiert auf Erfahrung der Schätzenden und
+     dem Vergleich mit abgewickelten Projekten
+
+
+
+
+VO - Software Engineering II                     31
+ 3.2 Empirische Schätzverfahren
+
+                          EMPIRISCHE SCHÄTZVERFAHREN
+
+   ‣ Gut bei genug Erfahrung mit gleichartigen
+     Projekten
+   ‣ Basiert auf Erfahrung der Schätzenden und
+     dem Vergleich mit abgewickelten Projekten
+
+                                      Vorteile
+   + einfach und billig
+
+
+
+
+VO - Software Engineering II                     31
+ 3.2 Empirische Schätzverfahren
+
+                          EMPIRISCHE SCHÄTZVERFAHREN
+
+   ‣ Gut bei genug Erfahrung mit gleichartigen
+     Projekten
+   ‣ Basiert auf Erfahrung der Schätzenden und
+     dem Vergleich mit abgewickelten Projekten
+
+                                      Vorteile
+   + einfach und billig
+
+
+                                    Nachteile
+   - grobe Fehler möglich
+
+
+
+VO - Software Engineering II                     31
+ 3.2 Empirische Schätzverfahren
+
+                      EMPIRISCHE SCHÄTZVERFAHREN
+
+        Techniken:
+        ‣ Expertenschätzung
+        ‣ Delphi-Methode
+        ‣ Analogieschätzung
+        ‣ Bottom-Up Methode
+
+
+
+
+VO - Software Engineering II       32
+ 3.2 Empirische Schätzverfahren
+
+                                EXPERTENSCHÄTZUNG
+
+  ‣ Schätzung erfolgt durch mehrere Experten in Meetings
+  ‣ Gut bei genug Erfahrung mit gleichartigen Projekten
+
+
+
+
+VO - Software Engineering II                          33
+ 3.2 Empirische Schätzverfahren
+
+                                EXPERTENSCHÄTZUNG
+
+  ‣ Schätzung erfolgt durch mehrere Experten in Meetings
+  ‣ Gut bei genug Erfahrung mit gleichartigen Projekten
+
+                                            Vorteile
+    + einfach und günstig
+
+
+
+
+VO - Software Engineering II                          33
+ 3.2 Empirische Schätzverfahren
+
+                                EXPERTENSCHÄTZUNG
+
+  ‣ Schätzung erfolgt durch mehrere Experten in Meetings
+  ‣ Gut bei genug Erfahrung mit gleichartigen Projekten
+
+                                            Vorteile
+    + einfach und günstig
+
+
+                                         Nachteile
+    - grobe Fehler möglich
+
+
+
+
+VO - Software Engineering II                          33
+ 3.2 Empirische Schätzverfahren
+
+                      EMPIRISCHE SCHÄTZVERFAHREN
+
+        Techniken:
+        ‣ Expertenschätzung
+        ‣ Delphi-Methode
+        ‣ Analogieschätzung
+        ‣ Bottom-Up Methode
+
+
+
+
+VO - Software Engineering II       34
+ 3.2 Empirische Schätzverfahren
+
+                                        DELPHI-METHODE
+
+    ‣ mehrere Runden, konvergiert
+    ‣ Schätzung mit mehreren unabhängigen Experten
+       1.Übergabe von Projektbeschreibung und Unterlagen
+       2.Treffen und Diskussion
+       3.anonymes Schätzen des Umfanges
+       4.Sammlung und Anonymisierung durch Koordinator
+       5.Diskussion der Ergebnisse
+       6.Wiederholung bei 3., bis Koordinator zufrieden ist
+
+
+
+
+VO - Software Engineering II                                  35
+ 3.2 Empirische Schätzverfahren
+
+                                          DELPHI-METHODE
+
+    ‣ mehrere Runden, konvergiert
+    ‣ Schätzung mit mehreren unabhängigen Experten
+       1.Übergabe von Projektbeschreibung und Unterlagen
+       2.Treffen und Diskussion
+       3.anonymes Schätzen des Umfanges
+       4.Sammlung und Anonymisierung durch Koordinator
+       5.Diskussion der Ergebnisse
+       6.Wiederholung bei 3., bis Koordinator zufrieden ist
+
+                                                 Vorteile
+  + liefert sehr gute Ergebnisse und vermeidet Einfluss
+    dominanter Teilnehmer
+  + eliminiert Ausreißer
+
+VO - Software Engineering II                                  35
+ 3.2 Empirische Schätzverfahren
+
+                                          DELPHI-METHODE
+
+    ‣ mehrere Runden, konvergiert
+    ‣ Schätzung mit mehreren unabhängigen Experten
+       1.Übergabe von Projektbeschreibung und Unterlagen
+       2.Treffen und Diskussion
+       3.anonymes Schätzen des Umfanges
+       4.Sammlung und Anonymisierung durch Koordinator
+       5.Diskussion der Ergebnisse
+       6.Wiederholung bei 3., bis Koordinator zufrieden ist
+
+                                                 Vorteile                                           Nachteile
+  + liefert sehr gute Ergebnisse und vermeidet Einfluss            - Experten mit Erfahrung nötig
+    dominanter Teilnehmer                                          - mitunter langwierig
+  + eliminiert Ausreißer
+
+VO - Software Engineering II                                  35
+ 3.2 Empirische Schätzverfahren
+
+                      EMPIRISCHE SCHÄTZVERFAHREN
+
+        Techniken:
+        ‣ Expertenschätzung
+        ‣ Delphi-Methode
+        ‣ Analogieschätzung
+        ‣ Bottom-Up Methode
+
+
+
+
+VO - Software Engineering II       36
+ 3.2 Empirische Schätzverfahren
+
+                               ANALOGIE SCHÄTZUNG
+
+      ‣ Schätzungen werden aufgrund ähnlicher Projekte
+        durchgeführt
+
+      ‣ Idealerweise selbes Geschäftsumfeld, ähnliches
+        System, und die selben Methoden und Sprachen
+
+      ‣ Abweichungen werden durch Adjustierungsfaktoren
+        berücksichtigt
+
+
+
+
+VO - Software Engineering II                        37
+ 3.2 Empirische Schätzverfahren
+
+                                        ANALOGIE SCHÄTZUNG
+
+      ‣ Schätzungen werden aufgrund ähnlicher Projekte
+        durchgeführt
+
+      ‣ Idealerweise selbes Geschäftsumfeld, ähnliches
+        System, und die selben Methoden und Sprachen
+
+      ‣ Abweichungen werden durch Adjustierungsfaktoren
+        berücksichtigt
+
+
+
+                                                       Vorteile
+  + sehr zuverlässig, wenn man mit ähnlichen Projekten bereits
+    Erfahrung hat
+  + rasches und frühes Ergebnis
+
+VO - Software Engineering II                                      37
+ 3.2 Empirische Schätzverfahren
+
+                                        ANALOGIE SCHÄTZUNG
+
+      ‣ Schätzungen werden aufgrund ähnlicher Projekte
+        durchgeführt
+
+      ‣ Idealerweise selbes Geschäftsumfeld, ähnliches
+        System, und die selben Methoden und Sprachen
+
+      ‣ Abweichungen werden durch Adjustierungsfaktoren
+        berücksichtigt
+
+
+
+                                                       Vorteile                                                        Nachteile
+  + sehr zuverlässig, wenn man mit ähnlichen Projekten bereits         - Eventuell sind die Unterschiede doch größer und die Schätzung
+    Erfahrung hat                                                        liegt daneben
+  + rasches und frühes Ergebnis
+
+VO - Software Engineering II                                      37
+ 3.2 Empirische Schätzverfahren
+
+                      EMPIRISCHE SCHÄTZVERFAHREN
+
+        Techniken:
+        ‣ Expertenschätzung
+        ‣ Delphi-Methode
+        ‣ Analogieschätzung
+        ‣ Bottom-Up Methode
+
+
+
+
+VO - Software Engineering II       38
+ 3.2 Empirische Schätzverfahren
+
+                               BOTTOM-UP METHODE
+
+       ‣ Jede Komponente wird einzeln geschätzt
+
+       ‣ Errichtung des Gesamtaufwandes
+
+       ‣ Immer in Kombination mit anderen
+         Schätzmethoden
+
+
+
+
+VO - Software Engineering II                39
+ 3.2 Empirische Schätzverfahren
+
+                                   BOTTOM-UP METHODE
+
+       ‣ Jede Komponente wird einzeln geschätzt
+
+       ‣ Errichtung des Gesamtaufwandes
+
+       ‣ Immer in Kombination mit anderen
+         Schätzmethoden
+
+
+                                          Vorteile
+  + Ableitung von Meilensteinen möglich
+
+
+VO - Software Engineering II                         39
+ 3.2 Empirische Schätzverfahren
+
+                                   BOTTOM-UP METHODE
+
+       ‣ Jede Komponente wird einzeln geschätzt
+
+       ‣ Errichtung des Gesamtaufwandes
+
+       ‣ Immer in Kombination mit anderen
+         Schätzmethoden
+
+
+                                          Vorteile                                            Nachteile
+  + Ableitung von Meilensteinen möglich                   - Aufwand nicht einfach addierbar
+
+
+VO - Software Engineering II                         39
+ 3.2 Empirische Schätzverfahren
+
+                      EMPIRISCHE SCHÄTZVERFAHREN
+
+        Techniken:
+        ‣ Expertenschätzung
+        ‣ Delphi-Methode
+        ‣ Analogieschätzung
+        ‣ Bottom-Up Methode
+
+
+
+
+VO - Software Engineering II       40
+ 3.2 Aufwandsschätzung
+
+                               SCHÄTZVERFAHREN
+
+
+          ‣ Empirische Schätzverfahren
+
+          ‣ Algorithmische Schätzverfahren
+
+          ‣ Sonstige Schätzverfahren
+
+
+
+
+VO - Software Engineering II                 41
+ 3.2 Algorithmische Schätzverfahren
+
+                 ALGORITHMISCHE SCHÄTZVERFAHREN
+   ‣ Berechnung von Kosten- und Durchlaufzeit-Funktionen
+      - Eingangsvariablen müssen zutreffend geschätzt werden
+      - Modell muss kalibriert werden
+
+
+
+
+VO - Software Engineering II                      42
+ 3.2 Algorithmische Schätzverfahren
+
+                  ALGORITHMISCHE SCHÄTZVERFAHREN
+   ‣ Berechnung von Kosten- und Durchlaufzeit-Funktionen
+      - Eingangsvariablen müssen zutreffend geschätzt werden
+      - Modell muss kalibriert werden
+
+
+
+                                                   Vorteile
+   + liefert bei richtiger Kalibrierung die besten Prognosen
+
+
+
+
+VO - Software Engineering II                                   42
+ 3.2 Algorithmische Schätzverfahren
+
+                  ALGORITHMISCHE SCHÄTZVERFAHREN
+   ‣ Berechnung von Kosten- und Durchlaufzeit-Funktionen
+      - Eingangsvariablen müssen zutreffend geschätzt werden
+      - Modell muss kalibriert werden
+
+
+
+                                                   Vorteile
+   + liefert bei richtiger Kalibrierung die besten Prognosen
+
+
+                                                Nachteile
+   - ohne Maßzahlen über abgewickelte Projekte keine
+     zuverlässigen Prognosen möglich
+
+
+
+VO - Software Engineering II                                   42
+ 3.2 Algorithmische Schätzverfahren
+
+                 ALGORITHMISCHE SCHÄTZVERFAHREN
+
+       Techniken:
+       ‣ Function Points
+
+       ‣ Application Points
+
+       ‣ COCOMO 81 und COCOMO II
+
+
+
+
+VO - Software Engineering II          43
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (01/10)
+       ‣ IBM, A. Albrecht 1979
+       ‣ Basis der Schätzung ist Anzahl der zu implementierenden Funktionen
+       ‣ Geht von Benutzersicht aus
+
+       Vorgehensweise:
+        1. Schritt: Alle relevanten Daten werden gesammelt und in folgende Kategorien eingeteilt
+
+
+
+
+VO - Software Engineering II                          44
+ 3.2 Algorithmische Schätzverfahren
+
+                                FUNCTION POINT METHODE (01/10)
+        ‣ IBM, A. Albrecht 1979
+        ‣ Basis der Schätzung ist Anzahl der zu implementierenden Funktionen
+        ‣ Geht von Benutzersicht aus
+
+        Vorgehensweise:
+          1. Schritt: Alle relevanten Daten werden gesammelt und in folgende Kategorien eingeteilt
+
+
+ Zugriff auf interne
+ Datenbestände z.B.
+ Entitätstypen, Relationen in
+ Datenbanken
+
+
+
+
+VO - Software Engineering II                            44
+ 3.2 Algorithmische Schätzverfahren
+
+                                FUNCTION POINT METHODE (01/10)
+        ‣ IBM, A. Albrecht 1979
+        ‣ Basis der Schätzung ist Anzahl der zu implementierenden Funktionen
+        ‣ Geht von Benutzersicht aus
+
+        Vorgehensweise:
+          1. Schritt: Alle relevanten Daten werden gesammelt und in folgende Kategorien eingeteilt
+
+
+ Zugriff auf interne
+ Datenbestände z.B.
+ Entitätstypen, Relationen in
+ Datenbanken
+
+
+
+
+                         Lesezugriff auf externe
+                            Datenbestände
+VO - Software Engineering II                            44
+ 3.2 Algorithmische Schätzverfahren
+
+                                FUNCTION POINT METHODE (01/10)
+        ‣ IBM, A. Albrecht 1979
+        ‣ Basis der Schätzung ist Anzahl der zu implementierenden Funktionen
+        ‣ Geht von Benutzersicht aus
+
+        Vorgehensweise:
+          1. Schritt: Alle relevanten Daten werden gesammelt und in folgende Kategorien eingeteilt
+
+
+ Zugriff auf interne
+ Datenbestände z.B.
+ Entitätstypen, Relationen in
+ Datenbanken
+
+
+
+
+                                                   Pflege des internen Datenbestands z. B.
+                         Lesezugriff auf externe   durch Formulareingaben, Eingabedateien
+                            Datenbestände                  aus externen
+VO - Software Engineering II                                         44 Systemen
+ 3.2 Algorithmische Schätzverfahren
+
+                                FUNCTION POINT METHODE (01/10)
+        ‣ IBM, A. Albrecht 1979
+        ‣ Basis der Schätzung ist Anzahl der zu implementierenden Funktionen
+        ‣ Geht von Benutzersicht aus
+
+        Vorgehensweise:
+          1. Schritt: Alle relevanten Daten werden gesammelt und in folgende Kategorien eingeteilt
+
+
+ Zugriff auf interne                                                                         Präsentation von Daten, die
+ Datenbestände z.B.                                                                          zuvor bearbeitet wurden (z. B.
+ Entitätstypen, Relationen in                                                                mit Formeln o. Ä.)
+ Datenbanken
+
+
+
+
+                                                   Pflege des internen Datenbestands z. B.
+                         Lesezugriff auf externe   durch Formulareingaben, Eingabedateien
+                            Datenbestände                  aus externen
+VO - Software Engineering II                                         44 Systemen
+ 3.2 Algorithmische Schätzverfahren
+
+                                FUNCTION POINT METHODE (01/10)
+        ‣ IBM, A. Albrecht 1979
+        ‣ Basis der Schätzung ist Anzahl der zu implementierenden Funktionen
+        ‣ Geht von Benutzersicht aus
+
+        Vorgehensweise:
+          1. Schritt: Alle relevanten Daten werden gesammelt und in folgende Kategorien eingeteilt
+
+
+ Zugriff auf interne                                                                                 Präsentation von Daten, die
+ Datenbestände z.B.                                                                                  zuvor bearbeitet wurden (z. B.
+ Entitätstypen, Relationen in                                                                        mit Formeln o. Ä.)
+ Datenbanken
+
+
+
+
+                                                   Pflege des internen Datenbestands z. B.
+                         Lesezugriff auf externe   durch Formulareingaben, Eingabedateien    Präsentation von Daten, z. B. Auflistung,
+                            Datenbestände                  aus externen                           Ergebnis von Suchabfragen
+VO - Software Engineering II                                         44 Systemen
+ 3.2 Algorithmische Schätzverfahren
+
+                        FUNCTION POINT METHODE (02/10)
+    ‣ 2. Schritt: Klassi zierung der Daten durch Beurteilung des Aufwands in niedrig, mittel, hoch
+
+    ‣ 3. Schritt: Zählen und Berechnen der unbewerteten Function-Points (UFPs):
+
+                                     Typ                              Komplexität
+                                                      niedrig         mittel        hoch        ∑
+                      Eingabe (EI)                  ____ × 3       ____ × 4     ____ × 6
+                      Ausgabe (EO)                  ____ × 4       ____ × 5     ____ × 7
+                      Abfrage (EQ)                  ____ × 3       ____ × 4     ____ × 6
+                      interne Datenbestände (ILF)   ____ × 7       ____ × 10    ____ × 15
+                      externe Datenbestände (EIF)   ____ × 5       ____ × 7     ____ × 10
+                                                            Unadjusted Function Points (UFP):
+
+VO - Software Engineering II
+                 fi
+                                                       45
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (03/10)
+                                                           i   Faktor                                      Gewicht (SMi)
+                                                            1 Datenkommunikation
+                                                            2 Verteilte Datenverarbeitung
+    ‣ 4. Schritt: Gewichtung der 14 Ein ussfaktoren         3 Geschwindigkeit
+      0 … kein Ein uss, bis 5 starker Ein uss               4 Auslastung der HW-Konfiguration
+                                                            5 Transaktionsrate
+                                                            6 Echtzeit-Dateneingabe
+                                                            7 Bedienerfreundlichkeit
+    ‣ 5. Schritt: Berechnung des Korrekturfaktors           8 Echtzeit-Datenpflege
+      (Value Adjustment Factor, VAF)                        9 Prozesslogik
+      VAF = 0.65 + 0.01 x TDI                              10 Wiederverwendbarkeit
+                                                           11 Installation und Konvertierung
+                                                           12 Automatisierung
+                                                           13 Vernetzung
+                                                           14 Anpassbarkeit
+                                                               Total Degree of Influence (TDI)   ∑
+                                                                                                     SMi
+
+VO - Software Engineering II
+              fl                fl   fl
+                                                      46
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (04/10)
+
+
+
+
+VO - Software Engineering II          47
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (04/10)
+
+    ‣ 6. Schritt: Berechnung der Adjusted Function Points (FPs)
+      FP = UFP * VAF
+
+    Basierend auf der Zahl der Function Points kann man weitere Projektgrößen abschätzen
+    ‣ TDEV (Time for Development in Months) = FP0.4
+    ‣ DEV (Number of Developers) = FP/150
+    ‣ E (Effort) =TDEV x DEV
+    ‣…
+
+
+
+
+VO - Software Engineering II                          47
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (04/10)
+
+    ‣ 6. Schritt: Berechnung der Adjusted Function Points (FPs)
+      FP = UFP * VAF
+
+                Achtung!    Dies  sind   nur  grobe  Schätzungen!      Adjustierung
+    Basierend auf der Zahl der Function Points kann man weitere Projektgrößen abschätzen
+                     nach eigenen Projekterfahrungen          unumgänglich!
+    ‣ TDEV (Time for Development in Months) = FP
+                                              0.4
+
+    ‣ DEV (Number of Developers) = FP/150
+    ‣ E (Effort) =TDEV x DEV
+    ‣…
+
+
+
+
+VO - Software Engineering II                       47
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                      6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                           - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                          - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                                 - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                                - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                         - Änderbarkeit: normal
+                                                                                - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                 4. Produktdaten
+                                                                         - Speicherung Kundendaten
+                  1. Schritt: Alle relevanten Daten werden gesammelt
+      1. Zielbestimmung                                                      und in folgende
+                                                                         - Speicherung            Kategorien eingeteilt.
+                                                                                          Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden, - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                             5. Produktleistungen
+                                                                         - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                     maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.      - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                       werden.
+
+      3. Produktfunktionen                                               6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                    - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                   - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                          - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                         - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                  - Änderbarkeit: normal
+                                                                         - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                   48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                      6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                           - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                          - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                                 - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                                - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                         - Änderbarkeit: normal
+                                                                                - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                      6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                           - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                          - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                 Eingabe (EI)    - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                                - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                         - Änderbarkeit: normal
+                                                                                - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                      6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                           - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                          - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                                 - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                                - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                         - Änderbarkeit: normal
+                                                                                - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                   6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                        - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                       - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                              - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                             - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung         Ausgabe (EO) - Änderbarkeit: normal
+                                                                             - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                      6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                           - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                          - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                                 - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                                - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                         - Änderbarkeit: normal
+                                                                                - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                      6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                           - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                          - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                 Abfrage (EQ)    - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                                - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                         - Änderbarkeit: normal
+                                                                                - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                      6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                           - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                          - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                                 - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                                - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                         - Änderbarkeit: normal
+                                                                                - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten          interne Datenbestände
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                      6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                           - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                          - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                                 - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                                - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                         - Änderbarkeit: normal
+                                                                                - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                               FUNCTION POINT METHODE (05/10)
+      „Bestellsoftware für Lieferservice“
+      Version 0.1 / Datum: 01.01.2005 / Author: M. Meyer                        4. Produktdaten
+                                                                                - Speicherung Kundendaten
+      1. Zielbestimmung                                                         - Speicherung Produktdaten
+      Der Lieferservice „Sushi Deluxe“ soll in die Lage versetzt werden,        - Speicherung Bestelldaten
+      Kundendaten und telefonische Bestellungen mittels Software
+      verarbeiten zu können.                                                    5. Produktleistungen
+                                                                                - Das Speichern der Kunden, Produkt und Bestelldaten soll
+      2. Produkteinsatz                                                            maximal 2s benötigen.
+      Das Produkt dient zur Verwaltung von Bestellungen und Kunden.             - Es sollen maximal 2000 Kunden und 100 Produkte verwaltet
+      Zielgruppe sind Mitarbeiter des Lieferservices.                              werden.
+
+      3. Produktfunktionen                                                      6. Anforderung Produktqualität
+      - Erfassung, Änderung, Löschung von Kundendaten                           - Funktionalität: gut
+      - Erfassung, Änderung, Löschung von Produktdaten                          - Zuverlässigkeit: gut
+      - Abfrage der Kundendaten                                                 - Benutzbarkeit: sehr gut
+      - Erfassung Bestellvorgang                                                - Ef zienz: gut
+      - Ausgabe von Bestellung, Lieferauftrag, Rechnung                         - Änderbarkeit: normal
+                                                                                - Übertragbarkeit: nicht relevant
+
+
+VO - Software Engineering II
+ fi
+                                                                           48
+ 3.2 Algorithmische Schätzverfahren
+
+                           FUNCTION POINT METHODE (06/10)
+
+         1. Schritt: Kategorisierung
+                   1. Eingabe (EI): P ege der Kundendaten, P ege der Produktdaten, Eingabe der
+                      Bestelldaten
+                   2. Ausgabe (EO): Ausgabe von Bestellung, Lieferauftrag und Rechnung
+                   3. Abfrage (EQ): Anzeige der Kundendaten
+                   4. externe Datenbestände (EIF): keine vorhanden
+                   5. interne Datenbestände (ILF): Kundendaten, Produktdaten, Bestelldaten
+
+
+
+
+VO - Software Engineering II
+              fl                            fl
+                                                           49
+     3.2 Algorithmische Schätzverfahren
+
+                            FUNCTION POINT METHODE (06/10)
+           2. Schritt: Klassi zierung der Daten durch Beurteilung des Aufwands in niedrig, mittel, hoch.
+                   1. Eingabe (EI):
+                        ‣ P ege der Kundendaten: ein Datentyp, sechs Attribute, einfach
+                        ‣ P ege der Produktdaten: ein Datentyp, vier Attribute, einfach
+                        ‣ Eingabe der Bestelldaten: drei Datentypen, zehn Attribute, komplex
+                   2. Ausgabe (EO):
+                       ‣ Ausgabe von Bestellung, Lieferauftrag und Rechnung: drei Datentypen, 20 Felder, komplex
+                   3. Abfrage (EQ):
+                       ‣ Ausgabe von Anzeige der Kundendaten: sechs Felder, einfach
+                   4. interne Datenbestände (ILF):
+                        ‣ Kundendaten: ein Datentyp, einfach
+                        ‣ Produktdaten: ein Datentyp, einfach
+                        ‣ Bestelldaten: ein Datentyp, einfach
+
+
+VO - Software Engineering II
+fl
+fl            fi
+                                                                50
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (07/10)
+
+           3. Schritt: Berechnung der UFP
+                                                     Typ                         Komplexität
+                                                                    niedrig     mittel         hoch     ∑
+                                      Eingabe (EI)                     2 × 3 ____ × 4          1× 6     12
+                     UFP = 37         Ausgabe (EO)                  ____ × 4 ____ × 5          1× 7         7
+                                      Abfrage (EQ)                     1 × 3 ____ × 4 ____ × 6              3
+                                      externe Datenbestände (EIF) ____ × 7 ____ × 10 ____ × 15           0
+                                      interne Datenbestände (ILF)      3 × 5 ____ × 7 ____ × 10         15
+
+                                                                    Unadjusted Function Points (UFP):   37
+
+
+
+VO - Software Engineering II                           51
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (08/10)
+
+
+
+
+VO - Software Engineering II          52
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (08/10)
+        4. Schritt: Gewichtung der Ein ussfaktoren
+                                                SM Faktor                   Gewicht
+                                                 3 Geschwindigkeit          3 (soll gut sein)
+                                                 5 Transaktionsrate         3 (häufige Bestellungen)
+                                                 6 Echtzeit-Dateneingabe    2 (nötig, aber nicht prioritär)
+                                                 7 Bedienerfreundlichkeit   5 (sollte sehr gut sein)
+                                                 9 Prozesslogik             2 (Funktionalität soll gut sein)
+                                                10 Wiederverwendbarkeit     0 (nicht nötig)
+                                                     TDI                    15
+
+
+
+
+VO - Software Engineering II   fl
+                                                     52
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (08/10)
+        4. Schritt: Gewichtung der Ein ussfaktoren
+                                                SM Faktor                    Gewicht
+                                                  3 Geschwindigkeit          3 (soll gut sein)
+                                                  5 Transaktionsrate         3 (häufige Bestellungen)
+                                                  6 Echtzeit-Dateneingabe    2 (nötig, aber nicht prioritär)
+                                                  7 Bedienerfreundlichkeit   5 (sollte sehr gut sein)
+                                                  9 Prozesslogik             2 (Funktionalität soll gut sein)
+                                                 10 Wiederverwendbarkeit     0 (nicht nötig)
+                                                     TDI                     15
+
+
+
+        5. Schritt: Berechnung des Korrekturfaktors (VAF = 0.65 + 0.01 x TDI)
+                                           VAF = 0.65 + 0.01 x 15 = 0.80
+
+
+
+
+VO - Software Engineering II   fl
+                                                     52
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (09/10)
+         5. Schritt: Berechnung der FPs (FP = UFP x VAF)
+                                              FP = 37 x 0.8 = 29.6
+
+
+
+
+         ‣ TDEV (Time for Development in Months) = FP0.4 = 3.88
+         ‣ DEV (Number of Developers) = FP/150 = 0.20
+         ‣ E (Effort) =TDEV x DEV = 0.78
+         ‣…
+
+
+
+
+VO - Software Engineering II                         53
+ 3.2 Algorithmische Schätzverfahren
+
+                       FUNCTION POINT METHODE (09/10)
+         5. Schritt: Berechnung der FPs (FP = UFP x VAF)
+                                               FP = 37 x 0.8 = 29.6
+
+
+
+
+         ‣ TDEV (Time for Development in Months) = FP0.4 = 3.88
+         ‣ DEV (Number of Developers) = FP/150 = 0.20
+         ‣ E (Effort) =TDEV x DEV = 0.78
+         ‣…
+
+
+                                      eignet sich eher für große Projekte
+
+VO - Software Engineering II                          53
+ 3.2 Algorithmische Schätzverfahren
+
+                     FUNCTION POINT METHODE (10/10)
+
+         ‣ FP Verfahren wird häu g bei kommerzieller SW eingesetzt
+         ‣ Achtung! Am Ende des Projekts soll der tatsächliche Aufwand mit dem
+           errechneten verglichen werden
+         ‣ FPs lassen sich mittels Tabelle in Personenmonaten umrechnen
+
+
+
+
+VO - Software Engineering II
+                         fi
+                                                54
+ 3.2 Algorithmische Schätzverfahren
+
+                     FUNCTION POINT METHODE (10/10)
+
+         ‣ FP Verfahren wird häu g bei kommerzieller SW eingesetzt
+         ‣ Achtung! Am Ende des Projekts soll der tatsächliche Aufwand mit dem
+           errechneten verglichen werden
+         ‣ FPs lassen sich mittels Tabelle in Personenmonaten umrechnen
+
+
+                                         Vorteile
+    + kann sehr früh eingesetzt werden
+    + anpassbar
+    + leicht erlernbar
+    + schnell
+
+VO - Software Engineering II
+                         fi
+                                                    54
+ 3.2 Algorithmische Schätzverfahren
+
+                     FUNCTION POINT METHODE (10/10)
+
+         ‣ FP Verfahren wird häu g bei kommerzieller SW eingesetzt
+         ‣ Achtung! Am Ende des Projekts soll der tatsächliche Aufwand mit dem
+           errechneten verglichen werden
+         ‣ FPs lassen sich mittels Tabelle in Personenmonaten umrechnen
+
+
+                                         Vorteile                                           Nachteile
+    + kann sehr früh eingesetzt werden                   - eignet sich nicht für technisch/
+    + anpassbar                                            wissenschaftliche SW (komplexe Algorithmen)
+    + leicht erlernbar
+    + schnell
+
+VO - Software Engineering II
+                         fi
+                                                    54
+ 3.2 Algorithmische Schätzverfahren
+
+                 ALGORITHMISCHE SCHÄTZVERFAHREN
+
+       Techniken:
+       ‣ Function Points
+
+       ‣ Application Points
+
+       ‣ COCOMO 81 und COCOMO II
+
+
+
+
+VO - Software Engineering II          55
+ 3.2 Algorithmische Schätzverfahren
+
+                               APPLICATION POINTS (1/6)
+
+          ‣ Alternative zu Function Points
+          ‣ Schätzen und Bewerten
+          ‣ Komplexität und Anzahl an Screens, Reports und Module
+
+
+
+
+VO - Software Engineering II                 56
+ 3.2 Algorithmische Schätzverfahren
+
+                               APPLICATION POINTS (1/6)
+
+          ‣ Alternative zu Function Points
+          ‣ Schätzen und Bewerten
+          ‣ Komplexität und Anzahl an Screens, Reports und Module
+
+
+
+
+                                                Vorteile
+  + Application Points und Function Points korrelieren
+  + Application Points sind schneller zu berechnen als
+    Function Points
+
+
+VO - Software Engineering II                               56
+ 3.2 Algorithmische Schätzverfahren
+
+                               APPLICATION POINTS (1/6)
+
+          ‣ Alternative zu Function Points
+          ‣ Schätzen und Bewerten
+          ‣ Komplexität und Anzahl an Screens, Reports und Module
+
+
+
+
+                                                Vorteile                                                  Nachteile
+  + Application Points und Function Points korrelieren          - genaue Kalibrierung des Modells fehlt noch
+  + Application Points sind schneller zu berechnen als
+    Function Points
+
+
+VO - Software Engineering II                               56
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (2/6)
+           1. Schritt: Bewertung der Screens, Reports und Module
+                                  Objekte                          Komplexität
+
+                                                    niedrig     mittel        hoch        Summe
+
+           Anzahl an unterschiedlichen Screens      ____ × 1    ____ × 2      ____ × 3
+
+           Anzahl an Reports die generiert werden   ____ × 2    ____ × 5      ____ × 8
+           Anzahl an Modulen                                                ____ × 10
+                                                               Application Points (AP):
+
+
+
+
+VO - Software Engineering II                        57
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (2/6)
+           1. Schritt: Bewertung der Screens, Reports und Module
+                                  Objekte                          Komplexität
+
+                                                    niedrig     mittel        hoch        Summe
+
+           Anzahl an unterschiedlichen Screens      ____ × 1    ____ × 2      ____ × 3
+
+           Anzahl an Reports die generiert werden   ____ × 2    ____ × 5      ____ × 8
+           Anzahl an Modulen                                                ____ × 10
+                                                               Application Points (AP):
+
+
+           2. Schritt:
+           Schätzung von Ein uss wiederverwendeter Komponenten (reusable components) RC (in %)
+           Dies ergibt die Normierten Application Points (NAP).
+           NAP = AP x (100 - RC) x 0.01
+
+
+
+VO - Software Engineering II
+                    fl
+                                                    57
+ 3.2 Algorithmische Schätzverfahren
+
+                               APPLICATION POINTS (3/6)
+
+
+
+
+VO - Software Engineering II              58
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (3/6)
+             3. Schritt: Bestimmung der Produktivität PROD
+              Merkmal                                                   sehr gering   gering   mittel        hoch       sehr hoch
+              M1 (Erfahrung und Leistungsfähigkeit der MA)                       1         2            3           4           5
+              M2 (Reife der verwendeten CASE Umgebung)                           1         2            3           4           5
+              PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)           1 —> 4 2 —> 7 3 —> 13            4 —> 25     5 —> 50
+
+
+
+
+VO - Software Engineering II                                       58
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (3/6)
+             3. Schritt: Bestimmung der Produktivität PROD
+              Merkmal                                                   sehr gering   gering   mittel        hoch       sehr hoch
+              M1 (Erfahrung und Leistungsfähigkeit der MA)                       1         2            3           4           5
+              M2 (Reife der verwendeten CASE Umgebung)                           1         2            3           4           5
+              PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)           1 —> 4 2 —> 7 3 —> 13            4 —> 25     5 —> 50
+
+                                                             Computer Aided Software Engineering
+
+
+
+
+VO - Software Engineering II                                       58
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (3/6)
+             3. Schritt: Bestimmung der Produktivität PROD
+              Merkmal                                                   sehr gering   gering   mittel        hoch       sehr hoch
+              M1 (Erfahrung und Leistungsfähigkeit der MA)                       1         2            3           4           5
+              M2 (Reife der verwendeten CASE Umgebung)                           1         2            3           4           5
+              PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)           1 —> 4 2 —> 7 3 —> 13            4 —> 25     5 —> 50
+
+                                                             Computer Aided Software Engineering
+
+             4. Schritt: Bestimmung der Personenmonate PM
+                   NAP
+             PM = ——
+                   PROD
+
+
+
+
+VO - Software Engineering II                                       58
+ 3.2 Algorithmische Schätzverfahren
+
+                               APPLICATION POINTS (4/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Modulen, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+
+
+VO - Software Engineering II                        59
+ 3.2 Algorithmische Schätzverfahren
+
+                                   APPLICATION POINTS (4/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Modulen, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+         1. Schritt: Bewertung der Screens, Reports und Module
+                                Objekte                           Komplexität
+
+                                                   niedrig     mittel        hoch        Summe
+
+         Anzahl an unterschiedlichen Screens       ____ × 1    ____ × 2      ____ × 3
+
+         Anzahl an Reports die generiert werden    ____ × 2    ____ × 5      ____ × 8
+         Anzahl an Modulen                                                 ____ × 10
+                                                              Application Points (AP):
+
+
+
+VO - Software Engineering II                         59
+ 3.2 Algorithmische Schätzverfahren
+
+                                   APPLICATION POINTS (4/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Modulen, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+         1. Schritt: Bewertung der Screens, Reports und Module
+                                Objekte                           Komplexität
+
+                                                   niedrig     mittel        hoch        Summe
+
+         Anzahl an unterschiedlichen Screens       ____ × 1    10
+                                                               ____ × 2      ____ × 3
+
+         Anzahl an Reports die generiert werden    ____ × 2    ____ × 5      ____ × 8
+         Anzahl an Modulen                                                 ____ × 10
+                                                              Application Points (AP):
+
+
+
+VO - Software Engineering II                         59
+ 3.2 Algorithmische Schätzverfahren
+
+                                   APPLICATION POINTS (4/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Modulen, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+         1. Schritt: Bewertung der Screens, Reports und Module
+                                Objekte                           Komplexität
+
+                                                   niedrig     mittel        hoch        Summe
+
+         Anzahl an unterschiedlichen Screens       ____ × 1    10
+                                                               ____ × 2      ____ × 3     20
+         Anzahl an Reports die generiert werden    ____ × 2    ____ × 5      ____ × 8
+         Anzahl an Modulen                                                 ____ × 10
+                                                              Application Points (AP):
+
+
+
+VO - Software Engineering II                         59
+ 3.2 Algorithmische Schätzverfahren
+
+                                   APPLICATION POINTS (4/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Modulen, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+         1. Schritt: Bewertung der Screens, Reports und Module
+                                Objekte                           Komplexität
+
+                                                   niedrig     mittel        hoch        Summe
+
+         Anzahl an unterschiedlichen Screens       ____ × 1    10
+                                                               ____ × 2      ____ × 3     20
+         Anzahl an Reports die generiert werden    ____ × 2     8 ×5
+                                                               ____          ____ × 8
+         Anzahl an Modulen                                                 ____ × 10
+                                                              Application Points (AP):
+
+
+
+VO - Software Engineering II                         59
+ 3.2 Algorithmische Schätzverfahren
+
+                                   APPLICATION POINTS (4/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Modulen, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+         1. Schritt: Bewertung der Screens, Reports und Module
+                                Objekte                           Komplexität
+
+                                                   niedrig     mittel        hoch        Summe
+
+         Anzahl an unterschiedlichen Screens       ____ × 1    10
+                                                               ____ × 2      ____ × 3     20
+         Anzahl an Reports die generiert werden    ____ × 2     8 ×5
+                                                               ____          ____ × 8     40
+         Anzahl an Modulen                                                 ____ × 10
+                                                              Application Points (AP):
+
+
+
+VO - Software Engineering II                         59
+ 3.2 Algorithmische Schätzverfahren
+
+                                   APPLICATION POINTS (4/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Modulen, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+         1. Schritt: Bewertung der Screens, Reports und Module
+                                Objekte                           Komplexität
+
+                                                   niedrig     mittel        hoch        Summe
+
+         Anzahl an unterschiedlichen Screens       ____ × 1    10
+                                                               ____ × 2      ____ × 3     20
+         Anzahl an Reports die generiert werden    ____ × 2     8 ×5
+                                                               ____          ____ × 8     40
+         Anzahl an Modulen                                                  6
+                                                                           ____ × 10
+                                                              Application Points (AP):
+
+
+
+VO - Software Engineering II                         59
+ 3.2 Algorithmische Schätzverfahren
+
+                                   APPLICATION POINTS (4/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Modulen, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+         1. Schritt: Bewertung der Screens, Reports und Module
+                                Objekte                           Komplexität
+
+                                                   niedrig     mittel        hoch        Summe
+
+         Anzahl an unterschiedlichen Screens       ____ × 1    10
+                                                               ____ × 2      ____ × 3     20
+         Anzahl an Reports die generiert werden    ____ × 2     8 ×5
+                                                               ____          ____ × 8     40
+         Anzahl an Modulen                                                  6
+                                                                           ____ × 10      60
+                                                              Application Points (AP):
+
+
+
+VO - Software Engineering II                         59
+ 3.2 Algorithmische Schätzverfahren
+
+                                   APPLICATION POINTS (4/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Modulen, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+         1. Schritt: Bewertung der Screens, Reports und Module
+                                Objekte                           Komplexität
+
+                                                   niedrig     mittel        hoch        Summe
+
+         Anzahl an unterschiedlichen Screens       ____ × 1    10
+                                                               ____ × 2      ____ × 3     20
+         Anzahl an Reports die generiert werden    ____ × 2     8 ×5
+                                                               ____          ____ × 8     40
+         Anzahl an Modulen                                                  6
+                                                                           ____ × 10      60
+                                                              Application Points (AP):   120
+
+
+VO - Software Engineering II                         59
+ 3.2 Algorithmische Schätzverfahren
+
+                               APPLICATION POINTS (5/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+
+         2. Schritt:
+         Schätzung von Ein uss wiederverwendeter Komponenten RC (in %) und Ausrechnen der
+         Normierten Application Points (NAP).
+
+         NAP = AP x (100 - RC) x 0.01 = 120 x (100 -        ) x 0.01 =
+
+
+
+
+VO - Software Engineering II
+                     fl
+                                                       60
+ 3.2 Algorithmische Schätzverfahren
+
+                               APPLICATION POINTS (5/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+
+         2. Schritt:
+         Schätzung von Ein uss wiederverwendeter Komponenten RC (in %) und Ausrechnen der
+         Normierten Application Points (NAP).
+
+         NAP = AP x (100 - RC) x 0.01 = 120 x (100 - 25 ) x 0.01 =
+
+
+
+
+VO - Software Engineering II
+                     fl
+                                                     60
+ 3.2 Algorithmische Schätzverfahren
+
+                               APPLICATION POINTS (5/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+
+
+         2. Schritt:
+         Schätzung von Ein uss wiederverwendeter Komponenten RC (in %) und Ausrechnen der
+         Normierten Application Points (NAP).
+
+         NAP = AP x (100 - RC) x 0.01 = 120 x (100 - 25 ) x 0.01 = 90
+
+
+
+
+VO - Software Engineering II
+                     fl
+                                                     60
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (6/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+        3. Schritt: Bestimmung der Produktivität PROD
+         Merkmal                                              sehr gering   gering   mittel   hoch   sehr hoch
+         M1 (Erfahrung und Leistungsfähigkeit der MA)             1           2        3       4        5
+         M2 (Reife der verwendeten CASE Umgebung)                 1           2        3       4        5
+         PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)    1 —> 4       2 —> 7 3 —> 13 4 —> 25   5 —> 50
+
+
+
+
+VO - Software Engineering II                                    61
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (6/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+        3. Schritt: Bestimmung der Produktivität PROD
+         Merkmal                                              sehr gering   gering   mittel   hoch   sehr hoch
+         M1 (Erfahrung und Leistungsfähigkeit der MA)             1           2        3       4        5
+         M2 (Reife der verwendeten CASE Umgebung)                 1           2        3       4        5
+         PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)    1 —> 4       2 —> 7 3 —> 13 4 —> 25   5 —> 50
+
+
+
+
+VO - Software Engineering II                                    61
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (6/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+        3. Schritt: Bestimmung der Produktivität PROD
+         Merkmal                                              sehr gering   gering   mittel   hoch   sehr hoch
+         M1 (Erfahrung und Leistungsfähigkeit der MA)             1           2        3       4        5
+         M2 (Reife der verwendeten CASE Umgebung)                 1           2        3       4        5
+         PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)    1 —> 4       2 —> 7 3 —> 13 4 —> 25   5 —> 50
+
+
+
+
+VO - Software Engineering II                                    61
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (6/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+        3. Schritt: Bestimmung der Produktivität PROD
+         Merkmal                                              sehr gering   gering   mittel   hoch   sehr hoch
+         M1 (Erfahrung und Leistungsfähigkeit der MA)             1           2        3       4        5
+         M2 (Reife der verwendeten CASE Umgebung)                 1           2        3       4        5
+         PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)    1 —> 4       2 —> 7 3 —> 13 4 —> 25   5 —> 50
+         Mittelwert = (2+4)/2 = 3
+
+
+
+
+VO - Software Engineering II                                    61
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (6/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+        3. Schritt: Bestimmung der Produktivität PROD
+         Merkmal                                              sehr gering   gering   mittel   hoch   sehr hoch
+         M1 (Erfahrung und Leistungsfähigkeit der MA)             1           2        3       4        5
+         M2 (Reife der verwendeten CASE Umgebung)                 1           2        3       4        5
+         PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)    1 —> 4       2 —> 7 3 —> 13 4 —> 25   5 —> 50
+         Mittelwert = (2+4)/2 = 3
+
+
+
+
+VO - Software Engineering II                                    61
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (6/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+        3. Schritt: Bestimmung der Produktivität PROD
+         Merkmal                                              sehr gering   gering   mittel   hoch   sehr hoch
+         M1 (Erfahrung und Leistungsfähigkeit der MA)             1           2        3       4        5
+         M2 (Reife der verwendeten CASE Umgebung)                 1           2        3       4        5
+         PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)    1 —> 4       2 —> 7 3 —> 13 4 —> 25   5 —> 50
+         Mittelwert = (2+4)/2 = 3
+         PROD = 13
+
+
+
+
+VO - Software Engineering II                                    61
+ 3.2 Algorithmische Schätzverfahren
+
+                                  APPLICATION POINTS (6/6)
+         Beispiel:
+         System mit 10 Bildschirm-Masken, 8 Berichten mittlerer Komplexität, 6 Module, ca. 25%
+         Wiederverwendung. Es wird eine gute CASE Umgebung verwendet, die Mitarbeiter haben
+         aber nur geringe Erfahrung.
+
+        3. Schritt: Bestimmung der Produktivität PROD
+         Merkmal                                              sehr gering    gering   mittel   hoch   sehr hoch
+         M1 (Erfahrung und Leistungsfähigkeit der MA)             1            2        3       4        5
+         M2 (Reife der verwendeten CASE Umgebung)                 1            2        3       4        5
+         PROD ( = Mittelwert aus M1 und M2, dann Zuordnung)    1 —> 4       2 —> 7 3 —> 13 4 —> 25    5 —> 50
+         Mittelwert = (2+4)/2 = 3
+         PROD = 13
+                                                                                 NAP  90
+        4. Schritt: Bestimmung der Personenmonate PM                        PM = —— = —— = 6.92
+                                                                                 PROD 13
+VO - Software Engineering II                                    61
+ 3.2 Algorithmische Schätzverfahren
+
+                 ALGORITHMISCHE SCHÄTZVERFAHREN
+
+       Techniken:
+       ‣ Function Points
+
+       ‣ Application Points
+
+       ‣ COCOMO 81 und COCOMO II
+
+
+
+
+VO - Software Engineering II          62
+ 3.2 Algorithmische Schätzverfahren
+
+                                    COCOMO 81 (1/3)
+
+        ‣ Barry Boehm (u. A. Software Engineer bei Boeing), 1981
+
+        ‣ Basierend auf Schätzung der Produktgröße S in KDSI
+          (Kilo Delivered Source Instructions)
+           - Gesamtaufwand (Effort) E in Personenmonaten PM (19 Arbeitstage)
+           - Dauer des Projektes TDEV in Kalendermonaten (Calender Months) CM
+
+        ‣ Wasserfall —> Korrekturfaktor 0.4 und 0.7
+
+
+
+
+VO - Software Engineering II                     63
+ 3.2 Algorithmische Schätzverfahren
+
+                                    COCOMO 81 (1/3)
+
+        ‣ Barry Boehm (u. A. Software Engineer bei Boeing), 1981
+
+        ‣ Basierend auf Schätzung der Produktgröße S in KDSI
+          (Kilo Delivered Source Instructions)
+           - Gesamtaufwand (Effort) E in Personenmonaten PM (19 Arbeitstage)
+           - Dauer des Projektes TDEV in Kalendermonaten (Calender Months) CM
+
+        ‣ Wasserfall —> Korrekturfaktor 0.4 und 0.7
+
+
+
+
+VO - Software Engineering II                     63
+ 3.2 Algorithmische Schätzverfahren
+
+                                    COCOMO 81 (1/3)
+
+        ‣ Barry Boehm (u. A. Software Engineer bei Boeing), 1981
+
+        ‣ Basierend auf Schätzung der Produktgröße S in KDSI
+          (Kilo Delivered Source Instructions)
+           - Gesamtaufwand (Effort) E in Personenmonaten PM (19 Arbeitstage)
+           - Dauer des Projektes TDEV in Kalendermonaten (Calender Months) CM
+
+        ‣ Wasserfall —> Korrekturfaktor 0.4 und 0.7
+
+
+
+
+VO - Software Engineering II                     63
+ 3.2 Algorithmische Schätzverfahren
+
+                                    COCOMO 81 (1/3)
+
+        ‣ Barry Boehm (u. A. Software Engineer bei Boeing), 1981
+
+        ‣ Basierend auf Schätzung der Produktgröße S in KDSI
+          (Kilo Delivered Source Instructions)
+           - Gesamtaufwand (Effort) E in Personenmonaten PM (19 Arbeitstage)
+           - Dauer des Projektes TDEV in Kalendermonaten (Calender Months) CM
+
+        ‣ Wasserfall —> Korrekturfaktor 0.4 und 0.7         COCOMO II (2000)
+
+
+
+
+VO - Software Engineering II                     63
+ 3.2 Algorithmische Schätzverfahren
+
+                                            COCOMO 81 (2/3)
+     ‣ 3 Stufen der Präzision:                         Projektart     Aufwand E [PM]   Aufwand E [PM]    Dauer TDEV
+                                                                          - Basic       - Intermediate      [CM]
+      - Basic: ausschließliche Berücksichtigung der
+        Anzahl der KDSIs S = ∑ KDSI                    Organic          2.4 x S1.05    M x 3.2 x S1.05 2.5 x E[PM]0.38
+                                                       Semidetached     3.0 x S1.12    M x 3.0 x S1.12 2.5 x E[PM]0.35
+      - Intermediate: Schätzung auf Ebene der          Embedded         3.6 x S1.20    M x 2.8 x S1.20 2.5 x E[PM]0.32
+        Subsysteme, Korrekturfaktor M = ∏ Mi
+
+      - Detailed: weitere Aufspaltung der
+        Korrekturfaktoren
+    ‣ 3 Arten von Projekten:
+      - Organic: kleine Programmgröße, < 50 KDSI
+
+      - Semidetached: Projektumfang < 300 KDSI
+
+      - Embedded: Entwicklung für einen neuen
+        Einsatzbereich
+
+
+
+VO - Software Engineering II                          64
+ 3.2 Algorithmische Schätzverfahren
+
+                                            COCOMO 81 (2/3)
+     ‣ 3 Stufen der Präzision:                                Projektart         Aufwand E [PM]    Aufwand E [PM]     Dauer TDEV
+                                                                                     - Basic        - Intermediate       [CM]
+      - Basic: ausschließliche Berücksichtigung der
+        Anzahl der KDSIs S = ∑ KDSI                           Organic               2.4 x S1.05    M x 3.2 x S1.05 2.5 x E[PM]0.38
+                                                              Semidetached          3.0 x S1.12    M x 3.0 x S1.12 2.5 x E[PM]0.35
+      - Intermediate: Schätzung auf Ebene der                 Embedded              3.6 x S1.20    M x 2.8 x S1.20 2.5 x E[PM]0.32
+        Subsysteme, Korrekturfaktor M = ∏ Mi
+                                                      i Faktor/Einschränkungen Mi           sehr niedrig normal hoch sehr extrem
+      - Detailed: weitere Aufspaltung der                                                  niedrig                   hoch hoch
+        Korrekturfaktoren
+                                                      1 RELY (SW Reliability)               0.75    0.88      1      1.15 1.40
+    ‣ 3 Arten von Projekten:                          2 CPLX (Complexity)                   0.70    0.85      1      1.15 1.30     1.65
+      - Organic: kleine Programmgröße, < 50 KDSI      3 TIME (Execution time)                                 1      1.11 1.30     1.66
+      - Semidetached: Projektumfang < 300 KDSI        4 ACAP (Analyst capability)           1.46    1.19      1      0.86 0.71
+                                                      5 PCAP (Programmer capability)        1.42    1.17      1      0.86 0.70
+      - Embedded: Entwicklung für einen neuen         6 LEXP (Language experience)          1.14    1.07      1      0.95
+        Einsatzbereich
+                                                      7 TOOL (Use of SW Tools)              1.24    1.10      1      0.91 0.83
+                                                      8 SCED (Required dev. schedule)       1.23    1.08      1      1.04 1.10
+
+VO - Software Engineering II                                64
+ 3.2 Algorithmische Schätzverfahren
+
+                                           COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+
+
+                                           21.18 PM
+
+
+
+
+VO - Software Engineering II                                  65
+ 3.2 Algorithmische Schätzverfahren
+
+                                           COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+
+
+                                                            Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV
+                                                                               - Basic       - Intermediate       [CM]
+                                                            Organic          2.4 x S1.05    M x 3.2 x S 1.05 2.5 x E[PM]0.38
+                                                            Semidetached     3.0 x S1.12    M x 3.0 x S1.12   2.5 x E[PM]0.35
+                                           21.18 PM         Embedded         3.6 x S1.20    M x 2.8 x S1.20   2.5 x E[PM]0.32
+
+
+
+
+VO - Software Engineering II                                  65
+ 3.2 Algorithmische Schätzverfahren
+
+                                           COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+
+
+                                                            Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV
+                                                                               - Basic       - Intermediate       [CM]
+                                                            Organic          2.4 x S1.05    M x 3.2 x S 1.05 2.5 x E[PM]0.38
+                                                            Semidetached     3.0 x S1.12    M x 3.0 x S1.12   2.5 x E[PM]0.35
+                                           21.18 PM         Embedded         3.6 x S1.20    M x 2.8 x S1.20   2.5 x E[PM]0.32
+
+
+
+
+VO - Software Engineering II                                  65
+ 3.2 Algorithmische Schätzverfahren
+
+                                           COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+
+      Basic:                                                Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV
+      E = 2.4 ×              1.05
+                                                                               - Basic       - Intermediate       [CM]
+                                                            Organic          2.4 x S1.05    M x 3.2 x S 1.05 2.5 x E[PM]0.38
+                                                            Semidetached     3.0 x S1.12    M x 3.0 x S1.12   2.5 x E[PM]0.35
+                                           21.18 PM         Embedded         3.6 x S1.20    M x 2.8 x S1.20   2.5 x E[PM]0.32
+
+
+
+
+VO - Software Engineering II                                  65
+ 3.2 Algorithmische Schätzverfahren
+
+                                           COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+
+      Basic:                                                Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05                                              - Basic       - Intermediate       [CM]
+                                                            Organic          2.4 x S1.05    M x 3.2 x S 1.05 2.5 x E[PM]0.38
+                                                            Semidetached     3.0 x S1.12    M x 3.0 x S1.12   2.5 x E[PM]0.35
+                                           21.18 PM         Embedded         3.6 x S1.20    M x 2.8 x S1.20   2.5 x E[PM]0.32
+
+
+
+
+VO - Software Engineering II                                  65
+ 3.2 Algorithmische Schätzverfahren
+
+                                           COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+
+      Basic:                                                Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM                                    - Basic       - Intermediate       [CM]
+                                                            Organic          2.4 x S1.05    M x 3.2 x S 1.05 2.5 x E[PM]0.38
+                                                            Semidetached     3.0 x S1.12    M x 3.0 x S1.12   2.5 x E[PM]0.35
+                                           21.18 PM         Embedded         3.6 x S1.20    M x 2.8 x S1.20   2.5 x E[PM]0.32
+
+
+
+
+VO - Software Engineering II                                  65
+ 3.2 Algorithmische Schätzverfahren
+
+                                           COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+
+      Basic:                                                Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM                                    - Basic       - Intermediate       [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                       Organic          2.4 x S1.05    M x 3.2 x S 1.05 2.5 x E[PM]0.38
+                                                            Semidetached     3.0 x S1.12    M x 3.0 x S1.12   2.5 x E[PM]0.35
+                                           21.18 PM         Embedded         3.6 x S1.20    M x 2.8 x S1.20   2.5 x E[PM]0.32
+
+
+
+
+VO - Software Engineering II                                  65
+ 3.2 Algorithmische Schätzverfahren
+
+                                           COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+
+      Basic:                                                Projektart     Aufwand E [PM]   Aufwand E [PM]     Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM                                    - Basic       - Intermediate       [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                       Organic          2.4 x S1.05    M x 3.2 x S 1.05 2.5 x E[PM]0.38
+      Intermediate:                                         Semidetached     3.0 x S1.12    M x 3.0 x S1.12   2.5 x E[PM]0.35
+      E=                  × 3.2 × 3.61.05 = 21.18 PM        Embedded         3.6 x S1.20    M x 2.8 x S1.20   2.5 x E[PM]0.32
+
+
+
+
+VO - Software Engineering II                                  65
+ 3.2 Algorithmische Schätzverfahren
+
+                                           COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+                                                       i Faktor/Einschränkungen Mi          sehr niedrig normal hoch sehr extrem
+                                                                                          niedrig                           hoch hoch
+      Basic:                                                 Projektart        Aufwand E [PM] Aufwand E [PM]          Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM            1 RELY (SW Reliability)             0.75      0.88       1    1.15 1.40
+                                                                                   - Basic         - Intermediate        [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                  2 CPLX (Complexity)                 0.70      0.85       1    1.15 1.300.38 1.65
+                                                             Organic             2.4 x S 1.05     M x 3.2 x S  1.05 2.5 x E[PM]
+                                                       3 TIMESemidetached
+                                                              (Execution time) 3.0 x S1.12                      1 2.5
+                                                                                                  M x 3.0 x S1.12    1.11   1.300.35 1.66
+                                                                                                                        x E[PM]
+                                                       4 ACAP                              1.46 M 1.19
+                                                              (Analyst capability)3.6 x S1.20
+                                                            Embedded                                        1
+                                                                                                  x 2.8 x S1.20    0.86
+                                                                                                                  2.5     0.710.32
+                                                                                                                      x E[PM]
+                                                       5 PCAP (Programmer capability) 1.42        1.17      1      0.86 0.70
+                                                       6 LEXP (Language experience)       1.14     1.07       1     0.95
+                                                       7 TOOL (Use of SW Tools)           1.24     1.10       1     0.91 0.83
+                                                       8 SCED (Required dev. schedule)    1.23     1.08       1     1.04 1.10
+
+
+
+VO - Software Engineering II                                   66
+ 3.2 Algorithmische Schätzverfahren
+
+                                              COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+                                                       i Faktor/Einschränkungen Mi          sehr niedrig normal hoch sehr extrem
+                                                                                          niedrig                           hoch hoch
+      Basic:                                                 Projektart        Aufwand E [PM] Aufwand E [PM]          Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM            1 RELY (SW Reliability)             0.75      0.88       1    1.15 1.40
+                                                                                   - Basic         - Intermediate        [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                  2 CPLX (Complexity)                 0.70      0.85       1    1.15 1.300.38 1.65
+                                                             Organic             2.4 x S 1.05     M x 3.2 x S  1.05 2.5 x E[PM]
+                                                       3 TIMESemidetached
+                                                              (Execution time) 3.0 x S1.12                      1 2.5
+                                                                                                  M x 3.0 x S1.12    1.11   1.300.35 1.66
+                                                                                                                        x E[PM]
+      Intermediate:
+                                                       4 ACAP                              1.46 M 1.19
+                                                              (Analyst capability)3.6 x S1.20               1      0.86   0.710.32
+      E=                  × 3.2 × 3.61.05 =                 Embedded                              x 2.8 x S1.20   2.5 x E[PM]
+                                                       5 PCAP (Programmer capability) 1.42        1.17      1      0.86 0.70
+                                                       6 LEXP (Language experience)       1.14     1.07       1     0.95
+                                                       7 TOOL (Use of SW Tools)           1.24     1.10       1     0.91 0.83
+                                                       8 SCED (Required dev. schedule)    1.23     1.08       1     1.04 1.10
+
+
+
+VO - Software Engineering II                                   66
+ 3.2 Algorithmische Schätzverfahren
+
+                                              COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+                                                       i Faktor/Einschränkungen Mi          sehr niedrig normal hoch sehr extrem
+                                                                                          niedrig                           hoch hoch
+      Basic:                                                 Projektart        Aufwand E [PM] Aufwand E [PM]          Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM            1 RELY (SW Reliability)             0.75      0.88       1    1.15 1.40
+                                                                                   - Basic         - Intermediate        [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                  2 CPLX (Complexity)                 0.70      0.85       1    1.15 1.300.38 1.65
+                                                             Organic             2.4 x S 1.05     M x 3.2 x S  1.05 2.5 x E[PM]
+                                                       3 TIMESemidetached
+                                                              (Execution time) 3.0 x S1.12                      1 2.5
+                                                                                                  M x 3.0 x S1.12    1.11   1.300.35 1.66
+                                                                                                                        x E[PM]
+      Intermediate:
+                                                       4 ACAP                              1.46 M 1.19
+                                                              (Analyst capability)3.6 x S1.20               1      0.86   0.710.32
+      E=                  × 3.2 × 3.61.05 =                 Embedded                              x 2.8 x S1.20   2.5 x E[PM]
+                                                       5 PCAP (Programmer capability) 1.42        1.17      1      0.86 0.70
+                                                       6 LEXP (Language experience)       1.14     1.07       1     0.95
+                                                       7 TOOL (Use of SW Tools)           1.24     1.10       1     0.91 0.83
+                                                       8 SCED (Required dev. schedule)    1.23     1.08       1     1.04 1.10
+
+
+
+VO - Software Engineering II                                   66
+ 3.2 Algorithmische Schätzverfahren
+
+                                              COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+                                                       i Faktor/Einschränkungen Mi          sehr niedrig normal hoch sehr extrem
+                                                                                          niedrig                           hoch hoch
+      Basic:                                                 Projektart        Aufwand E [PM] Aufwand E [PM]          Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM            1 RELY (SW Reliability)             0.75      0.88       1    1.15 1.40
+                                                                                   - Basic         - Intermediate        [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                  2 CPLX (Complexity)                 0.70      0.85       1    1.15 1.300.38 1.65
+                                                             Organic             2.4 x S 1.05     M x 3.2 x S  1.05 2.5 x E[PM]
+                                                       3 TIMESemidetached
+                                                              (Execution time) 3.0 x S1.12                      1 2.5
+                                                                                                  M x 3.0 x S1.12    1.11   1.300.35 1.66
+                                                                                                                        x E[PM]
+      Intermediate:
+                                                       4 ACAP                              1.46 M 1.19
+                                                              (Analyst capability)3.6 x S1.20               1      0.86   0.710.32
+      E=                  × 3.2 × 3.61.05 =                 Embedded                              x 2.8 x S1.20   2.5 x E[PM]
+                                                       5 PCAP (Programmer capability) 1.42        1.17      1      0.86 0.70
+                                                       6 LEXP (Language experience)       1.14     1.07       1     0.95
+                                                       7 TOOL (Use of SW Tools)           1.24     1.10       1     0.91 0.83
+                                                       8 SCED (Required dev. schedule)    1.23     1.08       1     1.04 1.10
+
+
+
+VO - Software Engineering II                                   66
+ 3.2 Algorithmische Schätzverfahren
+
+                                              COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+                                                       i Faktor/Einschränkungen Mi          sehr niedrig normal hoch sehr extrem
+                                                                                          niedrig                           hoch hoch
+      Basic:                                                 Projektart        Aufwand E [PM] Aufwand E [PM]          Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM            1 RELY (SW Reliability)             0.75      0.88       1    1.15 1.40
+                                                                                   - Basic         - Intermediate        [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                  2 CPLX (Complexity)                 0.70      0.85       1    1.15 1.300.38 1.65
+                                                             Organic             2.4 x S 1.05     M x 3.2 x S  1.05 2.5 x E[PM]
+                                                       3 TIMESemidetached
+                                                              (Execution time) 3.0 x S1.12                      1 2.5
+                                                                                                  M x 3.0 x S1.12    1.11   1.300.35 1.66
+                                                                                                                        x E[PM]
+      Intermediate:
+                                                       4 ACAP                              1.46 M 1.19
+                                                              (Analyst capability)3.6 x S1.20               1      0.86   0.710.32
+      E=                  × 3.2 × 3.61.05 =                 Embedded                              x 2.8 x S1.20   2.5 x E[PM]
+                                                       5 PCAP (Programmer capability) 1.42        1.17      1      0.86 0.70
+                                                       6 LEXP (Language experience)       1.14     1.07       1     0.95
+                                                       7 TOOL (Use of SW Tools)           1.24     1.10       1     0.91 0.83
+                                                       8 SCED (Required dev. schedule)    1.23     1.08       1     1.04 1.10
+
+
+
+VO - Software Engineering II                                   66
+ 3.2 Algorithmische Schätzverfahren
+
+                                                  COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+                                                       i Faktor/Einschränkungen Mi          sehr niedrig normal hoch sehr extrem
+                                                                                          niedrig                           hoch hoch
+      Basic:                                                 Projektart        Aufwand E [PM] Aufwand E [PM]          Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM            1 RELY (SW Reliability)             0.75      0.88       1    1.15 1.40
+                                                                                   - Basic         - Intermediate        [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                  2 CPLX (Complexity)                 0.70      0.85       1    1.15 1.300.38 1.65
+                                                             Organic             2.4 x S 1.05     M x 3.2 x S  1.05 2.5 x E[PM]
+                                                       3 TIMESemidetached
+                                                              (Execution time) 3.0 x S1.12                      1 2.5
+                                                                                                  M x 3.0 x S1.12    1.11   1.300.35 1.66
+                                                                                                                        x E[PM]
+      Intermediate:
+                                                       4 ACAP                              1.46 M 1.19
+                                                              (Analyst capability)3.6 x S1.20               1      0.86   0.710.32
+      E = (1.3 x 1.24 x 1.07) × 3.2 × 3.61.05 =             Embedded                              x 2.8 x S1.20   2.5 x E[PM]
+                                                       5 PCAP (Programmer capability) 1.42        1.17      1      0.86 0.70
+                                                       6 LEXP (Language experience)       1.14     1.07       1     0.95
+                                                       7 TOOL (Use of SW Tools)           1.24     1.10       1     0.91 0.83
+                                                       8 SCED (Required dev. schedule)    1.23     1.08       1     1.04 1.10
+
+
+
+VO - Software Engineering II                                   66
+ 3.2 Algorithmische Schätzverfahren
+
+                                               COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+                                                             i Faktor/Einschränkungen Mi          sehr niedrig normal hoch sehr extrem
+                                                                                                niedrig                           hoch hoch
+      Basic:                                                       Projektart        Aufwand E [PM] Aufwand E [PM]          Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM                  1 RELY (SW Reliability)             0.75      0.88       1    1.15 1.40
+                                                                                         - Basic         - Intermediate        [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                        2 CPLX (Complexity)                 0.70      0.85       1    1.15 1.300.38 1.65
+                                                                   Organic             2.4 x S 1.05     M x 3.2 x S  1.05 2.5 x E[PM]
+                                                             3 TIMESemidetached
+                                                                    (Execution time) 3.0 x S1.12                      1 2.5
+                                                                                                        M x 3.0 x S1.12    1.11   1.300.35 1.66
+                                                                                                                              x E[PM]
+      Intermediate:
+                                                          4 ACAP (Analyst capability)         1.46   1.19       1    0.86   0.71
+      E = (1.3 x 1.24 x 1.07) × 3.2 × 3.6 1.05 = 21.18 PM      Embedded             3.6 x S 1.20   M x 2.8 x S 1.20 2.5 x E[PM] 0.32
+
+                                                             5 PCAP (Programmer capability)     1.42     1.17       1     0.86 0.70
+                                                             6 LEXP (Language experience)       1.14     1.07       1     0.95
+                                                             7 TOOL (Use of SW Tools)           1.24     1.10       1     0.91 0.83
+                                                             8 SCED (Required dev. schedule)    1.23     1.08       1     1.04 1.10
+
+
+
+VO - Software Engineering II                                         66
+ 3.2 Algorithmische Schätzverfahren
+
+                                               COCOMO 81 (3/3)
+      Beispiel:
+       Ein Informationssystem (Organic) soll entwickelt werden. 3 Subsysteme: Kernsystem (2.1 KDSI), Datenimport
+       (0.9 KDSI), Report-Generator (0.6 KDSI). Die Verarbeitungsgeschwindigkeit muss sehr hoch sein, nur sehr wenige
+       Entwicklungswerkzeuge stehen zur Verfügung, und eine neue Programmiersprache wird eingesetzt.
+
+
+                                                             i Faktor/Einschränkungen Mi          sehr niedrig normal hoch sehr extrem
+                                                                                                niedrig                           hoch hoch
+      Basic:                                                       Projektart        Aufwand E [PM] Aufwand E [PM]          Dauer TDEV
+      E = 2.4 × (2.1+0.9+0.6)1.05 = 9.21 PM                  1 RELY (SW Reliability)             0.75      0.88       1    1.15 1.40
+                                                                                         - Basic         - Intermediate        [CM]
+      TDEV = 2.5 × 9.210.38 = 5.81 CM                        2 CPLX (Complexity)                 0.70      0.85       1    1.15 1.300.38 1.65
+                                                                   Organic             2.4 x S 1.05     M x 3.2 x S  1.05 2.5 x E[PM]
+                                                             3 TIMESemidetached
+                                                                    (Execution time) 3.0 x S1.12                      1 2.5
+                                                                                                        M x 3.0 x S1.12    1.11   1.300.35 1.66
+                                                                                                                              x E[PM]
+      Intermediate:
+                                                          4 ACAP (Analyst capability)         1.46   1.19       1    0.86   0.71
+      E = (1.3 x 1.24 x 1.07) × 3.2 × 3.6 1.05 = 21.18 PM      Embedded             3.6 x S 1.20   M x 2.8 x S 1.20 2.5 x E[PM] 0.32
+
+      TDEV = 2.5 × 21.180.38 = 7.98 CM                    5 PCAP (Programmer capability) 1.42        1.17       1    0.86 0.70
+                                                             6 LEXP (Language experience)       1.14     1.07       1     0.95
+                                                             7 TOOL (Use of SW Tools)           1.24     1.10       1     0.91 0.83
+                                                             8 SCED (Required dev. schedule)    1.23     1.08       1     1.04 1.10
+
+
+
+VO - Software Engineering II                                         66
+ 3.2 Algorithmische Schätzverfahren
+
+                                                 COCOMO II
+          ‣ 2000, Barry Boehm
+
+          ‣ Erweiterte Version um Änderungen (DBMS Systeme, CASE Tools, …) gerecht
+             zu werden
+          ‣ KSLOC (Kilo Source Lines Of Code)
+
+          ‣ 5 Skalierungsfaktoren
+             -   Präzedenz
+             -   Flexibilität
+             -   Risiko-Umgang
+             -   Zusammenarbeit
+             -   Reife von Entwicklungsprozess
+          ‣ 17 Kostenfaktoren
+
+
+
+
+VO - Software Engineering II                         67
+ 3.2 Algorithmische Schätzverfahren
+
+                 ALGORITHMISCHE SCHÄTZVERFAHREN
+
+       Techniken:
+       ‣ Function Points
+
+       ‣ Application Points
+
+       ‣ COCOMO 81 und COCOMO II
+
+
+
+
+VO - Software Engineering II          68
+ 3.2 Aufwandsschätzung
+
+                               SCHÄTZVERFAHREN
+
+
+          ‣ Empirische Schätzverfahren
+
+          ‣ Algorithmische Schätzverfahren
+
+          ‣ Sonstige Schätzverfahren
+
+
+
+
+VO - Software Engineering II                 69
+ 3.2 Sonstige Verfahren
+
+                               SONSTIGE VERFAHREN
+
+
+
+
+VO - Software Engineering II           70
+ 3.2 Sonstige Verfahren
+
+                               SONSTIGE VERFAHREN
+
+
+
+
+VO - Software Engineering II           70
+ 3.2 Sonstige Verfahren
+
+                               SONSTIGE VERFAHREN
+  ‣ Koste es, was es wolle Schätzung:
+        - So tief schätzen, dass man auf jeden Fall den Zuschlag für ein Projekt bekommt.
+
+
+
+
+VO - Software Engineering II                     70
+ 3.2 Sonstige Verfahren
+
+                               SONSTIGE VERFAHREN
+  ‣ Koste es, was es wolle Schätzung:
+        - So tief schätzen, dass man auf jeden Fall den Zuschlag für ein Projekt bekommt.
+
+
+  ‣ Schmerzschwellen Schätzung:
+        - Abtasten, wie viel der Auftraggeber bereit ist zu zahlen, und die Schätzung danach
+          ausrichten.
+
+
+
+
+VO - Software Engineering II                     70
+ 3.2 Sonstige Verfahren
+
+                               SONSTIGE VERFAHREN
+  ‣ Koste es, was es wolle Schätzung:
+        - So tief schätzen, dass man auf jeden Fall den Zuschlag für ein Projekt bekommt.
+
+
+  ‣ Schmerzschwellen Schätzung:
+        - Abtasten, wie viel der Auftraggeber bereit ist zu zahlen, und die Schätzung danach
+          ausrichten.
+
+
+  ‣ Parkinsonsches Gesetz:
+        - Der Aufwand passt sich der vorhandenen Kapazität an.
+
+
+
+VO - Software Engineering II                     70
+ 3.2 Aufwandsschätzung
+
+                               SCHÄTZVERFAHREN
+
+
+          ‣ Empirische Schätzverfahren
+
+          ‣ Algorithmische Schätzverfahren
+
+          ‣ Sonstige Schätzverfahren
+
+
+
+
+VO - Software Engineering II                 71
+ 3.2 Aufwandsschätzung
+
+                               ZUSAMMENFASSUNG
+
+
+
+
+VO - Software Engineering II          72
+ 3.2 Aufwandsschätzung
+
+                                  ZUSAMMENFASSUNG
+
+
+
+
+     Empirische Schätzverfahren
+VO - Software Engineering II             72
+ 3.2 Aufwandsschätzung
+
+                                  ZUSAMMENFASSUNG
+
+
+
+
+     Empirische Schätzverfahren      Algorithmische Schätzverfahren
+VO - Software Engineering II                  72
+ 3.2 Aufwandsschätzung
+
+                                  ZUSAMMENFASSUNG
+
+
+
+
+     Empirische Schätzverfahren      Algorithmische Schätzverfahren   Sonstige Schätzverfahren
+VO - Software Engineering II                  72
+                                            INHALTE
+                           3     Projektmanagement
+                           3.1   Einführung
+                           3.2   Aufwandsschätzung
+                           3.3   Planung und Steuerung
+                           3.4   Personal- und Risikomanagement
+
+
+
+
+VO - Software Engineering II                      73
+ 3.3 Planung und Steuerung
+
+                                         PROJEKTPHASEN
+
+
+       Projektde nition          Projektplanung            Projektverfolgung       Projektabschluss
+
+      - Projektvorschlag       - Projektstruktur           - Projektüberwachung   - Übergabe der Projektergebnisse
+      - Projektentscheidung    - Aufwände schätzen         - Aufwandserfassung    - Entlastung des Projektteams
+      - Projektauftrag         - technische und            - Meilenstein Trend-   - Abrechnung der Projektaufwände
+                                 wirtschaftliche Planung     analyse              - Projektbericht „lessons learned“
+
+
+
+
+                                           ‣ Work-Breakdown Structure
+                                           ‣ Project-Breakdown Structure
+
+VO - Software Engineering II
+         fi
+                                                           74
+ 3.3 Planung und Steuerung
+
+                WORK-BREAKDOWN STRUCTURE (WBS)
+
+   ‣ Projektstrukturplan (PSP)
+   ‣ hierarchische Struktur / Baum
+   ‣ 2 Typen: objektorientiert,
+     ablauforientiert
+   ‣ Testen ist auch „Teilprojekt“
+   ‣ Grundlage für Kostenschätzung
+   ‣ horizontale vs. vertikale Rolle
+
+
+
+
+                                       kleinste plan- und verfolgbare Einheit
+
+
+
+
+VO - Software Engineering II                          75
+ 3.3 Planung und Steuerung
+
+              PROJECT-BREAKDOWN STRUCTURE (PBS)
+
+         ‣ nach PRINCE2 (PRojects IN Controlled Environments)
+         ‣ Zerteilung des Projekts in Teilprodukte
+         ‣ ergänzendes Product Flow Diagrams mit
+           Abhängigkeiten
+
+
+
+
+                                                                [https://productbreakdownstructure.com]
+
+
+
+
+VO - Software Engineering II                         76
+ 3.3 Planung und Steuerung
+
+                                         PROJEKTPHASEN
+
+
+       Projektde nition          Projektplanung            Projektverfolgung       Projektabschluss
+
+      - Projektvorschlag       - Projektstruktur           - Projektüberwachung   - Übergabe der Projektergebnisse
+      - Projektentscheidung    - Aufwände schätzen         - Aufwandserfassung    - Entlastung des Projektteams
+      - Projektauftrag         - technische und            - Meilenstein Trend-   - Abrechnung der Projektaufwände
+                                 wirtschaftliche Planung     Analyse              - Projektbericht „lessons learned“
+
+
+
+
+    ‣ Netzplan und Balkendiagram                                ‣ Meilenstein Trend-Analyse
+    ‣ Burndown Chart                                            ‣ Kosten Trend-Analyse
+    ‣ Cumulative Flow Diagram
+VO - Software Engineering II
+         fi
+                                                           77
+ 3.3 Planung und Steuerung
+
+                   NETZPLAN- UND BALKENDIAGRAMM
+
+    ‣ graphisches Planungsinstrument
+    ‣ Abhängigkeiten und Bearbeitungsreihenfolge
+      der Arbeitspakete
+    ‣ Grundlage: WBS
+    ‣ PERT-Diagramm
+      (Program Evaluation and Review Technique)
+    ‣ GANTT-Diagramm
+
+
+                               Einsatz bei Projekten nach dem Wasserfall bzw. V-Modell
+
+VO - Software Engineering II                             78
+ 3.3 Planung und Steuerung
+
+                                                                  PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                1. Jun   4. Jun   4. Jun    20. Jun
+
+
+
+
+                                                                  20. Jun   26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                          30. Jul   12. Aug
+
+
+
+
+                                                                                       7. Jul   22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                          22. Jul   12. Aug
+
+
+
+
+                                                                                                                              18. Aug            8. Sep
+                                                                                                                                        [visual-paradigm]
+
+
+VO - Software Engineering II                                                             79
+ 3.3 Planung und Steuerung
+
+                                                                  PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                1. Jun   4. Jun   4. Jun    20. Jun     Aktivität
+
+
+
+
+                                                                  20. Jun   26. Jun   26. Jun       7. Jul
+
+
+
+
+                                                                                                              30. Jul   12. Aug
+
+
+
+
+                                                                                       7. Jul       22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                              22. Jul   12. Aug
+
+
+
+
+                                                                                                                                  18. Aug            8. Sep
+                                                                                                                                            [visual-paradigm]
+
+
+VO - Software Engineering II                                                             79
+ 3.3 Planung und Steuerung
+
+                                                                  PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                1. Jun   4. Jun   4. Jun    20. Jun     Aktivität
+                                                                                                              Dauer
+
+
+                                                                  20. Jun   26. Jun   26. Jun       7. Jul
+
+
+
+
+                                                                                                              30. Jul   12. Aug
+
+
+
+
+                                                                                       7. Jul       22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                              22. Jul   12. Aug
+
+
+
+
+                                                                                                                                  18. Aug            8. Sep
+                                                                                                                                            [visual-paradigm]
+
+
+VO - Software Engineering II                                                             79
+ 3.3 Planung und Steuerung
+
+                                                                  PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                1. Jun   4. Jun   4. Jun    20. Jun     Aktivität
+                                                                                                               Dauer
+
+
+                                                                  20. Jun   26. Jun   26. Jun       7. Jul
+
+                                                                                                         Abhängigkeit
+
+
+                                                                                                               30. Jul   12. Aug
+
+
+
+
+                                                                                       7. Jul       22. Jul                        12. Aug           18. Aug
+
+
+
+
+                                                                                                               22. Jul   12. Aug
+
+
+
+
+                                                                                                                                   18. Aug            8. Sep
+                                                                                                                                             [visual-paradigm]
+
+
+VO - Software Engineering II                                                             79
+ 3.3 Planung und Steuerung
+
+                                                                  PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                1. Jun   4. Jun   4. Jun    20. Jun
+
+
+
+
+                                                                  20. Jun   26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                          30. Jul   12. Aug
+
+
+
+
+                                                                                       7. Jul   22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                          22. Jul   12. Aug
+
+
+
+
+                                                                                                                              18. Aug            8. Sep
+                                                                                                                                        [visual-paradigm]
+
+
+VO - Software Engineering II                                                             79
+ 3.3 Planung und Steuerung
+
+                                                                        PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                     1. Jun    4. Jun   4. Jun    20. Jun
+
+
+
+
+                                                Frühster Anfang (FA)
+
+                                                                        20. Jun   26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                                30. Jul   12. Aug
+
+
+
+
+                                                                                             7. Jul   22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                                22. Jul   12. Aug
+
+
+
+
+                                                                                                                                    18. Aug            8. Sep
+                                                                                                                                              [visual-paradigm]
+
+
+VO - Software Engineering II                                                                   79
+ 3.3 Planung und Steuerung
+
+                                                                        PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                     1. Jun    4. Jun   4. Jun    20. Jun
+
+
+
+                                                                         Frühstes Ende (FE)
+                                                Frühster Anfang (FA)
+                                                                            = FA+Dauer
+                                                                        20. Jun   26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                                30. Jul   12. Aug
+
+
+
+
+                                                                                             7. Jul   22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                                22. Jul   12. Aug
+
+
+
+
+                                                                                                                                    18. Aug            8. Sep
+                                                                                                                                              [visual-paradigm]
+
+
+VO - Software Engineering II                                                                   79
+ 3.3 Planung und Steuerung
+
+                                                                        PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                     1. Jun    4. Jun   4. Jun    20. Jun
+
+
+
+                                                                         Frühstes Ende (FE)
+                                                Frühster Anfang (FA)
+                                                                            = FA+Dauer
+                                                                        20. Jun   26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                                30. Jul   12. Aug
+
+
+
+
+                                                                                             7. Jul   22. Jul                         12. Aug           18. Aug
+
+
+
+
+                                                                                                                                    Frühster Anfang (FA)
+                                                                                                                22. Jul   12. Aug
+                                                                                                                                     = Maximum FE der
+                                                                                                                                         Vorgänger
+
+
+                                                                                                                                      18. Aug            8. Sep
+                                                                                                                                                [visual-paradigm]
+
+
+VO - Software Engineering II                                                                   79
+ 3.3 Planung und Steuerung
+
+                                                                        PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                     1. Jun    4. Jun   4. Jun    20. Jun
+
+
+
+                                                                         Frühstes Ende (FE)
+                                                Frühster Anfang (FA)
+                                                                            = FA+Dauer
+                                                                        20. Jun   26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                                30. Jul   12. Aug                            Frühstes Ende (FE)
+
+
+                                                                                             7. Jul   22. Jul                         12. Aug           18. Aug
+
+
+
+
+                                                                                                                                    Frühster Anfang (FA)
+                                                                                                                22. Jul   12. Aug
+                                                                                                                                     = Maximum FE der
+                                                                                                                                         Vorgänger
+
+
+                                                                                                                                      18. Aug            8. Sep
+                                                                                                                                                [visual-paradigm]
+
+
+VO - Software Engineering II                                                                   79
+ 3.3 Planung und Steuerung
+
+                                                                  PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                1. Jun   4. Jun   4. Jun    20. Jun
+
+
+
+
+                                                                  20. Jun   26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                          30. Jul   12. Aug
+
+
+
+
+                                                                                       7. Jul   22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                          22. Jul   12. Aug
+
+
+
+
+                                                                                                                              18. Aug            8. Sep
+                                                                                                                                        [visual-paradigm]
+
+
+VO - Software Engineering II                                                             79
+ 3.3 Planung und Steuerung
+
+                                                                  PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                1. Jun   4. Jun   4. Jun        20. Jun
+
+
+
+
+                                                                  20. Jun       26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                              30. Jul   12. Aug
+
+
+
+
+                                                                                           7. Jul   22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                              22. Jul
+                                                                                Spätestes Ende (SE)                     12. Aug
+
+
+                                                                            = Minimum SA der Nachfolger
+
+
+                                                                                                                                  18. Aug            8. Sep
+                                                                                                                                            [visual-paradigm]
+
+
+VO - Software Engineering II                                                                 79
+ 3.3 Planung und Steuerung
+
+                                                                     PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                1. Jun      4. Jun   4. Jun        20. Jun
+
+
+
+
+                                                                     20. Jun       26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                                 30. Jul   12. Aug
+
+
+                                                         Spätester Anfang (SA)
+                                                             = SE - Dauer                              22. Jul
+                                                                                              7. Jul                                 12. Aug           18. Aug
+
+
+
+
+                                                                                                                 22. Jul
+                                                                                   Spätestes Ende (SE)                     12. Aug
+
+
+                                                                               = Minimum SA der Nachfolger
+
+
+                                                                                                                                     18. Aug            8. Sep
+                                                                                                                                               [visual-paradigm]
+
+
+VO - Software Engineering II                                                                    79
+ 3.3 Planung und Steuerung
+
+                                                                  PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                1. Jun   4. Jun   4. Jun    20. Jun
+
+
+
+
+                                                                  20. Jun   26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                                                                          30. Jul   12. Aug
+
+
+
+
+                                                                                       7. Jul   22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                          22. Jul   12. Aug
+
+
+
+
+                                                                                                                              18. Aug            8. Sep
+                                                                                                                                        [visual-paradigm]
+
+
+VO - Software Engineering II                                                             79
+ 3.3 Planung und Steuerung
+
+                                                                                 PERT-DIAGRAMM
+
+
+
+
+      Program Evaluation and Review Technique
+                                                           1. Jun       4. Jun   4. Jun    20. Jun
+
+
+
+
+                                                                                 20. Jun   26. Jun   26. Jun   7. Jul
+
+
+
+
+                                                kritischer Pfad, wenn
+                                                       SE-FE = 0
+                                                                                                                         30. Jul   12. Aug
+
+
+
+
+                                                                                                      7. Jul   22. Jul                       12. Aug           18. Aug
+
+
+
+
+                                                                                                                         22. Jul   12. Aug
+
+
+
+
+                                                                                                                                             18. Aug            8. Sep
+                                                                                                                                                       [visual-paradigm]
+
+
+VO - Software Engineering II                                                                            79
+ 3.3 Planung und Steuerung
+
+                               GANTT-DIAGRAMM
+
+
+
+
+                                                [MindView-Gantt_Chart.png]
+
+VO - Software Engineering II         80
+ 3.3 Planung und Steuerung
+
+                               GANTT-DIAGRAMM
+
+            Henry Gantt
+
+
+
+
+                                                [MindView-Gantt_Chart.png]
+
+VO - Software Engineering II         80
+ 3.3 Planung und Steuerung
+
+                                     GANTT-DIAGRAMM
+
+            Henry Gantt
+                               konkrete Aktivität / Umsetzung eines Arbeitspaketes
+
+
+
+
+                                                                                     [MindView-Gantt_Chart.png]
+
+VO - Software Engineering II                                 80
+ 3.3 Planung und Steuerung
+
+                                     GANTT-DIAGRAMM
+
+            Henry Gantt
+                               konkrete Aktivität / Umsetzung eines Arbeitspaketes
+
+
+
+
+                                               zeitlicher Aufwand = Dauer
+
+
+
+
+                                                                                     [MindView-Gantt_Chart.png]
+
+VO - Software Engineering II                                 80
+ 3.3 Planung und Steuerung
+
+                                     GANTT-DIAGRAMM
+
+            Henry Gantt
+                               konkrete Aktivität / Umsetzung eines Arbeitspaketes
+
+
+
+
+                                               zeitlicher Aufwand = Dauer
+
+
+                                                                   FA
+
+
+
+
+                                                                                     [MindView-Gantt_Chart.png]
+
+VO - Software Engineering II                                 80
+ 3.3 Planung und Steuerung
+
+                                     GANTT-DIAGRAMM
+
+            Henry Gantt
+                               konkrete Aktivität / Umsetzung eines Arbeitspaketes
+
+
+
+
+                                               zeitlicher Aufwand = Dauer
+
+
+                                                                   FA                FE
+
+
+
+
+                                                                                     [MindView-Gantt_Chart.png]
+
+VO - Software Engineering II                                 80
+ 3.3 Planung und Steuerung
+
+                                     GANTT-DIAGRAMM
+
+            Henry Gantt
+                               konkrete Aktivität / Umsetzung eines Arbeitspaketes
+
+
+
+
+                                               zeitlicher Aufwand = Dauer
+
+
+                                                                   FA                FE
+
+                                                                  Abhängigkeiten
+
+
+
+
+                                                                                     [MindView-Gantt_Chart.png]
+
+VO - Software Engineering II                                 80
+ 3.3 Planung und Steuerung
+
+                                     GANTT-DIAGRAMM
+
+            Henry Gantt
+                               konkrete Aktivität / Umsetzung eines Arbeitspaketes
+
+
+
+
+                                               zeitlicher Aufwand = Dauer
+
+
+                                                                   FA                         FE
+
+                                                                  Abhängigkeiten
+                                                                                     Puffer
+
+
+
+
+                                                                                              [MindView-Gantt_Chart.png]
+
+VO - Software Engineering II                                 80
+ 3.3 Planung und Steuerung
+
+                                     GANTT-DIAGRAMM
+
+            Henry Gantt
+                               konkrete Aktivität / Umsetzung eines Arbeitspaketes
+
+                                                                                       aktive Arbeitspakete zu
+                                                                                        bestimmten Zeitpunkt
+
+                                               zeitlicher Aufwand = Dauer
+
+
+                                                                   FA                             FE
+
+                                                                  Abhängigkeiten
+                                                                                     Puffer
+
+
+
+
+                                                                                                  [MindView-Gantt_Chart.png]
+
+VO - Software Engineering II                                 80
+ 3.3 Planung und Steuerung
+
+                                         PROJEKTPHASEN
+
+
+       Projektde nition          Projektplanung            Projektverfolgung       Projektabschluss
+
+      - Projektvorschlag       - Projektstruktur           - Projektüberwachung   - Übergabe der Projektergebnisse
+      - Projektentscheidung    - Aufwände schätzen         - Aufwandserfassung    - Entlastung des Projektteams
+      - Projektauftrag         - technische und            - Meilenstein Trend-   - Abrechnung der Projektaufwände
+                                 wirtschaftliche Planung     Analyse              - Projektbericht „lessons learned“
+
+
+
+
+    ‣ Netzplan und Balkendiagram                                ‣ Meilenstein Trend-Analyse
+    ‣ Burndown Chart                                            ‣ Kosten Trend-Analyse
+    ‣ Cumulative Flow Diagram
+VO - Software Engineering II
+         fi
+                                                           81
+ 3.3 Planung und Steuerung
+
+                               BURNDOWN CHART
+
+
+
+
+VO - Software Engineering II         82
+ 3.3 Planung und Steuerung
+
+                               BURNDOWN CHART
+
+
+
+
+                                                [4]
+
+
+
+VO - Software Engineering II         83
+ 3.3 Planung und Steuerung
+
+                     CUMULATIVE FLOW DIAGRAM (CFD)
+
+
+
+
+                                        [https://679artists.com]
+
+
+
+
+VO - Software Engineering II       84
+ 3.3 Planung und Steuerung
+
+                                         PROJEKTPHASEN
+
+
+       Projektde nition          Projektplanung            Projektverfolgung       Projektabschluss
+
+      - Projektvorschlag       - Projektstruktur           - Projektüberwachung   - Übergabe der Projektergebnisse
+      - Projektentscheidung    - Aufwände schätzen         - Aufwandserfassung    - Entlastung des Projektteams
+      - Projektauftrag         - technische und            - Meilenstein Trend-   - Abrechnung der Projektaufwände
+                                 wirtschaftliche Planung     Analyse              - Projektbericht „lessons learned“
+
+
+
+
+    ‣ Netzplan und Balkendiagram                                ‣ Meilenstein Trend-Analyse
+    ‣ Burndown Chart                                            ‣ Kosten Trend-Analyse
+    ‣ Cumulative Flow Diagram
+VO - Software Engineering II
+         fi
+                                                           85
+ 3.3 Planung und Steuerung
+
+                  MEILENSTEIN-TREND-ANALYSE (MTA)
+
+
+
+
+                                           [4]
+
+VO - Software Engineering II     86
+ 3.3 Planung und Steuerung
+
+                  MEILENSTEIN-TREND-ANALYSE (MTA)
+
+                               OK
+
+
+
+
+                                           [4]
+
+VO - Software Engineering II        86
+ 3.3 Planung und Steuerung
+
+                  MEILENSTEIN-TREND-ANALYSE (MTA)
+
+                                         Problem
+
+                               OK
+
+
+
+
+                                                   [4]
+
+VO - Software Engineering II        86
+ 3.3 Planung und Steuerung
+
+                  MEILENSTEIN-TREND-ANALYSE (MTA)
+
+                                                  Problem
+
+                               OK
+
+
+
+
+                                    Puffer
+
+
+
+
+                                                            [4]
+
+VO - Software Engineering II                 86
+ 3.3 Planung und Steuerung
+
+                          KOSTEN TREND ANALYSE (CTA)
+
+
+
+
+                                                              [Kosten-Trend-Analyse]
+
+
+
+                               ‣ Gegenüberstellung von Soll-Kosten und Ist-Kosten
+
+                               ‣ Problemphasen vs. zu viel Puffer
+
+VO - Software Engineering II                             87
+ 3.3 Planung und Steuerung
+
+                                         PROJEKTPHASEN
+
+
+       Projektde nition          Projektplanung            Projektverfolgung       Projektabschluss
+
+      - Projektvorschlag       - Projektstruktur           - Projektüberwachung   - Übergabe der Projektergebnisse
+      - Projektentscheidung    - Aufwände schätzen         - Aufwandserfassung    - Entlastung des Projektteams
+      - Projektauftrag         - technische und            - Meilenstein Trend-   - Abrechnung der Projektaufwände
+                                 wirtschaftliche Planung     Analyse              - Projektbericht „lessons learned“
+
+
+
+
+    ‣ Netzplan und Balkendiagram                                ‣ Meilenstein Trend-Analyse
+    ‣ Burndown Chart                                            ‣ Kosten Trend-Analyse
+    ‣ Cumulative Flow Diagram
+VO - Software Engineering II
+         fi
+                                                           88
+ 3.3 Planung und Steuerung
+
+                               ZUSAMMENFASSUNG
+          Projektstruktur                  Planen, Messen, Steuern
+
+
+
+
+VO - Software Engineering II          89
+                                            INHALTE
+                           3     Projektmanagement
+                           3.1   Einführung
+                           3.2   Aufwandsschätzung
+                           3.3   Planung und Steuerung
+                           3.4   Personal- und Risikomanagement
+
+
+
+
+VO - Software Engineering II                      90
+                                            INHALTE
+                           3     Projektmanagement
+                           3.1   Einführung
+                           3.2   Aufwandsschätzung
+                           3.3   Planung und Steuerung
+                           3.4   Personal- und Risikomanagement
+
+
+
+
+VO - Software Engineering II                      90
+ 3.4 Personal- und Risikomanagement
+
+                               PERSONALMANAGEMENT
+
+
+
+
+VO - Software Engineering II           91
+ 3.4 Personal- und Risikomanagement
+
+                               PERSONALMANAGEMENT
+           Mitarbeiter
+  ‣ Wertschätzung, Einkommen,
+    Verantwortung, Weiterbildung
+  ‣ Motivation
+    - Aufgabenorientiert
+    - Selbstorientiert
+    - Interaktionsorientiert
+
+
+
+
+VO - Software Engineering II           91
+ 3.4 Personal- und Risikomanagement
+
+                               PERSONALMANAGEMENT
+           Mitarbeiter
+  ‣ Wertschätzung, Einkommen,
+    Verantwortung, Weiterbildung
+  ‣ Motivation
+    - Aufgabenorientiert
+    - Selbstorientiert
+    - Interaktionsorientiert
+
+          Teamarbeit
+  ‣ Gruppenzusammensetzung
+     - Persönlichkeiten
+     - Erfahrung
+     - Geschlecht
+  ‣ Gruppengröße
+  ‣ Arbeitsumgebung
+VO - Software Engineering II           91
+ 3.4 Personal- und Risikomanagement
+
+                               PERSONALMANAGEMENT
+           Mitarbeiter
+  ‣ Wertschätzung, Einkommen,
+    Verantwortung, Weiterbildung                                Projekt
+  ‣ Motivation
+                                              „Adding manpower to a
+    - Aufgabenorientiert                       late software project
+    - Selbstorientiert                         makes it later“
+                                                           Fred Brooks, 1975
+    - Interaktionsorientiert
+                                              ‣ Messen von Aufwand und Arbeit
+          Teamarbeit                            in Mann-Monaten ist Mythos
+  ‣ Gruppenzusammensetzung
+                                              ‣ Einarbeitungszeit
+     - Persönlichkeiten
+     - Erfahrung                              ‣ Integration ins Team
+     - Geschlecht                             ‣ Personal früh aufstocken
+  ‣ Gruppengröße
+  ‣ Arbeitsumgebung
+VO - Software Engineering II           91
+ 3.4 Personal- und Risikomanagement
+
+                               RISIKOMANAGEMENT (1/2)
+           Unter einem „Risiko“ wird ein Ereignis verstanden, das mit abschätzbarer Wahrscheinlichkeit
+           auftreten kann und dem Projekterfolg erheblichen und quanti zierbaren Schaden zufügen kann.
+                                                                                       [Best Practice in SE, A. Schatten]
+
+
+
+
+             ‣ Projektrisiken - Zeitplan, Budget
+             ‣ Produktrisiken - Qualität, Leistung
+             ‣ Wirtschaftliche Risiken - Auswirkungen
+               aufs Unternehmen
+
+
+
+
+VO - Software Engineering II                            fi
+                                                             92
+ 3.4 Personal- und Risikomanagement
+
+                               RISIKOMANAGEMENT (2/2)
+
+
+
+                                                [Software Engineering, I. Sommerville]
+
+
+
+
+VO - Software Engineering II             93
+ 3.4 Personal- und Risikomanagement
+
+                               RISIKOMANAGEMENT (2/2)
+
+ ‣ Checklisten: Technologie,
+   Personal, Unternehmen,
+   Tools, Anforderungen,
+   Schätzungen
+ ‣ Komponenten-Prüfung
+ ‣ Risiko Bäume
+                                                [Software Engineering, I. Sommerville]
+ ‣ Was wäre wenn?
+
+
+
+
+VO - Software Engineering II             93
+ 3.4 Personal- und Risikomanagement
+
+                               RISIKOMANAGEMENT (2/2)
+
+
+
+                                                [Software Engineering, I. Sommerville]
+
+
+
+
+         ‣ Wahrscheinlichkeit und
+           Schweregrad
+         ‣ Qualitativ -
+           Risiko-Bewertungstabelle
+         ‣ Quantitativ -
+           Gefährdungspotential
+VO - Software Engineering II             93
+ 3.4 Personal- und Risikomanagement
+
+                               RISIKOMANAGEMENT (2/2)
+
+
+
+                                                                          [Software Engineering, I. Sommerville]
+
+
+
+
+                                                     Was wäre wenn sich die Türe bei fahrendem Zug öffnet?
+         ‣ Wahrscheinlichkeit und
+                                            Konsequenz             Wahrscheinlich               Möglich            Unwahrscheinlich
+           Schweregrad
+                                      Verlust von Leben           katastrophal           katastrophal              schwerwiegend
+         ‣ Qualitativ -               Verletzungen                katastrophal           schwerwiegend             hoch
+           Risiko-Bewertungstabelle   Zuggarnitur beschädigt      hoch                   moderat                   niedrig
+         ‣ Quantitativ -              Verlust von Personen        hoch                   hoch                      niedrig
+           Gefährdungspotential       Reputationsverlust          moderat                niedrig                   niedrig
+
+VO - Software Engineering II                         93
+ 3.4 Personal- und Risikomanagement
+
+                               RISIKOMANAGEMENT (2/2)
+
+
+
+                                                [Software Engineering, I. Sommerville]
+
+
+
+
+         ‣ Wahrscheinlichkeit und
+           Schweregrad
+         ‣ Qualitativ -
+           Risiko-Bewertungstabelle
+         ‣ Quantitativ -
+           Gefährdungspotential
+VO - Software Engineering II             93
+ 3.4 Personal- und Risikomanagement
+
+                               RISIKOMANAGEMENT (2/2)
+
+
+
+                                                                                 [Software Engineering, I. Sommerville]
+
+
+
+                                 ‣ Vermeidung: kaputte Komponente z. B. Ersetzen von defekten
+                                   Komponenten durch zugekaufte
+                                 ‣ Minimierung: krankheitsbedingter Ausfall z. B. Planen mit mehr
+                                   Überschneidungen der MA
+                                 ‣ Notfallplan: nanzielle Schwierigkeiten des Unternehmens z. B.
+                                   Dokument, das Wert des Produktes zeigt
+
+
+
+
+VO - Software Engineering II
+        fi
+                                                            93
+ 3.4 Personal- und Risikomanagement
+
+                               RISIKOMANAGEMENT (2/2)
+                                                                                         ‣ Messen
+                                                                                         ‣ Bewerten
+                                                                                         ‣ Anpassen
+
+
+
+
+                                                [Software Engineering, I. Sommerville]
+
+
+
+
+VO - Software Engineering II             93
+ Projektmanagement II
+
+                               ZUSAMMENFASSUNG
+
+
+
+
+VO - Software Engineering II          94
+ Projektmanagement II
+
+                                        ZUSAMMENFASSUNG
+
+ Personalmanagement
+                          Mitarbeiter
+                                         Teamarbeit
+
+      Projekt
+
+
+
+
+  „Adding manpower to a late software project makes it later“
+                                                 Fred Brooks, 1975
+
+
+
+
+VO - Software Engineering II                                         94
+ Projektmanagement II
+
+                                        ZUSAMMENFASSUNG
+
+ Personalmanagement
+                          Mitarbeiter                                 Risikomanagement
+                                         Teamarbeit
+
+      Projekt
+
+
+
+
+  „Adding manpower to a late software project makes it later“
+                                                 Fred Brooks, 1975
+
+
+
+
+VO - Software Engineering II                                         94
+ Projektmanagement II
+
+                      LAWS OF PROJECT MANAGEMENT
+                               [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+
+
+
+VO - Software Engineering II                       95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+
+
+
+VO - Software Engineering II                                      95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+  ‣ Der Projektfortschritt erreicht schnell 90%, dann bleibt er bei 90%.
+
+
+
+
+VO - Software Engineering II                                      95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+  ‣ Der Projektfortschritt erreicht schnell 90%, dann bleibt er bei 90%.
+
+  ‣ Ein Vorteil von ungenauen Projektzielen ist es, dass sie einem die Peinlichkeit einer genauen Kostenschätzung ersparen.
+
+
+
+
+VO - Software Engineering II                                      95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+  ‣ Der Projektfortschritt erreicht schnell 90%, dann bleibt er bei 90%.
+
+  ‣ Ein Vorteil von ungenauen Projektzielen ist es, dass sie einem die Peinlichkeit einer genauen Kostenschätzung ersparen.
+
+  ‣ Wenn alles gut läuft, dann geht etwas schief.
+
+
+
+
+VO - Software Engineering II                                      95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+  ‣ Der Projektfortschritt erreicht schnell 90%, dann bleibt er bei 90%.
+
+  ‣ Ein Vorteil von ungenauen Projektzielen ist es, dass sie einem die Peinlichkeit einer genauen Kostenschätzung ersparen.
+
+  ‣ Wenn alles gut läuft, dann geht etwas schief.
+
+  ‣ Wenn es nicht schlimmer kommen kann, dann wird es schlimmer.
+
+
+
+
+VO - Software Engineering II                                      95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+  ‣ Der Projektfortschritt erreicht schnell 90%, dann bleibt er bei 90%.
+
+  ‣ Ein Vorteil von ungenauen Projektzielen ist es, dass sie einem die Peinlichkeit einer genauen Kostenschätzung ersparen.
+
+  ‣ Wenn alles gut läuft, dann geht etwas schief.
+
+  ‣ Wenn es nicht schlimmer kommen kann, dann wird es schlimmer.
+
+  ‣ Wenn die Dinge besser zu werden scheinen, dann hat man etwas übersehen.
+
+
+
+
+VO - Software Engineering II                                      95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+  ‣ Der Projektfortschritt erreicht schnell 90%, dann bleibt er bei 90%.
+
+  ‣ Ein Vorteil von ungenauen Projektzielen ist es, dass sie einem die Peinlichkeit einer genauen Kostenschätzung ersparen.
+
+  ‣ Wenn alles gut läuft, dann geht etwas schief.
+
+  ‣ Wenn es nicht schlimmer kommen kann, dann wird es schlimmer.
+
+  ‣ Wenn die Dinge besser zu werden scheinen, dann hat man etwas übersehen.
+
+  ‣ Wenn es einem Projektinhalt erlaubt ist sich zu ändern, dann übersteigt die Änderungsrate die Produktivitätsrate.
+
+
+
+
+VO - Software Engineering II                                      95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+  ‣ Der Projektfortschritt erreicht schnell 90%, dann bleibt er bei 90%.
+
+  ‣ Ein Vorteil von ungenauen Projektzielen ist es, dass sie einem die Peinlichkeit einer genauen Kostenschätzung ersparen.
+
+  ‣ Wenn alles gut läuft, dann geht etwas schief.
+
+  ‣ Wenn es nicht schlimmer kommen kann, dann wird es schlimmer.
+
+  ‣ Wenn die Dinge besser zu werden scheinen, dann hat man etwas übersehen.
+
+  ‣ Wenn es einem Projektinhalt erlaubt ist sich zu ändern, dann übersteigt die Änderungsrate die Produktivitätsrate.
+
+  ‣ Kein System ist völlig fehlerfrei. Der Versuch Fehler zu beheben führt unweigerlich zu neuen Fehlern.
+
+
+
+
+VO - Software Engineering II                                      95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+  ‣ Der Projektfortschritt erreicht schnell 90%, dann bleibt er bei 90%.
+
+  ‣ Ein Vorteil von ungenauen Projektzielen ist es, dass sie einem die Peinlichkeit einer genauen Kostenschätzung ersparen.
+
+  ‣ Wenn alles gut läuft, dann geht etwas schief.
+
+  ‣ Wenn es nicht schlimmer kommen kann, dann wird es schlimmer.
+
+  ‣ Wenn die Dinge besser zu werden scheinen, dann hat man etwas übersehen.
+
+  ‣ Wenn es einem Projektinhalt erlaubt ist sich zu ändern, dann übersteigt die Änderungsrate die Produktivitätsrate.
+
+  ‣ Kein System ist völlig fehlerfrei. Der Versuch Fehler zu beheben führt unweigerlich zu neuen Fehlern.
+
+  ‣ Ein achtlos geplantes Projekt dauert in etwa 3 mal so lange bis zur Fertigstellung als erwartet. Ein sorgfältig geplantes
+    Projekt nur etwa doppelt so lange.
+
+
+
+VO - Software Engineering II                                      95
+ Projektmanagement II
+
+                        LAWS OF PROJECT MANAGEMENT
+                                              [Project Management – Processes, Methodologies, and Economics, A. Shtub]
+
+  ‣ Kein Projekt schließt wie ursprünglich geplant ab, Ihres wird nicht das erste sein.
+
+  ‣ Der Projektfortschritt erreicht schnell 90%, dann bleibt er bei 90%.
+
+  ‣ Ein Vorteil von ungenauen Projektzielen ist es, dass sie einem die Peinlichkeit einer genauen Kostenschätzung ersparen.
+
+  ‣ Wenn alles gut läuft, dann geht etwas schief.
+
+  ‣ Wenn es nicht schlimmer kommen kann, dann wird es schlimmer.
+
+  ‣ Wenn die Dinge besser zu werden scheinen, dann hat man etwas übersehen.
+
+  ‣ Wenn es einem Projektinhalt erlaubt ist sich zu ändern, dann übersteigt die Änderungsrate die Produktivitätsrate.
+
+  ‣ Kein System ist völlig fehlerfrei. Der Versuch Fehler zu beheben führt unweigerlich zu neuen Fehlern.
+
+  ‣ Ein achtlos geplantes Projekt dauert in etwa 3 mal so lange bis zur Fertigstellung als erwartet. Ein sorgfältig geplantes
+    Projekt nur etwa doppelt so lange.
+
+  ‣ Projekt-Teams hassen es über ihren Fortschritt zu berichten, weil es den langsamen Fortschritt sichtbar machen würde.
+
+VO - Software Engineering II                                      95
+

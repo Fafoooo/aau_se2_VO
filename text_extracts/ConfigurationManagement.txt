@@ -1,0 +1,1409 @@
+Konfigurationsmanagement
+Christian Macho
+Konfigurationsmanagement
+
+
+
+
+                           2
+                           Motivation
+• Softwaresysteme ändern sich fortlaufend
+   – Korrektur von Fehlern
+   – Anforderungen ändern sich
+   – Systemumgebung ändert sich (Hardware,
+     Betriebssystem, etc.)
+
+• Änderungen führen zu einer neuen Version
+  einer Software
+   – Welche Version korrigierte diesen Fehler,
+     welche Version implementierte das neue
+     Feature?
+
+                                                 3
+                           Motivation
+• Software Configuration Management (SCM)
+   – betrifft die Anwendung (und Entwicklung) von Verfahren (Standards),
+     Prozessen und Tools zur Verwaltung sich weiterentwickelnder
+     Systemprodukte (=Änderungen) [4, p. 651]
+
+   – Manchmal ist SCM auch Teil des Qualitäts-Managements
+   – Dem Prozess sollten Standards zugrundeliegen (z.B.: IEEE 828-1990 [3])
+
+• SCM unterstützt das Entwickeln von Systemen in Teams
+   – Teammitglieder wissen über die Änderungen Bescheid und können
+     Überschneidungen vermeiden
+
+                                                                              4
+                                  Aktivitäten/Themen
+
+
+
+Änderungsmanagement                      Versionsmanagement                 Automatisierung
+•   Erfassen der Änderungen          •    Verwalten der verschiedenen   •   Build Management
+    und Abschätzen der                    Versionen der System-         •   Continuous
+    Realisierbarkeit und Kosten           Komponenten und                   Integration/Delivery/Deploy
+•   Wie gehen SE Prozesse mit             Vermeidung von                    ment
+    Änderungen um?                        Überschneidungen              •   DevOps
+                                     •    Wie verwaltet man             •   Wie kann man die
+                                          Versionen und Änderungen          Softwareausbringung
+                                          im Source Code effizient?         automatisieren?
+
+                                                                                                          5
+ÄNDERUNGSMANAGEMENT
+7
+Änderungsmanagement, klassische Sicht
+•   Änderungen müssen in kontrollierter Weise (und dadurch kostengünstig)
+    ablaufen [4, p. 657]:
+Änderungsantrag stellen;
+Analyse des Änderungsantrags;
+if (Änderung notwendig) {
+    Bewertung, wie Änderung implementiert werden könnte;
+    Einschätzung der Änderungskosten;
+    Speichern des Änderungsantrags in der DB;
+    Einreichen des Antrags an Änderungskommission;
+    if (Änderung akzeptiert) {
+        do {
+            Durchführen der Änderung an der SW;
+            Speichern der Änderung unter Bezug zum Antrag;
+            Geänderte SW zum Test weiterleiten;
+        } while (Softwarequalität noch nicht hinreichend)
+    else {
+        Änderungsantrag ablehnen;
+    }
+else {
+    Änderungsantrag ablehnen;
+}
+
+
+
+                                                                            8
+                    Änderungskommission
+•   Beurteilt die Auswirkung von Änderungen aus strategischer und
+    organisatorischer Sicht (und nicht so sehr aus techn. Sicht)
+
+     – Was sind die Konsequenzen, wenn diese Änderung nicht gemacht wird?
+     – Was ist der zu erwartende Nutzen der Änderung?
+     – Wie viele Benutzer sind von der Änderung betroffen?
+     – Was sind die Kosten der Durchführung der Änderung?
+     – Was ist der Releaseplan?
+         • Soll die Änderung noch für die nächste Release durchgeführt werden?
+
+
+•   Agile Methoden involvieren den Kunden in diesen Entscheidungsprozess
+
+
+                                                                                 9
+Beispiel – Eclipse Bug Report
+
+
+
+
+                                10
+Beispiel – Eclipse Bug Report
+
+
+
+
+                                11
+   Beispiel – Eclipse Bug Report
+
+
+Für welche Softwareentwicklungsprozesse klappt
+          diese Vorgehensweise gut?
+
+
+
+
+                                                 12
+What about Agile?
+
+
+
+
+                    13
+Änderungsmanagement, agile Sicht
+
+
+
+
+                                   14
+      Änderungsmanagement, agile Sicht
+•   Änderungsanforderungen werden wie “gewöhnliche” Anforderungen behandelt
+
+•   Als User Story initial in das Produkt – Backlog
+
+•   Planung der Umsetzung je nach Priorität der Anforderung in einem Sprint
+
+•   Umsetzung der Anforderung im Sprint
+
+•   Auslieferung nach Sprintende
+
+•   Was passiert wenn die Änderung sofort durchgeführt werden muss? (vgl. auch
+    Produktionssupport)
+
+                                                                                 15
+               Zusammenfassung
+• Änderungen kommen sehr oft vor
+
+• Teams und Prozesse müssen entsprechend reagieren
+
+• Adequate Behandlung von Änderungswünschen ist
+  essentiell
+
+• Bereits vorher (rechtzeitig!) Gedanken machen!
+                                                     16
+VERSIONSMANAGEMENT
+                         Motivation
+• Teams sind oft sehr groß
+
+• Fehler können passieren und man möchte lokale Änderungen
+  rückgängig machen
+
+• Unterstützt das Verständnis der Abläufe während der Entwicklung
+
+• Unterstützt die Zusammenarbeit von Entwicklern und Teams
+
+• Entwicklung kann sehr schnell, sehr komplex werden
+
+                                                                    18
+19
+    Versionsmanagement – Terminologie
+•   Die Versionsverwaltung kann wie folgt
+    erfolgen:
+
+     – Zentral: Client/Server System, wobei es nur
+       einen Server gibt. Beispiele: CVS, SVN
+
+     – Dezentral: Ein Repository pro Client, jeder
+       arbeitet auf seinem eigenen
+       Entwicklungszweig. Beispiel: Git
+
+     – Lokal: Nur für die lokale
+       Entwicklung/Versionierung bestimmt. Viele
+       der genannten Konfigurationssysteme können
+       auch lokal verwendet werden
+                                                     20
+            Source Code Management – GIT
+•   Git
+     –    Tool für verteiltes Versionsmanagement
+     –    Frei verfügbar
+     –    Konzepte auch bei anderen Tools sehr ähnlich
+
+•   Ein üblicher Ablauf in Git beinhaltet die folgenden Aktionen
+     –    Repository vom Server downloaden (clone)
+     –    Änderungen lokal speichern (commit)
+     –    Lokale Änderungen an den Server schicken (push)
+     –    Änderungen vom Server abholen (pull)
+
+•   Zusätzlich können auch Verzweigungen und Markierungen erstellt werden
+     –    Beginnen eines neuen Entwicklungsstrangs (branch)
+     –    Markieren einer Revision (tag)
+
+•   Fortgeschrittene Techniken
+     –    rebase, stash, checkout, diff,...
+
+
+
+
+                                                                            21
+            Source Code Management – GIT
+•   Clone
+     – Kopiert das komplette Repository von einem Server auf den lokalen Rechner
+     – Danach können lokal Änderungen durchgeführt werden
+•   Commit
+     – Gibt die Änderungen „frei“ und speichert sie in einer neuen Revision
+     – Revisionen in Git werden mittels SHA-1 Hashes identifiziert (z.B.:
+       2e3413e918deaba1afb08038d0de609204e141ad)
+
+
+
+     – Jede Änderung ist kurz zu kommentieren (was und warum) à Commit Message
+
+
+
+
+                                                                                   22
+         Source Code Management – GIT
+• push
+   – Überträgt die Änderungen die mittels commit freigegeben wurden zum
+     Server
+   – Lokales Repository muss „sauber“ sein (keine Änderungen von anderen
+     Entwicklern am Server), sonst muss zuerst ein „pull“ erfolgen
+
+• pull
+   – Holt die Änderungen der anderen Entwickler vom Server ab und versucht
+     sie in den lokalen Code Stand zu integrieren (merge)
+   – Manche Änderungen können nicht automatisch zusammen geführt werden
+     à Konflikt
+
+                                                                           23
+        Source Code Management – GIT
+• branch
+  – Erstellt eine neue Verzweigung
+  – Sehr nützlich zur Vermeidung von Merge-Konflikten
+  – Änderungen werden nach Fertigstellung in den Hauptstrang
+    integriert
+
+• tag
+  – Markiert eine Revision
+  – Wird z.B. verwendet um Releases zu markieren (z.B. „4.2.3“)
+                                                                  24
+Wann ist eine Commit Message gut?
+
+
+
+
+                                    25
+  (Some) Rules of a Great Commit Message
+    1.       Zusammenfassung und Details
+             trennen
+    2.       Zusammenfassung auf 50 Zeichen
+             begrenzen
+    3.       Referenzen angeben (z.B. Links zum
+             Issue Tracker)
+
+
+
+
+https://chris.beams.io/posts/git-commit/
+
+                                                  26
+  (Some) Rules of a Great Commit Message
+                                                  $ git log
+    1.       Zusammenfassung und Details          commit 42e769bdf4894310333942ffc5a15151222a87be
+                                                  Author: Kevin Flynn <kevin@flynnsarcade.com>
+             trennen                              Date:   Fri Jan 01 00:00:00 1982 -0200
+
+                                                  Derezz the master control program
+    2.       Zusammenfassung auf 50 Zeichen       MCP turned out to be evil and had become intent on world domination.
+             begrenzen                            This commit throws Tron's disc into MCP (causing its deresolution)
+                                                  and turns it back into a chess game.
+
+    3.       Referenzen angeben (z.B. Links zum
+             Issue Tracker)
+                                                  $ git log --oneline
+                                                  42e769 Derezz the master control program
+
+
+
+                                                  à Message Body oft nicht sichtbar
+                                                  à Trennung von Zusammenfassung und Details
+
+https://chris.beams.io/posts/git-commit/
+
+                                                                                                                    27
+  (Some) Rules of a Great Commit Message
+    1.       Zusammenfassung und Details
+             trennen
+    2.       Zusammenfassung auf 50 Zeichen
+             begrenzen
+    3.       Referenzen angeben (z.B. Links zum
+             Issue Tracker)
+
+
+                                                  à GitHub trennt nach 72 Zeichen ab (50
+                                                    anpeilen)
+                                                  à Zusammenfassung kurz halten
+https://chris.beams.io/posts/git-commit/
+
+                                                                                           28
+  (Some) Rules of a Great Commit Message
+    1.       Zusammenfassung und Details          $ git log --oneline
+
+             trennen                              42e769 [MYISSUE-1234] Derezz the master control program
+
+
+
+    2.       Zusammenfassung auf 50 Zeichen
+             begrenzen
+                                                                                 vs.
+    3.       Referenzen angeben (z.B. Links zum   $ git log --oneline
+
+             Issue Tracker)                       42e769 Derezz the master control program
+
+
+
+
+                                                  à Details können beim Issue nachgelesen
+                                                    werden
+                                                  à Zuordnung/Aggregation leicht möglich
+https://chris.beams.io/posts/git-commit/
+
+                                                                                                            29
+Beispiele
+
+
+
+
+            30
+                    Beispiele
+
+
+
+
+„Fix typos in test method names.“
+                                    31
+Beispiele
+
+
+
+
+            32
+                  Beispiele
+„Remove
+dependency on
+Guava
+
+Stopwatch class was
+used by a single
+test“
+                              33
+         Beispiele – Tangled Commits
+• Ein Commit beinhaltet die Änderungen mehrerer Tasks
+   à Tangled (“Verknäult”) Commit
+
+• Eher schlecht
+   – Entwicklung vermeintlich einfacher
+   – Retrospektive Analyse schwer
+   – Finden von Code (z.B. zum Fehler beheben) schwer
+
+à Vermeiden!
+                                                        34
+         Beispiele – Tangled Commits
+• Ein Commit beinhaltet die Änderungen mehrerer Tasks
+   à Tangled (“Verknäult”) Commit
+
+• Eher schlecht
+   – Entwicklung vermeintlich einfacher
+   – Retrospektive Analyse schwer
+   – Finden von Code (z.B. zum Fehler beheben) schwer
+
+à Vermeiden!
+                                                        35
+         Beispiele – Tangled Commits
+• Ein Commit beinhaltet die Änderungen mehrerer Tasks
+   à Tangled (“Verknäult”) Commit
+
+• Eher schlecht
+   – Entwicklung vermeintlich einfacher
+   – Retrospektive Analyse schwer
+   – Finden von Code (z.B. zum Fehler beheben) schwer
+
+à Vermeiden!
+                                                        36
+       Beispiele – Tangled Commits
+• Best Practice
+  – Für jeden Task/Schritt ein Commit
+  – Sinnvolle Message! (Was wurde in dem Schritt
+    gemacht?
+  – Referenz zum Issue (z.B. [ISSUE-1234] <Message>)
+
+
+                                                       37
+Beispiele – (Un)Tangled Commits
+
+
+
+
+                                  38
+                    Research?
+  „When developers commit software changes to a
+version control system, they often commit unrelated
+   changes in a single transaction—simply because,
+ while, say, fixing a bug in module A, they also came
+across a typo in module B, and updated a deprecated
+      call in module C.“, Herzig and Zeller, 2011
+
+                          Herzig, Kim, and Andreas Zeller. "Untangling changes." Unpublished manuscript, September 37 (2011): 38-40.
+
+
+
+                                                                                                                           39
+         Tool Support? Research?
+• Beinflussende Faktoren
+  – Zeitliche Nähe
+  – ”Örtliche Nähe”
+  – Gleiche Klasse
+  – Gemeinsame Zugriffe
+    auf Variablen
+• (Etwas) Tool Support
+                                   40
+         Tool Support? Research?
+• Beinflussende Faktoren
+  – Zeitliche Nähe
+  – ”Örtliche Nähe”
+  – Gleiche Klasse
+  – Gemeinsame Zugriffe
+    auf Variablen
+• (Etwas) Tool Support
+                                   41
+  Source Code Management – Merging
+• Was passiert wenn 2 Entwickler getrennt von
+  einander, parallel etwas bearbeiten?
+
+• Verschiedene Stellen à Kein Problem
+
+• Gleiche Stellen à Evtl. problematisch
+                                                42
+  Source Code Management – Merging
+• Was passiert wenn 2 Entwickler getrennt von
+  einander, parallel etwas bearbeiten?
+
+• Verschiedene Stellen à Kein Problem
+
+• Gleiche Stellen à Evtl. problematisch
+                                                43
+ Source Code Management – Merging
+• Gleichzeitige Änderung
+  in der Datei Main.java
+
+à Zusammenführen
+notwendig! (=Merging)
+
+                                    44
+ Source Code Management – Merging
+• Soweit möglich von Git übernommen
+• Sonst:
+
+
+
+
+                                      45
+Source Code Management – Merging
+Beim Zusammenführen von Änderungen kann es, ohne
+    geeignete Strategien, zu Problemen kommen
+
+
+
+
+  Überschreiben von Änderungen   Arbeiten an nicht mehr aktuellen
+        anderer Entwickler                 Codeständen
+                                                                    46
+    Source Code Management – Merging
+•   Lösungsstrategien
+
+     – Lock-Modify-Unlock: Beim Auschecken der Dateien werden diese für andere gesperrt. Der Code
+       kann modifiziert werden und erst nach einem Commit steht dieser wieder anderen Entwicklern zur
+       Änderung zur Verfügung.
+          •   Nachteil: Lange Wartezeiten wenn die Komponente gesperrt ist und der Entwickler der die Komponente
+              sperrte nicht erreichbar ist
+
+     – Copy-Modify-Merge: Auschecken ist jederzeit erlaubt. Beim Einchecken entsteht mitunter aber ein
+       Konflikt, welcher durch Zusammenfügen (Merge) der Codestellen gelöst werden muss.
+          •   Nachteil: das Zusammenfügen ist mitunter nicht immer automatisch möglich
+
+     – Feature Branches: Entwickler arbeitet in einem eigenen Branch und integriert die Änderungen am
+       Ende der Arbeit
+
+
+
+                                                                                                                   47
+    Source Code Management – Merging
+•   Lösungsstrategien
+
+     – Lock-Modify-Unlock: Beim Auschecken der Dateien werden diese für andere gesperrt. Der Code
+       kann modifiziert werden und erst nach einem Commit steht dieser wieder anderen Entwicklern zur
+       Änderung zur Verfügung.
+          •   Nachteil: Lange Wartezeiten wenn die Komponente gesperrt ist und der Entwickler der die Komponente
+              sperrte nicht erreichbar ist
+
+     – Copy-Modify-Merge: Auschecken ist jederzeit erlaubt. Beim Einchecken entsteht mitunter aber ein
+       Konflikt, welcher durch Zusammenfügen (Merge) der Codestellen gelöst werden muss.
+          •   Nachteil: das Zusammenfügen ist mitunter nicht immer automatisch möglich
+
+     – Feature Branches: Entwickler arbeitet in einem eigenen Branch und integriert die Änderungen am
+       Ende der Arbeit
+
+
+
+                                                                                                                   48
+Source Code Management – Merging
+
+
+
+
+                                   49
+  Source Code Management – Merging
+• <<<<<<<, ======= und >>>>>>> zeigen Bereiche von Konflikten an
+   – Beheben durch entfernen der Marker und manuellem Zusammenfügen des
+     Codes (merge)
+
+
+
+
+                                                                     50
+  Source Code Management – Merging
+• <<<<<<<, ======= und >>>>>>> zeigen Bereiche von Konflikten an
+   – Beheben durch entfernen der Marker und manuellem Zusammenfügen des
+     Codes (merge)
+
+                                            „Original“
+
+                                            Version 1
+
+
+                                            Version 2
+
+
+
+                                                                     51
+       Source Code Management – GIT
+• Es hat sich folgendes Modell als sehr nützlich erwiesen, um im Team zu
+  entwickeln (auch für die SE2 Übung ;) )
+
+
+
+
+                                                                       52
+Source Code Management – GIT
+
+
+
+
+                               53
+Source Code Management – GIT
+
+
+                           Wo können
+                             Merge
+                            Conflicts
+                           auftreten?
+
+
+
+
+                                  54
+Source Code Management – GIT
+
+
+                           Wo können
+                             Merge
+                            Conflicts
+                           auftreten?
+
+
+
+
+                                  55
+Source Code Management – GIT
+
+
+                           Wo können
+                             Merge
+                            Conflicts
+                           auftreten?
+
+
+
+
+                                  56
+         Semantic Versioning – Muster
+                     MAJOR.MINOR.PATCH
+
+• Version Zahlen verwenden üblicherweise dieses Muster (e.g. 1.3.15)
+
+• MAJOR: erhöhen bei inkompatiblen API Änderungen
+• MINOR: hinzufügen von Funktionalität in einer abwärtskompatiblen Art
+• PATCH: kleinere Änderungen, wie z.B. abwärtskompatible Bug Fixes
+
+                                                             Source: https://semver.org/
+
+                                                                                57
+       Semantic Versioning – Postfixes
+• Manchmal werden auch noch folgende Endungen verwendet:
+   – SNAPSHOT: während der Entwicklung, „under frequent change”
+     (1.2.1-SNAPSHOT)
+   – M<Zahl>: Zeigt Milestone Releases an (2.4.1-M1, 2.4.1-M2, …)
+   – Beta: Zeigt Beta Testversionen an (1.3.1-b1)
+   – RC oder CR: Release Candidate, quasi finale Version die ausgebracht
+     werden soll (1.3.0-rc4)
+   – GA: “General Availability”, Öffentlicher Release (1.0.4.GA)
+   – Release: finale Version
+
+
+                                                                       58
+                             Release Notes
+•   Inhalte variieren
+•   Häufig folgende Inhalte
+     –   Versionsnummer
+     –   Datum (des Releases)
+     –   Zusammenfassung
+     –   Fixed bugs
+     –   Neue Features
+     –   Abhängigkeitsänderungen
+     –   Referenzen zu Issues (gh-xxx)
+     –   Mitarbeiter (Contributors)
+     –   Download Links/Dependency
+         Definitions (e.g. für Maven/Gradle)
+Release Notes – Beispiel
+
+
+
+
+                           60
+                      Zusammenfassung
+•   Zentralisiertes vs. Verteiltes Versionsmanagement
+•   Workflow für Source Code Management Systeme
+     – clone
+     – commit
+     – push
+     – pull
+•   Best Practice für die Nutzung von GIT
+     – Feature Branches
+     – Hotfix Branch
+     – Release Branch
+     – Master Branch
+•   Tagging von Versionen/Releases
+                                                        61
+BUILDMANAGEMENT/AUTOMATISIERUNG
+63
+                                   Motivation
+•   Viele Branches und Entwicklungsstränge
+
+à Viele Versionen die kompiliert, gebaut, getestet, und ausgebracht werden müssen
+
+•   Ohne Automatisierung nur für kleine Projekte möglich
+     – Amazon: 136,000 builds/deployments pro Tag
+
+
+
+
+à Software Automation Pipeline
+
+
+                                                                                    64
+Motivation
+
+
+
+
+             65
+Motivation
+
+
+
+
+             66
+Manually???
+
+
+ vs.
+
+
+
+              67
+             Software Automation Pipeline
+       Development                 Integration                   QA              Operation
+
+                                     Feedback loops
+
+    Code               Unit                      Integr.              Accept.
+             Build              Integrate                  Release              Deploy       Operate
+                      Tests                       Tests                Tests
+
+
+
+
+                 Increase confidence in production readiness
+
+
+•   Die Abläufe jeder Phase des Software Prozesses können automatisiert werden (von Entwicklung zu
+    Integration bis zu QA und Betrieb)
+•   Weitere Schritte werden nur (automatisch) ausgeführt wenn einige Bedingungen erfüllt worden sind
+•   Andernfalls werden die Verantwortlichen über den Fehler benachrichtigt und der Prozess angehalten à
+    Feedback loop
+
+                                                                                                       68
+          Software Automation Pipeline
+   Development                   Integration                   QA              Operation
+
+                                   Feedback loops
+
+Code                   Unit                    Integr.              Accept.
+           Build              Integrate                  Release              Deploy       Operate
+                      Tests                     Tests                Tests
+
+Build Automation
+
+Continuous Integration (CI)
+
+
+Continuous Delivery (CD)
+
+Continuous Deployment (CD)
+
+
+DevOps
+
+
+
+                                                                                                     69
+             Software Automation Pipeline
+•   Build Automation
+     –   Bauen von individuellen Komponenten und Ausführung von Unit Tests
+     –   Typischer Weise vom Entwickler ausgeführt
+•   Continuous Integration
+     –   Automatisches Bauen, Testen, und Integrieren von Komponenten und Ausführung von Integrations Tests
+     –   Typischer Weise am Continuous Integration Server ausgeführt
+•   Continuous Delivery
+     –   Zusätzliches Erstellen von Releases, deren Ausbringung auf Test Umgebungen, und Ausführen von Akzeptanztests
+     –   Release ist bereit um in die Produktivumgebung ausgebracht zu werden
+•   Continuous Deployment
+     –   Ausbringung des Releases auf die Produktivumgebung
+•   DevOps
+     –   Betrieb läuft automatisch ab (Backups, Monitoring, Scaling,...)
+
+
+
+                                                                                                                    70
+          Software Automation Pipeline
+   Development                   Integration                   QA              Operation
+
+                                   Feedback loops
+
+Code                   Unit                    Integr.              Accept.
+           Build              Integrate                  Release              Deploy       Operate
+                      Tests                     Tests                Tests
+
+Build Automation
+
+Continuous Integration (CI)
+
+
+Continuous Delivery (CD)
+
+Continuous Deployment (CD)
+
+
+DevOps
+
+
+
+                                                                                                     71
+                                     Build Automation
+•   Build Automation deckt die Build Phase des SW lifecycle ab
+•   Wichtige Schritte sind
+     –      Auflösen von Abhängigkeiten (Dependency Resolution)
+     –      Kompilieren des Source Codes
+     –      Ausführung der (Unit) Tests
+     –      Software zusammenstellen (packaging)
+     –      Ausbringen in Repositories
+     –      Dokumentation erstellen
+
+•   Tools
+     –      Java: (Ant), Maven, Gradle,...
+     –      C/C++: make,...
+     –      Microsoft: MS Build, Visual Build,...
+     –      Ruby: Rake,...
+
+
+
+
+                                                                  72
+    Build Automation/CI – Beispiel Maven
+•   Jedes Projekt besitzt ein Project Object Model (POM)
+•   XML (XSD-basierend)
+
+•   „Metadaten“ zum Projekt
+     –   Dependencies
+     –   Build Prozess
+     –   Dokumentation
+     –   ...
+
+•   POM kann vererbt werden (wie in OO)
+     – „Super-POM“ wird von Maven bereit gestellt
+     – Sinnvoll für große Projekte (z.B.: zentrale Verwaltung von Dependencies)
+
+
+
+                                                                                  73
+ Build Automation/CI – Beispiel Maven
+• (minimal) POM
+
+
+
+
+                                        74
+ Build Automation/CI – Beispiel Maven
+• POM Bereiche (Abhängigkeiten)
+
+
+
+
+                                        75
+ Build Automation/CI – Beispiel Maven
+• POM Bereiche (Build Prozess)
+
+
+
+
+                                        76
+ Build Automation/CI – Beispiel Maven
+• Einfacher Aufruf
+   – mvn [options] [<goal(s)>] [<phase(s)>]
+   – mvn clean package –DskipTests=true
+
+• Viele Parameter
+   – -h (Help)
+   – -v (Version; Test Maven Installation)
+   – --fail-at-end
+   – ...
+
+                                              77
+Build Automation/CI – Beispiel Maven
+[INFO] Reactor Summary:
+[INFO]
+[INFO] Activiti ........................................... SUCCESS [ 0.078 s]
+[INFO] Activiti - BPMN Model .............................. SUCCESS [ 1.637 s]
+[INFO] Activiti - BPMN Converter .......................... SUCCESS [ 1.602 s]
+[INFO] Activiti - Engine .................................. SUCCESS [ 9.965 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.735 s
+[INFO] Finished at: 2018-05-22T16:36:07+02:00
+[INFO] Final Memory: 52M/478M
+[INFO] ------------------------------------------------------------------------
+
+
+
+
+                                                                                  78
+          Software Automation Pipeline
+   Development                   Integration                   QA              Operation
+
+                                   Feedback loops
+
+Code                   Unit                    Integr.              Accept.
+           Build              Integrate                  Release              Deploy       Operate
+                      Tests                     Tests                Tests
+
+Build Automation
+
+Continuous Integration (CI)
+
+
+Continuous Delivery (CD)
+
+Continuous Deployment (CD)
+
+
+DevOps
+
+
+
+                                                                                                     79
+               Continuous Integration
+• Kontinuierliche Integration aller Änderungen (von verschiedenen
+  Entwicklern/Teams)
+
+
+• Zusammenbauen der Komponenten in eine vollständige Applikation
+  und Ausführen der Integrations Tests mit dieser Applikation
+
+
+
+
+                                                                    80
+ Continuous Integration
+
+                   mvn clean package
+
+
+
+
+mvn site           mvn test
+
+
+
+
+                                       81
+               Continuous Integration
+• Findet meistens auf einem Continuous Integration Server statt
+
+• Tools
+
+
+   GitHub
+   Actions
+
+
+
+
+                                                                  82
+Continuous Integration – GitHub Actions
+• Stellt Infrastruktur zur Verfügung
+   – Requirements werden deklariert
+
+• Vorteile
+   – Standardisiert
+   – Geringerer Aufwand (grundsätzlich)
+• Nachteile
+   – Keine Kontrolle über die dahinter liegende Infrastruktur
+   – Customization manchmal schwer
+
+                                                                83
+Continuous Integration – GitHub Actions
+
+
+
+
+                                      84
+Continuous Integration – GitHub Actions
+         Wann soll der Build
+         ausgeführt werden?
+
+
+
+
+                                      85
+Continuous Integration – GitHub Actions
+
+
+
+                     Welche Schritte sollen
+                     ausgeführt warden?
+
+
+
+
+                                              86
+          Software Automation Pipeline
+   Development                   Integration                   QA              Operation
+
+                                   Feedback loops
+
+Code                   Unit                    Integr.              Accept.
+           Build              Integrate                  Release              Deploy       Operate
+                      Tests                     Tests                Tests
+
+Build Automation
+
+Continuous Integration (CI)
+
+
+Continuous Delivery (CD)
+
+Continuous Deployment (CD)
+
+
+DevOps
+
+
+
+                                                                                                     87
+                      Continuous Delivery
+•   Traditionelle Applikationen                  Applikation
+     – Monolithen
+                                                                     Server
+     – Beim Deployment wird die gesamte
+       Applikation auf eine Server Instanz
+       ausgebracht
+     – Meistens wird hier Continuous
+       Integration angewandt
+
+                                                Microservice 1
+                                                                 .   Server 1
+•   Flexiblere Architekturen
+     – z.B. Microservices                                        .
+     – Viele kleine Applikationen à viel mehr                    .
+       Deploymentvorgänge                       Microservice n
+                                                                     Server n
+                  Continuous Delivery
+• Schnelles Feedback, ob die Applikation für die Auslieferung bereit ist
+
+• Deployment ist der finale Abschnitt der Continuous Integration
+
+• Ziel: Die Software ist zu jedem Zeitpunkt in einem stabilen Zustand und
+  kann in die Produktionsumgebung ausgebracht werden
+
+• „Definition of done“
+
+
+
+                                                                           89
+                  Continuous Delivery
+• Schnelles Feedback, ob die Applikation für die Auslieferung bereit ist
+
+• Deployment ist der finale Abschnitt der Continuous Integration
+
+• Ziel: Die Software ist zu jedem Zeitpunkt in einem stabilen Zustand und
+  kann in die Produktionsumgebung ausgebracht werden
+
+• „Definition of done“
+    – Entwicklung abgeschlossen/Tests erfolgreich/Abnahme durch Kunden
+
+
+                                                                           90
+                  Continuous Delivery
+• Schnelles Feedback, ob die Applikation für die Auslieferung bereit ist
+
+• Deployment ist der finale Abschnitt der Continuous Integration
+
+• Ziel: Die Software ist zu jedem Zeitpunkt in einem stabilen Zustand und
+  kann in die Produktionsumgebung ausgebracht werden
+
+• „Definition of done“
+    – Entwicklung abgeschlossen/Tests erfolgreich/Abnahme durch Kunden
+    – Verfügbar in der Produktionsumgebung!
+
+                                                                           91
+            Continuous Delivery
+
+   Continuous Delivery ist eine Sammlung von
+Prozessen, Tools, und Techniken um das Ausliefern
+           des Produkts zu verbessern
+
+
+
+                                                92
+           Continuous Delivery
+
+Our highest priority is to satisfy the customer
+   through early and continuous delivery
+            of valuable software.
+
+
+                                              93
+          Software Automation Pipeline
+   Development                   Integration                   QA              Operation
+
+                                   Feedback loops
+
+Code                   Unit                    Integr.              Accept.
+           Build              Integrate                  Release              Deploy       Operate
+                      Tests                     Tests                Tests
+
+Build Automation
+
+Continuous Integration (CI)
+
+
+Continuous Delivery (CD)
+
+Continuous Deployment (CD)
+
+
+DevOps
+
+
+
+                                                                                                     94
+          Software Automation Pipeline
+   Development                   Integration                   QA              Operation
+
+                                   Feedback loops
+
+Code                   Unit                    Integr.              Accept.
+           Build              Integrate                  Release              Deploy       Operate
+                      Tests                     Tests                Tests
+
+Build Automation
+
+Continuous Integration (CI)
+
+
+Continuous Delivery (CD)
+
+Continuous Deployment (CD)
+
+
+DevOps
+
+
+
+                                                                                                     95
+    Continuous Delivery vs. Deployment
+•   Bei Continuous Delivery wird der finale Schritt – das Deployment – von einem
+    Menschen ausgelöst.
+•   Typischer Weise nach einigen Änderungen oder zu fixen Zeitpunkten
+
+       Code                Unit                                       Accept.
+                                              Integrate                                     Deploy
+       Done   automated   Tests   automated               automated    Tests     manual
+
+
+
+
+•   Bei Continuous Deployment wird jede Änderung die erfolgreiche Tests hinter sich hat
+    automatisch in die Produktionsumgebung ausgebracht
+       Code                Unit                                       Accept.
+                                              Integrate                                     Deploy
+       Done   automated   Tests   automated               automated    Tests    automated
+
+
+                                                                                                     96
+    Continuous Delivery vs. Deployment
+•   Bei Continuous Delivery wird der finale Schritt – das Deployment – von einem
+    Menschen ausgelöst.
+•   Typischer Weise nach einigen Änderungen oder zu fixen Zeitpunkten
+
+       Code
+       Done
+                   What can possibly go wrong?
+                           Unit
+                          Tests
+                                              Integrate
+                                                                      Accept.
+                                                                       Tests
+                                                                                            Deploy
+              automated           automated               automated              manual
+
+
+
+
+•   Bei Continuous Deployment wird jede Änderung die erfolgreiche Tests hinter sich hat
+    automatisch in die Produktionsumgebung ausgebracht
+       Code                Unit                                       Accept.
+                                              Integrate                                     Deploy
+       Done   automated   Tests   automated               automated    Tests    automated
+
+
+                                                                                                     97
+          Software Automation Pipeline
+   Development                   Integration                   QA              Operation
+
+                                   Feedback loops
+
+Code                   Unit                    Integr.              Accept.
+           Build              Integrate                  Release              Deploy       Operate
+                      Tests                     Tests                Tests
+
+Build Automation
+
+Continuous Integration (CI)
+
+
+Continuous Delivery (CD)
+
+Continuous Deployment (CD)
+
+
+DevOps
+
+
+
+                                                                                                     98
+                      DevOps – Problematik
+• Organisationen arbeiten sehr oft noch nach dem Wasserfall – Modell
+• Entwicklungsteams arbeiten bereits häufig in agilen Prozessen
+                                                                Developers
+       Requirements
+
+
+                       Design
+                                                                     QA Engineer
+                                Implementation
+
+                                                                                   IT Operations
+                                                 Verification
+
+
+                                                                   Maintenance
+
+                                                                                           99
+DevOps – Konflikt: „Wall of Confusion“
+
+
+
+
+                                     100
+DevOps – Konflikt: „Wall of Confusion“
+              I want
+             change
+
+
+
+                      Develop-
+  Business
+                        ment
+
+              QA
+
+
+
+
+     Deliver bug-fixes, changes
+         & new features
+
+                                     101
+DevOps – Konflikt: „Wall of Confusion“
+              I want                           I want
+             change                           stability
+
+
+                      Develop-
+  Business                        Sysadmin                DBA
+                        ment
+
+                                             Network-
+              QA
+                                             Engineer
+
+
+
+
+     Deliver bug-fixes, changes     Reliable, stable software &
+         & new features                  Enhanced services
+
+                                                                  102
+DevOps – Konflikt: „Wall of Confusion“
+              I want                           I want
+             change                           stability
+
+
+                      Develop-
+  Business                        Sysadmin                DBA
+                        ment
+
+                                             Network-
+              QA
+                                             Engineer
+
+
+
+
+     Deliver bug-fixes, changes     Reliable, stable software &
+         & new features                  Enhanced services
+
+                                                                  103
+DevOps – Konflikt: „Wall of Confusion“
+              I want                           I want
+             change                           stability
+                       Spannungsfeld
+  Business
+                   zwischen Development
+                      Develop-
+                                  Sysadmin                DBA
+                        ment
+
+              QA
+                      und Operations!        Network-
+                                             Engineer
+
+
+
+
+     Deliver bug-fixes, changes     Reliable, stable software &
+         & new features                  Enhanced services
+
+                                                                  104
+                         Spannungsfeld
+Entwicklung                             Betrieb
+•    Entwickler bringen nicht immer     •   Betrieb ist motiviert Änderungen
+     konsistente Software aus               zu widerstehen (Stabilität)
+•    Der Entwicklungsprozess ist agil   •   Der Betriebsprozess ist statisch
+
+
+    Diese Problematik verursacht Verzögerung und Verzögerungen
+                        verursachen Verluste
+
+    à IT ist sehr häufig der Flaschenhals von der Idee zum Markt
+                                                                               105
+106
+            Wall of Confusion
+It works on my                    It’s not the
+   machine...                   server, it’s your
+                                      code
+
+
+
+
+    Development          Operations
+       & QA
+
+                                                    107
+Wall of Confusion - Lösung?
+
+
+
+
+                              108
+      Wall of Confusion - Lösung?
+
+
+
+
+        Business    Development   Operations
+                       & QA
+Agile Development                  DevOps fixes this
+     fixes this
+                                                       109
+                        DevOps Practices
+•   Versionskontrolle für alle Bereiche (auch Betrieb; z.B. für
+    Konfigurationsdateien)
+•   Automatisiertes Testen
+•   Proaktives Monitoring (Metriken; auch wenn „alles passt“)
+•   Anwendung von Kanban/Scrum
+•   Continuous Integration/Delivery/Deployment
+•   „Abrufbereitschaft“ auch für Entwicklung
+•   Virtualisierung/Container (z.B. mit Docker, Kubernetes)
+
+ABER: Es muss auch eine Umstellung der „Kultur“ hinsichtlich der neuen Prozesse
+                        und Vorgehensweise erfolgen
+
+                                                                             110
+Even with the best tools, DevOps is just another
+  buzzword if you don't have the right culture.
+
+
+
+
+                                                   111
+Fortführungen
+
+
+
+
+                112
+                          Zusammenfassung
+•   Build Automation
+     – Automatisches Bauen und Testen von Software Produkten
+     – Tool Unterstützung z.B. durch Apache Maven
+
+•   Continuous Integration/Delivery/Deployment
+     – Automatisches Bauen, Testen, und Ausbringen von Software Produkten
+     – Tool Unterstützung z.B. durch TravisCI
+     – Ziel: Customer Satisfaction
+
+•   DevOps
+     – Erweiterung von Continuous Deployment um die Operations Seite
+     – Erfordert nicht nur gute Tools sondern auch einen Kulturwandel
+
+
+
+                                                                            113
+                                  Aktivitäten/Themen
+
+
+
+Änderungsmanagement                      Versionsmanagement                 Automatisierung
+•   Erfassen der Änderungen          •    Verwalten der verschiedenen   •   Build Management
+    und Abschätzen der                    Versionen der System-         •   Continuous
+    Realisierbarkeit und Kosten           Komponenten und                   Integration/Delivery/Deploy
+•   Wie gehen SE Prozesse mit             Vermeidung von                    ment
+    Änderungen um?                        Überschneidungen              •   DevOps
+                                     •    Wie verwaltet man             •   Wie kann man die
+                                          Versionen und Änderungen          Softwareausbringung
+                                          im Source Code effizient?         automatisieren?
+
+                                                                                                     114
+                             Zum Nachlesen
+[1] Software-Entwurf, Test und Entwicklungsprozess. 8. SW Reuse and CBSE. Roland Mittermeir. 2008.
+[2] Software Engineering, Ian Sommerville. 8th Ed., Addison Wesley, 2007.
+[3] IEEE Standard 828-1990 - IEEE Standard for Software Configuration Management Pland. IEEE Standards
+    Board. Zu finden unter: http://www.cs.tufts.edu/comp/190/IEEE-std-828-1990-SCM.pdf
+[4] Software Engineering, Ian Sommerville. 6. Auflage, Pearson Studium, 2001.
+[5] Softwaretechnik: Mit Fallbeispielen aus realen Entwicklungsprojekten., Thomas Grechenig, Mario
+    Bernhart, Roland Breiteneder, Karin Kappel., Pearson Studium. 2010.
+[6] https://devops.com
+[7] https://martinfowler.com/bliki/BlueGreenDeployment.html
+[8] https://martinfowler.com/articles/feature-toggles.html
+[9] http://cgrant.io/article/deployment-strategies/
+[10] https://martinfowler.com/books/continuousDelivery.html
+
+Weitere Informationen finden Sie auch auf den Web-Sites der Anbieter der diversen
+   Konfigurationsmanagement-Tools
+
+                                                                                                   115
+

@@ -1,0 +1,2710 @@
+                          SOFTWARE ENGINEERING II
+                                  Vorlesung
+
+
+
+                                  Software Design
+
+
+
+
+Software Engineering II                1
+Wiederholung
+
+
+                          SCRUM
+
+
+
+
+Software Engineering II     2
+Wiederholung
+
+
+                                  SCRUM
+
+           Was ist…
+           ‣ … eine User Story?
+           ‣ … INVEST?
+           ‣ … Planning Poker?
+           ‣ … Velocity?
+
+
+
+
+Software Engineering II             3
+                                       INHALTE
+                          2    Software Design
+                          2.1 Software Design Patterns
+                          2.1.1 Schichtenarchitektur
+                          2.1.2 MVC und MVP
+                          2.1.3 Software Design in Android
+                          2.2 Component Based Software Engineering
+                          2.2.1 Reuse
+                          2.2.2 Vom Objekt zum Service
+                          2.2.3 Komponenten
+                          2.2.4 Services
+
+
+
+
+Software Engineering II                        4
+                                            LITERATUR
+
+
+
+
+             [1] Software Engineering   [2] Best Practice Software-Engineering   [3] Effektive Softwarearchitekturen
+                  Ian Sommerville                  A. Schatten et al.                        Gernot Starke
+                     10. Au age                           2010                                 6. Au age
+
+Software Engineering II
+   fl   fl
+                                                        5
+ 2.1 Software Design Patterns
+
+                          ARCHITEKTURSTILE
+
+
+
+
+Software Engineering II          6
+ 2.1 Software Design Patterns
+
+                   SOFTWARE DESIGN PATTERNS (AUSZUG)
+
+
+       ‣ Hierarchisches Design
+          - 2.1.1 Schichtenarchitektur
+
+       ‣ Interaktionsorientiertes Design
+          - 2.1.2 MVC und MVP
+
+
+
+
+Software Engineering II                    7
+ 2.1 Software Design Patterns
+
+                          SCHICHTEN ARCHITEKTUR (1/3)
+    ‣ Schichten kapseln Funktionalität (Services)
+
+    ‣ Subsysteme mit beliebiger Komplexität
+      (Interfaces!)
+                                                        verwendet
+    ‣ Strikte Aufrufhierarchie von „oben“ nach „unten
+
+    ‣ Obere Schichten: Darstellung (UI) und
+      Verarbeitung (Businesslogik)                      verwendet
+
+    ‣ Untere Schichten: „technische Aspekte“, wie
+      Hardware und DB
+
+
+Software Engineering II                             8
+ 2.1 Software Design Patterns
+
+                          SCHICHTEN ARCHITEKTUR (2/3)
+
+
+                                                   verwendet
+
+
+
+
+                                                   verwendet
+
+
+
+
+Software Engineering II                9
+ 2.1 Software Design Patterns
+
+                          SCHICHTEN ARCHITEKTUR (2/3)
+                                        Vorteile
+    + Schichten sind unabhängig
+    + Schichten sind austauschbar (Interfaces!)
+    + Kann Abhängigkeit zwischen Komponenten
+      reduzieren                                       verwendet
+    + leicht verständlich
+
+
+                                                       verwendet
+
+
+
+
+Software Engineering II                            9
+ 2.1 Software Design Patterns
+
+                          SCHICHTEN ARCHITEKTUR (2/3)
+                                           Vorteile
+    + Schichten sind unabhängig
+    + Schichten sind austauschbar (Interfaces!)
+    + Kann Abhängigkeit zwischen Komponenten
+      reduzieren                                          verwendet
+    + leicht verständlich
+
+                                         Nachteile
+    - Performance (Weiterreichung von Anfragen            verwendet
+      durch alle Schichten Lsg: Layer Bridge)
+    - Änderungen (z.B. weiteres Datenfeld) in allen
+      beteiligten Schichten
+    - Schlechte Skalierbarkeit
+
+
+Software Engineering II                               9
+ 2.1 Software Design Patterns
+
+                          SCHICHTEN ARCHITEKTUR (3/3)
+      ‣ Presentation Layer
+
+         - (graphisches) User Interface
+
+      ‣ Application Layer
+
+         - optional, Koordination und Delegation
+
+      ‣ Business Layer
+
+         - Constraints, Validierung, Regeln
+
+      ‣ Technical Layer
+
+         - Persistenz von Daten, Interface zu Hardware,
+           externen Systemen etc.
+
+Software Engineering II                            10
+ 2.1 Software Design Patterns
+
+                          MODEL-VIEW-CONTROLLER (1/2)
+      ‣ Einsatzbereich: Presentation Layer (UI)
+      ‣ Ziel: Daten von Anzeige/View loslösen
+
+
+
+
+                                                       [https://www.guru99.com/mvc-tutorial.html]
+
+
+
+
+Software Engineering II                           11
+ 2.1 Software Design Patterns
+
+                          MODEL-VIEW-CONTROLLER (1/2)
+      ‣ Einsatzbereich: Presentation Layer (UI)
+      ‣ Ziel: Daten von Anzeige/View loslösen
+      ‣ Model
+         -   enthält die Daten und/oder Status
+         -   benachrichtigt View bei Update
+         -   Anwendungslogik
+
+
+
+
+                                                       [https://www.guru99.com/mvc-tutorial.html]
+
+
+
+
+Software Engineering II                           11
+ 2.1 Software Design Patterns
+
+                          MODEL-VIEW-CONTROLLER (1/2)
+      ‣ Einsatzbereich: Presentation Layer (UI)
+      ‣ Ziel: Daten von Anzeige/View loslösen
+      ‣ Model
+         -   enthält die Daten und/oder Status
+         -   benachrichtigt View bei Update
+         -   Anwendungslogik
+
+      ‣ View
+         -   Anzeige der Daten (z.B. HTML, PDF, CSV)
+         -   Weiterleiten von User-Eingaben
+
+
+
+                                                            [https://www.guru99.com/mvc-tutorial.html]
+
+
+
+
+Software Engineering II                                11
+ 2.1 Software Design Patterns
+
+                          MODEL-VIEW-CONTROLLER (1/2)
+      ‣ Einsatzbereich: Presentation Layer (UI)
+      ‣ Ziel: Daten von Anzeige/View loslösen
+      ‣ Model
+         -   enthält die Daten und/oder Status
+         -   benachrichtigt View bei Update
+         -   Anwendungslogik
+
+      ‣ View
+         -   Anzeige der Daten (z.B. HTML, PDF, CSV)
+         -   Weiterleiten von User-Eingaben
+
+      ‣ Controller
+         -   Interpretiert /Validiert User-Eingaben         [https://www.guru99.com/mvc-tutorial.html]
+
+         -   triggert Model Update
+
+Software Engineering II                                11
+ 2.1 Software Design Patterns
+
+                          MODEL-VIEW-CONTROLLER (2/2)
+
+
+
+
+                                                  [https://www.guru99.com/mvc-tutorial.html]
+
+
+
+
+Software Engineering II                12
+ 2.1 Software Design Patterns
+
+                          MODEL-VIEW-CONTROLLER (2/2)
+                                        Vorteile
+    + klare Trennung von Verantwortlichkeiten
+    + zu einem Model mehrere Views
+    + leicht änderbar
+    + viele unterstützende Frameworks
+
+
+
+
+                                                        [https://www.guru99.com/mvc-tutorial.html]
+
+
+
+
+Software Engineering II                            12
+ 2.1 Software Design Patterns
+
+                          MODEL-VIEW-CONTROLLER (2/2)
+                                        Vorteile
+    + klare Trennung von Verantwortlichkeiten
+    + zu einem Model mehrere Views
+    + leicht änderbar
+    + viele unterstützende Frameworks
+
+
+                                     Nachteile
+    - zusätzliche Abstraktionsschicht
+    - aufwendiges Debugging (Frameworks!!)
+    - Performance bei vielen View/Controller
+      Paaren
+                                                        [https://www.guru99.com/mvc-tutorial.html]
+
+
+
+
+Software Engineering II                            12
+ 2.1 Software Design Patterns
+
+                             MODEL-VIEW-PRESENTER
+      ‣ Ableitung von MVC
+      ‣ Einsatzbereich: Presentation Layer (UI)
+      ‣ Ziel: Anzeige von Logik loslösen
+
+
+
+
+                                                       [https://android.jlelse.eu]
+
+
+
+
+Software Engineering II                           13
+ 2.1 Software Design Patterns
+
+                              MODEL-VIEW-PRESENTER
+      ‣ Ableitung von MVC
+      ‣ Einsatzbereich: Presentation Layer (UI)
+      ‣ Ziel: Anzeige von Logik loslösen
+
+      ‣   Model
+          - enthält die Daten/Status
+          - Anwendungslogik
+
+
+
+
+                                                       [https://android.jlelse.eu]
+
+
+
+
+Software Engineering II                           13
+ 2.1 Software Design Patterns
+
+                                MODEL-VIEW-PRESENTER
+      ‣ Ableitung von MVC
+      ‣ Einsatzbereich: Presentation Layer (UI)
+      ‣ Ziel: Anzeige von Logik loslösen
+
+      ‣   Model
+          - enthält die Daten/Status
+          - Anwendungslogik
+
+
+      ‣ (passive) View
+        - Anzeige der Daten (z.B. HTML, PDF, CSV, …)
+          -   Weiterleiten von User Input an den Presenter
+                                                             [https://android.jlelse.eu]
+
+
+
+
+Software Engineering II                                 13
+ 2.1 Software Design Patterns
+
+                                MODEL-VIEW-PRESENTER
+      ‣ Ableitung von MVC
+      ‣ Einsatzbereich: Presentation Layer (UI)
+      ‣ Ziel: Anzeige von Logik loslösen
+
+      ‣   Model
+          - enthält die Daten/Status
+          - Anwendungslogik
+
+
+      ‣ (passive) View
+        - Anzeige der Daten (z.B. HTML, PDF, CSV, …)
+          -   Weiterleiten von User Input an den Presenter
+                                                              [https://android.jlelse.eu]
+      ‣ Presenter
+        - Mittelsmann zwischen Model und View
+          -   Triggert Business Logik und View Updates
+Software Engineering II                                  13
+ 2.1 Software Design Patterns
+
+                                MODEL-VIEW-PRESENTER
+      ‣ Ableitung von MVC
+      ‣ Einsatzbereich: Presentation Layer (UI)
+      ‣ Ziel: Anzeige von Logik loslösen
+
+      ‣   Model
+          - enthält die Daten/Status
+          - Anwendungslogik
+
+
+      ‣ (passive) View
+        - Anzeige der Daten (z.B. HTML, PDF, CSV, …)
+          -   Weiterleiten von User Input an den Presenter
+                                                                                          [https://android.jlelse.eu]
+      ‣ Presenter
+        - Mittelsmann zwischen Model und View
+          -   Triggert Business Logik und View Updates        … erhöhte Testbarkeit im Vergleich zu MVC…
+
+Software Engineering II                                  13
+ 2.1 Software Design Patterns
+
+                      MVP UND SCHICHTEN IN ANDROID
+                   Presentation Layer                     Business Layer      Technical Layer
+
+            Darstellung auf Android Geräten               Spiellogik            Persistenz
+                                              (Spieler, Spielbrett, Karten,
+                                                                               Speicherung
+                                               Würfel, Spielregeln, etc.)
+                                                                               von Daten in
+                                                                              Datenbank oder
+                                                                                  Cloud
+
+
+
+                                                    Keine Abhängigkeit        z.B. Highscore
+                                                       zu Android!!
+
+
+
+
+Software Engineering II                              14
+                                       INHALTE
+                          2    Software Design
+                          2.1 Software Design Patterns
+                          2.1.1 Schichtenarchitektur
+                          2.1.2 MVC und MVP
+                          2.1.3 Software Design in Android
+                          2.2 Component Based Software Engineering
+                          2.2.1 Reuse
+                          2.2.2 Vom Objekt zum Service
+                          2.2.3 Komponenten
+                          2.2.4 Services
+
+
+
+
+Software Engineering II                       15
+ 2.2.1 Reuse
+
+                          WIR HABEN EIN PROBLEM
+
+
+
+
+Software Engineering II             16
+ 2.2.1 Reuse
+
+                          WIR HABEN EIN PROBLEM
+
+
+
+
+Software Engineering II             16
+ 2.2.1 Reuse
+
+                          WIR HABEN EIN PROBLEM
+
+
+
+
+Software Engineering II             16
+ 2.2.1 Reuse
+
+                          WIR HABEN EIN PROBLEM
+
+
+
+
+Software Engineering II             16
+ 2.2.1 Reuse
+
+                          WIR HABEN EIN PROBLEM
+
+
+
+
+Software Engineering II             16
+ 2.2.1 Reuse
+
+                           WIR HABEN EIN PROBLEM
+
+
+
+
+         „Bei jeder Software-Entwicklung wird in der Regel das »Rad« mehrmals erfunden.
+         Damit erlaubt sich die SW Industrie einen Luxus, der auf Dauer nicht bezahlt
+         werden kann.“                                                          H. Balzert
+
+
+Software Engineering II                          16
+ 2.2.1 Reuse
+
+                                                    REUSE
+
+      Papier, Kompost, Plastik, … Code
+
+
+
+
+                Reusability. The degree to which a software module or other work product can be used
+                 in more than one computer, program, or software system.
+
+Software Engineering II                                   17
+ 2.2.1 Reuse
+
+                                                    REUSE
+                                                                                                       Vorteile
+                                                               + Erhöhung der Produktivität
+                                                               + Beschleunigung der Entwicklung
+      Papier, Kompost, Plastik, … Code
+                                                               + Kostenreduktion
+                                                               + Steigerung der Qualität
+                                                               + Fokus aufs Kerngeschäft
+                                                               + Einhaltung von Standards
+
+
+
+
+                Reusability. The degree to which a software module or other work product can be used
+                 in more than one computer, program, or software system.
+
+Software Engineering II                                   17
+ 2.2.1 Reuse
+
+                                                    REUSE
+                                                                                                         Vorteile
+                                                               + Erhöhung der Produktivität
+                                                               + Beschleunigung der Entwicklung
+      Papier, Kompost, Plastik, … Code
+                                                               + Kostenreduktion
+                                                               + Steigerung der Qualität
+                                                               + Fokus aufs Kerngeschäft
+                                                               + Einhaltung von Standards
+
+                                                                                                       Nachteile
+                                                               - NIH Syndrom
+                                                               - Kosten für Suchen, Verstehen und Anpassen
+                                                               - Unsicherheit bzgl. Langzeit-Support
+
+                Reusability. The degree to which a software module or other work product can be used
+                 in more than one computer, program, or software system.
+
+Software Engineering II                                   17
+ 2.2.1 Reuse
+
+                                                          REUSE
+                                                                                                          e   n d e t   Vorteile
+                                                                                                    e rw           en
+                                                                                                  v
+                                                                        + Erhöhung der Produktivität
+                                                                                               e r          l ie g
+                                                                        + Beschleunigung  e  d     derv o r
+                                                                                                        Entwicklung
+      Papier, Kompost, Plastik, … Code                                             i g w        a r e
+                                                                        + lieb
+                                                                           Kostenreduktionf t w
+                                                                      t  b e         e S o
+                                                                i c h              r
+                                                                        + Steigerung
+                                                                               b a         der   Qualität
+                                                          n  n          +e n d
+                                                                           Fokus     aufs  Kerngeschäft
+                                                   k a n          e r w
+                                             a re           e r v       + Einhaltung von Standards
+                                       f t w          i e d
+                                   S o        s  s w
+                          A B  E R
+                                      s   m u                                                                         Nachteile
+                        … den,      e                                   - NIH Syndrom
+                         w e r
+                                                                        - Kosten für Suchen, Verstehen und Anpassen
+                                                                      - Unsicherheit bzgl. Langzeit-Support
+
+                  Reusability. The degree to which a software module or other work product can be used
+                   in more than one computer, program, or software system.
+
+Software Engineering II                                          17
+                                       INHALTE
+                          2    Software Design
+                          2.1 Architekturstile
+                          2.1.1 Schichtenarchitektur
+                          2.1.2 MVC
+                          2.1.3 Android
+                          2.2 Component Based Software Engineering
+                          2.2.1 Reuse
+                          2.2.2 Vom Objekt zum Service
+                          2.2.3 Komponenten
+                          2.2.4 Services
+
+
+
+
+Software Engineering II                       18
+ 2.2.2 Vom Objekt zum Service
+
+                                       DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                            private PDFPrinter pp = new PDFPrinter();
+                            public WordDocument processWordDocument(String filename) {
+                              WordDocument wd = wi.read(filename);
+                              // do something
+                              return wd;
+                            }
+                            public void printDocumentInPDF(WordDocument wd) {
+                              // do something with pp
+                            }
+                          }
+
+
+
+
+Software Engineering II                                19
+ 2.2.2 Vom Objekt zum Service
+
+                                       DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                            private PDFPrinter pp = new PDFPrinter();
+                            public WordDocument processWordDocument(String filename) {
+                              WordDocument wd = wi.read(filename);
+                              // do something
+                              return wd;
+                            }
+                            public void printDocumentInPDF(WordDocument wd) {
+                              // do something with pp
+                            }
+                          }
+
+
+
+                                               Vorteile
+        + leicht umsetzbar
+        + Bindung zwischen Objekten zum Zeitpunkt
+          des Übersetzens bekannt
+        + IDE Unterstützung
+Software Engineering II                                19
+ 2.2.2 Vom Objekt zum Service
+
+                                       DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                            private PDFPrinter pp = new PDFPrinter();
+                            public WordDocument processWordDocument(String filename) {
+                              WordDocument wd = wi.read(filename);
+                              // do something
+                              return wd;
+                            }
+                            public void printDocumentInPDF(WordDocument wd) {
+                              // do something with pp
+                            }
+                          }
+
+
+
+                                               Vorteile                                   Nachteile
+        + leicht umsetzbar                                  - Austausch von WordImport bzw. PDFPrinter
+        + Bindung zwischen Objekten zum Zeitpunkt             kann mühsam werden
+          des Übersetzens bekannt                           - keine Konfiguration zur Laufzeit möglich
+        + IDE Unterstützung                                 - direkte Bindung
+Software Engineering II                                19
+ 2.2.2 Vom Objekt zum Service
+
+                                       DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                            private PDFPrinter pp = new PDFPrinter();
+                            public WordDocument processWordDocument(String filename) {
+                              WordDocument wd = wi.read(filename);
+                              // do something
+                              return wd;
+                            }
+                            public void printDocumentInPDF(WordDocument wd) {
+                              // do something with pp
+                            }
+                          }
+
+
+
+                                               Vorteile                                   Nachteile
+        + leicht umsetzbar                                  - Austausch von WordImport bzw. PDFPrinter
+        + Bindung zwischen Objekten zum Zeitpunkt             kann mühsam werden
+          des Übersetzens bekannt                           - keine Konfiguration zur Laufzeit möglich
+        + IDE Unterstützung                                 - direkte Bindung
+Software Engineering II                                19
+ 2.2.2 Vom Objekt zum Service
+
+                                       DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                            private PDFPrinter pp = new PDFPrinter();
+                            public WordDocument processWordDocument(String filename) {
+                              WordDocument wd = wi.read(filename);
+                              // do something
+                              return wd;
+                            }
+                            public void printDocumentInPDF(WordDocument wd) {
+                              // do something with pp
+                            }
+                          }
+
+
+
+                                               Vorteile                                   Nachteile
+        + leicht umsetzbar                                  - Austausch von WordImport bzw. PDFPrinter
+        + Bindung zwischen Objekten zum Zeitpunkt             kann mühsam werden
+          des Übersetzens bekannt                           - keine Konfiguration zur Laufzeit möglich
+        + IDE Unterstützung                                 - direkte Bindung
+Software Engineering II                                19
+ 2.2.2 Vom Objekt zum Service
+
+                                       DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                            private PDFPrinter pp = new PDFPrinter();
+                            public WordDocument processWordDocument(String filename) {
+                              WordDocument wd = wi.read(filename);
+                              // do something
+                              return wd;
+                            }
+                            public void printDocumentInPDF(WordDocument wd) {
+                              // do something with pp
+                            }
+                          }
+
+
+
+                                               Vorteile                                   Nachteile
+        + leicht umsetzbar                                  - Austausch von WordImport bzw. PDFPrinter
+        + Bindung zwischen Objekten zum Zeitpunkt             kann mühsam werden
+          des Übersetzens bekannt                           - keine Konfiguration zur Laufzeit möglich
+        + IDE Unterstützung                                 - direkte Bindung
+Software Engineering II                                19
+ 2.2.2 Vom Objekt zum Service
+
+                                       DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                            private PDFPrinter pp = new PDFPrinter();
+                            public WordDocument processWordDocument(String filename) {
+                              WordDocument wd = wi.read(filename);
+                              // do something
+                              return wd;
+                            }
+                            public void printDocumentInPDF(WordDocument wd) {
+                              // do something with pp
+                            }
+                          }
+
+
+
+                                               Vorteile                                   Nachteile
+        + leicht umsetzbar                                  - Austausch von WordImport bzw. PDFPrinter
+        + Bindung zwischen Objekten zum Zeitpunkt             kann mühsam werden
+          des Übersetzens bekannt                           - keine Konfiguration zur Laufzeit möglich
+        + IDE Unterstützung                                 - direkte Bindung
+Software Engineering II                                19
+ 2.2.2 Vom Objekt zum Service
+
+                                       DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                            private PDFPrinter pp = new PDFPrinter();
+                            public WordDocument processWordDocument(String filename) {
+                              WordDocument wd = wi.read(filename);
+                              // do something
+                              return wd;
+                            }
+                            public void printDocumentInPDF(WordDocument wd) {
+                              // do something with pp
+                            }
+                          }
+
+
+
+                                               Vorteile                                   Nachteile
+        + leicht umsetzbar                                  - Austausch von WordImport bzw. PDFPrinter
+        + Bindung zwischen Objekten zum Zeitpunkt             kann mühsam werden
+          des Übersetzens bekannt                           - keine Konfiguration zur Laufzeit möglich
+        + IDE Unterstützung                                 - direkte Bindung
+Software Engineering II                                19
+ 2.2.2 Vom Objekt zum Service
+
+                                       DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                            private PDFPrinter pp = new PDFPrinter();
+                            public WordDocument processWordDocument(String filename) {
+                              WordDocument wd = wi.read(filename);
+                              // do something
+                              return wd;
+                            }
+                            public void printDocumentInPDF(WordDocument wd) {
+                              // do something with pp
+                            }
+                          }
+
+
+
+                                               Vorteile                                   Nachteile
+        + leicht umsetzbar                                  - Austausch von WordImport bzw. PDFPrinter
+        + Bindung zwischen Objekten zum Zeitpunkt             kann mühsam werden
+          des Übersetzens bekannt                           - keine Konfiguration zur Laufzeit möglich
+        + IDE Unterstützung                                 - direkte Bindung
+Software Engineering II                                19
+ 2.2.2 Vom Objekt zum Service
+
+                                            DIREKTER AUFRUF
+                          class A() {
+                            private WordImport wi = new WordImport();
+                                                                                                          l ? ? ?
+                            private PDFPrinter pp = new PDFPrinter();                                w i l
+                                                                                              t ze n
+                            public WordDocument processWordDocument(String filename)
+                                                                                         r se               {
+                              WordDocument wd = wi.read(filename);
+                                                                                     rt e
+                              // do something                                    p o
+                                                                          m lI m
+                              return wd;
+                                                                    t H t
+                            }
+                                                                m i
+                                                          o r t
+                            public void printDocumentInPDF(WordDocument              wd)   {
+                              // do something with ppIm p
+                                                 o rd
+                            }
+                                               W
+                          }                 ch
+                                            n i
+                                        wen
+                                  ist ,
+                            a s                        Vorteile                                                     Nachteile
+                           W
+        + leicht umsetzbar                                                - Austausch von WordImport bzw. PDFPrinter
+        + Bindung zwischen Objekten zum Zeitpunkt                           kann mühsam werden
+          des Übersetzens bekannt                                         - keine Konfiguration zur Laufzeit möglich
+        + IDE Unterstützung                                               - direkte Bindung
+Software Engineering II                                            19
+ 2.2.2 Vom Objekt zum Service
+
+                 AUFRUF UND BINDUNG VIA INTERFACE
+                          public interface TextImport {
+                           public Document read (String filename);
+                          }
+
+
+
+
+Software Engineering II                  20
+ 2.2.2 Vom Objekt zum Service
+
+                 AUFRUF UND BINDUNG VIA INTERFACE
+                             public interface TextImport {
+                              public Document read (String filename);
+                             }
+
+ public class HtmlImport implements TextImport {
+   public Document read (String filename) {
+   // hier erfolgt die konkrete Implementierung
+    // des HTML-Import-Filters
+  }
+ }
+
+
+
+
+Software Engineering II                     20
+ 2.2.2 Vom Objekt zum Service
+
+                 AUFRUF UND BINDUNG VIA INTERFACE
+                             public interface TextImport {
+                              public Document read (String filename);
+                             }
+
+ public class HtmlImport implements TextImport {
+   public Document read (String filename) {
+   // hier erfolgt die konkrete Implementierung
+    // des HTML-Import-Filters
+                                           public class WordImport implements TextImport {
+  }
+                                             public Document read (String filename) {
+ }
+                                             // hier erfolgt die konkrete Implementierung
+                                              // des "Word"-Import-Filters
+                                            }
+                                           }
+
+
+Software Engineering II                     20
+ 2.2.2 Vom Objekt zum Service
+
+                 AUFRUF UND BINDUNG VIA INTERFACE
+         class A() {
+           private WordImport wi = new WordImport();
+           private PDFPrinter pp = new PDFPrinter();
+           public WordDocument processWordDocument(String filename) {
+             WordDocument wd = wi.read(filename);
+             // do something
+             return wd;
+           }
+         }
+
+
+
+
+Software Engineering II                             21
+ 2.2.2 Vom Objekt zum Service
+
+                 AUFRUF UND BINDUNG VIA INTERFACE
+         class A() {
+           private WordImport wi = new WordImport();
+           private PDFPrinter pp = new PDFPrinter();
+           public WordDocument processWordDocument(String filename) {
+             WordDocument wd = wi.read(filename);
+             // do something
+             return wd;                        class A{
+           }                                    private TextImport ti = new HtmlImport();
+         }
+                                                private PDFPrinter pp = new PDFPrinter()
+
+
+                                              public Document processDocument(String filename){
+                                                  Document doc = ti.read(filename)
+                                                     // do something
+                                                 return doc;
+                                                 }
+                                             }
+
+Software Engineering II                                   21
+ 2.2.2 Vom Objekt zum Service
+
+                   AUFRUF UND BINDUNG VIA INTERFACE
+         class A() {
+                                                                                                               l c  h e
+                                                                                                           w e           ?
+           private WordImport wi = new WordImport();
+                                                                                                   i l l ,       l l ? ?
+                                                                                               n w           so
+           private PDFPrinter pp = new PDFPrinter();
+                                                                                       l e g e        e    n
+           public WordDocument processWordDocument(String filename)
+                                                                                f es t          erd
+                                                                                                  {
+                                                                            d e           e t w
+             WordDocument wd = wi.read(filename);                       C o         n d
+                                                                 t  i m       rw  e
+             // do something
+                                                        n i c h           v e
+                                                    c h  class n
+                                                                    u   g
+                                                                       A{
+             return wd;
+                                             n    i         t i e r
+           }
+                                        w e n           e nprivate        TextImport ti = new HtmlImport();
+         }
+                                 is t ,       p l e  m     private PDFPrinter pp = new PDFPrinter()
+                                   a s        e I m
+                                  W      re t
+                                    o nk
+                                  k                           public Document processDocument(String filename){
+                                                                  Document doc = ti.read(filename)
+                                                                     // do something
+                                                                 return doc;
+                                                                 }
+                                                             }
+
+Software Engineering II                                                   21
+ 2.2.2 Vom Objekt zum Service
+
+                          SOFTWARE KOMPONENTE
+
+
+
+
+          Eigenschaften
+          ‣ verfügen über klare und stabile Schnittstelle
+          ‣ hat meist höhere Abstraktion
+          ‣ auf Wiederverwendbarkeit ausgelegt
+          ‣ locker verbunden
+
+Software Engineering II                        22
+ 2.2.2 Vom Objekt zum Service
+
+                          KOMPONENTEN FRAMEWORK
+
+    ‣ kümmert sich um Verdrahtung
+         der Komponenten
+    ‣ Kon guration
+
+    ‣ Lebenszyklus
+
+    ‣ meist auf Plattform beschränkt
+
+
+
+
+Software Engineering II
+    fi
+                                       23
+ 2.2.2 Vom Objekt zum Service
+
+                                        KOMPONENTEN FRAMEWORK                                                                                           d i e
+                                                                                                                                                    e r         t e l lt
+                                                                                                                                                 o d        e s
+                                                                                                                                          i rd         g g
+                                                                                                                                    g t w        g u n
+                                                                                                                             ö  t i          rf ü
+                                                                                                                       b en           r Ve
+                                                                                                               u n g        l t z   u
+                                                                                                       e  n  d        p p e
+    ‣ kümmert sich um Verdrahtung                                                                n   w           t k o
+                                                                                            r A            r e n
+      der Komponenten                                                                   d e          r k e
+                                                                                l un g         s t ä
+                                                                         rt e i        o c h            ?
+                                                                    V e            d  n          l le n
+    ‣ Kon guration                                            e re          u   n            s o
+                                                        ä r k         g ig            d e n
+                                                e   s t         h ä n              e r
+                                          e in              a b                w
+    ‣ Lebenszyklus                  n n            m   u n
+                               w  e         t f o r
+                       i s t ,       p l at
+    ‣ meist aufW  a s
+                 Plattform     t e n beschränkt
+                       n  e  n
+                   p o
+             K o m
+
+
+
+Software Engineering II
+    fi
+                                                                                       23
+ 2.2.2 Vom Objekt zum Service
+
+                                SOFTWARE SERVICES
+
+
+
+
+             Eigenschaften
+             ‣ plattformunabhängig
+             ‣ klar de nierte Schnittstelle
+             ‣ plattformunabhängige Beschreibung der Schnittstelle
+             ‣ angeboten via Netzwerk
+
+Software Engineering II
+        fi
+                                                24
+ 2.2.2 Vom Objekt zum Service
+
+                                DISKUSSION
+
+
+
+
+Software Engineering II             25
+ 2.2.2 Vom Objekt zum Service
+
+                                DISKUSSION
+                                                                  Vorteile
+                                         + Wiederverwendbarkeit
+                                         + Austauschbarkeit
+
+
+
+
+Software Engineering II             25
+ 2.2.2 Vom Objekt zum Service
+
+                                DISKUSSION
+                                                                    Vorteile
+                                         + Wiederverwendbarkeit
+                                         + Austauschbarkeit
+
+
+                                                                  Nachteile
+                                         - Komplexität
+                                         - Overhead
+                                         - Abhängigkeiten
+
+
+
+
+Software Engineering II             25
+ 2.2.2 Vom Objekt zum Service
+
+                                DISKUSSION
+                                                                     Vorteile
+                                          + Wiederverwendbarkeit
+                                          + Austauschbarkeit
+                                    OMI
+
+                                                                   Nachteile
+                                          - Komplexität
+                                          - Overhead
+                                          - Abhängigkeiten
+
+
+
+
+Software Engineering II             25
+ 2.2.2 Vom Objekt zum Service
+
+                                DISKUSSION
+                                                                     Vorteile
+                                          + Wiederverwendbarkeit
+                                          + Austauschbarkeit
+                                    OMI
+
+                                                                   Nachteile
+                                          - Komplexität
+                                          - Overhead
+                                          - Abhängigkeiten
+
+
+
+
+Software Engineering II             25
+ 2.2.2 Vom Objekt zum Service
+                                  ZIEL: REUSE VON SOFTWARE
+                   Ansatz                      Beschreibung
+                                               Generische Abstraktion die über Anwendungsgrenzen hinweg
+                   Design Patterns
+                                               auftreten. Zeigen konkrete Objekte und deren Interaktionen
+                                               Systeme werden entwickelt, indem man Komponenten (Sammlung von
+                   Component-based
+                                               Objekten), welche einem Komponenten-Modell-Standard entsprechen,
+                   Development
+                                               integriert
+                                               Sammlungen von abstrakten und konkreten Klassen werden adaptiert
+                   Application Frameworks
+                                               und erweitert
+                                               Über eine Menge von Schnittstellen wird auf das weiterhin bestehende
+                   Legacy Systems Wrapping
+                                               Altsystem zugegriffen
+                   Service-oriented Systems    Systeme werden durch das Verlinken von (verteilten) Services realisiert
+                                               Eine Anwendung wird generalisiert und kann so an verschiedene
+                   Application product lines
+                                               Anforderungen (Kunden) angepasst werden
+                                               Ein System wird durch die Integration existierender Anwendungen
+                   COTS Integration
+                                               realisiert
+                   Con gurable vertical        Ein generisches System wird entwickelt, sodass es den Wünschen
+                   Applications                diverser Kunden entsprechend kon guriert werden kann
+                                               Häu g verwendete Klassen und Funktionen stehen in einer Bibliothek
+                   Program Libraries
+                                               zum Reuse bereit
+                                               Ein Generatorsystem beinhaltet Wissen einer Domäne und kann bei
+                   Program Generators
+                                               Bedarf ein System generieren
+                   Aspect-oriented SW          Komponenten die unterschiedliche Aspekte beschreiben werden zu
+                   Development                 einer Anwendung verwoben                                                  [1]
+Software Engineering II
+  fi   fi                    fi
+                                                                   26
+                                       INHALTE
+                          2    Software Design
+                          2.1 Software Design Patterns
+                          2.1.1 Schichtenarchitektur
+                          2.1.2 MVC und MVP
+                          2.1.3 Software Design in Android
+                          2.2 Component Based Software Engineering
+                          2.2.1 Motivation
+                          2.2.2 Vom Objekt zum Service
+                          2.2.3 Komponenten
+                          2.2.4 Services
+
+
+
+
+Software Engineering II                       27
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              28
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+                                           1. standardisiert und dokumentiert
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              28
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+                                           1. standardisiert und dokumentiert
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              28
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              29
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+                                                        2. unabhängig
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              29
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+                                                        2. unabhängig
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              29
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              30
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+                                                     3. zusammensetzbar
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              30
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+                                                     3. zusammensetzbar
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              30
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                              31
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+                                                          4. verteilbar
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                               31
+ 2.2.3 Komponenten
+
+             KOMPONENTEN UND IHRE EIGENSCHAFTEN
+                                                          4. verteilbar
+
+          „One of the parts that make up a system. A component may be hardware or software and may be
+          subdivided into other components.“                                                [IEEE Glossary]
+
+          „A software element that conforms to a standard component model and can be independently deployed
+          and composed without modi cation according to a composition standard“                [Councill et al.]
+
+          „A unit of composition with contractually-speci ed interfaces and explicit context dependencies only. It
+          can be deployed independently and is subject to composition by third parties.“                    [Szyperski]
+
+
+
+
+Software Engineering II   fi                fi
+                                                               31
+ 2.2.3 Komponenten
+
+                                            FRAMEWORK
+
+           „A framework is a reusable design that requires software components.“            Strooper
+
+
+           „A framework is a set of classes that embodies an abstract design for solutions to
+           a family of related problems. An object-oriented application framework is a
+           promising technology for reifying proven software designs and implementations in
+           order to reduce the costs and improve the quality of software.“   Jonson und Foote
+                          ‣ Aufgaben: Verdrahtung, Kon guration und Lebenszyklus der Komponenten
+                          ‣ Ziele: Wiederverwendbarkeit und Wirtschaftlichkeit,
+                            Fokus der Entwickler auf Umsetzung der Problemdomäne
+                          ‣ geben oft Patterns / Architektur vor
+                          ‣ modularer Aufbau; besteht aus Komponenten
+Software Engineering II       fi
+                                                       32
+ 2.2.3 Komponenten
+
+                   BESTANDTEILE EINES FRAMEWORKS
+                                                 Application Extensions
+
+
+
+                           Unused
+                                      Framework              Framework
+                           Library
+                                      Library                Core
+                           Classes
+
+
+
+
+                                                                          L. Liu et al.
+                          Framework                       Application
+
+
+
+Software Engineering II                     33
+ 2.2.3 Komponenten
+
+                   BESTANDTEILE EINES FRAMEWORKS
+                                                      Application Extensions
+
+
+               public class ActivityExample extends AppCompatActivity {
+                           Unused
+                     @Override             Framework              Framework
+                           Library
+                                           Library
+                     protected void onStart()  {                  Core
+                           Classes
+                         super.onStart();
+                     }
+               ...
+
+
+                                                                               L. Liu et al.
+                          Framework                            Application
+
+
+
+Software Engineering II                          33
+ 2.2.3 Komponenten
+
+                          FRAMEWORK
+
+
+
+
+Software Engineering II       34
+ 2.2.3 Komponenten
+
+                          FRAMEWORK
+                                                                     Vorteile
+                                   + Wiederverwendbarkeit
+                                   + Modularität (auch durch vorgegebene
+                                     Architektur)
+                                   + Erweiterbarkeit
+                                   + gleiche Lösungen für Standardprobleme
+
+
+
+
+Software Engineering II       34
+ 2.2.3 Komponenten
+
+                          FRAMEWORK
+                                                                     Vorteile
+                                   + Wiederverwendbarkeit
+                                   + Modularität (auch durch vorgegebene
+                                     Architektur)
+                                   + Erweiterbarkeit
+                                   + gleiche Lösungen für Standardprobleme
+
+                                                                   Nachteile
+                                   - Komplexität
+                                   - Abhängigkeiten
+                                   - Einarbeitung
+                                   - Fehlerfindung in Framework
+
+
+
+Software Engineering II       34
+ 2.2.3 Komponenten
+
+                     AUFLÖSUNG DER ABHÄNGIGKEITEN
+     konventionell
+       ‣ Komponente regelt Au ösung, Initialisierung und
+           Kommunikation zu Abhängigkeiten
+       ‣ direkt oder über Factory
+
+     Inversion of Control
+       ‣ Client de niert die Abhängigkeiten
+
+       ‣ Framework regelt Au ösung, Initialisierung und Kommunikation
+
+       ‣ Entkopplung von Komponenten
+
+Software Engineering II
+          fi              fl   fl
+                                               35
+ 2.2.3 Komponenten
+
+                                DEPENDENCY INJECTION
+                                               (Inversion of Control)
+
+         ‣ Pattern
+
+         ‣ Client kennt nur die öffentliche Schnittstelle
+
+         ‣ Kon guration der konkreten Implementierung
+
+           - an zentraler Stelle (XML)
+
+           - im Java Code (Annotations, Autowiring)
+
+         ‣ Framework ladet Kon guration zur Laufzeit
+
+         ‣ Framework injiziert konkrete Implementierung
+                                                                        [researchgate]
+
+           - Setter Injection, Constructor Injection
+
+
+
+Software Engineering II
+    fi                    fi
+                                                         36
+ 2.2.3 Komponenten
+
+                                               BEISPIEL
+
+
+
+
+      StudentInformationService benötigt die Komponenten IExamService, ICourseService und IStudentService
+
+
+Software Engineering II                                37
+ 2.2.3 Komponenten
+
+             DEPENDENCY INJECTION MIT
+                                                          (XML)
+   public class StudentInformationService implements IStudentInformationService {
+
+       private IExamService examService;
+       private IStudentService studentService;
+       private ICourseService courseService;
+
+       // Setter methods for injection
+       public void setExamService(IExamService injectedService){
+           examService = injectedService;
+       }
+                                                                                    Implementierung
+       public void setCourseService(ICourseService injectedService){
+           courseService = injectedService;
+                                                                                      des Services
+       }                                                                               als POJO
+       public void setStudentService(IStudentService injectedService){
+           studentService = injectedService;
+       }
+
+       public StudentInformationService() { }
+
+       public void registerForExam(long examId, String matrNr, String comment) {
+           //do some pre work
+           //call service for exam registration
+           examService.registerForExam(...);
+           //do some post work
+       }
+   }
+
+Software Engineering II                                     38
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                            (XML)
+
+                             Kon guration der Abhängigkeiten
+
+
+
+
+Software Engineering II
+   fi
+                             39
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                                       (XML)
+
+                                        Kon guration der Abhängigkeiten
+                          Komponente
+
+
+
+
+Software Engineering II
+   fi
+                                        39
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                                                (XML)
+
+                                                  Kon guration der Abhängigkeiten
+                          Komponente
+
+
+
+
+                                        Repräsentieren
+                                       Setter und Getter
+
+
+
+
+Software Engineering II
+   fi
+                                                   39
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                                                (XML)
+
+                                                  Kon guration der Abhängigkeiten
+                          Komponente
+
+
+
+
+                                                               Verwendung des Containers
+                                        Repräsentieren
+                                       Setter und Getter
+
+
+
+
+Software Engineering II
+   fi
+                                                   39
+ 2.2.3 Komponenten
+
+            DEPENDENCY INJECTION MIT
+                                                (XML)
+                                                                                    Kon gurationsdatei
+                                                  Kon guration der Abhängigkeiten
+                          Komponente
+
+
+
+
+                                                               Verwendung des Containers
+                                        Repräsentieren
+                                       Setter und Getter
+
+
+
+
+Software Engineering II
+  fi   fi
+                                                   39
+ 2.2.3 Komponenten
+
+            DEPENDENCY INJECTION MIT
+                                                (XML)
+                                                                                          Kon gurationsdatei
+                                                  Kon guration der Abhängigkeiten
+                          Komponente
+
+
+
+
+                                                                   Verwendung des Containers
+                                        Repräsentieren
+                                       Setter und Getter
+                                                             statische Kon gurationen, value statt ref
+
+
+                                                           <property name="encoding" value="utf-8" />
+
+Software Engineering II
+  fi   fi   fi
+                                                   39
+ 2.2.3 Komponenten
+
+                   DEPENDENCY INJECTION MIT
+                                                                    (XML)
+                                                                                                              Kon gurationsdatei
+                                                                      Kon guration der Abhängigkeiten
+                                              Komponente
+
+
+
+
+                                                                                       Verwendung des Containers
+                                                            Repräsentieren
+                                                           Setter und Getter
+                                                                                 statische Kon gurationen, value statt ref
+
+
+            ‣   Beans werden im Container als Singleton behandelt              <property name="encoding" value="utf-8" />
+
+Software Engineering II
+  fi   fi           fi
+                                                                       39
+ 2.2.3 Komponenten
+
+               DEPENDENCY INJECTION MIT
+                                                                (XML)
+
+                                                                  Kon guration der Abhängigkeiten
+                                          Komponente
+
+
+
+                                                                                                          Initialisierung des Containers
+
+
+
+
+                                                                                   Verwendung des Containers
+                                                        Repräsentieren
+                                                       Setter und Getter
+                                                                             statische Kon gurationen, value statt ref
+
+
+        ‣   Beans werden im Container als Singleton behandelt              <property name="encoding" value="utf-8" />
+
+Software Engineering II
+   fi           fi
+                                                                   39
+ 2.2.3 Komponenten
+
+               DEPENDENCY INJECTION MIT
+                                                                (XML)
+
+                                                                  Kon guration der Abhängigkeiten
+                                          Komponente
+
+
+
+
+                                                                                                         Laden der Beans
+                                                                                                       von Container über ID
+                                                                                   Verwendung des Containers
+                                                        Repräsentieren
+                                                       Setter und Getter
+                                                                             statische Kon gurationen, value statt ref
+
+
+        ‣   Beans werden im Container als Singleton behandelt              <property name="encoding" value="utf-8" />
+
+Software Engineering II
+   fi           fi
+                                                                   39
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+
+
+
+
+Software Engineering II      40
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+Software Engineering II                41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+                             Initialisierung des Containers
+
+
+
+
+Software Engineering II                    41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+                                 Kon gurationsklasse
+
+
+
+
+Software Engineering II
+  fi
+                                         41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+                                 Kon gurationsklasse
+
+
+
+
+Software Engineering II
+  fi
+                                         41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                                      (Annotations and Autowiring)
+
+
+                          für Autowiring
+
+
+                                             Kon gurationsklasse
+
+
+
+
+Software Engineering II
+  fi
+                                                     41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+Software Engineering II                41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                               (Annotations and Autowiring)
+
+
+
+
+                          Laden des Services über den Container
+
+
+
+
+Software Engineering II                            41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+Software Engineering II                41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+                                                         Kennzeichnung als Bean
+
+
+
+
+Software Engineering II                41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+                                                         IPrinter wird via Autowiring verknüpft
+
+
+
+
+Software Engineering II                41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+Software Engineering II                41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+                            Kennzeichnung als Bean
+
+
+
+
+Software Engineering II                    41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+                                                         Output
+
+Software Engineering II                41
+ 2.2.3 Komponenten
+
+           DEPENDENCY INJECTION MIT
+
+
+
+
+Software Engineering II      42
+ 2.2.3 Komponenten
+
+           DEPENCENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+Software Engineering II                43
+ 2.2.3 Komponenten
+
+           DEPENCENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+Software Engineering II                43
+ 2.2.3 Komponenten
+
+           DEPENCENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+Software Engineering II                43
+ 2.2.3 Komponenten
+
+           DEPENCENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+Software Engineering II                43
+ 2.2.3 Komponenten
+
+           DEPENCENCY INJECTION MIT
+                          (Annotations and Autowiring)
+
+
+
+
+                                                         Output
+
+Software Engineering II                43
+ 2.2.3 Komponenten
+
+                          DEPENDENCY INJECTION
+
+
+
+
+                                                 [researchgate]
+
+
+
+
+Software Engineering II            44
+ 2.2.3 Komponenten
+
+                               DEPENDENCY INJECTION
+
+                                             Vorteile
+        + gute Strukturierung der Komponenten
+        + Abhängigkeiten zwischen Komponenten
+          werden auf Schnittstellen reduziert
+        + Testbarkeit wird erleichtert (auch Mocking)
+        + Wiederverwendbarkeit steigt
+
+
+
+
+                                                             [researchgate]
+
+
+
+
+Software Engineering II                                 44
+ 2.2.3 Komponenten
+
+                               DEPENDENCY INJECTION
+
+                                             Vorteile
+        + gute Strukturierung der Komponenten
+        + Abhängigkeiten zwischen Komponenten
+          werden auf Schnittstellen reduziert
+        + Testbarkeit wird erleichtert (auch Mocking)
+        + Wiederverwendbarkeit steigt
+
+                                           Nachteile
+       - Komplexität
+       - Einarbeitung                                        [researchgate]
+
+
+
+
+Software Engineering II                                 44
+ 2.2.3 Komponenten
+
+             ASPEKT-ORIENTIERTE PROGRAMMIERUNG
+          ‣ Auslagerung von Cross Cutting Concerns in Aspekte
+            (z.B. Logging, Security, Transaktionssteuerung)
+          ‣ Wozu?
+
+
+
+
+Software Engineering II                           45
+ 2.2.3 Komponenten
+
+             ASPEKT-ORIENTIERTE PROGRAMMIERUNG
+                                  Problemfelder, die in verschiedensten Methoden und
+                                 verschiedensten Schichten in ähnlicher Weise auftreten
+
+          ‣ Auslagerung von Cross Cutting Concerns in Aspekte
+            (z.B. Logging, Security, Transaktionssteuerung)
+          ‣ Wozu?
+
+
+
+
+Software Engineering II                                  45
+ 2.2.3 Komponenten
+
+             ASPEKT-ORIENTIERTE PROGRAMMIERUNG
+          ‣ Auslagerung von Cross Cutting Concerns in Aspekte
+            (z.B. Logging, Security, Transaktionssteuerung)
+          ‣ Wozu?
+
+
+
+
+Software Engineering II                           45
+ 2.2.3 Komponenten
+
+             ASPEKT-ORIENTIERTE PROGRAMMIERUNG
+          ‣ Auslagerung von Cross Cutting Concerns in Aspekte
+            (z.B. Logging, Security, Transaktionssteuerung)
+          ‣ Wozu?
+
+
+
+
+Software Engineering II                           45
+ 2.2.3 Komponenten
+
+                                                       BEGRIFFE
+         ‣   Aspekt: Klasse mit Querschnittsfunktionalität, beinhaltet
+             Pointcuts und Advices als Methoden
+
+         ‣   Advice: Implementierung des Aspekts, die an einen oder
+             mehreren Join Points eingebunden wird: z.B. Before Advice,
+             After Advice, Around Advice
+
+         ‣   Join Points: Punkte an denen Aspekte eingeführt werden
+             können z. B. Methodenaufruf, Ende einer Methode,
+             Exception, Zugriff auf eine Variable, Initialisierung einer
+             Klasse oder eines Objekts
+
+         ‣   Pointcut: Gruppe von Join Points, die bestimmte
+             Eigenschaften (Muster) aufweisen
+
+         ‣   Introduction: Zur Einbindung von Attributen und Operationen
+             schon beim Übersetzen des Programmes (statisch)
+
+
+Software Engineering II                                          46
+ 6.3 Komponenten Frameworks
+
+                              BEISPIEL
+
+
+
+
+Software Engineering II          47
+ 6.3 Komponenten Frameworks
+
+                                                           BEISPIEL
+
+
+
+
+    Ausgabe von Start und Ende aller CustomerDao-Aufrufe
+                       Bei Exceptions
+
+
+
+Software Engineering II                                       47
+ 6.3 Komponenten Frameworks
+
+                                                            BEISPIEL
+
+
+                                                           Logging der Dauer von handleInput() - Calls
+
+
+
+
+    Ausgabe von Start und Ende aller CustomerDao-Aufrufe
+                       Bei Exceptions
+
+
+
+Software Engineering II                                                47
+ 6.3 Komponenten Frameworks
+
+                  AOP MIT ASPECTJ UND
+
+
+
+
+Software Engineering II          48
+ 6.3 Komponenten Frameworks
+
+                  AOP MIT ASPECTJ UND
+                          Annotieren der Klasse als Aspekt
+
+
+
+
+Software Engineering II                                      48
+ 6.3 Komponenten Frameworks
+
+                  AOP MIT ASPECTJ UND
+
+
+
+
+Software Engineering II          48
+ 6.3 Komponenten Frameworks
+
+                  AOP MIT ASPECTJ UND
+
+                                        De nieren des Pointcut
+
+
+
+
+Software Engineering II
+ fi
+                                 48
+ 6.3 Komponenten Frameworks
+
+                  AOP MIT ASPECTJ UND
+
+
+
+
+Software Engineering II          48
+ 6.3 Komponenten Frameworks
+
+                  AOP MIT ASPECTJ UND
+
+
+
+
+                                        Advices
+
+Software Engineering II          48
+ 6.3 Komponenten Frameworks
+
+                  AOP MIT ASPECTJ UND
+
+
+
+
+Software Engineering II          48
+ 6.3 Komponenten Frameworks
+
+                      AOP MIT ASPECTJ UND
+        Markieren
+     als Komponente
+
+
+
+
+Software Engineering II              48
+ 6.3 Komponenten Frameworks
+
+                  AOP MIT ASPECTJ UND
+
+
+
+
+Software Engineering II          48
+ 6.3 Komponenten Frameworks
+
+                                    ZUSAMMENFASSUNG
+                                        ZIEL: Entkopplung von Komponenten
+
+
+
+
+                          Dependency Injection                  Aspektorientierte Programmierung
+
+Software Engineering II                               49
+                                       INHALTE
+                          2    Software Design
+                          2.1 Software Design Patterns
+                          2.1.1 Schichtenarchitektur
+                          2.1.2 MVC und MVP
+                          2.1.3 Software Design in Android
+                          2.2 Component Based Software Engineering
+                          2.2.1 Motivation
+                          2.2.2 Vom Objekt zum Service
+                          2.2.3 Komponenten
+                          2.2.4 Services
+
+
+
+
+Software Engineering II                       50
+ 2.2.4 Services
+
+                      ANFORDERUNGEN AN EIN SERVICE
+
+
+
+
+       ‣ Zustandslos        ‣ Service Registry (Serviceverzeichnis)   ‣ Ortstransparenz
+
+       ‣ Lose Kopplung      ‣ Verteilung                              ‣ Plattformunabhängigkeit
+
+       ‣ Austauschbarkeit   ‣ Geschlossenheit                         ‣ Zugriff über Schnittstelle
+
+
+
+
+Software Engineering II                           51
+ 2.2.4 Services
+
+               SERVICE ORIENTED ARCHITECTURE (SOA)
+         Eine serviceorientierte Architektur kapselt die Verarbeitungsfunktionen einer Software, die
+         Geschäftsprozessen oder Teilen von Geschäftsprozessen entsprechen, als Dienste die über
+         das Netzwerk angeboten werden und über standardisierte Schnittstellen angesprochen werden.
+                                                           [Goll, Architektur und Entwurfsmuster der Software Technik (adaptiert und ergänzt ]
+
+                                                                                                        4.
+                                                                     Servicenutzer                                      Serviceanbieter
+         ‣   unabhängig von Plattform und Technologie                                                   5.
+
+         ‣   ansprechbar über einheitlichen, offenen Standard                        3.
+                                                                                                                                1.
+                                                                               2.
+         ‣   höherer Wiederverwendungsgrad als Komponenten
+                                                                                            Serviceverzeichnis
+
+
+                                                                     1) Veröffentlichung, 2) Suchanfrage, 3) Verweis auf Service,
+                                                                     4) Serviceaufruf, 5) Serviceantwort
+
+
+
+Software Engineering II                                         52
+ 2.2.4 Services
+
+                            REALISIERUNG VON SOA
+
+              ‣ XML-basierte Web Services
+
+              ‣ RESTful (Representation State Transfer) Web Services
+
+              ‣ Microservices
+
+              ‣ CORBA (Common Object Request Broker Architecture)
+
+
+
+
+Software Engineering II                          53
+ 2.2.4 Services
+
+                            REALISIERUNG VON SOA
+
+              ‣ XML-basierte Web Services
+
+              ‣ RESTful (Representation State Transfer) Web Services
+
+              ‣ Microservices
+
+              ‣ CORBA (Common Object Request Broker Architecture)
+
+
+
+
+Software Engineering II                          53
+ 2.2.4 Services
+
+                            XML-BASIERTE WEB SERVICES
+                                                                                              4. (SOAP)
+                                                                      Servicenutzer                          Serviceanbieter
+                                                                                              5. (SOAP)
+
+                                                                                  3. (WSDL)
+      ‣   UDDI (Universal Description, Discovery, and Integration)         2.                                       1. (UDDI, WSDL)
+                                                                        (UDDI)
+      ‣   WSDL (Web Service Description Language)                                       Serviceverzeichnis
+      ‣   SOAP (Simple Object Access Protocol)
+
+
+                                                                     1) Veröffentlichung, 2) Suchanfrage, 3) Verweis auf Service,
+                                                                     4) Serviceaufruf, 5) Serviceantwort
+
+
+
+                                                                                                https://www.w3schools.com/
+
+Software Engineering II                                         54
+ 2.2.4 Services
+
+                                              UDDI UND WSDL
+                                                                   <definitions>
+                                                                                                            WSDL
+                                                                    <types>
+      ‣   Universal Description, Discovery, and Integration           data type definitions
+                                                                    </types>
+          -   Standard für Datenaustausch mit                       <message>
+              Serviceverzeichnis (Registry/Repository)                definition of the data being communicated….
+                                                                    </message>
+                                                                    <portType>
+                                                                      set of operations......
+      ‣   Web Services Description Language                         </portType>
+                                                                    <binding>
+          -   Beschreibung von Web Services                           protocol and data format specification....
+                                                                    </binding>
+          -   (Haupt)Elemente: types, message, portType, binding   </definitions>
+
+
+
+
+Software Engineering II                                       55
+ 2.2.4 Services
+
+                                                         SOAP
+                                                     <?xml version="1.0"?>
+                                                     <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+                                                     soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding" >
+     ‣   Simple Object Access Protocol                 <soap:Header>
+                                                         <!—- Angaben wie Benutzername und Passwort—->
+                                                       </soap:Header>
+     ‣   Serviceanfrage und Serviceaufruf              <soap:Body>
+                                                         <!—- Angaben über Aufruf und Antwort—->
+     ‣   Senden und Empfangen von Nachrichten          <soap:Fault>
+                                                         <!—- Information über Fehler und Status —->
+                                                       </soap:Fault>
+     ‣   Aufbau: Envelope, (Header), Body, (Fault)     </soap:Body>
+                                                     </soap:Envelope>
+
+
+
+
+Software Engineering II                                       56
+ 2.2.4 Services
+
+                                                           SOAP
+                                                     <?xml version="1.0"?>
+                                                     <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+                                                     soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding" >
+     ‣   Simple Object Access Protocol                 <soap:Header>
+                                                         <!—- Angaben wie Benutzername und Passwort—->
+                                                       </soap:Header>
+     ‣   Serviceanfrage und Serviceaufruf              <soap:Body>
+                                                         <!—- Angaben über Aufruf und Antwort—->
+     ‣   Senden und Empfangen von Nachrichten          <soap:Fault>
+                                                         <!—- Information über Fehler und Status —->
+                                                       </soap:Fault>
+     ‣   Aufbau: Envelope, (Header), Body, (Fault)     </soap:Body>
+                                                     </soap:Envelope>
+
+
+
+      [...]
+      <soap:Envelope [...]>
+                                                     Request
+      <soap:Body xmlns:m="http://www.example.org/stock">
+        <m:GetStockPrice>
+          <m:StockName>IBM</m:StockName>
+        </m:GetStockPrice>
+      </soap:Body>
+      </soap:Envelope>
+
+
+
+Software Engineering II                                        56
+ 2.2.4 Services
+
+                                                           SOAP
+                                                     <?xml version="1.0"?>
+                                                     <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+                                                     soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding" >
+     ‣   Simple Object Access Protocol                 <soap:Header>
+                                                         <!—- Angaben wie Benutzername und Passwort—->
+                                                       </soap:Header>
+     ‣   Serviceanfrage und Serviceaufruf              <soap:Body>
+                                                         <!—- Angaben über Aufruf und Antwort—->
+     ‣   Senden und Empfangen von Nachrichten          <soap:Fault>
+                                                         <!—- Information über Fehler und Status —->
+                                                       </soap:Fault>
+     ‣   Aufbau: Envelope, (Header), Body, (Fault)     </soap:Body>
+                                                     </soap:Envelope>
+
+
+
+      [...]
+      <soap:Envelope [...]>
+                                                     Request        [...]                                      Response
+                                                                    <soap:Envelope [...]>
+      <soap:Body xmlns:m="http://www.example.org/stock">            <soap:Body xmlns:m="http://www.example.org/stock">
+        <m:GetStockPrice>                                             <m:GetStockPriceResponse>
+          <m:StockName>IBM</m:StockName>                                <m:Price>34.5</m:Price>
+        </m:GetStockPrice>                                            </m:GetStockPriceResponse>
+      </soap:Body>                                                  </soap:Body>
+      </soap:Envelope>                                              </soap:Envelope>
+
+
+
+Software Engineering II                                        56
+ 2.2.4 Services
+
+                                      RESTFUL WEB SERVICES
+        ‣   Representational State Transfer
+        ‣   Ansprechen von Komponenten (Ressourcen) via HTTP
+        ‣   Ressourcen identi ziert via URIs/global IDs
+        ‣   Datenformat: JSON, XML, CSV, HTML, …
+        ‣   Requests:
+            ‣ GET Daten abfragen
+
+            ‣ POST      Daten erstellen
+            ‣ PUT      Update oder Ersetzung von Daten
+            ‣ DELETE      Löschen von Daten
+
+
+
+
+Software Engineering II
+                  fi
+                                                          57
+ 2.2.4 Services
+
+           RESTFUL VS. XML-BASIERTE WEB SERVICES
+
+
+
+
+Software Engineering II      58
+ 2.2.4 Services
+
+           RESTFUL VS. XML-BASIERTE WEB SERVICES
+
+                                          RESTful
+  + einfacher zu verwenden
+  + Modifikation nur bei URL
+  + JSON, CSV, XML,…
+  - keine standardisierte Sprache zur Beschreibung
+    des Web Services
+  - kein Dienst zum Auffinden von Webservices
+
+
+
+
+Software Engineering II                              58
+ 2.2.4 Services
+
+           RESTFUL VS. XML-BASIERTE WEB SERVICES
+
+                                          RESTful                                          XML-basiert
+  + einfacher zu verwenden                                - höherer Implementierungsaufwand
+  + Modifikation nur bei URL                              - starke Bindung zwischen Client und Service
+  + JSON, CSV, XML,…                                      - nur XML Support
+  - keine standardisierte Sprache zur Beschreibung        + standardisierte Sprache zur Beschreibung des
+    des Web Services                                        Web Services (WSDL)
+  - kein Dienst zum Auffinden von Webservices             + Dienst zum Auffinden von Webservices (UDDI)
+
+
+
+
+Software Engineering II                              58
+ 2.2.4 Services
+
+                                              MICROSERVICES
+       ‣ eine Applikation wird aus einer Sammlung von
+          Services zusammengestellt
+       ‣ neue Features, Änderungen, Bug Fixes können
+          rasch ausgeliefert werden
+       ‣ Eigenschaften:
+          -   lose gekoppelt
+          -   leicht wartbar
+          -   jedes einzelne für sich leicht testbar
+          -   unabhängig voneinander zusammensetzbar
+          -   austauschbar
+
+                                                              https://microservices.io
+
+Software Engineering II                                59
+ 2.2.4 Services
+
+           UNTERSCHIED MONOLITH UND MICROSERVICE
+
+
+
+
+                     https://martinfowler.com/articles/microservices.html#MicroservicesAndSoa
+
+Software Engineering II                                 60
+ 2.2.4 Services
+
+                          AMAZON MICROSERVICES
+
+
+
+
+Software Engineering II            61
+ 2.2.4 Services
+
+                          SERVICES UND SOA
+                                                                 4.
+                                      Servicenutzer                          Serviceanbieter
+                                                                 5.
+
+                                                  3.
+                                             2.                                     1.
+
+
+                                                       Serviceverzeichnis
+
+
+                                      1) Veröffentlichung, 2) Suchanfrage, 3) Verweis auf Service,
+                                      4) Serviceaufruf, 5) Serviceantwort
+
+
+
+
+Software Engineering II          62
+ 2.2.4 Services
+
+                                  SERVICES UND SOA
+                                         Vorteile                                   4.
+       + Reusability                                     Servicenutzer                          Serviceanbieter
+                                                                                    5.
+       + Maintainability
+       + Ortsunabhängigkeit                                          3.
+                                                                2.                                     1.
+       + Plattformunabhängigkeit
+       + Technologieunabhängigkeit der Services
+                                                                          Serviceverzeichnis
+
+
+                                                         1) Veröffentlichung, 2) Suchanfrage, 3) Verweis auf Service,
+                                                         4) Serviceaufruf, 5) Serviceantwort
+
+
+
+
+Software Engineering II                             62
+ 2.2.4 Services
+
+                                  SERVICES UND SOA
+                                          Vorteile                                   4.
+       + Reusability                                      Servicenutzer                          Serviceanbieter
+                                                                                     5.
+       + Maintainability
+       + Ortsunabhängigkeit                                           3.
+                                                                 2.                                     1.
+       + Plattformunabhängigkeit
+       + Technologieunabhängigkeit der Services
+                                                                           Serviceverzeichnis
+                                         Nachteile
+       - Overhead                                         1) Veröffentlichung, 2) Suchanfrage, 3) Verweis auf Service,
+       - Service Management                               4) Serviceaufruf, 5) Serviceantwort
+
+       - Externe Services == Black Box
+
+
+
+
+Software Engineering II                              62
+                          ZUSAMMENFASSUNG
+
+
+
+
+Software Engineering II          63
+                          ZUSAMMENFASSUNG
+
+
+
+
+Software Engineering II          63
+                          ZUSAMMENFASSUNG
+
+                                      ‣ Vom Objekt zum Service
+
+
+
+
+Software Engineering II          63
+                          ZUSAMMENFASSUNG
+
+                                      ‣ Vom Objekt zum Service
+
+                                      ‣ Dependency Injection
+
+
+
+
+Software Engineering II          63
+                          ZUSAMMENFASSUNG
+
+                                      ‣ Vom Objekt zum Service
+
+                                      ‣ Dependency Injection
+
+                                      ‣ Aspektorientierte Programmierung
+
+
+
+
+Software Engineering II          63
+                          ZUSAMMENFASSUNG
+
+                                      ‣ Vom Objekt zum Service
+
+                                      ‣ Dependency Injection
+
+                                      ‣ Aspektorientierte Programmierung
+
+                                      ‣ Webservices (XML-basiert, RESTful)
+
+
+
+
+Software Engineering II          63
+                          ZUSAMMENFASSUNG
+
+                                      ‣ Vom Objekt zum Service
+
+                                      ‣ Dependency Injection
+
+                                      ‣ Aspektorientierte Programmierung
+
+                                      ‣ Webservices (XML-basiert, RESTful)
+
+                                      ‣ Microservices
+
+
+
+
+Software Engineering II          63
+
